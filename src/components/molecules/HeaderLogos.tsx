@@ -10,7 +10,7 @@ import logoDesaWisata from "../../assets/logo/6-Desa-Wisata-(Putih).png";
 
 const HeaderLogos: React.FC = () => {
   return (
-    <Box padding="32px 40px">
+    <Box padding="32px 38px">
       <Flex columnGap="10px">
         <Image src={ logoKemenpar } alt="logo-kemenpar" height={46} />
         <Image src={ logo77 } alt="logo-kemenpar" height={46} />
