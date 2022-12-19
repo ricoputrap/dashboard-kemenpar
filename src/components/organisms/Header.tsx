@@ -8,11 +8,12 @@ const Header: React.FC = () => {
   return (
     <Box>
       <Image
+        zIndex={1}
         src={ headerLine }
         alt="header-line"
         position="absolute"
       />
-      
+
       <Flex height="30px" direction="row" justifyContent="space-between">
         <HeaderLogos />
         <Navbar />

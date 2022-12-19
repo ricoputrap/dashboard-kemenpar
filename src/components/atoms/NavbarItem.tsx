@@ -13,6 +13,7 @@ const NavbarItem: React.FC<Props> = ({
 }) => {
   return (
     <Box
+      zIndex={2}
       fontSize="12px"
       color={isActive ? "main" : "white"}
       fontWeight={isActive ? "700" : "400"}
