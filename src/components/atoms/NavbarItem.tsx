@@ -1,25 +1,26 @@
 import { Box } from '@chakra-ui/react';
-import React from 'react'
+import { Link } from 'react-router-dom';
 
 type Props = {
   label: string;
   path: string;
   isActive: boolean;
-  onClick: (path: string) => void;
 }
 
 const NavbarItem: React.FC<Props> = ({
-  label, path, isActive, onClick
+  label, path, isActive
 }) => {
+
   return (
     <Box
       zIndex={2}
       fontSize="12px"
       color={isActive ? "main" : "white"}
       fontWeight={isActive ? "700" : "400"}
-      onClick={() => onClick(path)}
     >
-      { label }
+      <Link to={ path }>
+        { label }
+      </Link>
     </Box>
   )
 }

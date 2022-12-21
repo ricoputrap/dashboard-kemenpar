@@ -1,61 +1,52 @@
 import { Box, Flex, Image } from '@chakra-ui/react';
-import React, { useState } from 'react'
 import NavbarItem from '../atoms/NavbarItem';
 import iconUser from "../../assets/icons/icon-user-small.png";
+import { Link, Location, useLocation } from 'react-router-dom';
 
 interface IMenu {
   label: string,
   path: string,
-  isActive: boolean
 }
 
 const menus: IMenu[] = [
-  { label: "HOME", path: "/", isActive: true },
-  { label: "NARASUMBER", path: "/narasumber", isActive: false },
-  { label: "SOSIALISASI", path: "/sosialisasi", isActive: false },
-  { label: "PELATIHAN A", path: "/pelatihan-a", isActive: false },
-  { label: "PELATIHAN B", path: "/pelatihan-b", isActive: false },
-  { label: "PELATIHAN C", path: "/pelatihan-c", isActive: false },
-  { label: "PENDAMPINGAN", path: "/pendampingan", isActive: false },
-  { label: "APRESIASI", path: "/apresiasi", isActive: false },
+  { label: "HOME", path: "/" },
+  { label: "NARASUMBER", path: "/narasumber" },
+  { label: "SOSIALISASI", path: "/sosialisasi" },
+  { label: "PELATIHAN A", path: "/pelatihan-a" },
+  { label: "PELATIHAN B", path: "/pelatihan-b" },
+  { label: "PELATIHAN C", path: "/pelatihan-c" },
+  { label: "PENDAMPINGAN", path: "/pendampingan" },
+  { label: "APRESIASI", path: "/apresiasi" },
 ]
 
-const Navbar = () => {
-  const [menuItems, setMenuItems] = useState<IMenu[]>(menus);
+const Navbar: React.FC = () => {
+  const location: Location = useLocation();
 
-  const onClick = (path: string) => {
-    const oldActiveMenuIndex: number = menuItems.findIndex((item: IMenu) => item.isActive == true);
-    const newActiveMenuIndex: number = menuItems.findIndex((item: IMenu) => item.path == path);
-   
-    if (oldActiveMenuIndex !== -1 && newActiveMenuIndex !== -1) {
-      const oldActiveMenu: IMenu = { ...menuItems[oldActiveMenuIndex] };
-      const newActiveMenu: IMenu = { ...menuItems[newActiveMenuIndex] };
-      
-      oldActiveMenu.isActive = false;
-      newActiveMenu.isActive = true;
-
-      const updatedMenuItems: IMenu[] = [...menuItems];
-      updatedMenuItems[oldActiveMenuIndex] = oldActiveMenu;
-      updatedMenuItems[newActiveMenuIndex] = newActiveMenu;
-
-      setMenuItems(updatedMenuItems);
-    }
+  const getIsActive = (path: string): boolean => {
+    return path == location.pathname;
   }
 
   return (
     <Box padding="30px 48px">
       <Flex columnGap="15px">
-        { menuItems.map((menu: IMenu) => (
+        { menus.map((menu: IMenu) => (
           <NavbarItem
             key={ menu.path }
             label={ menu.label }
             path={ menu.path }
-            isActive={ menu.isActive }
-            onClick={ onClick }
+            isActive={ getIsActive(menu.path) }
           />
         ))}
 
-        <Image src={ iconUser } alt="icon-user" height="24px" />
+        <Box zIndex={2}>
+          <Link to="/profile">
+            <Image
+              src={ iconUser }
+              alt="icon-user"
+              height="24px"
+            />
+          </Link>
+        </Box>
       </Flex>
     </Box>
   )
