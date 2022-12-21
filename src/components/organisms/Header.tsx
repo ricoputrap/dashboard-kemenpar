@@ -12,6 +12,8 @@ const Header: React.FC = () => {
         src={ headerLine }
         alt="header-line"
         position="absolute"
+        width="100vw"
+        height="114px"
       />
 
       <Flex height="30px" direction="row" justifyContent="space-between">
