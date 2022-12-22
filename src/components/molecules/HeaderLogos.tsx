@@ -1,12 +1,12 @@
 import { Box, Flex, Image } from '@chakra-ui/react'
 import React from 'react'
 
-import logoKemenpar from "../../assets/logo/1-logo-kemenpar.png";
-import logo77 from "../../assets/logo/2-logo-77.png";
-import logoG20 from "../../assets/logo/3-logo-G20-(putih).png";
-import logoWonderfull from "../../assets/logo/4-logo-Wonderfull-Indonesia-(Putih).png";
-import logoWorld from "../../assets/logo/5-logo-World-Tourism-day-2022-(Putih).png";
-import logoDesaWisata from "../../assets/logo/6-Desa-Wisata-(Putih).png";
+import logoKemenpar from "../../assets/logo/1-logo-kemenpar.svg";
+import logo77 from "../../assets/logo/2-logo-77.svg";
+import logoG20 from "../../assets/logo/3-logo-G20-(putih).svg";
+import logoWonderfull from "../../assets/logo/4-logo-Wonderfull-Indonesia-(Putih).svg";
+import logoWorld from "../../assets/logo/5-logo-World-Tourism-day-2022-(Putih).svg";
+import logoDesaWisata from "../../assets/logo/6-Desa-Wisata-(Putih).svg";
 
 const HeaderLogos: React.FC = () => {
   return (
