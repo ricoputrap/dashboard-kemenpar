@@ -27,7 +27,21 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <Box padding="30px 48px">
+    <Box
+      padding="30px 48px 15px"
+      height="fit-content"
+      borderBottom="2px solid #EAC170"
+      position="relative"
+    >
+      <Box
+        position="absolute"
+        bottom="-2px"
+        right={0}
+        height="2px"
+        width="100%"
+        borderBottom="2px solid #EAC170"
+        filter="blur(4px)"
+      ></Box>
       <Flex columnGap="14px">
         { menus.map((menu: IMenu) => (
           <NavbarItem

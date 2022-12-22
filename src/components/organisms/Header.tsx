@@ -7,20 +7,55 @@ import headerLine from "../../assets/lines/header-line.png";
 const Header: React.FC = () => {
   return (
     <Box>
-      <Image
-        zIndex={1}
-        src={ headerLine }
-        alt="header-line"
+      {/* header line - left */}
+      <Box
+        id="header-line"
+        height="112px"
         position="absolute"
-        width="100vw"
+        top={0}
+        left={0}
+        width="calc(50% - 150px)"
+        borderBottom="2px solid #EAC170"
+      ></Box>
+      <Box
+        id="header-line"
         height="114px"
-      />
+        position="absolute"
+        top={0}
+        left={0}
+        width="calc(50% - 150px)"
+        borderBottom="2px solid #EAC170"
+        filter="blur(4px)"
+      ></Box>
+      
+      {/* header line - right */}
+      <Box
+        id="header-line"
+        height="112px"
+        position="absolute"
+        top={0}
+        right={0}
+        width="calc(50% - 150px)"
+        borderBottom="2px solid #EAC170"
+      ></Box>
+      <Box
+        id="header-line"
+        height="114px"
+        position="absolute"
+        top={0}
+        right={0}
+        width="calc(50% - 150px)"
+        borderBottom="2px solid #EAC170"
+        filter="blur(4px)"
+      ></Box>
 
+      {/* header content */}
       <Flex direction="row" justifyContent="space-between">
         <HeaderLogos />
         <Navbar />
       </Flex>
 
+      {/* header title */}
       <Heading
         fontSize="18px"
         fontFamily="Montserrat"
