@@ -1,13 +1,11 @@
-import { Box } from '@chakra-ui/react'
 import React from 'react'
-import Header from '../components/organisms/Header'
+import BasePage from '../components/templates/BasePage';
 
 const PelatihanB: React.FC = () => {
   return (
-    <Box id="page-pelatihan_b">
-      <Header />
+    <BasePage id="page-pelatihan_b">
       <h1>PELATIHAN B</h1>
-    </Box>
+    </BasePage>
   )
 }
 

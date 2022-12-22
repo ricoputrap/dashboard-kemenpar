@@ -1,4 +1,4 @@
-import { Box, Flex, Image } from '@chakra-ui/react'
+import { Box, Flex, Heading, Image } from '@chakra-ui/react'
 import React from 'react'
 import HeaderLogos from '../molecules/HeaderLogos'
 import Navbar from '../molecules/Navbar'
@@ -20,6 +20,21 @@ const Header: React.FC = () => {
         <HeaderLogos />
         <Navbar />
       </Flex>
+
+      <Heading
+        fontSize="18px"
+        fontFamily="Montserrat"
+        fontWeight={700}
+        lineHeight="22px"
+        textAlign="center"
+        position="absolute"
+        top={94}
+        width="100vw"
+      >
+        KAMPANYE SADAR
+        <br/>
+        WISATA 5.0
+      </Heading>
     </Box>
   )
 }
