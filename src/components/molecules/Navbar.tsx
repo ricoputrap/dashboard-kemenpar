@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 
   return (
     <Box padding="30px 48px">
-      <Flex columnGap="15px">
+      <Flex columnGap="14px">
         { menus.map((menu: IMenu) => (
           <NavbarItem
             key={ menu.path }

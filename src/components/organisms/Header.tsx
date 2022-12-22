@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         height="114px"
       />
 
-      <Flex height="30px" direction="row" justifyContent="space-between">
+      <Flex direction="row" justifyContent="space-between">
         <HeaderLogos />
         <Navbar />
       </Flex>
