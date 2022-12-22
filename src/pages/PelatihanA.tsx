@@ -4,16 +4,7 @@ import Header from '../components/organisms/Header'
 
 const PelatihanA: React.FC = () => {
   return (
-    <Box
-      backgroundColor="background"
-      height="100vh"
-      color="white"
-      fontFamily="Montserrat"
-      fontStyle="normal"
-      fontWeight="800"
-      fontSize="20px"
-      lineHeight="24px"
-    >
+    <Box id="page-pelatihan_a">
       <Header />
       <h1>PELATIHAN A</h1>
     </Box>
