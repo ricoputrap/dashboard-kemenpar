@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         >
         <Box
           id="root-Box"
-          height="100vh"
+          minHeight="100vh"
           backgroundImage={`url(${bgImg})`}
           backgroundPosition="center"
           backgroundRepeat="no-repeat"

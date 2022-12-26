@@ -1,35 +1,53 @@
-import { Box, Heading, Image, Table, TableContainer, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/react'
+import { Box, Flex, Heading, Image, Table, TableContainer, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react'
 import React from 'react'
 import HorizontalBarItem from '../../atoms/HorizontalBarItem';
 import chartLineImg from "../../../assets/lines/chart-line.svg";
+import { TBarChartItem } from '../../../types/charts.type';
+import useData from './useData';
 
 type Props = {
-  
+  title: string;
+  dataInput: TBarChartItem[];
 }
 
-const data = [
-  { name: "TOBA", percent: 79 },
-  { name: "BYP", percent: 59 },
-  { name: "BTS", percent: 45 },
-  { name: "LOMBOK", percent: 37 }
-]
+const HorizontalBarChart: React.FC<Props> = ({ title, dataInput }) => {
+  const {
+    data,
+    categories,
+    activeCategory,
+    changeCategory
+  } = useData(dataInput);
 
-const HorizontalBarChart: React.FC<Props> = ({ }) => {
   return (
     <Box>
       <Box marginBottom="12px">
         <Image src={chartLineImg} />
       </Box>
 
-      <Box marginBottom="12px">
+      <Flex marginBottom="20px" justifyContent="space-between">
         <Heading
           fontSize="20px"
           fontFamily="Montserrat"
           fontWeight={500}
         >
-          TOP LIST
+          { title }
         </Heading>
-      </Box>
+
+        <Flex fontSize="12px" fontWeight={400} columnGap="8px">
+          {categories.map(category => (
+            <Text
+              textTransform="uppercase"
+              color={category == activeCategory ? "main" : "white"}
+              onClick={() => changeCategory(category)}
+              _hover={{
+                cursor: "pointer"
+              }}
+            >
+              { category }
+            </Text>
+          ))}
+        </Flex>
+      </Flex>
 
       <TableContainer>
         <Table variant="unstyled">
@@ -53,12 +71,13 @@ const HorizontalBarChart: React.FC<Props> = ({ }) => {
                     height="29px"
                     padding={0}
                     verticalAlign="middle"
+                    textTransform="uppercase"
                   >
                     { item.name }
                   </Td>
 
                   <Td
-                    width="190px"
+                    width="220px"
                     height="29px"
                     padding={0}
                   >
@@ -71,7 +90,7 @@ const HorizontalBarChart: React.FC<Props> = ({ }) => {
                     paddingY={0}
                     paddingLeft="20px"
                     paddingRight={0}
-                    fontSize="20px"
+                    fontSize="15px"
                     fontWeight={600}
                     verticalAlign="middle"
                   >
