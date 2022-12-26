@@ -32,8 +32,8 @@ const LineChartLegend: React.FC<Props> = ({ items, position }) => {
 
   return (
     <Flex direction={ direction } rowGap={ rowGap } columnGap={ columnGap }>
-      {items.map(({ name, color }) => (
-        <LineChartLegendItem key={ name } name={ name } color={ color } />
+      {items.map(({ label, color }) => (
+        <LineChartLegendItem key={ label } label={ label } color={ color } />
       ))}
     </Flex>
   )

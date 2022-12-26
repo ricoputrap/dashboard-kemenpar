@@ -1,5 +1,5 @@
 export type ILineChartLegendItem = {
-  name: string;
+  label: string;
   color: string;
 }
 

@@ -7,15 +7,13 @@ import {
   LineElement,
   Title,
   Tooltip,
-  Legend,
-  ChartData,
-  Point,
+  Legend
 } from "chart.js";
 import { Line } from 'react-chartjs-2';
 import { options } from './config';
 import { Box, Flex, Heading, Image } from '@chakra-ui/react';
 import { IDataInput } from './types/dataset.type';
-import useDataset from './hooks/useData';
+import useData from './hooks/useData';
 import chartLineImg from "../../../assets/lines/chart-line.svg";
 import LineChartLegend from '../../molecules/LineChartLegend';
 
@@ -45,7 +43,7 @@ const items = [
 ]
 
 const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition = "none" }) => {
-  const dataset: ChartData<"line", (number | Point | null)[], unknown> = useDataset(data);
+  const { dataset, labelsWithColor } = useData(data);
 
   return (
     <Box width={ width }>
@@ -64,7 +62,7 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
           { title }
         </Heading>
 
-        {legendPosition == "top" ? <LineChartLegend items={ items } position="top" /> : <></>}
+        {legendPosition == "top" ? <LineChartLegend items={ labelsWithColor } position="top" /> : <></>}
       </Flex>
 
       <Box display="flex" alignItems="center">
@@ -76,7 +74,7 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
         />
         
         {legendPosition != "right" ? <></> : (
-          <LineChartLegend items={ items } position="right" />
+          <LineChartLegend items={ labelsWithColor } position="right" />
         )}
       </Box>
     </Box>
