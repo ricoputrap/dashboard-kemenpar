@@ -64,16 +64,20 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
           { title }
         </Heading>
 
-        <LineChartLegend items={ items } position="top" />
+        {legendPosition == "top" ? <LineChartLegend items={ items } position="top" /> : <></>}
       </Flex>
 
-      <Box>
+      <Box display="flex" alignItems="center">
         <Line
           options={ options }
           data={ dataset }
           height={ height }
           width={ width }
         />
+        
+        {legendPosition != "right" ? <></> : (
+          <LineChartLegend items={ items } position="right" />
+        )}
       </Box>
     </Box>
   )

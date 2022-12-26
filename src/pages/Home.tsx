@@ -13,6 +13,7 @@ const Home: React.FC = () => {
           data={ dummyInputData }
           height={200}
           width={1000}
+          legendPosition="top"
         />
       </Box>
     </BasePage>
