@@ -48,12 +48,3 @@ export const options = {
     }
   }
 }
-
-export const labels: string[] = [
-  "TOBA",
-  "BYP",
-  "BTS",
-  "LOMBOK",
-  "LABUAN BAJO",
-  "WAKATOBI"
-];

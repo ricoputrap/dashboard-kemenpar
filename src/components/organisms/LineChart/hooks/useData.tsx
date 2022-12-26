@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import { IDataInput, IDataset } from '../types/dataset.type';
+import { IDataInput, IDataset, ILabelColor } from '../types/dataset.type';
 import { ChartData, Point } from 'chart.js';
 import { getRandomColor } from '../../../../utils';
 
-const useData = (dataInput: IDataInput[] = []): ChartData<"line", (number | Point | null)[], unknown> => {
-  const [data, setData] = useState<ChartData<"line", (number | Point | null)[], unknown>>({
+const useData = (dataInput: IDataInput[] = []) => {
+  const [dataset, setDataset] = useState<ChartData<"line", (number | Point | null)[], unknown>>({
     labels: [],
     datasets: []
   });
+
+  const [labelsWithColor, setLabelsWithColor] = useState<ILabelColor[]>([]);
 
   useEffect(() => {
     let labels: string[] = [];
@@ -28,10 +30,24 @@ const useData = (dataInput: IDataInput[] = []): ChartData<"line", (number | Poin
       }
     });
 
-    setData({ labels, datasets });
+    // helper variable
+    const uniqueLabels: string[] = [];
+    const labelsWithColor: ILabelColor[] = datasets.reduce(
+      (result: ILabelColor[], item) => {
+        if (!uniqueLabels.includes(item.label)) {
+          result.push({
+            label: item.label,
+            color: item.backgroundColor
+          });
+        }
+        return result;
+      }, []);
+
+    setDataset({ labels, datasets });
+    setLabelsWithColor(labelsWithColor);
   }, [dataInput]);
 
-  return data;
+  return { dataset, labelsWithColor };
 }
 
 export default useData

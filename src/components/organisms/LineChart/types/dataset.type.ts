@@ -14,3 +14,8 @@ export interface IDataset {
   borderColor: string;
   backgroundColor: string;
 }
+
+export interface ILabelColor {
+  label: string;
+  color: string;
+}
