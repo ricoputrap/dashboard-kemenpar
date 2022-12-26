@@ -8,7 +8,11 @@ const Home: React.FC = () => {
   return (
     <BasePage id="page-home">
       <Box marginTop={200}>
-        <LineChart data={ dummyInputData } />
+        <LineChart
+          data={ dummyInputData }
+          height={200}
+          width={1000}
+        />
       </Box>
     </BasePage>
   )

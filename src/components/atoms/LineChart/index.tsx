@@ -29,18 +29,20 @@ ChartJS.register(
 
 type Props = {
   data: IDataInput[];
+  width: number;
+  height: number;
 }
 
-const LineChart: React.FC<Props> = ({ data }) => {
+const LineChart: React.FC<Props> = ({ data, width, height }) => {
   const dataset: ChartData<"line", (number | Point | null)[], unknown> = useDataset(data);
 
   return (
-    <Box width={1000}>
+    <Box width={ width }>
       <Line
         options={ options }
         data={ dataset }
-        height="200px"
-        width="1000px"
+        height={ height }
+        width={ width }
       />
     </Box>
   )
