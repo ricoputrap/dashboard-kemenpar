@@ -1,8 +1,10 @@
 export const options = {
   responsive: true,
   background: "white",
-  legend: {
-    display: false
+  plugins: {
+    legend: {
+      display: false
+    }
   },
   scales: {
     x: {
@@ -17,7 +19,11 @@ export const options = {
       ticks: {
         display: true,
         color: "white",
-        stepSize: 2
+        stepSize: 2,
+        font: {
+          size: 14,
+          weight: 500
+        }
       }
     },
     y: {
@@ -32,7 +38,11 @@ export const options = {
       ticks: {
         display: true,
         color: "white",
-        maxTicksLimit: 4
+        maxTicksLimit: 4,
+        font: {
+          size: 14,
+          weight: 500
+        }
       }
     }
   }
