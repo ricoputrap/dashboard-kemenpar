@@ -39,6 +39,7 @@ export const options = {
         display: true,
         color: "white",
         maxTicksLimit: 4,
+        padding: 14,
         font: {
           size: 14,
           weight: 500

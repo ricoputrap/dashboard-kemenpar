@@ -9,6 +9,7 @@ const Home: React.FC = () => {
     <BasePage id="page-home">
       <Box marginTop={200}>
         <LineChart
+          title="GRAFIK PENILAIAN PELATIHAN"
           data={ dummyInputData }
           height={200}
           width={1000}
