@@ -16,7 +16,7 @@ import { options } from './config';
 import { Box, Flex, Heading, Image } from '@chakra-ui/react';
 import { IDataInput } from './types/dataset.type';
 import useDataset from './hooks/useData';
-import charthLineImg from "../../../assets/lines/chart-line.svg";
+import chartLineImg from "../../../assets/lines/chart-line.svg";
 import LineChartLegend from '../../molecules/LineChartLegend';
 
 ChartJS.register(
@@ -32,7 +32,7 @@ ChartJS.register(
 type Props = {
   title: string;
   data: IDataInput[];
-  width: number;
+  width: number | string;
   height: number;
   legendPosition: "top" | "right" | "none";
 }
@@ -50,7 +50,7 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
   return (
     <Box width={ width }>
       <Box marginBottom="12px" paddingLeft="14px">
-        <Image src={charthLineImg} />
+        <Image src={chartLineImg} />
       </Box>
 
       <Flex marginBottom={0} paddingLeft="14px" justifyContent="space-between">

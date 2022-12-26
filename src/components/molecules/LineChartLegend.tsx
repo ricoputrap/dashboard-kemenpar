@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { ILineChartLegendItem } from '../../types/line-chart.type'
+import { ILineChartLegendItem } from '../../types/charts.type'
 import { Flex } from '@chakra-ui/react'
 import LineChartLegendItem from '../atoms/LineChartLegendItem'
 
