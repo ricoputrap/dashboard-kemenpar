@@ -22,7 +22,7 @@ export const options = {
         stepSize: 2,
         font: {
           size: 15,
-          weight: 500
+          weight: "500"
         }
       }
     },
@@ -42,7 +42,7 @@ export const options = {
         padding: 14,
         font: {
           size: 15,
-          weight: 500
+          weight: "500"
         }
       }
     }
