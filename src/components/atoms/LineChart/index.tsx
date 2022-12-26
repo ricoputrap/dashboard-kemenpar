@@ -53,7 +53,7 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
         <Image src={charthLineImg} />
       </Box>
 
-      <Flex marginBottom="8px" paddingLeft="14px" justifyContent="space-between">
+      <Flex marginBottom={0} paddingLeft="14px" justifyContent="space-between">
         <Heading
           margin={0}
           fontSize={18}
