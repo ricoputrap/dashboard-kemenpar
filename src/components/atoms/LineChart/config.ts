@@ -14,14 +14,14 @@ export const options = {
       },
       grid: {
         display: true,
-        color: "#EAC1704D"
+        color: "#FFFFFF80"
       },
       ticks: {
         display: true,
         color: "white",
         stepSize: 2,
         font: {
-          size: 14,
+          size: 15,
           weight: 500
         }
       }
@@ -33,7 +33,7 @@ export const options = {
       },
       grid: {
         display: true,
-        color: "#EAC1704D"
+        color: "#FFFFFF80"
       },
       ticks: {
         display: true,
@@ -41,7 +41,7 @@ export const options = {
         maxTicksLimit: 4,
         padding: 14,
         font: {
-          size: 14,
+          size: 15,
           weight: 500
         }
       }

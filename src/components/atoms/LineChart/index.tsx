@@ -13,10 +13,11 @@ import {
 } from "chart.js";
 import { Line } from 'react-chartjs-2';
 import { options } from './config';
-import { Box, Heading, Image } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image } from '@chakra-ui/react';
 import { IDataInput } from './types/dataset.type';
 import useDataset from './hooks/useData';
 import charthLineImg from "../../../assets/lines/chart-line.svg";
+import LineChartLegend from '../../molecules/LineChartLegend';
 
 ChartJS.register(
   CategoryScale,  // x-axis
@@ -33,9 +34,17 @@ type Props = {
   data: IDataInput[];
   width: number;
   height: number;
+  legendPosition: "top" | "right" | "none";
 }
 
-const LineChart: React.FC<Props> = ({ title, data, width, height }) => {
+const items = [
+  { name: "SOSIALISASI", color: "gray" },
+  { name: "PELATIHAN", color: "red" },
+  { name: "PENDAMPINGAN", color: "yellow" },
+  { name: "APRESIASI", color: "green" }
+]
+
+const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition = "none" }) => {
   const dataset: ChartData<"line", (number | Point | null)[], unknown> = useDataset(data);
 
   return (
@@ -43,7 +52,8 @@ const LineChart: React.FC<Props> = ({ title, data, width, height }) => {
       <Box marginBottom="12px" paddingLeft="14px">
         <Image src={charthLineImg} />
       </Box>
-      <Box marginBottom="14px" paddingLeft="14px">
+
+      <Flex marginBottom="8px" paddingLeft="14px" justifyContent="space-between">
         <Heading
           margin={0}
           fontSize={18}
@@ -53,13 +63,18 @@ const LineChart: React.FC<Props> = ({ title, data, width, height }) => {
         >
           { title }
         </Heading>
+
+        <LineChartLegend items={ items } position="top" />
+      </Flex>
+
+      <Box>
+        <Line
+          options={ options }
+          data={ dataset }
+          height={ height }
+          width={ width }
+        />
       </Box>
-      <Line
-        options={ options }
-        data={ dataset }
-        height={ height }
-        width={ width }
-      />
     </Box>
   )
 }
