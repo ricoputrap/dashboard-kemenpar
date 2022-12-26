@@ -36,6 +36,7 @@ const HorizontalBarChart: React.FC<Props> = ({ title, dataInput }) => {
         <Flex fontSize="12px" fontWeight={400} columnGap="8px">
           {categories.map(category => (
             <Text
+              key={ category }
               textTransform="uppercase"
               color={category == activeCategory ? "main" : "white"}
               onClick={() => changeCategory(category)}
@@ -61,43 +62,43 @@ const HorizontalBarChart: React.FC<Props> = ({ title, dataInput }) => {
 
           <Tbody>
             {data.map(item => (
-              <Box marginBottom="10px" key={item.name}>
-                <Tr>
-                  <Td
-                    fontSize="12px"
-                    fontWeight={400}
-                    lineHeight="12px"
-                    width="70px"
-                    height="29px"
-                    padding={0}
-                    verticalAlign="middle"
-                    textTransform="uppercase"
-                  >
-                    { item.name }
-                  </Td>
+              <Tr key={item.name}>
+                <Td
+                  fontSize="12px"
+                  fontWeight={400}
+                  lineHeight="12px"
+                  width="70px"
+                  height="29px"
+                  paddingX={0}
+                  paddingY="5px"
+                  verticalAlign="middle"
+                  textTransform="uppercase"
+                >
+                  { item.name }
+                </Td>
 
-                  <Td
-                    width="220px"
-                    height="29px"
-                    padding={0}
-                  >
-                    <HorizontalBarItem percent={ item.percent } />
-                  </Td>
+                <Td
+                  width="220px"
+                  height="29px"
+                  paddingX={0}
+                  paddingY="5px"
+                >
+                  <HorizontalBarItem percent={ item.percent } />
+                </Td>
 
-                  <Td
-                    height="29px"
-                    width="70px"
-                    paddingY={0}
-                    paddingLeft="20px"
-                    paddingRight={0}
-                    fontSize="15px"
-                    fontWeight={600}
-                    verticalAlign="middle"
-                  >
-                    { item.percent }%
-                  </Td>
-                </Tr>
-              </Box>
+                <Td
+                  height="29px"
+                  width="70px"
+                  paddingY="5px"
+                  paddingLeft="20px"
+                  paddingRight={0}
+                  fontSize="15px"
+                  fontWeight={600}
+                  verticalAlign="middle"
+                >
+                  { item.percent }%
+                </Td>
+              </Tr>
             ))}
           </Tbody>
         </Table>
