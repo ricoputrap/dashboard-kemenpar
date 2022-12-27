@@ -1,53 +1,30 @@
 import { Box, Flex, Heading, Image } from '@chakra-ui/react'
-import React from 'react'
+import React, { useMemo } from 'react'
 import HeaderLogos from '../molecules/HeaderLogos'
 import Navbar from '../molecules/Navbar'
-import headerLine from "../../assets/lines/header-line.png";
+import headerLine from "../../assets/lines/header-line.svg";
+import useWindowSize from '../../hooks/useWindowSize';
 
 const Header: React.FC = () => {
+  const { width } = useWindowSize();
+  const headerHeight = useMemo(() => {
+    if (width >= 1336) return "190px";
+    return 0;
+  }, [width]);
+
   return (
     <Box>
-      {/* header line - left */}
       <Box
-        id="header-line"
-        height="112px"
+        width="100vw"
         position="absolute"
-        top={0}
-        left={0}
-        width="calc(50% - 150px)"
-        borderBottom="2px solid #EAC170"
-      ></Box>
-      <Box
-        id="header-line"
-        height="114px"
-        position="absolute"
-        top={0}
-        left={0}
-        width="calc(50% - 150px)"
-        borderBottom="2px solid #EAC170"
-        filter="blur(4px)"
-      ></Box>
-      
-      {/* header line - right */}
-      <Box
-        id="header-line"
-        height="112px"
-        position="absolute"
-        top={0}
-        right={0}
-        width="calc(50% - 150px)"
-        borderBottom="2px solid #EAC170"
-      ></Box>
-      <Box
-        id="header-line"
-        height="114px"
-        position="absolute"
-        top={0}
-        right={0}
-        width="calc(50% - 150px)"
-        borderBottom="2px solid #EAC170"
-        filter="blur(4px)"
-      ></Box>
+        height={ headerHeight }
+      >
+        <Image
+          src={ headerLine }
+          width="100%"
+          height="100%"
+        />
+      </Box>
 
       {/* header content */}
       <Flex direction="row" justifyContent="space-between">
