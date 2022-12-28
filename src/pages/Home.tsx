@@ -4,6 +4,7 @@ import LineChart from "../components/organisms/LineChart"
 import { Box, Flex } from '@chakra-ui/react'
 import HorizontalBarChart from '../components/organisms/HorizontalBarChart'
 import useDataHome from '../hooks/useDataHome'
+import DonutChartJumlah from '../components/organisms/DonutChartJumlah'
 
 const Home: React.FC = () => {
   const {
@@ -34,12 +35,14 @@ const Home: React.FC = () => {
             />
           </Flex>
         </Box>
-        <Box marginTop={100}>
+        <Flex marginTop={100} direction="column" rowGap="20px">
+          <DonutChartJumlah title="JUMLAH" />
+
           <HorizontalBarChart
             title="TOP LIST"
             dataInput={ topList }
           />
-        </Box>
+        </Flex>
       </Flex>
     </BasePage>
   )
