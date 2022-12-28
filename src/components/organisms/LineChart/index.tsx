@@ -49,7 +49,13 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
         <Image src={chartLineImg} />
       </Box>
 
-      <Flex marginBottom={0} paddingLeft="14px" justifyContent="space-between">
+      <Flex
+        marginBottom="-4px"
+        paddingLeft="14px"
+        paddingRight="32px"
+        justifyContent="space-between"
+        alignItems="baseline"
+      >
         <Heading
           margin={0}
           fontSize={18}
@@ -62,7 +68,13 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
 
         {legendPosition == "top" ? <LineChartLegend items={ labelsWithColor } position="top" /> : <></>}
 
-        {legendPosition == "right" ? <Dropdown options={ dropdownOptions } /> : <></>}
+        {legendPosition != "right" ? <></> : (
+          <Dropdown
+            options={ dropdownOptions }
+            activeItem={ activeCategory }
+            onChange={ changeCategory }
+          />
+        )}
       </Flex>
 
       <Box display="flex" alignItems="center">

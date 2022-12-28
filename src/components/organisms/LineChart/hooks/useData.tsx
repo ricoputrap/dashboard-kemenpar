@@ -75,6 +75,34 @@ const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
     setLabelsWithColor(labelsWithColor);
   }, [dataInput]);
 
+  useEffect(() => {
+    if (activeCategory == "") return;
+
+    // filter the dataset
+    const filteredData = filterDataByCategory(dataInput, activeCategory);
+
+    // recompute the label based on the filtered dataset
+    let labels: string[] = [];
+    if (dataInput.length > 0) {
+      labels = filteredData[0].data.map(item => item.label);
+    }
+
+    // precompute dataset
+    const datasets: IDataset[] = filteredData.map(rowData => {
+      const color: string = getRandomColor();
+      const values: number[] = rowData.data.map(item => item.value);
+
+      return {
+        label: rowData.name,
+        data: values,
+        borderColor: color,
+        backgroundColor: color
+      }
+    });
+
+    setDataset({ labels, datasets })
+  }, [activeCategory, dataInput]);
+
   const changeCategory = (category: string) => {
     setActiveCategory(category);
   }
