@@ -100,7 +100,20 @@ const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
       }
     });
 
-    setDataset({ labels, datasets })
+    const uniqueLabels: string[] = [];
+    const labelsWithColor: ILabelColor[] = datasets.reduce(
+      (result: ILabelColor[], item) => {
+        if (!uniqueLabels.includes(item.label)) {
+          result.push({
+            label: item.label,
+            color: item.backgroundColor
+          });
+        }
+        return result;
+      }, []);
+
+    setDataset({ labels, datasets });
+    setLabelsWithColor(labelsWithColor);
   }, [activeCategory, dataInput]);
 
   const changeCategory = (category: string) => {
