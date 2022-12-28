@@ -1,24 +1,52 @@
-import React, { useEffect, useState } from 'react'
-import { IDataInput, IDataset, ILabelColor } from '../types/dataset.type';
+import React, { useEffect, useMemo, useState } from 'react'
+import { IDataInput, IDataPointInput, IDataset, ILabelColor } from '../types/dataset.type';
 import { ChartData, Point } from 'chart.js';
 import { getRandomColor } from '../../../../utils';
+import { TDropdownItem } from '../../../../types/utils.type';
 
-const useData = (dataInput: IDataInput[] = []) => {
+const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
+  const [labelsWithColor, setLabelsWithColor] = useState<ILabelColor[]>([]);
+  const [activeCategory, setActiveCategory] = useState<string>("");
+  const [categories, setCategories] = useState<string[]>([]);
   const [dataset, setDataset] = useState<ChartData<"line", (number | Point | null)[], unknown>>({
     labels: [],
     datasets: []
   });
 
-  const [labelsWithColor, setLabelsWithColor] = useState<ILabelColor[]>([]);
+  const dropdownOptions: TDropdownItem[] = useMemo(() => {
+    return categories.map(category => ({
+      label: category,
+      value: category
+    }))
+  }, [categories]);
 
   useEffect(() => {
-    let labels: string[] = [];
+    const uniqueCategories: string[] = [];
+    let activeCategory = "";
 
-    if (dataInput.length > 0) {
-      labels = dataInput[0].data.map(item => item.label);
+    if (filtering) {
+      for (let i = 0; i < dataInput.length; i++) {
+        dataInput[i].data.forEach(item => {
+          if (!uniqueCategories.includes(item.category || ""))
+            uniqueCategories.push(item.category || "");
+        });
+      }
+
+      setCategories(uniqueCategories);
+      setActiveCategory(uniqueCategories[0]);
+      activeCategory = uniqueCategories[0];
     }
 
-    const datasets: IDataset[] = dataInput.map(rowData => {
+    const filteredData: IDataInput[] = !filtering
+      ? dataInput
+      : filterDataByCategory(dataInput, activeCategory);
+
+    let labels: string[] = [];
+    if (dataInput.length > 0) {
+      labels = filteredData[0].data.map(item => item.label);
+    }
+
+    const datasets: IDataset[] = filteredData.map(rowData => {
       const color: string = getRandomColor();
       const values: number[] = rowData.data.map(item => item.value);
 
@@ -47,7 +75,53 @@ const useData = (dataInput: IDataInput[] = []) => {
     setLabelsWithColor(labelsWithColor);
   }, [dataInput]);
 
-  return { dataset, labelsWithColor };
+  useEffect(() => {
+    if (activeCategory == "") return;
+
+    // filter the dataset
+    const filteredData = filterDataByCategory(dataInput, activeCategory);
+
+    // recompute the label based on the filtered dataset
+    let labels: string[] = [];
+    if (dataInput.length > 0) {
+      labels = filteredData[0].data.map(item => item.label);
+    }
+
+    // precompute dataset
+    const datasets: IDataset[] = filteredData.map(rowData => {
+      const color: string = getRandomColor();
+      const values: number[] = rowData.data.map(item => item.value);
+
+      return {
+        label: rowData.name,
+        data: values,
+        borderColor: color,
+        backgroundColor: color
+      }
+    });
+
+    setDataset({ labels, datasets })
+  }, [activeCategory, dataInput]);
+
+  const changeCategory = (category: string) => {
+    setActiveCategory(category);
+  }
+
+  return { dataset, labelsWithColor, dropdownOptions, activeCategory, changeCategory };
+}
+
+const filterDataByCategory = (data: IDataInput[], activeCategory: string): IDataInput[] => {
+  const filteredData: IDataInput[] = [];
+
+  data.forEach(lineData => {
+    const filteredDataPoints: IDataPointInput[] = lineData.data.filter(dataPoint => dataPoint.category == activeCategory);
+    filteredData.push({
+      ...lineData,
+      data: filteredDataPoints
+    });
+  });
+
+  return filteredData;
 }
 
 export default useData

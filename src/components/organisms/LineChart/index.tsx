@@ -16,6 +16,7 @@ import { IDataInput } from './types/dataset.type';
 import useData from './hooks/useData';
 import chartLineImg from "../../../assets/lines/chart-line.svg";
 import LineChartLegend from '../../molecules/LineChartLegend';
+import Dropdown from '../../atoms/Dropdown';
 
 ChartJS.register(
   CategoryScale,  // x-axis
@@ -33,17 +34,14 @@ type Props = {
   width: number | string;
   height: number;
   legendPosition: "top" | "right" | "none";
+  filtering?: boolean;
 }
 
-const items = [
-  { name: "SOSIALISASI", color: "gray" },
-  { name: "PELATIHAN", color: "red" },
-  { name: "PENDAMPINGAN", color: "yellow" },
-  { name: "APRESIASI", color: "green" }
-]
-
-const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition = "none" }) => {
-  const { dataset, labelsWithColor } = useData(data);
+const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition = "none", filtering = false }) => {
+  const {
+    dataset, labelsWithColor, dropdownOptions,
+    activeCategory, changeCategory
+  } = useData(data, filtering);
 
   return (
     <Box width={ width }>
@@ -51,7 +49,13 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
         <Image src={chartLineImg} />
       </Box>
 
-      <Flex marginBottom={0} paddingLeft="14px" justifyContent="space-between">
+      <Flex
+        marginBottom="-4px"
+        paddingLeft="14px"
+        paddingRight="32px"
+        justifyContent="space-between"
+        alignItems="baseline"
+      >
         <Heading
           margin={0}
           fontSize={18}
@@ -63,6 +67,14 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
         </Heading>
 
         {legendPosition == "top" ? <LineChartLegend items={ labelsWithColor } position="top" /> : <></>}
+
+        {legendPosition != "right" ? <></> : (
+          <Dropdown
+            options={ dropdownOptions }
+            activeItem={ activeCategory }
+            onChange={ changeCategory }
+          />
+        )}
       </Flex>
 
       <Box display="flex" alignItems="center">

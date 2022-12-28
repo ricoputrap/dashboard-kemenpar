@@ -1,6 +1,7 @@
 export interface IDataPointInput {
   label: string;
   value: number;
+  category?: string;
 }
 
 export interface IDataInput {
