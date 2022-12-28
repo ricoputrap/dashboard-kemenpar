@@ -16,7 +16,7 @@ const Home: React.FC = () => {
   return (
     <BasePage id="page-home">
       <Flex paddingX="20px" columnGap="40px" paddingBottom="100px">
-        <Box marginTop="80px">
+        <Box marginTop="40px">
           <Flex direction="column" rowGap="100px">
             <LineChart
               title="GRAFIK PENILAIAN PELATIHAN"
@@ -35,7 +35,8 @@ const Home: React.FC = () => {
             />
           </Flex>
         </Box>
-        <Flex marginTop={100} direction="column" rowGap="20px">
+
+        <Flex marginTop="40px" direction="column" rowGap="20px">
           <DonutChartJumlah title="JUMLAH" />
 
           <HorizontalBarChart
