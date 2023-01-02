@@ -3,6 +3,7 @@ import { IDataInput, IDataPointInput, IDataset, ILabelColor } from '../types/dat
 import { ChartData, Point } from 'chart.js';
 import { getRandomColor } from '../../../../utils';
 import { TDropdownItem } from '../../../../types/utils.type';
+import useDropdownOptions from './useDropdownOptions';
 
 const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
   const [labelsWithColor, setLabelsWithColor] = useState<ILabelColor[]>([]);
@@ -12,13 +13,8 @@ const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
     labels: [],
     datasets: []
   });
-
-  const dropdownOptions: TDropdownItem[] = useMemo(() => {
-    return categories.map(category => ({
-      label: category,
-      value: category
-    }))
-  }, [categories]);
+  
+  const dropdownOptions: TDropdownItem[] = useDropdownOptions(categories);
 
   useEffect(() => {
     let uniqueCategories: string[] = [];
