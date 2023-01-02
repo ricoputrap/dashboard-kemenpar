@@ -1,0 +1,30 @@
+{
+  "data": [
+    { "name": "toba", "percent": 79, "category": "narasumber" },
+    { "name": "borobudur", "percent": 59, "category": "narasumber" },
+    { "name": "yogya", "percent": 45, "category": "narasumber" },
+    { "name": "prambanan", "percent": 37, "category": "narasumber" },
+    { "name": "bromo", "percent": 79, "category": "narasumber" },
+    { "name": "tengger", "percent": 59, "category": "narasumber" },
+    { "name": "semeru", "percent": 45, "category": "narasumber" },
+    { "name": "lombok", "percent": 37, "category": "narasumber" },
+
+    { "name": "toba", "percent": 38, "category": "champion" },
+    { "name": "borobudur", "percent": 14, "category": "champion" },
+    { "name": "yogya", "percent": 90, "category": "champion" },
+    { "name": "prambanan", "percent": 84, "category": "champion" },
+    { "name": "bromo", "percent": 46, "category": "champion" },
+    { "name": "tengger", "percent": 93, "category": "champion" },
+    { "name": "semeru", "percent": 25, "category": "champion" },
+    { "name": "lombok", "percent": 57, "category": "champion" },
+
+    { "name": "toba", "percent": 47, "category": "d.wisata" },
+    { "name": "borobudur", "percent": 89, "category": "d.wisata" },
+    { "name": "yogya", "percent": 15, "category": "d.wisata" },
+    { "name": "prambanan", "percent": 55, "category": "d.wisata" },
+    { "name": "bromo", "percent": 80, "category": "d.wisata" },
+    { "name": "tengger", "percent": 55, "category": "d.wisata" },
+    { "name": "semeru", "percent": 24, "category": "d.wisata" },
+    { "name": "lombok", "percent": 15, "category": "d.wisata" }
+  ]
+}

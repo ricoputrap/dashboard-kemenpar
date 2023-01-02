@@ -33,21 +33,23 @@ const HorizontalBarChart: React.FC<Props> = ({ title, dataInput }) => {
           { title }
         </Heading>
 
-        <Flex fontSize="12px" fontWeight={400} columnGap="8px">
-          {categories.map(category => (
-            <Text
-              key={ category }
-              textTransform="uppercase"
-              color={category == activeCategory ? "main" : "white"}
-              onClick={() => changeCategory(category)}
-              _hover={{
-                cursor: "pointer"
-              }}
-            >
-              { category }
-            </Text>
-          ))}
-        </Flex>
+        {categories.length > 0 && (
+          <Flex fontSize="12px" fontWeight={400} columnGap="8px">
+            {categories.map(category => (
+              <Text
+                key={ category }
+                textTransform="uppercase"
+                color={category == activeCategory ? "main" : "white"}
+                onClick={() => changeCategory(category)}
+                _hover={{
+                  cursor: "pointer"
+                }}
+              >
+                { category }
+              </Text>
+            ))}
+          </Flex>
+        )}
       </Flex>
 
       <TableContainer>

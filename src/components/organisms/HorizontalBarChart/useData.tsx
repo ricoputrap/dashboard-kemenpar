@@ -9,13 +9,17 @@ const useData = (dataInput: TBarChartItem[]) => {
   useEffect(() => {
     if (dataInput.length == 0) return;
 
-    const uniqueCategories: string[] = dataInput.reduce(
+    let uniqueCategories: string[] = dataInput.reduce(
       (allCategories: string[], current) => {
         if (!allCategories.includes(current.category))
           allCategories.push(current.category);
           
         return allCategories;
       }, []);
+
+    if (uniqueCategories.length == 1 && uniqueCategories[0] == undefined) {
+      uniqueCategories = [];
+    }
 
     setActiveCategory(uniqueCategories[0]);
     setCategories(uniqueCategories);
