@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "name": "Sosialisasi",
+      "data": [
+        {
+          "label": "TOBA",
+          "value": 500
+        },
+        {
+          "label": "BOROBUDUR",
+          "value": 700
+        },
+        {
+          "label": "YOGYA",
+          "value": 1100
+        },
+        {
+          "label": "PRAMBANAN",
+          "value": 900
+        },
+        {
+          "label": "BROMO",
+          "value": 1600
+        },
+        {
+          "label": "TENGGER",
+          "value": 2400
+        },
+        {
+          "label": "SEMERU",
+          "value": 500
+        },
+        {
+          "label": "LOMBOK",
+          "value": 700
+        },
+        {
+          "label": "LABUAN BAJO",
+          "value": 1100
+        },
+        {
+          "label": "WAKATOBI",
+          "value": 900
+        }
+      ]
+    },
+    {
+      "name": "PELATIHAN",
+      "data": [
+        {
+          "label": "TOBA",
+          "value": 900
+        },
+        {
+          "label": "BOROBUDUR",
+          "value": 1600
+        },
+        {
+          "label": "YOGYA",
+          "value": 2400
+        },
+        {
+          "label": "PRAMBANAN",
+          "value": 500
+        },
+        {
+          "label": "BROMO",
+          "value": 700
+        },
+        {
+          "label": "TENGGER",
+          "value": 1100
+        },
+        {
+          "label": "SEMERU",
+          "value": 900
+        },
+        {
+          "label": "LOMBOK",
+          "value": 1600
+        },
+        {
+          "label": "LABUAN BAJO",
+          "value": 2400
+        },
+        {
+          "label": "WAKATOBI",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "name": "PENDAMPINGAN",
+      "data": [
+        {
+          "label": "TOBA",
+          "value": 500
+        },
+        {
+          "label": "BOROBUDUR",
+          "value": 700
+        },
+        {
+          "label": "YOGYA",
+          "value": 2400
+        },
+        {
+          "label": "PRAMBANAN",
+          "value": 1100
+        },
+        {
+          "label": "BROMO",
+          "value": 900
+        },
+        {
+          "label": "TENGGER",
+          "value": 1600
+        },
+        {
+          "label": "SEMERU",
+          "value": 500
+        },
+        {
+          "label": "LOMBOK",
+          "value": 700
+        },
+        {
+          "label": "LABUAN BAJO",
+          "value": 2400
+        },
+        {
+          "label": "WAKATOBI",
+          "value": 1100
+        }
+      ]
+    },
+    {
+      "name": "APRESIASI",
+      "data": [
+        {
+          "label": "TOBA",
+          "value": 1600
+        },
+        {
+          "label": "BOROBUDUR",
+          "value": 2400
+        },
+        {
+          "label": "YOGYA",
+          "value": 500
+        },
+        {
+          "label": "PRAMBANAN",
+          "value": 700
+        },
+        {
+          "label": "BROMO",
+          "value": 1100
+        },
+        {
+          "label": "TENGGER",
+          "value": 900
+        },
+        {
+          "label": "SEMERU",
+          "value": 1600
+        },
+        {
+          "label": "LOMBOK",
+          "value": 2400
+        },
+        {
+          "label": "LABUAN BAJO",
+          "value": 500
+        },
+        {
+          "label": "WAKATOBI",
+          "value": 700
+        }
+      ]
+    }
+  ]
+}
