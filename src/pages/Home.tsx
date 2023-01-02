@@ -26,7 +26,7 @@ const Home: React.FC = () => {
               legendPosition="top"
             />
             <LineChart
-              title="GRAFIK PENILAIAN PELATIHAN"
+              title="GRAFIK JUMLAH KEGIATAN"
               data={ jumlahKegiatan }
               height={200}
               width={820}
