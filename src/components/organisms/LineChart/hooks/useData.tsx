@@ -21,7 +21,7 @@ const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
   }, [categories]);
 
   useEffect(() => {
-    const uniqueCategories: string[] = [];
+    let uniqueCategories: string[] = [];
     let activeCategory = "";
 
     if (filtering) {
@@ -31,6 +31,9 @@ const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
             uniqueCategories.push(item.category || "");
         });
       }
+
+      // capitalize categories
+      uniqueCategories = uniqueCategories.map(category => category.toUpperCase());
 
       setCategories(uniqueCategories);
       setActiveCategory(uniqueCategories[0]);
@@ -62,9 +65,12 @@ const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
     const uniqueLabels: string[] = [];
     const labelsWithColor: ILabelColor[] = datasets.reduce(
       (result: ILabelColor[], item) => {
-        if (!uniqueLabels.includes(item.label)) {
+        const label = item.label.toUpperCase();
+
+        if (!uniqueLabels.includes(label)) {
+          uniqueLabels.push(label);
           result.push({
-            label: item.label,
+            label,
             color: item.backgroundColor
           });
         }
@@ -84,7 +90,7 @@ const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
     // recompute the label based on the filtered dataset
     let labels: string[] = [];
     if (dataInput.length > 0) {
-      labels = filteredData[0].data.map(item => item.label);
+      labels = filteredData[0].data.map(item => item.label.toUpperCase());
     }
 
     // precompute dataset
@@ -100,12 +106,12 @@ const useData = (dataInput: IDataInput[] = [], filtering: boolean = false) => {
       }
     });
 
-    const uniqueLabels: string[] = [];
+    let uniqueLabels: string[] = [];
     const labelsWithColor: ILabelColor[] = datasets.reduce(
       (result: ILabelColor[], item) => {
-        if (!uniqueLabels.includes(item.label)) {
+        if (!uniqueLabels.includes(item.label.toUpperCase())) {
           result.push({
-            label: item.label,
+            label: item.label.toUpperCase(),
             color: item.backgroundColor
           });
         }
@@ -127,7 +133,7 @@ const filterDataByCategory = (data: IDataInput[], activeCategory: string): IData
   const filteredData: IDataInput[] = [];
 
   data.forEach(lineData => {
-    const filteredDataPoints: IDataPointInput[] = lineData.data.filter(dataPoint => dataPoint.category == activeCategory);
+    const filteredDataPoints: IDataPointInput[] = lineData.data.filter(dataPoint => dataPoint.category?.toUpperCase() == activeCategory);
     filteredData.push({
       ...lineData,
       data: filteredDataPoints

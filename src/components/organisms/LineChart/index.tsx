@@ -86,7 +86,9 @@ const LineChart: React.FC<Props> = ({ title, data, width, height, legendPosition
         />
         
         {legendPosition != "right" ? <></> : (
-          <LineChartLegend items={ labelsWithColor } position="right" />
+          <Box marginLeft="4px">
+            <LineChartLegend items={ labelsWithColor } position="right" />
+          </Box>
         )}
       </Box>
     </Box>
