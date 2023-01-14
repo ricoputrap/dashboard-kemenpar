@@ -11,7 +11,7 @@ export type TStatItemData = {
 export type TStatRowData = {
   full: TStatItemData;
   done: TStatItemData;
-  percent: TStatItemData;
+  percent?: TStatItemData;
 }
 
 export type TStatData = {
@@ -22,5 +22,5 @@ export type TStatData = {
 
 export type TKPIData = {
   title: string;
-  stat: TStatData;
+  stats: TStatData[];
 }

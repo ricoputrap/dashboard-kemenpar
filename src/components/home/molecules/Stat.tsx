@@ -5,9 +5,16 @@ import StatItem from '../atoms/StatItem'
 import { TStatData } from '../../../types/home.type'
 import StatYear from '../atoms/StatYear'
 
-const Stat: React.FC<TStatData> = ({ year, main, rows }) => {
+interface Props extends TStatData {
+  hasBorder?: boolean;
+}
+
+const Stat: React.FC<Props> = ({ year, main, rows, hasBorder = false }) => {
   return (
-    <>
+    <Flex
+      direction="column"
+      borderLeft={ hasBorder ? "1px solid #EAC170" : "none" }
+    >
       <StatYear year={ year } />
 
       <Flex
@@ -30,15 +37,17 @@ const Stat: React.FC<TStatData> = ({ year, main, rows }) => {
               label={ rowData.done.label }
               hasBorder
             />
-            <StatItem
-              value={ rowData.percent.value }
-              hasBorder
-              small
-            />
+            {!!rowData.percent && (
+              <StatItem
+                value={ rowData.percent.value }
+                hasBorder
+                small
+              />
+            )}
           </Flex>
         ))}
       </Flex>
-    </>
+    </Flex>
   )
 }
 

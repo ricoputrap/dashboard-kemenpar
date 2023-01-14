@@ -1,16 +1,47 @@
 import { useEffect, useState } from 'react'
 import API from '../API';
+import { TKPIData } from '../types/home.type';
 
-const useDataHome = () => {
-  const [description, setDescription] = useState<string>("");
-  const { data, error, isLoading } = API.home();
-
-  useEffect(() => {
-    if (!!data)
-      setDescription(data.data.description);
-  }, [data]);
-
-  return { description, error, isLoading }
+const initialDataPendampingan: TKPIData = {
+  title: "pendampingan",
+  stats: []
+}
+const initialDataPelatihan: TKPIData = {
+  title: "pelatihan",
+  stats: []
+}
+const initialDataSosialisasi: TKPIData = {
+  title: "sosialisasi",
+  stats: []
 }
 
-export default useDataHome
+const useDataHome = () => {
+  const [pendampingan, setPendampingan] = useState<TKPIData>(initialDataPendampingan);
+  const [pelatihan, setPelatihan] = useState<TKPIData>(initialDataPelatihan);
+  const [sosialisasi, setSosialisasi] = useState<TKPIData>(initialDataSosialisasi);
+
+  const { data, error, isLoading } = API.home();
+
+  if (error) {
+    console.error("error:", error);
+  }
+
+  if (isLoading) {
+    console.log("isLoading:", isLoading);
+  }
+
+  useEffect(() => {
+    if (!!data) {
+      setPendampingan(data.pendampingan);
+      setPelatihan(data.pelatihan);
+      setSosialisasi(data.sosialisasi);
+    }
+  }, [data]);
+
+  return {
+    pendampingan, pelatihan, sosialisasi,
+    error, isLoading
+  }
+}
+
+export default useDataHome;
