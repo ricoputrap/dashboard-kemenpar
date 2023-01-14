@@ -21,7 +21,7 @@ const Stat: React.FC<Props> = ({ year, main, rows, hasBorder = false }) => {
         direction="column"
         alignItems="center"
         rowGap="24px"
-        padding="15px 30px 18px"
+        padding="15px 18px 18px"
       >
         <StatMain value={ main.value } label={ main.label } />
 
