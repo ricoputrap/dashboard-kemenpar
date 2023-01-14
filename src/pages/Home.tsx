@@ -1,9 +1,10 @@
 import React from 'react'
 import BasePage from '../components/templates/BasePage'
 import DescriptionBox from '../components/home/DescriptionBox'
-import { Flex } from '@chakra-ui/react'
+import { Flex, Image } from '@chakra-ui/react'
 import KPI from '../components/home/organisms/KPI'
 import useDataHome from '../hooks/useDataHome'
+import MapIndo from "../assets/images/map-indo.svg";
 
 const Home: React.FC = () => {
   const {
@@ -13,9 +14,13 @@ const Home: React.FC = () => {
 
   return (
     <BasePage id="page-home">
-      <Flex direction="column" rowGap="15px">
-        <Flex>
+      <Flex direction="column" rowGap="32px">
+        <Flex justifyContent="space-between">
           <DescriptionBox />
+
+          <Flex justifyContent="end">
+            <Image src={ MapIndo } width="55vw" />
+          </Flex>
         </Flex>
 
         <Flex justifyContent="space-between">

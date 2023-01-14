@@ -6,16 +6,16 @@ const DescriptionBox: React.FC = () => {
   return (
     <Box
       padding="28px 8px 20px 28px"
-      width="fit-content"
       border="1px solid #EAC170"
       borderRadius="10px"
+      minWidth="407px"
+      maxWidth="35%"
     >
       <Flex
         direction="column"
         rowGap="8px"
         overflowY="scroll"
-        height="246px"
-        width="407px"
+        height="300px"
         paddingRight="20px"
       >
         <Heading

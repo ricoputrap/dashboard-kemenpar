@@ -12,7 +12,7 @@ const StatItem: React.FC<Props> = ({ value, label = "", white = false, hasBorder
   <Flex
     direction="column"
     justifyContent="center"
-    width={ small ? "65px" : "110px" }
+    width={ small ? "70px" : "110px" }
     borderLeft={ hasBorder ? "1px solid #FFFFFF" : "none" }
     paddingLeft={ hasBorder ? "10px" : 0 }
   >
