@@ -6,6 +6,8 @@ const Paragraph = styled.p`
   font-size: 15px;
   font-weight: 400;
   text-align: justify;
+  line-height: 18px;
+  letter-spacing: -0.03em;
 `;
 
 const Content: React.FC = () => {
