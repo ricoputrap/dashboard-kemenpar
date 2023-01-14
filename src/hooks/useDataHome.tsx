@@ -1,53 +1,16 @@
-import React, { useEffect, useState } from 'react'
-import { IDataPointInput } from '../components/organisms/LineChart/types/dataset.type';
-import { TBarChartItem } from '../types/charts.type';
-
-const penilaianPelatihanURL = "home/penilaianPelatihan.json";
-const jumlahKegiatanURL = "home/jumlahKegiatan.json";
-const topListURL = "home/topList.json";
-
-type TLineData = {
-  name: string;
-  data: IDataPointInput[];
-}
+import { useEffect, useState } from 'react'
+import API from '../API';
 
 const useDataHome = () => {
-  const [penilaianPelatihan, setPenilaianPelatihan] = useState<TLineData[]>([]);
-  const [jumlahKegiatan, setJumlahKegiatan] = useState<TLineData[]>([]);
-  const [topList, setTopList] = useState<TBarChartItem[]>([]);
+  const [description, setDescription] = useState<string>("");
+  const { data, error, isLoading } = API.home();
 
-  // fetch initial data
   useEffect(() => {
-    const fetchData = async () => {
-      const promise = Promise.all([
-        fetch(penilaianPelatihanURL),
-        fetch(jumlahKegiatanURL),
-        fetch(topListURL)
-      ]);
-  
-      const [
-        penilaianPelatihanResponse,
-        jumlahKegiatanResponse,
-        topListResponse
-      ] = await promise;
-  
-      const jumlahKegiatan = (await jumlahKegiatanResponse.json()).data;
-      const penilaianPelatihan = (await penilaianPelatihanResponse.json()).data;
-      const topList = (await topListResponse.json()).data;
+    if (!!data)
+      setDescription(data.data.description);
+  }, [data]);
 
-      setPenilaianPelatihan(penilaianPelatihan);
-      setJumlahKegiatan(jumlahKegiatan);
-      setTopList(topList);
-    }
-
-    fetchData();
-  }, []);
-
-  return {
-    penilaianPelatihan,
-    jumlahKegiatan,
-    topList
-  }
+  return { description, error, isLoading }
 }
 
 export default useDataHome
