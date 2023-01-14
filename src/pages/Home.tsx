@@ -1,6 +1,6 @@
 import React from 'react'
 import BasePage from '../components/templates/BasePage'
-import DescriptionBox from '../components/organisms/DescriptionBox'
+import DescriptionBox from '../components/home/DescriptionBox'
 
 const Home: React.FC = () => {
   return (
