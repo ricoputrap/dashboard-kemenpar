@@ -1,53 +1,47 @@
-import React, { useEffect, useState } from 'react'
-import { IDataPointInput } from '../components/organisms/LineChart/types/dataset.type';
-import { TBarChartItem } from '../types/charts.type';
+import { useEffect, useState } from 'react'
+import API from '../API';
+import { TKPIData } from '../types/home.type';
 
-const penilaianPelatihanURL = "home/penilaianPelatihan.json";
-const jumlahKegiatanURL = "home/jumlahKegiatan.json";
-const topListURL = "home/topList.json";
-
-type TLineData = {
-  name: string;
-  data: IDataPointInput[];
+const initialDataPendampingan: TKPIData = {
+  title: "pendampingan",
+  stats: []
+}
+const initialDataPelatihan: TKPIData = {
+  title: "pelatihan",
+  stats: []
+}
+const initialDataSosialisasi: TKPIData = {
+  title: "sosialisasi",
+  stats: []
 }
 
 const useDataHome = () => {
-  const [penilaianPelatihan, setPenilaianPelatihan] = useState<TLineData[]>([]);
-  const [jumlahKegiatan, setJumlahKegiatan] = useState<TLineData[]>([]);
-  const [topList, setTopList] = useState<TBarChartItem[]>([]);
+  const [pendampingan, setPendampingan] = useState<TKPIData>(initialDataPendampingan);
+  const [pelatihan, setPelatihan] = useState<TKPIData>(initialDataPelatihan);
+  const [sosialisasi, setSosialisasi] = useState<TKPIData>(initialDataSosialisasi);
 
-  // fetch initial data
+  const { data, error, isLoading } = API.home();
+
+  if (error) {
+    console.error("error:", error);
+  }
+
+  if (isLoading) {
+    console.log("isLoading:", isLoading);
+  }
+
   useEffect(() => {
-    const fetchData = async () => {
-      const promise = Promise.all([
-        fetch(penilaianPelatihanURL),
-        fetch(jumlahKegiatanURL),
-        fetch(topListURL)
-      ]);
-  
-      const [
-        penilaianPelatihanResponse,
-        jumlahKegiatanResponse,
-        topListResponse
-      ] = await promise;
-  
-      const jumlahKegiatan = (await jumlahKegiatanResponse.json()).data;
-      const penilaianPelatihan = (await penilaianPelatihanResponse.json()).data;
-      const topList = (await topListResponse.json()).data;
-
-      setPenilaianPelatihan(penilaianPelatihan);
-      setJumlahKegiatan(jumlahKegiatan);
-      setTopList(topList);
+    if (!!data) {
+      setPendampingan(data.pendampingan);
+      setPelatihan(data.pelatihan);
+      setSosialisasi(data.sosialisasi);
     }
-
-    fetchData();
-  }, []);
+  }, [data]);
 
   return {
-    penilaianPelatihan,
-    jumlahKegiatan,
-    topList
+    pendampingan, pelatihan, sosialisasi,
+    error, isLoading
   }
 }
 
-export default useDataHome
+export default useDataHome;
