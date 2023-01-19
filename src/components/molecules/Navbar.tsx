@@ -10,13 +10,11 @@ interface IMenu {
 
 const menus: IMenu[] = [
   { label: "HOME", path: "/" },
-  { label: "NARASUMBER", path: "/narasumber" },
   { label: "SOSIALISASI", path: "/sosialisasi" },
-  { label: "PELATIHAN A", path: "/pelatihan-a" },
-  { label: "PELATIHAN B", path: "/pelatihan-b" },
-  { label: "PELATIHAN C", path: "/pelatihan-c" },
+  { label: "PELATIHAN", path: "/pelatihan" },
   { label: "PENDAMPINGAN", path: "/pendampingan" },
-  { label: "APRESIASI", path: "/apresiasi" },
+  { label: "NARASUMBER", path: "/narasumber" },
+  { label: "PUBLIKASI", path: "/publikasi" },
 ]
 
 const Navbar: React.FC = () => {
