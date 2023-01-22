@@ -22,7 +22,7 @@ const GroupedKPIPeserta: React.FC<Props> = ({ data }) => {
           <KPIPeserta
             lokasi={ peserta.lokasi }
             target={ peserta.target }
-            realisasi={ peserta.perempuan }
+            realisasi={ peserta.realisasi }
             laki={ peserta.laki }
             perempuan={ peserta.perempuan }
           />

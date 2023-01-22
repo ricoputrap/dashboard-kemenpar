@@ -1,5 +1,5 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { useMemo } from 'react'
 
 type KPIPesertaType = {
   lokasi: string;
@@ -16,6 +16,10 @@ const KPIPeserta: React.FC<KPIPesertaType> = ({
   laki,
   perempuan
 }) => {
+  const percent: number = useMemo(() => {
+    return Math.ceil(realisasi * 100 / target);
+  }, [target, realisasi]);
+
   return (
     <Box
       border="1px solid #EAC170"
@@ -38,7 +42,7 @@ const KPIPeserta: React.FC<KPIPesertaType> = ({
           { lokasi }
         </Text>
         <Text fontSize="25px" fontWeight={600}>
-          100%
+          {percent}%
         </Text>
       </Flex>
 
