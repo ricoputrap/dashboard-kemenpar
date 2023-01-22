@@ -2,8 +2,9 @@ import useSWR from 'swr';
 import axios from 'axios';
 import { TKPIData } from '../types/home.type';
 import { KPIPesertaType } from '../types/sosialisasi.type';
+import pelatihan from './pelatihan';
 
-const fetcher = (url: string) => axios.get(url, { responseType: "json" }).then(res => res.data);
+export const fetcher = (url: string) => axios.get(url, { responseType: "json" }).then(res => res.data);
 
 type THomeData = {
   pendampingan: TKPIData;
@@ -31,5 +32,6 @@ const sosialisasi = () => {
 
 export default {
   home,
-  sosialisasi
+  sosialisasi,
+  pelatihan
 }
