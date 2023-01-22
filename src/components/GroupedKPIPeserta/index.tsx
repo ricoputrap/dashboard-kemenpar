@@ -2,14 +2,7 @@ import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import React from 'react'
 import KPIPeserta from '../KPIPeserta';
 import ChartLine from "../../assets/lines/chart-line.svg"
-
-type KPIPesertaType = {
-  lokasi: string;
-  target: number;
-  realisasi: number;
-  laki: number;
-  perempuan: number;
-}
+import { KPIPesertaType } from '../../types/sosialisasi.type';
 
 interface Props {
   title: string;

@@ -1,13 +1,6 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React, { useMemo } from 'react'
-
-type KPIPesertaType = {
-  lokasi: string;
-  target: number;
-  realisasi: number;
-  laki: number;
-  perempuan: number;
-}
+import { KPIPesertaType } from '../../types/sosialisasi.type';
 
 const KPIPeserta: React.FC<KPIPesertaType> = ({
   lokasi,
