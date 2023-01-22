@@ -1,7 +1,21 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 
-const KPIPeserta: React.FC = () => {
+type KPIPesertaType = {
+  lokasi: string;
+  target: number;
+  realisasi: number;
+  laki: number;
+  perempuan: number;
+}
+
+const KPIPeserta: React.FC<KPIPesertaType> = ({
+  lokasi,
+  target,
+  realisasi,
+  laki,
+  perempuan
+}) => {
   return (
     <Box
       border="1px solid #EAC170"
@@ -15,8 +29,13 @@ const KPIPeserta: React.FC = () => {
         rowGap="10px"
         paddingY="12px"
       >
-        <Text color="#EAC170" fontSize="12px" fontWeight={400}>
-          TOBA
+        <Text
+          color="#EAC170"
+          fontSize="12px"
+          fontWeight={400}
+          textTransform="uppercase"
+        >
+          { lokasi }
         </Text>
         <Text fontSize="25px" fontWeight={600}>
           100%
@@ -46,7 +65,7 @@ const KPIPeserta: React.FC = () => {
             letterSpacing="-0.05em"
             lineHeight="16px"
           >
-            270
+            { target }
           </Text>
         </Box>
         <Box
@@ -69,7 +88,7 @@ const KPIPeserta: React.FC = () => {
             letterSpacing="-0.05em"
             lineHeight="16px"
           >
-            270
+            { realisasi }
           </Text>
         </Box>
       </Flex>
@@ -91,7 +110,7 @@ const KPIPeserta: React.FC = () => {
               lineHeight="14px"
               letterSpacing="10%"
             >
-              100
+              { laki }
             </Text>
             <Text
               color="#EAC170"
@@ -117,7 +136,7 @@ const KPIPeserta: React.FC = () => {
               lineHeight="14px"
               letterSpacing="10%"
             >
-              170
+              { perempuan }
             </Text>
             <Text
               color="#EAC170"
