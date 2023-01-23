@@ -2,10 +2,16 @@ import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 import LegendItem from '../LegendItem'
 import styles from "./Legends.module.css"
+import { TGenderData } from '../types/legends.types'
 
-const Legends: React.FC = () => {
+interface Props {
+  menData: TGenderData;
+  womenData: TGenderData;
+}
+
+const Legends: React.FC<Props> = ({ menData, womenData }) => {
   return (
-    <Box className={ styles.container }>
+    <Box id="doughnut-legends" className={ styles.container }>
       <Text className={ styles.title }>
         Jenis Kelamin
       </Text>
@@ -14,18 +20,18 @@ const Legends: React.FC = () => {
 
         {/* LAKI-LAKI */}
         <LegendItem
-          value={60}
-          percent={30}
-          label="laki-laki"
-          color="#00FFFF"
+          value={ menData.value }
+          percent={ menData.percent }
+          label={ menData.label }
+          color={ menData.color }
         />
 
         {/* PEREMPUAN */}
         <LegendItem
-          value={140}
-          percent={70}
-          label="perempuan"
-          color="#FF1F00"
+          value={ womenData.value }
+          percent={ womenData.percent }
+          label={ womenData.label }
+          color={ womenData.color }
         />
       </Flex>
     </Box>
