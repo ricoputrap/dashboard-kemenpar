@@ -1,0 +1,27 @@
+.box {
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
+}
+
+.value {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.label {
+  color: #EAC170;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.percent {
+  font-size: 16px;
+  font-size: 500;
+  line-height: 20px;
+  font-weight: 500;
+}
