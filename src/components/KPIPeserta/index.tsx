@@ -99,7 +99,7 @@ const KPIPeserta: React.FC<KPIPesertaType> = ({
       >
         {/* laki-laki */}
         <Flex columnGap="4px" alignItems="center">
-          <Box width="12px" height="12px" background="#00F6E8"></Box>
+          <Box width="12px" height="12px" background="#00FFFF"></Box>
           <Flex direction="column" alignItems="start">
             <Text
               fontSize="12px"
@@ -122,7 +122,7 @@ const KPIPeserta: React.FC<KPIPesertaType> = ({
 
         {/* perempuan */}
         <Flex columnGap="4px" alignItems="center">
-          <Box width="12px" height="12px" background="#00F6E8"></Box>
+          <Box width="12px" height="12px" background="#FF1F00"></Box>
           <Flex
             direction="column"
             alignItems="start"
