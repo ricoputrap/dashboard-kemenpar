@@ -25,7 +25,7 @@ const home = () => {
 }
 
 const sosialisasi = () => {
-  const { data, error, isLoading } = useSWR<TSosialisasiResponse>("sosialisasi/index.json", fetcher);
+  const { data, error, isLoading } = useSWR<TSosialisasiResponse>("sosialisasi/sosialisasi.json", fetcher);
   return { data, error, isLoading }
 }
 
