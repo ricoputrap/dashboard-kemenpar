@@ -19,6 +19,22 @@ const dataset: TBarData[] = [
   }
 ]
 
+let labelsNilai = ["toba", "byp", "bts", "lombok", "l.bajo", "wakatobi"];
+labelsNilai = labelsNilai.map(item => item.toUpperCase());
+
+const datasetNilai: TBarData[] = [
+  {
+    label: "Nilai",
+    data: [1850, 950, 1000, 1900, 1000, 1000],
+    backgroundColor: "#FF3D00"
+  },
+  {
+    label: "Nilai",
+    data: [2800, 3500, 1900, 2900, 3400, 2000],
+    backgroundColor: "#00FFFF"
+  },
+]
+
 
 const Sosialisasi: React.FC = () => {
   const { kpi, chartData, isLoading, error } = useDataSosialisasi();
@@ -60,13 +76,21 @@ const Sosialisasi: React.FC = () => {
         </Flex>
 
         {/* Bar Charts */}
-        <Flex direction="column" columnGap="40px" width={ barChartsWidth }>
+        <Flex direction="column" rowGap="40px" width={ barChartsWidth }>
           <BarChart
             title="Grafik Kategori Usaha"
             width={ barChartsWidth }
             height="150px"
             labels={ labels }
             dataset={ dataset }
+          />
+
+          <BarChart
+            title="Grafik Nilai Pre Test & Post Test"
+            width={ barChartsWidth }
+            height="150px"
+            labels={ labelsNilai }
+            dataset={ datasetNilai }
           />
         </Flex>
       </Flex>
