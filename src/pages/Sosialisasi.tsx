@@ -6,6 +6,18 @@ import useDataSosialisasi from '../hooks/useDataSosialisasi'
 import DoughnutChartPeserta from '../components/organisms/DoughnutChartPeserta'
 import BarChart from '../components/organisms/BarChart'
 import useWindowSize from '../hooks/useWindowSize'
+import { TBarData } from '../components/organisms/BarChart/index.types'
+
+let labels = ['pemandu wisata', 'home stay', 'cendra mata', 'kuliner', 'pengelola wisata', 'jasa transportasi', 'pelaku budaya'];
+labels = labels.map(item => item.toUpperCase());
+
+const dataset: TBarData[] = [
+  {
+    label: "Jumlah Usaha",
+    data: [1500, 1900, 2500, 1000, 800, 1300, 2000],
+    backgroundColor: "#FF3D00"
+  }
+]
 
 
 const Sosialisasi: React.FC = () => {
@@ -49,7 +61,13 @@ const Sosialisasi: React.FC = () => {
 
         {/* Bar Charts */}
         <Flex direction="column" columnGap="40px" width={ barChartsWidth }>
-          <BarChart width={ barChartsWidth } height="150px" />
+          <BarChart
+            title="Grafik Kategori Usaha"
+            width={ barChartsWidth }
+            height="150px"
+            labels={ labels }
+            dataset={ dataset }
+          />
         </Flex>
       </Flex>
     </BasePage>
