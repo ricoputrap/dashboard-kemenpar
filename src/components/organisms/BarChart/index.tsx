@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -6,13 +6,12 @@ import {
   BarElement,
   Title,
   Tooltip,
-  Legend,
-  ChartData
+  Legend
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { _DeepPartialObject } from 'chart.js/dist/types/utils';
-import computeOptions from './options';
 import { TBarData } from './index.types';
+import useData from './useData';
 
 ChartJS.register(
   CategoryScale,
@@ -31,23 +30,11 @@ interface Props {
 }
 
 const BarChart: React.FC<Props> = ({ width, height, labels, dataset }) => {
-  const options = useMemo(() => computeOptions(labels), [labels]);
-  const datasets = useMemo(() => {
-    return dataset.map(item => ({
-      ...item,
-      barPercentage: 0.6,
-      categoryPercentage: 0.5,
-    }))
-  }, [dataset]);
-
-  const data: ChartData<"bar", number[], string> = useMemo(
-    () => ({ labels, datasets }),
-    [labels, datasets]
-  );
+  const { options, data } = useData(labels, dataset);
 
   return (
     <Bar
-      options={options}
+      options={ options }
       data={ data }
       width={ width }
       height={ height }
