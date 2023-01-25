@@ -3,3 +3,8 @@ export type TBarData = {
   data: number[];
   backgroundColor: string;
 }
+
+export type TLegendItem = {
+  label: string;
+  color: string;
+}

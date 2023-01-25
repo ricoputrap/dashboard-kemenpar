@@ -24,12 +24,12 @@ labelsNilai = labelsNilai.map(item => item.toUpperCase());
 
 const datasetNilai: TBarData[] = [
   {
-    label: "Nilai",
+    label: "pre-test",
     data: [1850, 950, 1000, 1900, 1000, 1000],
     backgroundColor: "#FF3D00"
   },
   {
-    label: "Nilai",
+    label: "post-test",
     data: [2800, 3500, 1900, 2900, 3400, 2000],
     backgroundColor: "#00FFFF"
   },
@@ -121,6 +121,7 @@ const Sosialisasi: React.FC = () => {
             height="150px"
             labels={ labelsNilai }
             dataset={ datasetNilai }
+            showLegends
           />
 
           <Flex
