@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -14,8 +14,9 @@ import { TBarData, TLegendItem } from './index.types';
 import useData from './useData';
 import ChartLine from "../../../assets/lines/chart-line.svg"
 import styles from "./BarChart.module.css";
-import LegendItem from './LegendItem';
 import useOptions from './useOptions';
+import Legends from './Legends';
+import useLegends from './Legends/useLegends';
 
 ChartJS.register(
   CategoryScale,
@@ -43,13 +44,7 @@ const BarChart: React.FC<Props> = ({
 }) => {
   const options = useOptions(labels, showGrid);
   const { data } = useData(labels, dataset);
-
-  const legends: TLegendItem[] = useMemo(() => {
-    return dataset.map(item => ({
-      label: item.label,
-      color: item.backgroundColor
-    }));
-  }, [dataset]);
+  const legends: TLegendItem[] = useLegends(dataset, showLegends);
 
   return (
     <Flex direction="column" rowGap="12px">
@@ -60,14 +55,7 @@ const BarChart: React.FC<Props> = ({
           { title }
         </Text>
 
-        {!!showLegends && <Flex columnGap="20px">
-          {legends.map(item => (
-            <LegendItem
-              label={ item.label }
-              color={ item.color }
-            />
-          ))}
-        </Flex>}
+        {!!showLegends && <Legends data={ legends } />}
       </Flex>
 
       <Bar
