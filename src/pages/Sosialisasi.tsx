@@ -122,6 +122,7 @@ const Sosialisasi: React.FC = () => {
             labels={ labelsNilai }
             dataset={ datasetNilai }
             showLegends
+            showGrid
           />
 
           <Flex

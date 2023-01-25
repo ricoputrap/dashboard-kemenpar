@@ -1,4 +1,4 @@
-const computeOptions = (labels: string[]) => {
+const computeOptions = (labels: string[], showGrid: boolean = false) => {
   const options: any = {
     responsive: true,
     plugins: {
@@ -43,7 +43,6 @@ const computeOptions = (labels: string[]) => {
         ticks: {
           display: true,
           color: "white",
-          maxTicksLimit: 4,
           padding: 10,
           font: {
             size: 11,
@@ -54,6 +53,19 @@ const computeOptions = (labels: string[]) => {
       }
     }
   };
+
+  // show grid
+  if (showGrid) {
+    options.scales.x.grid = {
+      display: true,
+      color: "#FFFFFF80"
+    }
+
+    options.scales.y.grid = {
+      display: true,
+      color: "#FFFFFF80"
+    }
+  }
 
   return options;
 }

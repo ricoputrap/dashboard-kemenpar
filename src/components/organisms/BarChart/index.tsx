@@ -15,6 +15,7 @@ import useData from './useData';
 import ChartLine from "../../../assets/lines/chart-line.svg"
 import styles from "./BarChart.module.css";
 import LegendItem from './LegendItem';
+import useOptions from './useOptions';
 
 ChartJS.register(
   CategoryScale,
@@ -32,13 +33,16 @@ interface Props {
   labels: string[];
   dataset: TBarData[];
   showLegends?: boolean;
+  showGrid?: boolean;
 }
 
 const BarChart: React.FC<Props> = ({
   title, width, height, labels, dataset,
-  showLegends = false
+  showLegends = false,
+  showGrid = false
 }) => {
-  const { options, data } = useData(labels, dataset);
+  const options = useOptions(labels, showGrid);
+  const { data } = useData(labels, dataset);
 
   const legends: TLegendItem[] = useMemo(() => {
     return dataset.map(item => ({
