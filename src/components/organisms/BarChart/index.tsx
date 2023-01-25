@@ -13,6 +13,7 @@ import { Flex, Image, Text } from '@chakra-ui/react';
 import { TBarData } from './index.types';
 import useData from './useData';
 import ChartLine from "../../../assets/lines/chart-line.svg"
+import styles from "./BarChart.module.css";
 
 ChartJS.register(
   CategoryScale,
@@ -37,12 +38,7 @@ const BarChart: React.FC<Props> = ({ title, width, height, labels, dataset }) =>
   return (
     <Flex direction="column" rowGap="12px">
       <Image src={ ChartLine } width="390px" />
-      <Text
-        fontSize="14px"
-        fontWeight={500}
-        lineHeight="16px"
-        textTransform="uppercase"
-      >
+      <Text className={ styles.title }>
         { title }
       </Text>
       <Bar
