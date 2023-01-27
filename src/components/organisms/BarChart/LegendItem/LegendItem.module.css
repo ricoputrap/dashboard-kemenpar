@@ -1,0 +1,11 @@
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.box {
+  width: 12px;
+  height: 12px;
+}
