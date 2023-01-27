@@ -7,6 +7,8 @@ import DoughnutChartPeserta from '../components/organisms/DoughnutChartPeserta'
 import BarChart from '../components/organisms/BarChart'
 import useWindowSize from '../hooks/useWindowSize'
 import { TBarData } from '../components/organisms/BarChart/index.types'
+import { TDropdownItem } from '../types/utils.type'
+import Dropdown from '../components/atoms/Dropdown'
 
 let labels = ['pemandu wisata', 'home stay', 'cendra mata', 'kuliner', 'pengelola wisata', 'jasa transportasi', 'pelaku budaya'];
 labels = labels.map(item => item.toUpperCase());
@@ -53,6 +55,12 @@ const datasetPendidikan: TBarData[] = [
     data: [1400, 2000, 2500, 3000, 2400, 2200, 1900],
     backgroundColor: "#00FFFF"
   }
+]
+
+const options: TDropdownItem[] = [
+  { label: "TOBA", value: "TOBA" },
+  { label: "BYP", value: "BYP" },
+  { label: "BTDS", value: "BTDS" },
 ]
 
 const Sosialisasi: React.FC = () => {
@@ -136,7 +144,12 @@ const Sosialisasi: React.FC = () => {
             {/* DROP DOWN */}
             <Flex columnGap="12px" alignItems="center">
               <Text fontSize="16px" fontWeight={500} lineHeight="20px">DPP</Text>
-              <Box
+              <Dropdown
+                options={ options }
+                activeItem="toba"
+                onChange={() => {}}
+              />
+              {/* <Box
                 width="fit-content"
                 background="#EAC170"
                 borderRadius="5px"
@@ -145,7 +158,7 @@ const Sosialisasi: React.FC = () => {
                 <Text fontSize="16px" fontWeight={500} lineHeight="20px" color="#000">
                   TOBA
                 </Text>
-              </Box>
+              </Box> */}
             </Flex>
 
             {/* CHARTS */}
