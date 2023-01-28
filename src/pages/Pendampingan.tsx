@@ -3,6 +3,7 @@ import BasePage from '../components/templates/BasePage'
 import { Box, Flex } from '@chakra-ui/react';
 import useInitDataStatistik from '../components/pendampingan/hooks/useInitDataStatistik';
 import StatistikTotal from '../components/pendampingan/components/StatistikTotal';
+import Statistik from '../components/pendampingan/components/Statistik';
 
 const Pendampingan: React.FC = () => {
   const {
@@ -19,9 +20,9 @@ const Pendampingan: React.FC = () => {
             <StatistikTotal />
           </Box>
 
-          {/* kpi */}
-          <Box>
-
+          {/* statistik */}
+          <Box width="1000px">
+            <Statistik />
           </Box>
         </Flex>
 
