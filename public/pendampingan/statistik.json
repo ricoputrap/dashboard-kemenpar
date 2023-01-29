@@ -1,0 +1,37 @@
+{
+  "data": {
+    "totalDesa": 65,
+    "statistik": [
+      {
+        "lokasi": "toba",
+        "sudah": 20,
+        "belum": 70
+      },
+      {
+        "lokasi": "byp",
+        "sudah": 20,
+        "belum": 80
+      },
+      {
+        "lokasi": "bts",
+        "sudah": 15,
+        "belum": 30
+      },
+      {
+        "lokasi": "lombok",
+        "sudah": 5,
+        "belum": 50
+      },
+      {
+        "lokasi": "l. bajo",
+        "sudah": 0,
+        "belum": 15
+      },
+      {
+        "lokasi": "wakatobi",
+        "sudah": 10,
+        "belum": 10
+      }
+    ]
+  }
+}

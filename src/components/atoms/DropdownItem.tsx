@@ -1,7 +1,6 @@
-import { Flex, Image, Text } from '@chakra-ui/react';
 import React from 'react'
-import arrowUpIcon from "../../assets/icons/arrow-up.svg";
-import arrowDownIcon from "../../assets/icons/arrow-down.svg";
+import { Flex, Text } from '@chakra-ui/react';
+import { TriangleUpIcon, TriangleDownIcon } from "@chakra-ui/icons";
 
 interface Props {
   label: string;
@@ -13,22 +12,28 @@ interface Props {
 const DropdownItem: React.FC<Props> = ({ label, isActive, isExpanded, onClick }) => {
   return (
     <Flex
-      minWidth="140px"
-      padding="4px 12px"
-      backgroundColor="background"
-      border="1px solid #EAC1704D"
+      minWidth="136px"
+      padding="2px 12px"
+      color="#112647"
+      backgroundColor={ isActive ? "#EAC170" : "transparent" }
+      border={ isActive ? "1px solid #EAC1704D" : "none" }
       justifyContent="space-between"
       alignItems="center"
       onClick={ onClick }
+      borderRadius={ isActive ? "5px" : 0 }
     >
-      <Text fontSize="12px" fontFamily="Montserrat" fontWeight={500}>
-        { label }
+      <Text
+        fontSize={ isActive ? "16px" : "12px"}
+        fontFamily="Montserrat"
+        fontWeight={500}
+      >
+        { label.toUpperCase() }
       </Text>
 
       {(isActive && isExpanded)
-        ? <Image src={arrowDownIcon} width="12px" />
+        ? <TriangleUpIcon color="#000000" width="12px" />
         : (isActive && !isExpanded)
-          ? <Image src={ arrowUpIcon } width="12px" />
+          ? <TriangleDownIcon color="#000000" width="12px" />
           : <></>
       }
     </Flex>

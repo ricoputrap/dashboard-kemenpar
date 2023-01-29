@@ -36,20 +36,25 @@ const Dropdown: React.FC<Props> = ({ options, activeItem, onChange }) => {
           isExpanded={ showOptions }
           isActive
         />
-      </Box>
 
-      {/* OPTIONS */}
-      {!showOptions ? <></> : (
-        <Box position="absolute">
-          {inactiveOptions.map(item => (
-            <DropdownItem
-              key={ item.label }
-              label={ item.label }
-              onClick={() => onOptionClicked(item.label)}
-            />
-          ))}
-        </Box>
-      )}
+        {/* OPTIONS */}
+        {!showOptions ? <></> : (
+          <Box 
+            borderRadius="5px"
+            background="#EAC170"
+            position="absolute"
+            top="38px"
+          >
+            {inactiveOptions.map(item => (
+              <DropdownItem
+                key={ item.label }
+                label={ item.label }
+                onClick={() => onOptionClicked(item.label)}
+              />
+            ))}
+          </Box>
+        )}
+      </Box>
     </Box>
   )
 }
