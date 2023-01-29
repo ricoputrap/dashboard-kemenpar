@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react";
-import { RouterProvider } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import router from './utils/router';
 import bgImg from "./assets/logo/logo-background.svg";
 import './index.css'
@@ -33,7 +33,17 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
         >
-          <RouterProvider router={router} />
+          <BrowserRouter>
+            <Routes>
+              {router.map(route => (
+                <Route
+                  path={ route.path }
+                  element={ route.element }
+                  key={ route.path }
+                />
+              ))}
+            </Routes>
+          </BrowserRouter>
         </Box>
       </Box>
     </ChakraProvider>

@@ -1,4 +1,3 @@
-import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Narasumber from "../pages/Narasumber";
 import Login from "../pages/Login";
@@ -9,7 +8,7 @@ import Apresiasi from "../pages/Apresiasi";
 import Profile from "../pages/Profile";
 import Publikasi from "../pages/Publikasi";
 
-const router = createBrowserRouter([
+const router = [
   {
     path: "/",
     element: <Home />
@@ -46,6 +45,6 @@ const router = createBrowserRouter([
     path: "/publikasi",
     element: <Publikasi />
   },
-]);
+];
 
 export default router;
