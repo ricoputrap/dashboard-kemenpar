@@ -5,7 +5,7 @@ type TWilayahLaporan = {
   desa: string,
 }
 
-type TLaporan = {
+export type TLaporan = {
   wilayah: TWilayahLaporan,
   deskripsi: string,
   foto: string[],
@@ -13,10 +13,15 @@ type TLaporan = {
   pdf: string;
 }
 
-type TPendampinganDesa = {
+export type TPendampinganDesa = {
   desa: string;
   kec: string;
   kab: string;
   urlProposal: string;
   laporan: TLaporan[];
+}
+
+export type TPendampinganDesaPerDPP = {
+  dpp: string;
+  data: TPendampinganDesa[];
 }

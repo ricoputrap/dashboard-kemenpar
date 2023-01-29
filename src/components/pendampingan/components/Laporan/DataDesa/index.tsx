@@ -2,6 +2,7 @@ import { Box, Flex, Text } from '@chakra-ui/react'
 import React, { useMemo } from 'react'
 import Proposal from '../Proposal';
 import LaporanItem from '../LaporanItem';
+import { TPendampinganDesa } from '../../../types/laporan.types';
 
 interface Props extends TPendampinganDesa {
   nomor: number;

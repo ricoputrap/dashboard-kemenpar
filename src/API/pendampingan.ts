@@ -1,21 +1,18 @@
 import useSWR from "swr";
 import { fetcher } from ".";
 import { TStatistikPendampingan } from "../components/pendampingan/types/statistik.types";
+import { TPendampinganDesaPerDPP } from "../components/pendampingan/types/laporan.types";
 
 export type TStatistikData = {
   totalDesa: number;
   statistik: TStatistikPendampingan[];
-}
-export type TLaporanData = {
-  dpp: string;
-  data: TPendampinganDesa[];
 }
 
 type TStatistikResponse = {
   data: TStatistikData;
 }
 type TLaporanResponse = {
-  data: TLaporanData;
+  data: TPendampinganDesaPerDPP;
 }
 
 export const pendampinganStatistik = () => {

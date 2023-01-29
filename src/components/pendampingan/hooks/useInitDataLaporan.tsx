@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import API from "../../../API";
 import useStore from "../state/store";
+import { TPendampinganDesa } from "../types/laporan.types";
 
 interface ReturnValue {
   isLaporanError: any;
@@ -9,8 +10,8 @@ interface ReturnValue {
 
 const useInitDataLaporan = (): ReturnValue => {
   const activeDPP: string = useStore((state) => state.activeDPP);
-  const setDataPendampinganPerDesa = useStore(
-    (state) => state.setDataPendampinganPerDesa
+  const setDataPendampinganPerDPP = useStore(
+    (state) => state.setDataPendampinganPerDPP
   );
 
   const { data, error, isLoading } = API.pendampinganLaporan(activeDPP);
@@ -18,8 +19,10 @@ const useInitDataLaporan = (): ReturnValue => {
   useEffect(() => {
     if (!data) return;
 
+    const dpp: string = data.data.dpp;
     const dataPendampingan: TPendampinganDesa[] = data.data.data;
-    setDataPendampinganPerDesa(dataPendampingan);
+
+    setDataPendampinganPerDPP(dpp, dataPendampingan);
   }, [data]);
 
   return {

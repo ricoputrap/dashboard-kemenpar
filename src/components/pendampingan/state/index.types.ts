@@ -1,3 +1,4 @@
+import { TPendampinganDesa, TPendampinganDesaPerDPP } from "../types/laporan.types";
 import { TStatistikPendampingan } from "../types/statistik.types"
 
 export type TDataStatistikTotal = {
@@ -18,7 +19,11 @@ export type TPendampinganState = {
 
   // LAPORAN
   activeDPP: string,
-  dataPendampinganPerDesa: TPendampinganDesa[],
+  dataPendampinganDesaPerDPP: TPendampinganDesaPerDPP[],
   setActiveDPP: (dpp: string) => void,
-  setDataPendampinganPerDesa: (data: TPendampinganDesa[]) => void
+  getDataPendampinganByDPP: (dpp: string) => TPendampinganDesa[],
+  setDataPendampinganPerDPP: (
+    dpp: string,
+    data: TPendampinganDesa[]
+  ) => void
 }

@@ -1,12 +1,14 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import React from 'react'
 import Filter from './Filter';
 import useStore from '../../state/store';
 import DataDesa from './DataDesa';
+import { TPendampinganDesa } from '../../types/laporan.types';
 
 const Laporan: React.FC = () => {
-  const dataPendampinganPerDesa: TPendampinganDesa[] = useStore(
-    (state) => state.dataPendampinganPerDesa
+  const activeDPP: string = useStore(state => state.activeDPP);
+  const dataPendampinganByDPP: TPendampinganDesa[] = useStore(
+    (state) => state.getDataPendampinganByDPP(activeDPP)
   );
 
   return (
@@ -27,7 +29,7 @@ const Laporan: React.FC = () => {
           paddingY="32px"
           borderTop="1px solid #EAC170"
         >
-          {dataPendampinganPerDesa.map((data, index) => (
+          {dataPendampinganByDPP.map((data, index) => (
             <DataDesa
               nomor={ index + 1 }
               key={ data.desa }

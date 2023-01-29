@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react'
 import AttachmentIcon from "../../../../../assets/icons/attachment.svg";
 import { Card, Icon, Label } from './index.styles';
+import { TLaporan } from '../../../types/laporan.types';
 
 interface Props {
   nomor: number;

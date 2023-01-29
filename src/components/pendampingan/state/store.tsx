@@ -2,8 +2,9 @@ import { create } from "zustand";
 import { initialStatistikTotal, statistikPendampingan } from "./initialData";
 import { TStatistikPendampingan } from "../types/statistik.types";
 import { TDataStatistikTotal, TPendampinganState } from "./index.types";
+import { TPendampinganDesa, TPendampinganDesaPerDPP } from "../types/laporan.types";
 
-const useStore = create<TPendampinganState>((set) => ({
+const useStore = create<TPendampinganState>((set, get) => ({
 
   // STATISTIK
   statistikPendampingan,
@@ -17,13 +18,46 @@ const useStore = create<TPendampinganState>((set) => ({
 
   // LAPORAN
   activeDPP: "lombok",
-  dataPendampinganPerDesa: [],
+  dataPendampinganDesaPerDPP: [],
   setActiveDPP: (dpp: string) => set({
     activeDPP: dpp
   }),
-  setDataPendampinganPerDesa: (data: TPendampinganDesa[]) => set({
-    dataPendampinganPerDesa: data
-  })
+  getDataPendampinganByDPP: (dpp: string) => {
+    const dataPendampinganDesaPerDPP = get().dataPendampinganDesaPerDPP;
+    const index: number = dataPendampinganDesaPerDPP.findIndex(
+      item => item.dpp == dpp
+    );
+
+    if (index === -1)
+      return [];
+
+    return dataPendampinganDesaPerDPP[index].data;
+  },
+  setDataPendampinganPerDPP: (
+    dpp: string,
+    data: TPendampinganDesa[]
+  ) => {
+    const newData: TPendampinganDesaPerDPP = { dpp, data };
+    const index: number = get().dataPendampinganDesaPerDPP.findIndex(
+      item => item.dpp == dpp
+    );
+
+    if (index == -1) {
+      set({
+        dataPendampinganDesaPerDPP: [
+          ...get().dataPendampinganDesaPerDPP,
+          newData
+        ]
+      });
+    }
+    else {
+      const updatedDataPendampinganDesaPerDPP = [...get().dataPendampinganDesaPerDPP];
+      updatedDataPendampinganDesaPerDPP[index] = newData;
+      set({
+        dataPendampinganDesaPerDPP: updatedDataPendampinganDesaPerDPP
+      });
+    }
+  }
 }));
 
 export default useStore;
