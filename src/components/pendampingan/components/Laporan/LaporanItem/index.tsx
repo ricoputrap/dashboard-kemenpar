@@ -1,5 +1,5 @@
 import { Flex, Image, Text } from '@chakra-ui/react';
-import React from 'react'
+import React, { useMemo } from 'react'
 import AttachmentIcon from "../../../../../assets/icons/attachment.svg";
 
 interface Props {
@@ -8,16 +8,19 @@ interface Props {
 }
 
 const LaporanItem: React.FC<Props> = ({ nomor, data = undefined }) => {
+  const isDefined: boolean = useMemo(() => data !== undefined, [data]);
+
   return (
     <Flex
       columnGap="5px"
-      padding="8px 9px"
+      padding="8px 8px"
       border="1px solid #EAC170"
-      background="#EAC170"
-      color="#0D1D37"
+      background={ isDefined ? "#EAC170" : "transparent" }
+      color={ isDefined ? "#0D1D37" : "#FFFFFF" }
       wrap="nowrap"
-      minWidth="134px"
+      minWidth="138px"
       height="38px"
+      justifyContent="center"
     >
       <Text
         fontSize="15px"
@@ -27,12 +30,14 @@ const LaporanItem: React.FC<Props> = ({ nomor, data = undefined }) => {
         LAPORAN { nomor }
       </Text>
 
-      <Image
-        alt="attachment"
-        src={ AttachmentIcon }
-        width="20px"
-        height="20px"
-      />
+      { isDefined && (
+        <Image
+          alt="attachment"
+          src={ AttachmentIcon }
+          width="20px"
+          height="20px"
+        />
+      )}
     </Flex>
   )
 }
