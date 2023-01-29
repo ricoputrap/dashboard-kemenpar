@@ -6,6 +6,7 @@ import StatistikTotal from '../components/pendampingan/components/StatistikTotal
 import Statistik from '../components/pendampingan/components/Statistik';
 import useWindowSize from '../hooks/useWindowSize';
 import { PADDING } from '../constants';
+import Laporan from '../components/pendampingan/components/Laporan';
 
 const Pendampingan: React.FC = () => {
   const {
@@ -25,7 +26,7 @@ const Pendampingan: React.FC = () => {
 
   return (
     <BasePage id="page-pendampingan">
-      <Flex direction="column">
+      <Flex direction="column" rowGap="24px">
         <Flex justifyContent="space-between" columnGap="72px">
           {/* gauge */}
           <Box width="312px">
@@ -39,7 +40,7 @@ const Pendampingan: React.FC = () => {
         </Flex>
 
         <Box>
-
+          <Laporan />
         </Box>
       </Flex>
     </BasePage>
