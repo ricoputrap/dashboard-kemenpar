@@ -18,5 +18,7 @@ export type TPendampinganState = {
 
   // LAPORAN
   activeDPP: string,
-  setActiveDPP: (dpp: string) => void
+  dataPendampinganPerDesa: TPendampinganDesa[],
+  setActiveDPP: (dpp: string) => void,
+  setDataPendampinganPerDesa: (data: TPendampinganDesa[]) => void
 }

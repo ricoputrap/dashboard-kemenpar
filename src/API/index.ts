@@ -3,7 +3,7 @@ import axios from 'axios';
 import { TKPIData } from '../types/home.type';
 import { KPIPesertaType } from '../types/sosialisasi.type';
 import pelatihan from './pelatihan';
-import pendampinganStatistik from './pendampingan';
+import { pendampinganStatistik, pendampinganLaporan } from './pendampingan';
 
 export const fetcher = (url: string) => axios.get(url, { responseType: "json" }).then(res => res.data);
 
@@ -39,4 +39,5 @@ export default {
   pelatihan,
   
   pendampinganStatistik,
+  pendampinganLaporan
 }

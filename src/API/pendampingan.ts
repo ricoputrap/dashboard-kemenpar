@@ -6,14 +6,24 @@ export type TStatistikData = {
   totalDesa: number;
   statistik: TStatistikPendampingan[];
 }
+export type TLaporanData = {
+  dpp: string;
+  data: TPendampinganDesa[];
+}
 
 type TStatistikResponse = {
   data: TStatistikData;
 }
+type TLaporanResponse = {
+  data: TLaporanData;
+}
 
-const pendampinganStatistik = () => {
+export const pendampinganStatistik = () => {
   const { data, error, isLoading } = useSWR<TStatistikResponse>("pendampingan/statistik.json", fetcher);
   return { data, error, isLoading }
 }
 
-export default pendampinganStatistik;
+export const pendampinganLaporan = (dpp: string) => {
+  const { data, error, isLoading } = useSWR<TLaporanResponse>("pendampingan/laporan.json", fetcher);
+  return { data, error, isLoading }
+}

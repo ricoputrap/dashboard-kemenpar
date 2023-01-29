@@ -17,8 +17,12 @@ const useStore = create<TPendampinganState>((set) => ({
 
   // LAPORAN
   activeDPP: "lombok",
+  dataPendampinganPerDesa: [],
   setActiveDPP: (dpp: string) => set({
     activeDPP: dpp
+  }),
+  setDataPendampinganPerDesa: (data: TPendampinganDesa[]) => set({
+    dataPendampinganPerDesa: data
   })
 }));
 
