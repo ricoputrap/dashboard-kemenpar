@@ -1,16 +1,14 @@
 import React from 'react';
 import { Flex, Image, Text } from '@chakra-ui/react';
 
-import useDataStatistikTotal from '../../hooks/useDataStatistikTotal'
 import ChartLine from "../../../../assets/lines/chart-line.svg";
 import styles from "./StatistikTotal.module.css";
+import GaugeChartPendampingan from './GaugeChartPendampingan';
+import useStore from '../../state/store';
+
 
 const StatistikTotal: React.FC = () => {
-  const {
-    totalDesa,
-    totalBelum,
-    totalSudah
-  } = useDataStatistikTotal();
+  const totalDesa = useStore(state => state.statistikTotal.totalDesa);
 
   return (
     <Flex direction="column" rowGap="12px">
@@ -28,9 +26,7 @@ const StatistikTotal: React.FC = () => {
       </Flex>
 
       {/* gauge chart */}
-      <Text>Percent: 0%</Text>
-      <Text>Sudah: { totalSudah }</Text>
-      <Text>Belum: { totalBelum }</Text>
+      <GaugeChartPendampingan />
     </Flex>
   )
 }
