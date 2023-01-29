@@ -10,9 +10,13 @@ type FSetDataStatistik = (data: TStatistikPendampingan[]) => void;
 type FSetDataStatistikTotal = (data: TDataStatistikTotal) => void;
 
 export type TPendampinganState = {
+  // STATISTIK
   statistikPendampingan: TStatistikPendampingan[],
   statistikTotal: TDataStatistikTotal,
-
   setDataStatistik: FSetDataStatistik,
-  setDataStatistikTotal: FSetDataStatistikTotal
+  setDataStatistikTotal: FSetDataStatistikTotal,
+
+  // LAPORAN
+  activeDPP: string,
+  setActiveDPP: (dpp: string) => void
 }
