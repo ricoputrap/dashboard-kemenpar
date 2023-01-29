@@ -3,6 +3,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend, ChartData } from 'chart.
 import { Doughnut } from 'react-chartjs-2';
 import options from './options';
 import { Box, Flex, Text } from '@chakra-ui/react';
+import { BoxChart, ChartPercent, ChartTitle, Container } from './index.styles';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -21,35 +22,20 @@ interface Props {
 
 const GaugeChart: React.FC<Props> = ({ data, title, percent, legend }) => {
   return (
-    <Flex width="100%" columnGap="20px" alignItems="center">
-      <Box width="100%" position="relative">
+    <Container>
+      <BoxChart>
         <Doughnut data={ data } options={ options } />
 
         {(percent !== undefined) && (
-          <Text
-            position="absolute"
-            top="65px"
-            width="100%"
-            textAlign="center"
-            fontSize="34px"
-            fontWeight={400}
-            lineHeight="42px"
-          >
+          <ChartPercent>
             { percent }%
-          </Text>
+          </ChartPercent>
         )}
 
-        <Text
-          position="absolute"
-          bottom="-24px"
-          fontSize="17px"
-          fontWeight={500}
-          lineHeight="21px"
-          textAlign="center"
-        >
+        <ChartTitle>
           { title }
-        </Text>
-      </Box>
+        </ChartTitle>
+      </BoxChart>
 
       {/* LEGEND */}
       {!!legend && (
@@ -77,7 +63,7 @@ const GaugeChart: React.FC<Props> = ({ data, title, percent, legend }) => {
           ))}
         </Flex>
       )}
-    </Flex>
+    </Container>
   )
 }
 
