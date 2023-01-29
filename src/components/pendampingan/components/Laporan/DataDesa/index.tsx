@@ -1,5 +1,5 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { useMemo } from 'react'
 import Proposal from '../Proposal';
 import LaporanItem from '../LaporanItem';
 
@@ -9,17 +9,19 @@ interface Props extends TPendampinganDesa {
 
 const DataDesa: React.FC<Props> = ({
   nomor,
-  desa,
-  kec,
-  kab,
-  urlProposal,
-  laporan
+  desa, kec, kab,
+  urlProposal, laporan
 }) => {
+  const jmlLaporan: string = useMemo(() => {
+    const total: number = laporan.length;
+    return `${total}/5`;
+  }, [laporan])
+
   return (
     <Flex justifyContent="space-between">
-      <Flex columnGap="12px" alignItems="center">
+      <Flex columnGap="12px" alignItems="center" width="284px">
         {/* No */}
-        <Text fontSize="20px" fontWeight={700} lineHeight="24px">
+        <Text fontSize="20px" fontWeight={700} lineHeight="24px" width="27px">
           { nomor }.
         </Text>
 
@@ -48,8 +50,15 @@ const DataDesa: React.FC<Props> = ({
           />
         ))}
 
-        <Text fontSize="25px" fontWeight={400} lineHeight="30px" letterSpacing="0.05em">
-          3/5
+        <Text
+          fontSize="25px"
+          fontWeight={400}
+          lineHeight="30px"
+          letterSpacing="0.05em"
+          width="44px"
+          textAlign="center"
+        >
+          { jmlLaporan }
         </Text>
       </Flex>
     </Flex>
