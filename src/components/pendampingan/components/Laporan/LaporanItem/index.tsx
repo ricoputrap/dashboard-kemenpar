@@ -1,6 +1,6 @@
-import { Flex, Image, Text } from '@chakra-ui/react';
 import React, { useMemo } from 'react'
 import AttachmentIcon from "../../../../../assets/icons/attachment.svg";
+import { Card, Icon, Label } from './index.styles';
 
 interface Props {
   nomor: number;
@@ -11,34 +11,18 @@ const LaporanItem: React.FC<Props> = ({ nomor, data = undefined }) => {
   const isDefined: boolean = useMemo(() => data !== undefined, [data]);
 
   return (
-    <Flex
-      columnGap="5px"
-      padding="8px 8px"
-      border="1px solid #EAC170"
-      background={ isDefined ? "#EAC170" : "transparent" }
-      color={ isDefined ? "#0D1D37" : "#FFFFFF" }
-      wrap="nowrap"
-      minWidth="138px"
-      height="38px"
-      justifyContent="center"
-    >
-      <Text
-        fontSize="15px"
-        fontWeight={600}
-        lineHeight="19px"
-      >
+    <Card isDefined={ isDefined }>
+      <Label>
         LAPORAN { nomor }
-      </Text>
+      </Label>
 
       { isDefined && (
-        <Image
+        <Icon
           alt="attachment"
           src={ AttachmentIcon }
-          width="20px"
-          height="20px"
         />
       )}
-    </Flex>
+    </Card>
   )
 }
 
