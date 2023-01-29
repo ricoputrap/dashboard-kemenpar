@@ -2,9 +2,11 @@ import { Image, LinkBox } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 export const Container = styled(LinkBox)`
-  padding: 10px 12px;
+  padding: 8px 9px;
   background: #00FFFF;
-
+  height: 38px;
+  min-width: 134px;
+  
   &:hover {
     cursor: pointer;
     background: #07DCDC;
@@ -13,7 +15,7 @@ export const Container = styled(LinkBox)`
 
 export const Label = styled.p`
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 19px;
   color: #0D1D37;

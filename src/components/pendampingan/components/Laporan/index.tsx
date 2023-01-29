@@ -14,7 +14,7 @@ const Laporan: React.FC = () => {
       border="1px solid #EAC170"
       borderRadius="10px"
       background="rgba(17, 38, 71, 0.85);"
-      padding="28px"
+      padding="28px 28px 0 28px"
     >
       <Flex direction="column" rowGap="16px">
         <Filter />
@@ -23,7 +23,7 @@ const Laporan: React.FC = () => {
         <Flex
           direction="column"
           rowGap="16px"
-          paddingX="24px"
+          paddingX="16px"
           paddingY="32px"
           borderTop="1px solid #EAC170"
         >
