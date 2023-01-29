@@ -1,22 +1,25 @@
 import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay } from '@chakra-ui/react'
 import React from 'react'
+import ModalBodyLaporan from '../ModalBodyLaporan';
+import { TLaporan } from '../../../types/laporan.types';
 
 interface Props {
   isOpen: boolean;
   closeModal: () => void;
   title: string;
+  data: TLaporan
 }
 
-const ModalLaporan: React.FC<Props> = ({ isOpen, closeModal, title }) => {
+const ModalLaporan: React.FC<Props> = ({ isOpen, closeModal, title, data }) => {
   return (
-    <Modal isOpen={ isOpen } onClose={ closeModal }>
+    <Modal isOpen={ isOpen } onClose={ closeModal } size="4xl">
       <ModalOverlay />
       <ModalContent>
         <ModalHeader>{ title }</ModalHeader>
         <ModalCloseButton />
 
         <ModalBody>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod suscipit blanditiis eaque nisi saepe non quasi beatae, ab magni atque consequatur error quibusdam quisquam voluptatem commodi quia, quis, ratione asperiores?
+          <ModalBodyLaporan data={ data } />
         </ModalBody>
       </ModalContent>
     </Modal>

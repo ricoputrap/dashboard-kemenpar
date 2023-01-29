@@ -35,11 +35,14 @@ const LaporanItem: React.FC<Props> = ({ nomor, data = undefined }) => {
         )}
       </Card>
 
-      <ModalLaporan
-        isOpen={ isOpen }
-        closeModal={ onClose }
-        title={ title }
-      />
+      {!!data && (
+        <ModalLaporan
+          isOpen={ isOpen }
+          closeModal={ onClose }
+          title={ title }
+          data={ data }
+        />
+      )}
     </>
   )
 }
