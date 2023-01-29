@@ -13,7 +13,7 @@ const Statistik: React.FC = () => {
   );
 
   return (
-    <Flex direction="column" rowGap="12px">
+    <Flex direction="column" rowGap="24px">
       <Flex columnGap="16px">
         <Image src={ ChartLine } />
         <Text className={ styles.title }>
@@ -30,6 +30,13 @@ const Statistik: React.FC = () => {
             sudah={ stat.sudah }
           />
         ))}
+      </Flex>
+
+      <Flex columnGap="16px">
+        <Image src={ ChartLine } />
+        <Text className={ styles.title }>
+          Laporan Pendampingan Berdasarkan Desa 
+        </Text>
       </Flex>
     </Flex>
   )
