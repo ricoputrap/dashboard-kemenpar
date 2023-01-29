@@ -7,12 +7,11 @@ import Statistik from '../components/pendampingan/components/Statistik';
 import useWindowSize from '../hooks/useWindowSize';
 import { PADDING } from '../constants';
 import Laporan from '../components/pendampingan/components/Laporan';
+import useInitDataLaporan from '../components/pendampingan/hooks/useInitDataLaporan';
 
 const Pendampingan: React.FC = () => {
-  const {
-    isStatistikError,
-    isStatistikLoading
-  } = useInitDataStatistik();
+  const { isStatistikError, isStatistikLoading } = useInitDataStatistik();
+  const { isLaporanError, isLaporanLoading } = useInitDataLaporan();
 
   const { width } = useWindowSize();
 
