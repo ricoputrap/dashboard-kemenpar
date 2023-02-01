@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react"
-import Header from "./components/organisms/Header"
+import Header from "./components/reusables/organisms/Header"
 
 const App: React.FC = () => {
 

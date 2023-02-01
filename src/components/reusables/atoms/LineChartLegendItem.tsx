@@ -1,5 +1,5 @@
 import React from 'react'
-import { ILineChartLegendItem } from '../../types/charts.type'
+import { ILineChartLegendItem } from '../../../types/charts.type'
 import { Box, Flex, Text } from '@chakra-ui/react'
 
 const LineChartLegendItem: React.FC<ILineChartLegendItem> = ({ label, color }) => {

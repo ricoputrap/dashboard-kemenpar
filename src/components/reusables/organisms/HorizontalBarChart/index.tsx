@@ -1,8 +1,8 @@
 import { Box, Flex, Heading, Image, Table, TableContainer, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react'
 import React from 'react'
 import HorizontalBarItem from '../../atoms/HorizontalBarItem';
-import chartLineImg from "../../../assets/lines/chart-line.svg";
-import { TBarChartItem } from '../../../types/charts.type';
+import chartLineImg from "../../../../assets/lines/chart-line.svg";
+import { TBarChartItem } from '../../../../types/charts.type';
 import useData from './useData';
 
 type Props = {

@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
-import Header from '../organisms/Header';
+import Header from '../reusables/organisms/Header';
 
 interface Props {
   id: string;

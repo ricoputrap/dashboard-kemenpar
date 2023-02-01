@@ -1,6 +1,6 @@
 import React from 'react'
 import { IDataInput, IDataset } from '../types/dataset.type';
-import { TDropdownItem } from '../../../../types/utils.type';
+import { TDropdownItem } from '../../../../../types/utils.type';
 import useDropdownOptions from './useDropdownOptions';
 import useCategory from './useCategory';
 import useLegend from './useLegend';

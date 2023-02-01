@@ -12,7 +12,7 @@ import { Bar } from 'react-chartjs-2';
 import { Flex, Image, Text } from '@chakra-ui/react';
 import { TBarData, TLegendItem } from './index.types';
 import useData from './useData';
-import ChartLine from "../../../assets/lines/chart-line.svg"
+import ChartLine from "../../../../assets/lines/chart-line.svg"
 import styles from "./BarChart.module.css";
 import useOptions from './useOptions';
 import Legends from './Legends';

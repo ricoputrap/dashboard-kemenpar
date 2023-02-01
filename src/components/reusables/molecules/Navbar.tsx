@@ -1,6 +1,6 @@
 import { Box, Flex, Image } from '@chakra-ui/react';
 import NavbarItem from '../atoms/NavbarItem';
-import iconUser from "../../assets/icons/icon-user-small.png";
+import iconUser from "../../../assets/icons/icon-user-small.png";
 import { Link, Location, useLocation } from 'react-router-dom';
 
 interface IMenu {

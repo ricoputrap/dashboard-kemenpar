@@ -14,7 +14,7 @@ import { options } from './config';
 import { Box, Flex, Heading, Image } from '@chakra-ui/react';
 import { IDataInput } from './types/dataset.type';
 import useData from './hooks/useData';
-import chartLineImg from "../../../assets/lines/chart-line.svg";
+import chartLineImg from "../../../../assets/lines/chart-line.svg";
 import LineChartLegend from '../../molecules/LineChartLegend';
 import Dropdown from '../../atoms/Dropdown';
 

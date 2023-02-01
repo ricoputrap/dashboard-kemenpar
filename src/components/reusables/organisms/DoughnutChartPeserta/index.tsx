@@ -1,6 +1,6 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import React from 'react'
-import ChartLine from "../../../assets/lines/chart-line.svg"
+import ChartLine from "../../../../assets/lines/chart-line.svg"
 import Legends from './Legends'
 import { TGenderData } from './types/legends.types'
 import styles from "./DoughnutChartPeserta.module.css"

@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react'
-import { TDropdownItem } from '../../types/utils.type'
+import { TDropdownItem } from '../../../types/utils.type'
 import { Box } from '@chakra-ui/react';
 import DropdownItem from './DropdownItem';
 
