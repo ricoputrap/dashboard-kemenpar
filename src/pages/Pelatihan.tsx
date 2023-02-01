@@ -2,7 +2,7 @@ import React from 'react'
 import BasePage from '../components/templates/BasePage'
 import useDataPelatihan from '../hooks/useDataPelatihan'
 import { Box } from '@chakra-ui/react';
-import GroupedKPIPeserta from '../components/GroupedKPIPeserta';
+import GroupedKPIPeserta from '../components/reusables/organisms/GroupedKPIPeserta';
 
 const Pelatihan: React.FC = () => {
   const { kpi } = useDataPelatihan();

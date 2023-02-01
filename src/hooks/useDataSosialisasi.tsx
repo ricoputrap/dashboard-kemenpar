@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { KPIPesertaType } from '../types/sosialisasi.type'
 import API from '../API';
-import { TGenderData } from '../components/organisms/DoughnutChartPeserta/types/legends.types';
+import { TGenderData } from '../components/reusables/organisms/DoughnutChartPeserta/types/legends.types';
 
 const useDataSosialisasi = () => {
   const [kpi, setKpi] = useState<KPIPesertaType[]>([]);

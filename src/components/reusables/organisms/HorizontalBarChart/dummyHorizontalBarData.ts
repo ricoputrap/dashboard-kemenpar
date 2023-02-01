@@ -1,4 +1,4 @@
-import { TBarChartItem } from "../../../types/charts.type";
+import { TBarChartItem } from "../../../../types/charts.type";
 
 const dummyHorizontalBarData: TBarChartItem[] = [
   { name: "toba", percent: 79, category: "narasumber" },

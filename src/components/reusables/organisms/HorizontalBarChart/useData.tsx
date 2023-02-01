@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { TBarChartItem } from '../../../types/charts.type';
+import { TBarChartItem } from '../../../../types/charts.type';
 
 const useData = (dataInput: TBarChartItem[]) => {
   const [activeCategory, setActiveCategory] = useState<string>("");

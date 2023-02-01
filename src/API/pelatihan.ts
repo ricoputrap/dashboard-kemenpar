@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import { KPIPesertaType } from '../components/KPIPeserta/index.types';
+import { KPIPesertaType } from '../components/reusables/organisms/KPIPeserta/index.types';
 import { fetcher } from '.';
 
 type TPelatihanData = {

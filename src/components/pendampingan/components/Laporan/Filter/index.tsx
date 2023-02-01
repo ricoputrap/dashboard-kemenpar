@@ -1,5 +1,5 @@
 import React from 'react'
-import Dropdown from '../../../../atoms/Dropdown';
+import Dropdown from '../../../../reusables/atoms/Dropdown';
 import useFilter from './useFilter';
 import { Container, Label } from './index.styles';
 

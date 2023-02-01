@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { TDropdownItem } from '../../../../types/utils.type'
+import { TDropdownItem } from '../../../../../types/utils.type'
 
 const useDropdownOptions = (categories: string[]): TDropdownItem[] => {
   const dropdownOptions: TDropdownItem[] = useMemo(() => {

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import useStore from '../../../state/store'
-import { TGaugeLegendItem } from '../../../../organisms/GaugeChart';
+import { TGaugeLegendItem } from '../../../../reusables/organisms/GaugeChart';
 import { ChartData } from 'chart.js';
 
 interface ReturnValue {

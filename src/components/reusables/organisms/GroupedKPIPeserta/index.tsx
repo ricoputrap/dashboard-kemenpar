@@ -1,8 +1,8 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import React from 'react'
 import KPIPeserta from '../KPIPeserta';
-import ChartLine from "../../assets/lines/chart-line.svg"
-import { KPIPesertaType } from '../../types/sosialisasi.type';
+import ChartLine from "../../../../assets/lines/chart-line.svg"
+import { KPIPesertaType } from '../KPIPeserta/index.types';
 
 interface Props {
   title: string;

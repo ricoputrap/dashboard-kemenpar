@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { IDataInput, IDataset } from '../types/dataset.type';
 import filterDataByCategory from '../utils/filterDataByCategory';
 import { ChartData, Point } from 'chart.js';
-import { getRandomColor } from '../../../../utils';
+import { getRandomColor } from '../../../../../utils';
 
 type IHookDatasetLabel = (
   data: IDataInput[],

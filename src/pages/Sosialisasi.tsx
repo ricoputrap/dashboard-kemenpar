@@ -1,14 +1,14 @@
 import React, { useMemo } from 'react'
 import BasePage from '../components/templates/BasePage'
 import { Box, Flex, Text } from '@chakra-ui/react'
-import GroupedKPIPeserta from '../components/GroupedKPIPeserta'
+import GroupedKPIPeserta from '../components/reusables/organisms/GroupedKPIPeserta'
 import useDataSosialisasi from '../hooks/useDataSosialisasi'
-import DoughnutChartPeserta from '../components/organisms/DoughnutChartPeserta'
-import BarChart from '../components/organisms/BarChart'
+import DoughnutChartPeserta from '../components/reusables/organisms/DoughnutChartPeserta'
+import BarChart from '../components/reusables/organisms/BarChart'
 import useWindowSize from '../hooks/useWindowSize'
-import { TBarData } from '../components/organisms/BarChart/index.types'
+import { TBarData } from '../components/reusables/organisms/BarChart/index.types'
 import { TDropdownItem } from '../types/utils.type'
-import Dropdown from '../components/atoms/Dropdown'
+import Dropdown from '../components/reusables/atoms/Dropdown'
 
 let labels = ['pemandu wisata', 'home stay', 'cendra mata', 'kuliner', 'pengelola wisata', 'jasa transportasi', 'pelaku budaya'];
 labels = labels.map(item => item.toUpperCase());
