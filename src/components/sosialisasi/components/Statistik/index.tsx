@@ -1,5 +1,5 @@
 import React from 'react'
-import useDataStatistik from '../../hooks/useDataStatistik'
+import useDataStatistik from './useDataStatistik'
 import GroupedKPIPeserta from '../../../reusables/organisms/GroupedKPIPeserta';
 
 const Statistik: React.FC = () => {
