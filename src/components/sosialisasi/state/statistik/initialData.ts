@@ -1,6 +1,8 @@
 import { TStatistikTotal } from "../../types/statistik.types";
 import { TStatistikPesertaPertahun } from "./index.types";
 
+export const initialTahun: number = 0;
+
 export const initialStatistikTotal: TStatistikTotal = {
   totalPeserta: 0,
   totalLaki: 0,
