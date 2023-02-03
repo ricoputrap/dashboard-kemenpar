@@ -6,7 +6,7 @@ import { TStatistikPeserta, TStatistikTotal } from '../types/statistik.types';
 import { initialStatistikTotal } from '../state/statistik/initialData';
 
 interface TReturnValue {
-  isStatistikError: any;
+  statistikError: any;
   isStatistikLoading: boolean;
 }
 
@@ -50,7 +50,7 @@ const useInitDataStatistik = (): TReturnValue => {
   }, [data]);
 
   return {
-    isStatistikError: error,
+    statistikError: error,
     isStatistikLoading: isLoading
   }
 }
