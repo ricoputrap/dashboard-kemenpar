@@ -3,6 +3,7 @@ import useNilaiStore from '../../state/nilai/store';
 import { TBarData } from '../../../reusables/organisms/BarChart/index.types';
 import { initialDataPostTest, initialDataPreTest } from './initialValues';
 import { TNilai } from '../../types/nilai.types';
+import useSosialisasiStore from '../../state/store';
 
 interface ReturnValue {
   labels: string[];
@@ -10,19 +11,19 @@ interface ReturnValue {
 }
 
 const useData = (): ReturnValue => {
-  const {
-    tahun,
-    nilaiPreTestPertahun,
-    nilaiPostTestPertahun
-  } = useNilaiStore();
+  const tahun: number = useSosialisasiStore(state => state.tahun);
+  const nilaiPreTestPertahun = useNilaiStore(state => state.nilaiPreTestPertahun);
+  const nilaiPostTestPertahun = useNilaiStore(state => state.nilaiPostTestPertahun);
 
   const [labels, setLabels] = useState<string[]>([]);
   const [dataPreTest, setDataPreTest] = useState<TBarData>(initialDataPreTest);
   const [dataPostTest, setDataPostTest] = useState<TBarData>(initialDataPostTest);
+  const [dataset, setDataset] = useState<TBarData[]>([]);
 
   useEffect(() => {
-    if (!nilaiPreTestPertahun.hasOwnProperty(tahun))
+    if (!nilaiPreTestPertahun.hasOwnProperty(tahun)) {
       return;
+    }
 
     const nilaiSetahun: TNilai[] = nilaiPreTestPertahun[tahun];
     const labels: string[] = nilaiSetahun.map(
@@ -59,12 +60,18 @@ const useData = (): ReturnValue => {
     setDataPostTest(dataPostTest);
   }, [tahun, nilaiPostTestPertahun]);
 
+  useEffect(() => {
+    if (!nilaiPreTestPertahun.hasOwnProperty(tahun)) {
+      setDataset([]);
+    }
+    else {
+      setDataset([dataPreTest, dataPostTest])
+    }
+  }, [nilaiPreTestPertahun, tahun, dataPreTest, dataPostTest]);
+
   return {
     labels,
-    dataset: [
-      dataPreTest,
-      dataPostTest
-    ]
+    dataset
   }
 }
 
