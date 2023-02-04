@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import BasePage from '../components/templates/BasePage'
-import { Flex } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import useWindowSize from '../hooks/useWindowSize'
 import useInitData from '../components/sosialisasi/hooks/useInitData'
 import Statistik from '../components/sosialisasi/components/Statistik'
@@ -34,13 +34,23 @@ const Sosialisasi: React.FC = () => {
     <BasePage id="page-sosialisasi">
       <Flex direction="row" justifyContent="space-between">
         {/* STATISTIK DATA */}
-        <Flex direction="column" width="390px" rowGap="24px">
+        <Flex
+          direction="column"
+          width="390px"
+          rowGap="24px"
+          marginTop="20px"
+        >
           <StatistikTotal />
           <Statistik />
         </Flex>
 
         {/* BAR CHARTS */}
-        <Flex direction="column" rowGap="12px" width={`${barChartsWidth}px`}>
+        <Flex
+          direction="column"
+          rowGap="12px"
+          width={`${barChartsWidth}px`}
+          marginTop="20px"
+        >
           <FilterTahun />
           <Flex direction="column" rowGap="40px">
             <GrafikKategoriUsaha width={ barChartsWidth } />
