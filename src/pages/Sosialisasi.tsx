@@ -8,6 +8,7 @@ import StatistikTotal from '../components/sosialisasi/components/StatistikTotal'
 import GrafikKategoriUsaha from '../components/sosialisasi/components/GrafikKategoriUsaha'
 import GrafikNilai from '../components/sosialisasi/components/GrafikNilai'
 import GrafikUsiaPendidikan from '../components/sosialisasi/components/GrafikUsiaPendidikan'
+import FilterTahun from '../components/sosialisasi/components/FilterTahun'
 
 
 const Sosialisasi: React.FC = () => {
@@ -39,10 +40,13 @@ const Sosialisasi: React.FC = () => {
         </Flex>
 
         {/* BAR CHARTS */}
-        <Flex direction="column" rowGap="40px" width={`${barChartsWidth}px`}>
-          <GrafikKategoriUsaha width={ barChartsWidth } />
-          <GrafikNilai width={ barChartsWidth } />
-          <GrafikUsiaPendidikan />
+        <Flex direction="column" rowGap="12px" width={`${barChartsWidth}px`}>
+          <FilterTahun />
+          <Flex direction="column" rowGap="40px">
+            <GrafikKategoriUsaha width={ barChartsWidth } />
+            <GrafikNilai width={ barChartsWidth } />
+            <GrafikUsiaPendidikan />
+          </Flex>
         </Flex>
       </Flex>
     </BasePage>
