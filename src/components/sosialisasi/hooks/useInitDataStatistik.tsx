@@ -17,7 +17,6 @@ interface TReturnValue {
 const useInitDataStatistik = (): TReturnValue => {
   const { data, error, isLoading } = API.sosialisasi.statistik();
   const {
-    setTahun,
     setStatistikPesertaPertahun,
     setStatistikTotal
   } = useStatistikStore();
@@ -44,7 +43,6 @@ const useInitDataStatistik = (): TReturnValue => {
     );
 
     // update states
-    setTahun(tahun);
     setStatistikPesertaPertahun(statistik, tahun);
     setStatistikTotal(statistikTotal);
   }, [data]);

@@ -1,6 +1,7 @@
-import React, { useEffect, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import useStatistikStore from '../../state/statistik/store'
 import { TStatistikPeserta, TStatistikTotal } from '../../types/statistik.types';
+import useSosialisasiStore from '../../state/store';
 
 interface ReturnValue {
   statistikPeserta: TStatistikPeserta[];
@@ -8,11 +9,9 @@ interface ReturnValue {
 }
 
 const useDataStatistik = (): ReturnValue => {
-  const {
-    tahun,
-    statistikPesertaPertahun,
-    statistikTotal
-  } = useStatistikStore();
+  const statistikPesertaPertahun = useStatistikStore(state => state.statistikPesertaPertahun);
+  const statistikTotal = useStatistikStore(state => state.statistikTotal);
+  const tahun = useSosialisasiStore(state => state.tahun);
 
   const statistikPeserta: TStatistikPeserta[] = useMemo(() => {
     const tahuns: string[] = Object.keys(statistikPesertaPertahun);
