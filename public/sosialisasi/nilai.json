@@ -1,0 +1,37 @@
+{
+  "data": {
+    "tahun": 2022,
+    "data": [
+      {
+        "lokasi": "toba",
+        "pre-test": 1900,
+        "post-test": 2900
+      },
+      {
+        "lokasi": "byp",
+        "pre-test": 1000,
+        "post-test": 3500
+      },
+      {
+        "lokasi": "bts",
+        "pre-test": 1000,
+        "post-test": 1900
+      },
+      {
+        "lokasi": "lombok",
+        "pre-test": 1900,
+        "post-test": 2900
+      },
+      {
+        "lokasi": "l.bajo",
+        "pre-test": 1000,
+        "post-test": 2500
+      },
+      {
+        "lokasi": "wakatobi",
+        "pre-test": 1000,
+        "post-test": 2000
+      }
+    ]
+  }
+}
