@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import useUsiaStore from '../../state/usia/store';
-import { TBarData } from '../../../reusables/organisms/BarChart/index.types';
-import { TUsia } from '../../state/usia/index.types';
+import useUsiaStore from '../../../state/usia/store';
+import { TBarData } from '../../../../reusables/organisms/BarChart/index.types';
+import { TUsia } from '../../../state/usia/index.types';
+import useUsiaPendidikanStore from '../../../state/usiaPendidikan/store';
 
 interface ReturnValue {
   title: string;
@@ -10,8 +11,10 @@ interface ReturnValue {
 }
 
 const useData = (): ReturnValue => {
+  const { tahun, lokasi } = useUsiaPendidikanStore();
+
   const {
-    tahun, lokasi, usiaPertahun,
+    usiaPertahun,
     getUsiaSetahun
   } = useUsiaStore();
 

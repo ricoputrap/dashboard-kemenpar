@@ -2,8 +2,6 @@ import { create } from "zustand";
 import { TUsiaState, TUsiaActions, TUsia, TUsiaPertahun, TUsiaPerlokasi } from "./index.types";
 
 const useUsiaStore = create<TUsiaState & TUsiaActions>((set, get) => ({
-  tahun: 2022,
-  lokasi: "toba",
   usiaPertahun: {},
 
   getUsiaSetahun: (tahun: number, lokasi: string) => {
@@ -19,8 +17,6 @@ const useUsiaStore = create<TUsiaState & TUsiaActions>((set, get) => ({
     return usiaSetahun[lokasi];
   },
 
-  setTahun: (tahun: number) => set({ tahun }),
-  setLokasi: (lokasi: string) => set({ lokasi }),
   setUsiaPertahun: (data: TUsia[], tahun: number, lokasi: string) => {
     const usiaPertahun: TUsiaPertahun = get().usiaPertahun;
     const usiaSetahunPerlokasi: TUsiaPerlokasi = usiaPertahun[tahun];

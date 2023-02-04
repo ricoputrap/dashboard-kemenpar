@@ -1,5 +1,5 @@
 import React from 'react'
-import BarChart from '../../../reusables/organisms/BarChart'
+import BarChart from '../../../../reusables/organisms/BarChart'
 import useData from './useData';
 
 interface Props {
