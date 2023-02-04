@@ -3,6 +3,7 @@ import useUsiaPendidikanStore from '../../../state/usiaPendidikan/store';
 import usePendidikanStore from '../../../state/pendidikan/store';
 import { TBarData } from '../../../../reusables/organisms/BarChart/index.types';
 import { TPendidikan } from '../../../state/pendidikan/index.types';
+import useSosialisasiStore from '../../../state/store';
 
 interface ReturnValue {
   title: string;
@@ -11,7 +12,7 @@ interface ReturnValue {
 }
 
 const useData = (): ReturnValue => {
-  const tahun = useUsiaPendidikanStore(state => state.tahun);
+  const tahun = useSosialisasiStore(state => state.tahun);
   const lokasi = useUsiaPendidikanStore(state => state.lokasi);
   const pendidikanPertahun = usePendidikanStore(state => state.pendidikanPertahun);
   const getPendidikanSetahun = usePendidikanStore(state => state.getPendidikanSetahun);
