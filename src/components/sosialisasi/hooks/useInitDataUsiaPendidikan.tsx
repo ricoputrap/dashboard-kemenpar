@@ -12,7 +12,8 @@ const useInitDataUsiaPendidikan = (): ReturnValue => {
   const { data, error, isLoading } = API.sosialisasi.usiaPendidikan();
 
   const setUsiaPertahun = useUsiaStore(state => state.setUsiaPertahun);
-  const { setTahun, setLokasi } = useUsiaPendidikanStore();
+  const setTahun = useUsiaPendidikanStore(state => state.setTahun);
+  const setLokasi = useUsiaPendidikanStore(state => state.setLokasi);
 
   useEffect(() => {
     if (!data) return;
