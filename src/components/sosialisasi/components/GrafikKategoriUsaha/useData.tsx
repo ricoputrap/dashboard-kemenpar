@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { TBarData } from '../../../reusables/organisms/BarChart/index.types';
 import useKategoriUsahaStore from '../../state/kategoriUsaha/store';
+import useSosialisasiStore from '../../state/store';
 
 interface ReturnValue {
   labels: string[];
@@ -8,14 +9,17 @@ interface ReturnValue {
 }
 
 const useData = (): ReturnValue => {
-  const { tahun, kategoriUsahaPertahun } = useKategoriUsahaStore();
+  const tahun: number = useSosialisasiStore(state => state.tahun);
+  const kategoriUsahaPertahun = useKategoriUsahaStore(state => state.kategoriUsahaPertahun);
   
   const [labels, setLabels] = useState<string[]>([]);
   const [dataset, setDataset] = useState<TBarData[]>([]);
 
   useEffect(() => {
-    if (!kategoriUsahaPertahun.hasOwnProperty(tahun))
+    if (!kategoriUsahaPertahun.hasOwnProperty(tahun)) {
+      setDataset([]);
       return;
+    }
 
     const kategoriUsahaSetahun = kategoriUsahaPertahun[tahun];
     const labels: string[] = kategoriUsahaSetahun.map(
@@ -36,7 +40,7 @@ const useData = (): ReturnValue => {
 
     setLabels(labels);
     setDataset(dataset);
-  }, [kategoriUsahaPertahun]);
+  }, [kategoriUsahaPertahun, tahun]);
 
   return { labels, dataset }
 }
