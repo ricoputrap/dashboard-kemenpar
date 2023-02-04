@@ -3,6 +3,7 @@ import { fetcher } from ".";
 import { TStatistikPeserta } from "../components/sosialisasi/types/statistik.types";
 import kategoriUsaha from "./sosialisasi/kategoriUsaha";
 import nilai from "./sosialisasi/nilai";
+import usiaPendidikan from "./sosialisasi/usiaPendidikan";
 
 export type TStatistikPesertaPertahun = {
   tahun: number;
@@ -21,5 +22,6 @@ const statistik = () => {
 export default {
   statistik,
   kategoriUsaha,
-  nilai
+  nilai,
+  usiaPendidikan
 }
