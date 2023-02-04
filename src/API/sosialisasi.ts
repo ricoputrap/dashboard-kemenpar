@@ -1,6 +1,7 @@
 import useSWR from "swr";
 import { fetcher } from ".";
 import { TStatistikPeserta } from "../components/sosialisasi/types/statistik.types";
+import kategoriUsaha from "./sosialisasi/kategoriUsaha";
 
 export type TStatistikPesertaPertahun = {
   tahun: number;
@@ -17,5 +18,6 @@ const statistik = () => {
 }
 
 export default {
-  statistik
+  statistik,
+  kategoriUsaha
 }

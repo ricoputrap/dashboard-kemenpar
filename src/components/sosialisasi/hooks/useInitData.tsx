@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
 import useInitDataStatistik from './useInitDataStatistik';
+import useInitDataKategoriUsaha from './useInitDataKategoriUsaha';
 
 interface ReturnValue {
   error: any;
@@ -8,9 +9,10 @@ interface ReturnValue {
 
 const useInitData = (): ReturnValue => {
   const { statistikError, isStatistikLoading } = useInitDataStatistik();
+  const { kategoriUsahaError, isKategoriUsahaLoading } = useInitDataKategoriUsaha();
 
   const isLoading = useMemo(() => {
-    return isStatistikLoading;
+    return isStatistikLoading || isKategoriUsahaLoading;
   }, [isStatistikLoading]);
   
   return {
