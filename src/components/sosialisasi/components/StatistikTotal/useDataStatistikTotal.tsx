@@ -1,6 +1,9 @@
-import React, { useMemo } from 'react'
+import React, { useEffect, useMemo } from 'react'
 import { TGenderData } from '../../../reusables/organisms/DoughnutChartPeserta/types/legends.types'
 import useStatistikStore from '../../state/statistik/store';
+import useSosialisasiStore from '../../state/store';
+import { TStatistikPesertaPertahun } from '../../state/statistik/index.types';
+import { TStatistikPeserta, TStatistikTotal } from '../../types/statistik.types';
 
 interface ReturnValue {
   menData: TGenderData;
@@ -8,7 +11,48 @@ interface ReturnValue {
 }
 
 const useDataStatistikTotal = (): ReturnValue => {
-  const { statistikTotal } = useStatistikStore();
+  const statistikPesertaPertahun: TStatistikPesertaPertahun = useStatistikStore(
+    state => state.statistikPesertaPertahun)
+  ;
+  const statistikTotal: TStatistikTotal = useStatistikStore(
+    state => state.statistikTotal
+  );
+  const setStatistikTotal = useStatistikStore(state => state.setStatistikTotal);
+  const tahun: number = useSosialisasiStore(state => state.tahun);
+
+  useEffect(() => {
+    const statistik: TStatistikPeserta[] = statistikPesertaPertahun[tahun];
+    if (!statistik) {
+      setStatistikTotal({
+        totalPeserta: 0,
+        totalLaki: 0,
+        totalPerempuan: 0
+      });
+    }
+    else {
+      const initialStatistikTotal: TStatistikTotal = {
+        totalPeserta: 0,
+        totalLaki: 0,
+        totalPerempuan: 0
+      }
+      const updatedStatistikTotal: TStatistikTotal = statistik.reduce(
+        (total: TStatistikTotal, stat: TStatistikPeserta) => {
+          const jumlahLaki: number = stat.laki;
+          const jumlahPerempuan: number = stat.perempuan;
+          const jumlahTotal: number = jumlahLaki + jumlahPerempuan;
+
+          return {
+            totalPeserta: total.totalPeserta + jumlahTotal,
+            totalLaki: total.totalLaki + jumlahLaki,
+            totalPerempuan: total.totalPerempuan + jumlahPerempuan
+          }
+        },
+        initialStatistikTotal
+      )
+
+      setStatistikTotal(updatedStatistikTotal);
+    }
+  }, [statistikPesertaPertahun, tahun])
 
   // compute data
   const { menData, womenData }: ReturnValue = useMemo(() => {
