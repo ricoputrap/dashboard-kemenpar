@@ -15,6 +15,9 @@ const useData = (): ReturnValue => {
     { label: "TOBA", value: "toba" },
     { label: "BYP", value: "byp" },
     { label: "BTS", value: "bts" },
+    { label: "LOMBOK", value: "lombok" },
+    { label: "L.BAJO", value: "l.bajo" },
+    { label: "WAKATOBI", value: "wakatobi" },
   ];
 
   const handleChange = (newLokasi: string) => {
