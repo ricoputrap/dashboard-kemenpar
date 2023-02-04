@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import useUsiaStore from '../../../state/usia/store';
 import { TBarData } from '../../../../reusables/organisms/BarChart/index.types';
-import { TUsia } from '../../../state/usia/index.types';
+import { TUsia, TUsiaPertahun } from '../../../state/usia/index.types';
 import useUsiaPendidikanStore from '../../../state/usiaPendidikan/store';
+import useSosialisasiStore from '../../../state/store';
 
 interface ReturnValue {
   title: string;
@@ -11,12 +12,10 @@ interface ReturnValue {
 }
 
 const useData = (): ReturnValue => {
-  const { tahun, lokasi } = useUsiaPendidikanStore();
-
-  const {
-    usiaPertahun,
-    getUsiaSetahun
-  } = useUsiaStore();
+  const tahun: number = useSosialisasiStore(state => state.tahun);
+  const lokasi: string = useUsiaPendidikanStore(state => state.lokasi);
+  const usiaPertahun: TUsiaPertahun = useUsiaStore(state => state.usiaPertahun);
+  const getUsiaSetahun = useUsiaStore(state => state.getUsiaSetahun);
 
   const [labels, setLabels] = useState<string[]>([]);
   const [dataset, setDataset] = useState<TBarData[]>([]);
