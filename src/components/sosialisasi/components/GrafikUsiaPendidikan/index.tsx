@@ -4,6 +4,7 @@ import { TDropdownItem } from '../../../../types/utils.type'
 import GrafikUsia from './GrafikUsia'
 import useWindowSize from '../../../../hooks/useWindowSize'
 import DropdownLokasi from './DropdownLokasi'
+import GrafikPendidikan from './GrafikPendidikan'
 
 const options: TDropdownItem[] = [
   { label: "TOBA", value: "TOBA" },
@@ -52,6 +53,7 @@ const GrafikUsiaPendidikan: React.FC = () => {
 
       <ChartContainer>
         <GrafikUsia width={ barChartsWidth } />
+        <GrafikPendidikan width={ barChartsWidth } />
       </ChartContainer>
     </Container>
   )

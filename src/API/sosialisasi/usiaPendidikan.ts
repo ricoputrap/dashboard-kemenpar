@@ -1,11 +1,7 @@
 import useSWR from "swr";
 import { fetcher } from "..";
 import { TUsia } from "../../components/sosialisasi/state/usia/index.types";
-
-type TPendidikan = {
-  pendidikan: string;
-  jumlah: number;
-}
+import { TPendidikan } from "../../components/sosialisasi/state/pendidikan/index.types";
 
 export type TUsiaPendidikanSetahun = {
   tahun: number;
