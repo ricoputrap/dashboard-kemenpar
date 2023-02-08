@@ -8,8 +8,8 @@ interface Props {
   url?: string;
 }
 
-const LaporanItem: React.FC<Props> = ({ nomor, url = "#" }) => {
-    const isDefined: boolean = useMemo(() => url !== "#", [url]);
+const LaporanItem: React.FC<Props> = ({ nomor, url = "" }) => {
+    const isDefined: boolean = useMemo(() => !!url, [url]);
     const title: string = useMemo(() => `LAPORAN ${nomor}`, [nomor]);
     const target: React.HTMLAttributeAnchorTarget = useMemo(() => {
       if (url !== "#")

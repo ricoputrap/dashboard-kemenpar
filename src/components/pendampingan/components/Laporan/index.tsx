@@ -33,7 +33,11 @@ const Laporan: React.FC = () => {
               kec={ data.kec }
               kab={ data.kab }
               urlProposal={ data.urlProposal }
-              laporan={ data.laporan }
+              laporan_1={ data.laporan_1 }
+              laporan_2={ data.laporan_2 }
+              laporan_3={ data.laporan_3 }
+              laporan_4={ data.laporan_4 }
+              laporan_5={ data.laporan_5 }
             />
           ))}
         </Flex>

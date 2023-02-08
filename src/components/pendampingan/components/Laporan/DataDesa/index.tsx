@@ -10,13 +10,23 @@ interface Props extends TPendampinganDesa {
 
 const DataDesa: React.FC<Props> = ({
   nomor,
-  desa, kec, kab,
-  urlProposal, laporan
+  desa, kec, kab, urlProposal,
+  laporan_1,
+  laporan_2,
+  laporan_3,
+  laporan_4,
+  laporan_5
 }) => {
   const jmlLaporan: string = useMemo(() => {
-    const total: number = laporan.length;
+    let total: number = 0;
+    if (!!laporan_1) total++;
+    if (!!laporan_2) total++;
+    if (!!laporan_3) total++;
+    if (!!laporan_4) total++;
+    if (!!laporan_5) total++;
+
     return `${total}/5`;
-  }, [laporan])
+  }, [laporan_1, laporan_2, laporan_3, laporan_4, laporan_5]);
 
   return (
     <Flex justifyContent="space-between">
@@ -43,13 +53,12 @@ const DataDesa: React.FC<Props> = ({
         {/* PROPOSAL */}
         <Proposal url={ urlProposal } />
 
-        {[0,1,2,3,4].map(index => (
-          <LaporanItem
-            key={ index }
-            nomor={ index + 1 }
-            data={ laporan[index] }
-          />
-        ))}
+        {/* LAPORAN */}
+        <LaporanItem nomor={1} url={ laporan_1 } />
+        <LaporanItem nomor={2} url={ laporan_2 } />
+        <LaporanItem nomor={3} url={ laporan_3 } />
+        <LaporanItem nomor={4} url={ laporan_4 } />
+        <LaporanItem nomor={5} url={ laporan_5 } />
 
         <Text
           fontSize="25px"

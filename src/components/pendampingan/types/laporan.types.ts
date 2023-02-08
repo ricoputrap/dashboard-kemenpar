@@ -18,7 +18,11 @@ export type TPendampinganDesa = {
   kec: string;
   kab: string;
   urlProposal: string;
-  laporan: TLaporan[];
+  laporan_1?: string;
+  laporan_2?: string;
+  laporan_3?: string;
+  laporan_4?: string;
+  laporan_5?: string;
 }
 
 export type TPendampinganDesaPerDPP = {
