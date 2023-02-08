@@ -10,12 +10,7 @@ const useLoginStore = create<TLoginState & TLoginActions>((set, get) => ({
   setPassword: (password: string) => set({ password }),
   toggleRememberMe: () => set({
     rememberMe: !get().rememberMe
-  }),
-  handleSubmit: () => {
-    console.log("===== username:", get().username);
-    console.log("===== password:", get().password);
-    console.log("===== rememberMe:", get().rememberMe);
-  }
+  })
 }));
 
 export default useLoginStore;
