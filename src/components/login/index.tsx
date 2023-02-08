@@ -3,12 +3,12 @@ import { BaseContainer, LoginButton, MainContainer, Title } from './index.styles
 import useData from './useData'
 import TextInput from '../reusables/atoms/TextInput';
 
-const LoginView = () => {
+const LoginForm = () => {
   const {
     username,
     password,
-    handleChangeUsername,
-    handleChangePassword,
+    setUsername,
+    setPassword,
     handleSubmit
   } = useData();
 
@@ -20,13 +20,13 @@ const LoginView = () => {
         <TextInput
           label="Username"
           value={ username }
-          handleChange={ handleChangeUsername }
+          handleChange={ setUsername }
         />
 
         <TextInput
           label="Password"
           value={ password }
-          handleChange={ handleChangePassword }
+          handleChange={ setPassword }
           isPassword
         />
         
@@ -38,4 +38,4 @@ const LoginView = () => {
   )
 }
 
-export default LoginView
+export default LoginForm

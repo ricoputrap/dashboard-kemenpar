@@ -1,9 +1,9 @@
 import React from 'react'
-import LoginView from '../components/login';
+import LoginForm from '../components/login';
 
 const Login: React.FC = () => {
   return (
-    <LoginView />
+    <LoginForm />
   )
 }
 

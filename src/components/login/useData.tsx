@@ -1,35 +1,27 @@
-import React, { useState } from 'react'
+import useLoginStore from './state/store';
 
 interface ReturnValue {
   username: string;
   password: string;
-  handleChangeUsername: (value: string) => void;
-  handleChangePassword: (value: string) => void;
+  setUsername: (value: string) => void;
+  setPassword: (value: string) => void;
   handleSubmit: () => void;
 }
 
 const useData = (): ReturnValue => {
-  const [username, setUsername] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
-
-  const handleChangeUsername = (value: string) => {
-    setUsername(value);
-  }
-
-  const handleChangePassword = (value: string) => {
-    setPassword(value);
-  }
-
-  const handleSubmit = () => {
-    console.log("===== username:", username);
-    console.log("===== password:", password);
-  }
+  const {
+    username,
+    password,
+    setUsername,
+    setPassword,
+    handleSubmit
+  } = useLoginStore();
 
   return {
     username,
     password,
-    handleChangeUsername,
-    handleChangePassword,
+    setUsername,
+    setPassword,
     handleSubmit
   }
 }
