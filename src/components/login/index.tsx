@@ -1,34 +1,31 @@
 import React from 'react'
 import { BaseContainer, LoginButton, MainContainer, Title } from './index.styles'
-import useData from './useData'
-import TextInput from '../reusables/atoms/TextInput';
+import Form from './components/Form';
+import { Flex, Link } from '@chakra-ui/react';
+import RememberMe from './components/RememberMe';
+import useSubmit from './hooks/useSubmit';
 
 const LoginForm = () => {
-  const {
-    username,
-    password,
-    setUsername,
-    setPassword,
-    handleSubmit
-  } = useData();
+  const handleSubmit = useSubmit();
 
   return (
     <BaseContainer>
       <MainContainer>
         <Title>LOGIN</Title>
+        <Form />
 
-        <TextInput
-          label="Username"
-          value={ username }
-          handleChange={ setUsername }
-        />
+        <Flex justifyContent="space-between">
+          <RememberMe />
 
-        <TextInput
-          label="Password"
-          value={ password }
-          handleChange={ setPassword }
-          isPassword
-        />
+          <Link
+            href="#"
+            color="#EAC170"
+            fontSize="18px"
+            fontWeight={400}
+          >
+            Forgot Password?
+          </Link>
+        </Flex>
         
         <LoginButton onClick={ handleSubmit }>
           Login

@@ -14,6 +14,7 @@ const useLoginStore = create<TLoginState & TLoginActions>((set, get) => ({
   handleSubmit: () => {
     console.log("===== username:", get().username);
     console.log("===== password:", get().password);
+    console.log("===== rememberMe:", get().rememberMe);
   }
 }));
 
