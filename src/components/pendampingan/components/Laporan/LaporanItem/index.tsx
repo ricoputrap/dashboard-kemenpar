@@ -1,49 +1,39 @@
-import React, { useCallback, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import AttachmentIcon from "../../../../../assets/icons/attachment.svg";
 import { Card, Icon, Label } from './index.styles';
-import { TLaporan } from '../../../types/laporan.types';
-import { useDisclosure } from '@chakra-ui/react';
-import ModalLaporan from '../ModalLaporan';
+import { LinkBox, LinkOverlay } from '@chakra-ui/react';
 
 interface Props {
   nomor: number;
-  data?: TLaporan;
+  url?: string;
 }
 
-const LaporanItem: React.FC<Props> = ({ nomor, data = undefined }) => {
-  const { isOpen, onClose, onToggle } = useDisclosure();
-  
-  const isDefined: boolean = useMemo(() => data !== undefined, [data]);
-  const title: string = useMemo(() => `LAPORAN ${nomor}`, [nomor]);
-
-  const handleClick = useCallback(() => {
-    if (isDefined) onToggle();
-  }, [isDefined]);
+const LaporanItem: React.FC<Props> = ({ nomor, url = "#" }) => {
+    const isDefined: boolean = useMemo(() => url !== "#", [url]);
+    const title: string = useMemo(() => `LAPORAN ${nomor}`, [nomor]);
+    const target: React.HTMLAttributeAnchorTarget = useMemo(() => {
+      if (url !== "#")
+        return "_blank";
+      return "_self";
+    }, [url]);
 
   return (
-    <>
-      <Card isDefined={ isDefined } onClick={ handleClick }>
-        <Label>
-          { title }
-        </Label>
+    <LinkBox>
+      <LinkOverlay href={ url } target={ target }>
+        <Card isDefined={ isDefined }>
+          <Label>
+            { title }
+          </Label>
 
-        { isDefined && (
-          <Icon
-            alt="attachment"
-            src={ AttachmentIcon }
-          />
-        )}
-      </Card>
-
-      {!!data && (
-        <ModalLaporan
-          isOpen={ isOpen }
-          closeModal={ onClose }
-          title={ title }
-          data={ data }
-        />
-      )}
-    </>
+          { isDefined && (
+            <Icon
+              alt="attachment"
+              src={ AttachmentIcon }
+            />
+          )}
+        </Card>
+      </LinkOverlay>
+    </LinkBox>
   )
 }
 
