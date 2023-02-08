@@ -23,7 +23,11 @@ const useFilter = (): ReturnValue => {
   }, []);
 
   const handleChange = (label: string) => {
-    setActiveDPP(label.toLowerCase());
+    const value: string = label == "L. BAJO"
+      ? "labuan_bajo"
+      : label.toLowerCase();
+
+    setActiveDPP(value);
   }
 
   return {

@@ -27,7 +27,7 @@ export const pendampinganStatistik = () => {
 }
 
 export const pendampinganLaporan = (dpp: string) => {
-  // const URL = "https://testingkemenpar.spero-lab.id/admin/api/pendampingan/dashboard/detail?dpp=toba";
+  const URL = "https://testingkemenpar.spero-lab.id/admin/api/pendampingan/dashboard/detail?dpp=" + dpp;
   // const token = "b6e276f8abb9542ce1a8c43615f94c8dabfb6d58";
   // const { data, error, isLoading } = useSWR<TLaporanResponse>(
   //   [URL, token],
