@@ -12,8 +12,6 @@ const useSubmit = () => {
   const handleSubmit = () => {
     const LOGIN_URL = BASE_URL + "/api/login";
 
-    document.cookie = "test2=HAHA";
-
     axios.post(LOGIN_URL, {
       email: username,
       password
@@ -21,6 +19,7 @@ const useSubmit = () => {
       .then(res => {
         const token: string = res.data.token;
         updateCookie(token);
+        location.replace("/");
       })
       .catch(err => {
         alert("LOGIN ERROR");
