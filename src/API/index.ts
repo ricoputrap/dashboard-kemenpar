@@ -1,11 +1,21 @@
 import useSWR from 'swr';
-import axios from 'axios';
+import axios, { AxiosRequestConfig } from 'axios';
 import { TKPIData } from '../types/home.type';
 import { KPIPesertaType } from '../types/sosialisasi.type';
 import pelatihan from './pelatihan';
 import { pendampinganStatistik, pendampinganLaporan } from './pendampingan';
 
-export const fetcher = (url: string) => axios.get(url, { responseType: "json" }).then(res => res.data);
+export const fetcher = (url: string, token: string = "") => {
+  const config: AxiosRequestConfig<any> = { responseType: "json" }
+  
+  if (!!token) {
+    config.headers = {
+      Authorization: "Token " + token
+    }
+  }
+
+  return axios.get(url, config).then(res => res.data);
+}
 
 type THomeData = {
   pendampingan: TKPIData;
