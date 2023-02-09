@@ -3,6 +3,7 @@ import API from '../../../API'
 import useNilaiStore from '../state/nilai/store';
 import { TNilaiSetahun } from '../../../API/sosialisasi/nilai';
 import { TNilai } from "../types/nilai.types";
+import useSosialisasiStore from '../state/store';
 
 interface ReturnValue {
   nilaiError: any;
@@ -10,7 +11,8 @@ interface ReturnValue {
 }
 
 const useInitDataNilai = (): ReturnValue => {
-  const { data, error, isLoading } = API.sosialisasi.nilai();
+  const tahun = useSosialisasiStore(state => state.tahun);
+  const { data, error, isLoading } = API.sosialisasi.nilai(tahun);
   const {
     setTahun,
     setNilaiPreTestPertahun,
