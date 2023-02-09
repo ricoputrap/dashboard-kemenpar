@@ -4,6 +4,7 @@ import useStatistikStore from '../state/statistik/store';
 import { TStatistikPesertaPertahun } from '../../../API/sosialisasi';
 import { TStatistikPeserta, TStatistikTotal } from '../types/statistik.types';
 import { initialStatistikTotal } from '../state/statistik/initialData';
+import useSosialisasiStore from '../state/store';
 
 interface TReturnValue {
   statistikError: any;
@@ -15,9 +16,11 @@ interface TReturnValue {
  * Sosialisasi per DPP
  */
 const useInitDataStatistik = (): TReturnValue => {
-  const { data, error, isLoading } = API.sosialisasi.statistik();
   const setStatistikPesertaPertahun = useStatistikStore(state => state.setStatistikPesertaPertahun);
   const setStatistikTotal = useStatistikStore(state => state.setStatistikTotal);
+  const tahun = useSosialisasiStore(state => state.tahun);
+
+  const { data, error, isLoading } = API.sosialisasi.statistik(tahun);
 
   useEffect(() => {
     if (!data) return;
