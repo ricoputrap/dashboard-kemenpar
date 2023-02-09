@@ -4,33 +4,33 @@
     "statistik": [
       {
         "lokasi": "toba",
-        "sudah": 20,
-        "belum": 70
+        "sudah": 0,
+        "belum": 90
       },
       {
         "lokasi": "byp",
-        "sudah": 20,
-        "belum": 80
+        "sudah": 0,
+        "belum": 100
       },
       {
         "lokasi": "bts",
-        "sudah": 15,
-        "belum": 30
+        "sudah": 0,
+        "belum": 45
       },
       {
         "lokasi": "lombok",
-        "sudah": 25,
-        "belum": 30
+        "sudah": 0,
+        "belum": 55
       },
       {
         "lokasi": "l. bajo",
-        "sudah": 3,
-        "belum": 12
+        "sudah": 0,
+        "belum": 15
       },
       {
         "lokasi": "wakatobi",
-        "sudah": 10,
-        "belum": 10
+        "sudah": 0,
+        "belum": 20
       }
     ]
   }
