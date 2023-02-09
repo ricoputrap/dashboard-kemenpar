@@ -14,8 +14,15 @@ export type TUsiaPendidikanResponse = {
   data: TUsiaPendidikanSetahun;
 }
 
-const usiaPendidikan = () => {
-  const { data, error, isLoading } = useSWR<TUsiaPendidikanResponse>("sosialisasi/usia-pendidikan.json", fetcher);
+const usiaPendidikan = (tahun: number, lokasi: string) => {
+  let dpp = lokasi;
+
+  if (lokasi == "l.bajo")
+    dpp = "labuan_bajo";
+
+  const source = `sosialisasi/usiaPendidikan/${tahun}/${dpp}.json`;
+
+  const { data, error, isLoading } = useSWR<TUsiaPendidikanResponse>(source, fetcher);
   return { data, error, isLoading };
 }
 
