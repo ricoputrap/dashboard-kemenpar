@@ -10,7 +10,7 @@ const useSubmit = () => {
   const { updateCookie } = useCookie("token");
 
   const handleSubmit = () => {
-    const LOGIN_URL = BASE_URL + "/api/login";
+    const LOGIN_URL = BASE_URL + "/api/login/";
 
     axios.post(LOGIN_URL, {
       email: username,

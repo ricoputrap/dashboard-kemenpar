@@ -5,12 +5,19 @@ import { Flex, Image } from '@chakra-ui/react'
 import KPI from '../components/home/organisms/KPI'
 import useDataHome from '../hooks/useDataHome'
 import MapIndo from "../assets/images/Peta.svg";
+import useAuth from '../hooks/useAuth'
+import LoginForm from '../components/login'
 
 const Home: React.FC = () => {
+  const isLoggedIn = useAuth();
   const {
     pendampingan, pelatihan, sosialisasi,
     error, isLoading
   } = useDataHome();
+
+  if (!isLoggedIn) return (
+    <LoginForm />
+  )
 
   return (
     <BasePage id="page-home">
