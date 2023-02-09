@@ -8,8 +8,11 @@ import useWindowSize from '../hooks/useWindowSize';
 import { PADDING } from '../constants';
 import Laporan from '../components/pendampingan/components/Laporan';
 import useInitDataLaporan from '../components/pendampingan/hooks/useInitDataLaporan';
+import useAuth from '../hooks/useAuth';
+import LoginForm from '../components/login';
 
 const Pendampingan: React.FC = () => {
+  const isLoggedIn = useAuth();
   const { isStatistikError, isStatistikLoading } = useInitDataStatistik();
   const { isLaporanError, isLaporanLoading } = useInitDataLaporan();
 
@@ -22,6 +25,10 @@ const Pendampingan: React.FC = () => {
     const result = width - statistikTotalWidth - totalPadding - gap;
     return result;
   }, [width]);
+
+  if (!isLoggedIn) return (
+    <LoginForm />
+  )
 
   return (
     <BasePage id="page-pendampingan">

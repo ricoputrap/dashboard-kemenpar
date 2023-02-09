@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { IDataPointInput } from '../components/organisms/LineChart/types/dataset.type';
+import { IDataPointInput } from '../components/reusables/organisms/LineChart/types/dataset.type';
 import { TBarChartItem } from '../types/charts.type';
 
 const narasumberURL = "narasumber/narasumber.json";

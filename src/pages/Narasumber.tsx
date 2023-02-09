@@ -2,12 +2,15 @@ import React, { useMemo } from 'react'
 import BasePage from '../components/templates/BasePage'
 import useDataNarasumber from '../hooks/useDataNarasumber'
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
-import LineChart from '../components/organisms/LineChart';
-import HorizontalBarChart from '../components/organisms/HorizontalBarChart';
+import LineChart from '../components/reusables/organisms/LineChart';
+import HorizontalBarChart from '../components/reusables/organisms/HorizontalBarChart';
 import MapIndo from "../assets/images/map-indo.svg";
 import useWindowSize from '../hooks/useWindowSize';
+import useAuth from '../hooks/useAuth';
+import LoginForm from '../components/login';
 
 const Narasumber: React.FC = () => {
+  const isLoggedIn = useAuth();
   const { dataNarasumber, dataTopList } = useDataNarasumber();
   const { width, height } = useWindowSize();
 
@@ -20,6 +23,10 @@ const Narasumber: React.FC = () => {
       height: 200
     }
   }, [width, height]);
+
+  if (!isLoggedIn) return (
+    <LoginForm />
+  )
 
   return (
     <BasePage id="page-narasumber">

@@ -1,9 +1,9 @@
 import useSWR from 'swr';
 import axios, { AxiosRequestConfig } from 'axios';
 import { TKPIData } from '../types/home.type';
-import { KPIPesertaType } from '../types/sosialisasi.type';
 import pelatihan from './pelatihan';
 import { pendampinganStatistik, pendampinganLaporan } from './pendampingan';
+import sosialisasi from './sosialisasi';
 
 export const fetcher = (url: string, token: string = "") => {
   const config: AxiosRequestConfig<any> = { responseType: "json" }
@@ -23,25 +23,10 @@ type THomeData = {
   sosialisasi: TKPIData;
 }
 
-type TSosialisasiData = {
-  kpi: KPIPesertaType[]
-}
-
-type TSosialisasiResponse = {
-  data: TSosialisasiData
-}
-
 const home = () => {
   const { data, error, isLoading } = useSWR<THomeData>("home/home.json", fetcher);
   return { data, error, isLoading }
 }
-
-const sosialisasi = () => {
-  const { data, error, isLoading } = useSWR<TSosialisasiResponse>("sosialisasi/sosialisasi.json", fetcher);
-  return { data, error, isLoading }
-}
-
-
 
 export default {
   home,

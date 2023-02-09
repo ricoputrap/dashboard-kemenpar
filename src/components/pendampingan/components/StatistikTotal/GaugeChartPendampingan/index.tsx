@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 import useData from './useData'
-import GaugeChart from '../../../../organisms/GaugeChart';
+import GaugeChart from '../../../../reusables/organisms/GaugeChart';
 
 const GaugeChartPendampingan: React.FC = () => {
   const { percent, data, legendItems } = useData();
