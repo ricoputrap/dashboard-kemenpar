@@ -11,8 +11,9 @@ export type TKategoriUsahaResponse = {
   data: TKategoriUsahaSetahun;
 }
 
-const kategoriUsaha = () => {
-  const { data, error, isLoading } = useSWR<TKategoriUsahaResponse>("sosialisasi/kategori-usaha.json", fetcher);
+const kategoriUsaha = (tahun: number) => {
+  const source: string = `sosialisasi/kategoriUsaha/${tahun}.json`;
+  const { data, error, isLoading } = useSWR<TKategoriUsahaResponse>(source, fetcher);
   return { data, error, isLoading }
 }
 

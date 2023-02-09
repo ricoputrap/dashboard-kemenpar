@@ -1,0 +1,35 @@
+{
+  "data": {
+    "tahun": 2022,
+    "data": [
+      {
+        "nama": "pemandu wisata",
+        "jumlah": 0
+      },
+      {
+        "nama": "home stay",
+        "jumlah": 0
+      },
+      {
+        "nama": "cendra mata",
+        "jumlah": 0
+      },
+      {
+        "nama": "kuliner",
+        "jumlah": 0
+      },
+      {
+        "nama": "pengelola wisata",
+        "jumlah": 0
+      },
+      {
+        "nama": "jasa",
+        "jumlah": 0
+      },
+      {
+        "nama": "pelaku budaya",
+        "jumlah": 0
+      }
+    ]
+  }
+}

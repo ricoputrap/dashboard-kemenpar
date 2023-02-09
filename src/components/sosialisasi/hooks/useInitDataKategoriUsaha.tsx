@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import API from '../../../API';
 import useKategoriUsahaStore from '../state/kategoriUsaha/store';
 import { TKategoriUsahaSetahun } from '../../../API/sosialisasi/kategoriUsaha';
+import useSosialisasiStore from '../state/store';
 
 interface ReturnValue {
   kategoriUsahaError: any;
@@ -9,7 +10,9 @@ interface ReturnValue {
 }
 
 const useInitDataKategoriUsaha = (): ReturnValue => {
-  const { data, error, isLoading } = API.sosialisasi.kategoriUsaha();
+  const tahun = useSosialisasiStore(state => state.tahun);
+  const { data, error, isLoading } = API.sosialisasi.kategoriUsaha(tahun);
+
   const {
     setTahun,
     setKategoriUsahaPertahun
