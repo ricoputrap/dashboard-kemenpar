@@ -1,0 +1,128 @@
+{
+  "data": {
+    "dpp": "lombok",
+    "data": [
+      {
+        "desa": "Pusuk Lestari",
+        "kec": "Batu Layar",
+        "kab": "Lombok Barat",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Senteluk",
+        "kec": "Batu Layar",
+        "kab": "Lombok Barat",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Gili Gede Indah",
+        "kec": "Sekotong",
+        "kab": "Lombok Barat",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Sekotong Barat",
+        "kec": "Sekotong",
+        "kab": "Lombok Barat",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Buwun Mas",
+        "kec": "Sekotong",
+        "kab": "Lombok Barat",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Kuta",
+        "kec": "Pujut",
+        "kab": "Lombok Tengah",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Rembitan",
+        "kec": "Pujut",
+        "kab": "Lombok Tengah",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Selong Belanak",
+        "kec": "Praya Barat",
+        "kab": "Lombok Tengah",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Gili Indah",
+        "kec": "Pemenang",
+        "kab": "Lombok Utara",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Medana",
+        "kec": "Tanjung",
+        "kab": "Lombok Utara",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Jerowaru",
+        "kec": "Jerowaru",
+        "kab": "Lombok Timur",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "data": {
+    "dpp": "labuan_bajo",
+    "data": [
+      {
+        "desa": "Papagarang",
+        "kec": "Komodo",
+        "kab": "Manggarai Barat",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Pasir Panjang",
+        "kec": "Komodo",
+        "kab": "Manggarai Barat",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      },
+      {
+        "desa": "Golo Mori",
+        "kec": "Komodo",
+        "kab": "Manggarai Barat",
+        "urlProposal": null,
+        "laporan_1": null,
+        "laporan_2": null,
+        "laporan_3": null,
+        "laporan_4": null,
+        "laporan_5": null
+      }
+    ]
+  }
+}
