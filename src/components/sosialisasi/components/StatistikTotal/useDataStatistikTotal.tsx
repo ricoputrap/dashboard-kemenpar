@@ -59,8 +59,12 @@ const useDataStatistikTotal = (): ReturnValue => {
     const totalLaki = statistikTotal.totalLaki;
     const totalPerempuan = statistikTotal.totalPerempuan;
 
-    const percentLaki = Math.ceil((totalLaki * 100) / (totalLaki + totalPerempuan));
-    const percentPerempuan = Math.floor((totalPerempuan * 100) / (totalLaki + totalPerempuan));
+    const percentLaki = totalLaki > 0
+      ? Math.ceil((totalLaki * 100) / (totalLaki + totalPerempuan))
+      : 0;
+    const percentPerempuan = totalPerempuan > 0
+      ? Math.floor((totalPerempuan * 100) / (totalLaki + totalPerempuan))
+      : 0;
 
     const menData: TGenderData = {
       value: totalLaki,
