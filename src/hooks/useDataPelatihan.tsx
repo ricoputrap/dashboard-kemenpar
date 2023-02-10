@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import API from '../API';
-import { KPIPesertaType } from '../components/reusables/organisms/KPIPeserta/index.types';
+import { KPIPesertaType } from '../components/reusables/organisms/StatistikPeserta/index.types';
 
 const useDataPelatihan = () => {
   const [kpi, setKpi] = useState<KPIPesertaType[]>([]);

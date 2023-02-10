@@ -1,7 +1,8 @@
 import { create } from "zustand";
 import { TStatistikActions, TStatistikPesertaPertahun, TStatistikState } from "./index.types";
 import { initialStatistikPesertaPertahun, initialStatistikTotal, initialTahun } from "./initialData";
-import { TStatistikPeserta, TStatistikTotal } from "../../types/statistik.types";
+import { TStatistikTotal } from "../../types/statistik.types";
+import { TStatistikPeserta } from "../../../reusables/organisms/StatistikPeserta/index.types";
 
 const useStatistikStore = create<TStatistikState & TStatistikActions>((set, get) => ({
   statistikPesertaPertahun: initialStatistikPesertaPertahun,

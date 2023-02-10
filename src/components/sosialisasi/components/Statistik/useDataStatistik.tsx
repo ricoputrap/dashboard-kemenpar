@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react'
 import useStatistikStore from '../../state/statistik/store'
-import { TStatistikPeserta, TStatistikTotal } from '../../types/statistik.types';
+import { TStatistikTotal } from '../../types/statistik.types';
+import { TStatistikPeserta } from '../../../reusables/organisms/StatistikPeserta/index.types';
 import useSosialisasiStore from '../../state/store';
 
 interface ReturnValue {

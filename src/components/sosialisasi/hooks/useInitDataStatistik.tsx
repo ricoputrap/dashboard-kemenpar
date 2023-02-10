@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import API from '../../../API';
 import useStatistikStore from '../state/statistik/store';
 import { TStatistikPesertaPertahun } from '../../../API/sosialisasi';
-import { TStatistikPeserta, TStatistikTotal } from '../types/statistik.types';
+import { TStatistikTotal } from '../types/statistik.types';
+import { TStatistikPeserta } from '../../reusables/organisms/StatistikPeserta/index.types';
 import { initialStatistikTotal } from '../state/statistik/initialData';
 import useSosialisasiStore from '../state/store';
 

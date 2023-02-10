@@ -3,7 +3,8 @@ import { TGenderData } from '../../../reusables/organisms/DoughnutChartPeserta/t
 import useStatistikStore from '../../state/statistik/store';
 import useSosialisasiStore from '../../state/store';
 import { TStatistikPesertaPertahun } from '../../state/statistik/index.types';
-import { TStatistikPeserta, TStatistikTotal } from '../../types/statistik.types';
+import { TStatistikTotal } from '../../types/statistik.types';
+import { TStatistikPeserta } from '../../../reusables/organisms/StatistikPeserta/index.types';
 
 interface ReturnValue {
   menData: TGenderData;
