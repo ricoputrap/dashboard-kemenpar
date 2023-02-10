@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import API from '../API';
-import { KPIPesertaType } from '../components/reusables/organisms/StatistikPeserta/index.types';
+import { TStatistikPeserta } from '../components/reusables/organisms/StatistikPeserta/index.types';
 
 const useDataPelatihan = () => {
-  const [kpi, setKpi] = useState<KPIPesertaType[]>([]);
+  const [kpi, setKpi] = useState<TStatistikPeserta[]>([]);
 
   const { data, error, isLoading } = API.pelatihan();
 

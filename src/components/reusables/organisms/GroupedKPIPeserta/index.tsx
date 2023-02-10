@@ -1,12 +1,12 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import React from 'react'
-import KPIPeserta from '../StatistikPeserta';
+import StatistikPeserta from '../StatistikPeserta';
 import ChartLine from "../../../../assets/lines/chart-line.svg"
-import { KPIPesertaType } from '../StatistikPeserta/index.types';
+import { TStatistikPeserta } from '../StatistikPeserta/index.types';
 
 interface Props {
   title: string;
-  data: KPIPesertaType[];
+  data: TStatistikPeserta[];
 }
 
 const GroupedKPIPeserta: React.FC<Props> = ({ title, data }) => {
@@ -27,7 +27,7 @@ const GroupedKPIPeserta: React.FC<Props> = ({ title, data }) => {
       <Flex wrap="wrap" gap="15px">
         {data.map(peserta => (
           <Box width="120px" key={peserta.lokasi}>
-            <KPIPeserta
+            <StatistikPeserta
               lokasi={ peserta.lokasi }
               target={ peserta.target }
               realisasi={ peserta.realisasi }

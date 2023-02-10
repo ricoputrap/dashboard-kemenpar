@@ -1,8 +1,8 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React, { useMemo } from 'react'
-import { KPIPesertaType } from '../../../../types/sosialisasi.type';
+import { TStatistikPeserta } from './index.types';
 
-const KPIPeserta: React.FC<KPIPesertaType> = ({
+const StatistikPeserta: React.FC<TStatistikPeserta> = ({
   lokasi,
   target,
   realisasi,
@@ -150,4 +150,4 @@ const KPIPeserta: React.FC<KPIPesertaType> = ({
   )
 }
 
-export default KPIPeserta
+export default StatistikPeserta
