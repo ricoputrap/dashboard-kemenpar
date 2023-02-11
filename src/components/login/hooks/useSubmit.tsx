@@ -2,12 +2,11 @@ import React from 'react'
 import useLoginStore from '../state/store'
 import { BASE_URL } from '../../../constants';
 import axios from 'axios';
-import useCookie from '../../../hooks/useCookie';
+import { setCookie } from '../../../utils/cookie';
 
 const useSubmit = () => {
   const username = useLoginStore(state => state.username);
   const password = useLoginStore(state => state.password);
-  const { updateCookie } = useCookie("token");
 
   const handleSubmit = () => {
     const LOGIN_URL = BASE_URL + "/api/login/";
@@ -18,7 +17,7 @@ const useSubmit = () => {
     })
       .then(res => {
         const token: string = res.data.token;
-        updateCookie(token);
+        setCookie("token", token);
         location.replace("/");
       })
       .catch(err => {

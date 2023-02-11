@@ -9,12 +9,10 @@ import GrafikKategoriUsaha from '../components/sosialisasi/components/GrafikKate
 import GrafikNilai from '../components/sosialisasi/components/GrafikNilai'
 import GrafikUsiaPendidikan from '../components/sosialisasi/components/GrafikUsiaPendidikan'
 import FilterTahun from '../components/sosialisasi/components/FilterTahun'
-import useAuth from '../hooks/useAuth'
 import LoginForm from '../components/login'
 
 
 const Sosialisasi: React.FC = () => {
-  const isLoggedIn = useAuth();
   const { error, isLoading } = useInitData();
   const { width } = useWindowSize();
 
@@ -32,10 +30,6 @@ const Sosialisasi: React.FC = () => {
 
     return remainingSpace;
   }, [width]);
-
-  if (!isLoggedIn) return (
-    <LoginForm />
-  )
 
   return (
     <BasePage id="page-sosialisasi">
