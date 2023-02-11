@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import { fetcher } from ".";
-import { TStatistikPeserta } from "../components/sosialisasi/types/statistik.types";
+import { TStatistikPeserta } from "../components/reusables/organisms/StatistikPeserta/index.types";
 import kategoriUsaha from "./sosialisasi/kategoriUsaha";
 import nilai from "./sosialisasi/nilai";
 import usiaPendidikan from "./sosialisasi/usiaPendidikan";

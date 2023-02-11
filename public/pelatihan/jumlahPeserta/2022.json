@@ -1,0 +1,49 @@
+{
+  "data": {
+    "tahun": 2022,
+    "statistik": [
+      {
+        "lokasi": "toba",
+        "target": 270,
+        "realisasi": 270,
+        "laki": 968,
+        "perempuan": 792
+      },
+      {
+        "lokasi": "byp",
+        "target": 300,
+        "realisasi": 300,
+        "laki": 1226,
+        "perempuan": 745
+      },
+      {
+        "lokasi": "bts",
+        "target": 135,
+        "realisasi": 135,
+        "laki": 590,
+        "perempuan": 284
+      },
+      {
+        "lokasi": "lombok",
+        "target": 165,
+        "realisasi": 165,
+        "laki": 789,
+        "perempuan": 311
+      },
+      {
+        "lokasi": "l. bajo",
+        "target": 45,
+        "realisasi": 45,
+        "laki": 235,
+        "perempuan": 65
+      },
+      {
+        "lokasi": "wakatobi",
+        "target": 60,
+        "realisasi": 60,
+        "laki": 179,
+        "perempuan": 221
+      }
+    ]
+  }
+}

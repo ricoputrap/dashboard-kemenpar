@@ -1,9 +1,9 @@
 import useSWR from 'swr';
 import axios, { AxiosRequestConfig } from 'axios';
 import { TKPIData } from '../types/home.type';
-import pelatihan from './pelatihan';
 import { pendampinganStatistik, pendampinganLaporan } from './pendampingan';
 import sosialisasi from './sosialisasi';
+import pelatihan from './pelatihan';
 
 export const fetcher = (url: string, token: string = "") => {
   const config: AxiosRequestConfig<any> = { responseType: "json" }
