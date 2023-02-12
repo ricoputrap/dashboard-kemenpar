@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import StatistikBoxes from "./components/StatistikBoxes";
-import { useEffect } from "react";
+import StatistikChart from "./components/StatistikChart";
 
 const StatistikJumlahPeserta: React.FC = () => {
   return (
@@ -10,6 +10,7 @@ const StatistikJumlahPeserta: React.FC = () => {
       rowGap="24px"
       marginTop="20px"
     >
+      <StatistikChart />
       <StatistikBoxes />
     </Flex>
   )

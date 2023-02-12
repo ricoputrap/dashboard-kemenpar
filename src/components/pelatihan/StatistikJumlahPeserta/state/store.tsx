@@ -3,6 +3,7 @@ import { TStatistikActions, TStatistikPesertaPertahun, TStatistikState } from ".
 
 const useStatistikStore = create<TStatistikState & TStatistikActions>((set, get) => ({
   statistikPesertaPertahun: {},
+
   setStatistikPesertaPertahun: (data, tahun) => {
     const statistikPesertaPertahun: TStatistikPesertaPertahun = get().statistikPesertaPertahun;
 
@@ -14,7 +15,7 @@ const useStatistikStore = create<TStatistikState & TStatistikActions>((set, get)
 
     // update value
     set({ statistikPesertaPertahun: updatedValue })
-  },
+  }
 }));
 
 export default useStatistikStore;

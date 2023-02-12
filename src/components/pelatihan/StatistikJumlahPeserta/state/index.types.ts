@@ -4,6 +4,12 @@ export type TStatistikPesertaPertahun = {
   [tahun: number]: TStatistikPeserta[];
 }
 
+export type TStatistikTotal = {
+  totalPeserta: number;
+  totalLaki: number;
+  totalPerempuan: number;
+}
+
 export type TStatistikState = {
   statistikPesertaPertahun: TStatistikPesertaPertahun;
 }

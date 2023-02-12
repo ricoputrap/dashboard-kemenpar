@@ -15,10 +15,12 @@ const useInitDataStatistik = (): ReturnValue => {
   const { data, error, isLoading } = API.pelatihan.statistik(tahun);
 
   useEffect(() => {
-    console.log("===== data:", data)
     if (!data) return;
 
-    const { tahun, statistik }: TStatistikPesertaSetahun = data.data;
+    const {
+      tahun,
+      statistik
+    }: TStatistikPesertaSetahun = data.data;
 
     setStatistikPesertaPertahun(statistik, tahun);
   }, [data]);
