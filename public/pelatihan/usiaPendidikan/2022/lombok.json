@@ -1,0 +1,54 @@
+{
+  "data": {
+    "tahun": 2022,
+    "dpp": "lombok",
+    "usia": [
+      {
+        "usia": "17-25",
+        "jumlah": 226
+      },
+      {
+        "usia": "26-45",
+        "jumlah": 687
+      },
+      {
+        "usia": "45-65",
+        "jumlah": 187
+      },
+      {
+        "usia": ">65",
+        "jumlah": 0
+      }
+    ],
+    "pendidikan": [
+      {
+        "pendidikan": "Tidak Tamat SD",
+        "jumlah": 23
+      },
+      {
+        "pendidikan": "SD",
+        "jumlah": 56
+      },
+      {
+        "pendidikan": "SMP",
+        "jumlah": 131
+      },
+      {
+        "pendidikan": "SMA/ SMK",
+        "jumlah": 567
+      },
+      {
+        "pendidikan": "D1/ D2/ D3",
+        "jumlah": 70
+      },
+      {
+        "pendidikan": "S1",
+        "jumlah": 235
+      },
+      {
+        "pendidikan": "S2",
+        "jumlah": 12
+      }
+    ]
+  }
+} 

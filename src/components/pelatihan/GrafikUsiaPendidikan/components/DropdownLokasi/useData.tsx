@@ -1,5 +1,5 @@
 import { TDropdownItem } from "../../../../../types/utils.type";
-import useUsiaPendidikanStore from "../../state/index.types";
+import useUsiaPendidikanStore from "../../state/store";
 
 interface ReturnValue {
   options: TDropdownItem[];

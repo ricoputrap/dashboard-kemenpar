@@ -1,9 +1,11 @@
-import { create } from "zustand";
-import { TUsiaPendidikanState, TUsiaPendidikanActions } from "./store";
+import { TUsia, TUsiaPertahun } from "./usia.types";
 
-const useUsiaPendidikanStore = create<TUsiaPendidikanState & TUsiaPendidikanActions>(set => ({
-  lokasi: "toba",
-  setLokasi: (lokasi) => set({ lokasi })
-}));
+export type TUsiaPendidikanState = {
+  lokasi: string;
+  usiaPertahun: TUsiaPertahun;
+}
 
-export default useUsiaPendidikanStore;
+export type TUsiaPendidikanActions = {
+  setLokasi: (lokasi: string) => void;
+  setUsiaPertahun: (data: TUsia[], tahun: number, lokasi: string) => void;
+}

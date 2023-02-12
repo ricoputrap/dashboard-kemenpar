@@ -1,0 +1,54 @@
+{
+  "data": {
+    "tahun": 2022,
+    "dpp": "byp",
+    "usia": [
+      {
+        "usia": "17-25",
+        "jumlah": 294
+      },
+      {
+        "usia": "26-45",
+        "jumlah": 716
+      },
+      {
+        "usia": "45-65",
+        "jumlah": 870
+      },
+      {
+        "usia": ">65",
+        "jumlah": 100
+      }
+    ],
+    "pendidikan": [
+      {
+        "pendidikan": "Tidak Tamat SD",
+        "jumlah": 9
+      },
+      {
+        "pendidikan": "SD",
+        "jumlah": 113
+      },
+      {
+        "pendidikan": "SMP",
+        "jumlah": 217
+      },
+      {
+        "pendidikan": "SMA/ SMK",
+        "jumlah": 987
+      },
+      {
+        "pendidikan": "D1/ D2/ D3",
+        "jumlah": 146
+      },
+      {
+        "pendidikan": "S1",
+        "jumlah": 416
+      },
+      {
+        "pendidikan": "S2",
+        "jumlah": 29
+      }
+    ]
+  }
+} 

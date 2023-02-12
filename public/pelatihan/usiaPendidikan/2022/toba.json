@@ -1,0 +1,54 @@
+{
+  "data": {
+    "tahun": 2022,
+    "dpp": "toba",
+    "usia": [
+      {
+        "usia": "17-25",
+        "jumlah": 371
+      },
+      {
+        "usia": "26-45",
+        "jumlah": 827
+      },
+      {
+        "usia": "45-65",
+        "jumlah": 445
+      },
+      {
+        "usia": ">65",
+        "jumlah": 75
+      }
+    ],
+    "pendidikan": [
+      {
+        "pendidikan": "Tidak Tamat SD",
+        "jumlah": 35
+      },
+      {
+        "pendidikan": "SD",
+        "jumlah": 86
+      },
+      {
+        "pendidikan": "SMP",
+        "jumlah": 226
+      },
+      {
+        "pendidikan": "SMA/ SMK",
+        "jumlah": 1047
+      },
+      {
+        "pendidikan": "D1/ D2/ D3",
+        "jumlah": 107
+      },
+      {
+        "pendidikan": "S1",
+        "jumlah": 197
+      },
+      {
+        "pendidikan": "S2",
+        "jumlah": 12
+      }
+    ]
+  }
+} 
