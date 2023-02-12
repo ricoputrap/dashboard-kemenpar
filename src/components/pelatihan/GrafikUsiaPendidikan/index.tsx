@@ -4,6 +4,7 @@ import { ChartContainer, Container } from './index.styles'
 import GrafikUsia from './components/GrafikUsia'
 import useWindowSize from '../../../hooks/useWindowSize'
 import { getChartWidth, getHalfChartWidth } from './utils'
+import GrafikPendidikan from './components/GrafikPendidikan'
 
 const GrafikUsiaPendidikan: React.FC = () => {
   const { width } = useWindowSize();
@@ -20,6 +21,7 @@ const GrafikUsiaPendidikan: React.FC = () => {
       
       <ChartContainer>
         <GrafikUsia width={ barChartsWidth } />
+        <GrafikPendidikan width={ barChartsWidth } />
       </ChartContainer>
     </Container>
   )

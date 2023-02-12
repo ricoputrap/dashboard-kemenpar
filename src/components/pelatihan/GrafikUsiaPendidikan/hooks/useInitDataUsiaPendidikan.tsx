@@ -9,6 +9,7 @@ interface ReturnValue {
 
 const useInitDataUsiaPendidikan = (): ReturnValue => {
   const setUsiaPertahun = useUsiaPendidikanStore(state => state.setUsiaPertahun);
+  const setPendidikanPertahun = useUsiaPendidikanStore(state => state.setPendidikanPertahun);
   const lokasi = useUsiaPendidikanStore(state => state.lokasi);
   const tahun = 2022;
 
@@ -20,6 +21,7 @@ const useInitDataUsiaPendidikan = (): ReturnValue => {
     const { dpp, usia, pendidikan } = data.data;
 
     setUsiaPertahun(usia, tahun, lokasi);
+    setPendidikanPertahun(pendidikan, tahun, lokasi);
   }, [data]);
 
   return {

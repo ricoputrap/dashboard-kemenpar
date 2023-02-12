@@ -1,13 +1,13 @@
 import useSWR from "swr";
 import { fetcher } from "..";
 import { TUsia } from "../../components/pelatihan/GrafikUsiaPendidikan/state/usia.types";
-import { TPendidikan } from "../../components/sosialisasi/state/pendidikan/index.types";
+import { TPendidikan } from "../../components/pelatihan/GrafikUsiaPendidikan/state/pendidikan.types";
 
 export type TUsiaPendidikanSetahun = {
   tahun: number;
   dpp: string;
   usia: TUsia[];
-  pendidikan: TPendidikan[]; // todo update
+  pendidikan: TPendidikan[];
 }
 
 export type TUsiaPendidikanResponse = {

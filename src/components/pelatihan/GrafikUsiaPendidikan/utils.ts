@@ -1,3 +1,4 @@
+import { TPendidikanPerlokasi, TPendidikanPertahun } from "./state/pendidikan.types";
 import { TUsiaPerlokasi, TUsiaPertahun } from "./state/usia.types";
 
 export const getChartWidth = (width: number): number => {
@@ -39,4 +40,19 @@ export const getUsiaSetahun = (
     return [];
 
   return usiaSetahun[lokasi];
+}
+
+export const getPendidikanSetahun = (
+  pendidikanPertahun: TPendidikanPertahun,
+  tahun: number,
+  lokasi: string
+) => {
+  if (!pendidikanPertahun.hasOwnProperty(tahun))
+    return [];
+
+  const pendidikanSetahun: TPendidikanPerlokasi = pendidikanPertahun[tahun];
+  if (!pendidikanSetahun)
+    return [];
+
+  return pendidikanSetahun[lokasi] || [];
 }
