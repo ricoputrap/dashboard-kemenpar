@@ -6,6 +6,7 @@ import KPI from '../components/home/organisms/KPI'
 import useDataHome from '../hooks/useDataHome'
 import MapIndo from "../assets/images/Peta.svg";
 import LoginForm from '../components/login'
+import withAuth from '../hoc/withAuth'
 
 const Home: React.FC = () => {
   const {
@@ -34,4 +35,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default withAuth(Home);

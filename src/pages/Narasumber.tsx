@@ -7,6 +7,7 @@ import HorizontalBarChart from '../components/reusables/organisms/HorizontalBarC
 import MapIndo from "../assets/images/map-indo.svg";
 import useWindowSize from '../hooks/useWindowSize';
 import LoginForm from '../components/login';
+import withAuth from '../hoc/withAuth';
 
 const Narasumber: React.FC = () => {
   const { dataNarasumber, dataTopList } = useDataNarasumber();
@@ -99,4 +100,4 @@ const Narasumber: React.FC = () => {
   )
 }
 
-export default Narasumber
+export default withAuth(Narasumber);

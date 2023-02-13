@@ -9,6 +9,7 @@ import { PADDING } from '../constants';
 import Laporan from '../components/pendampingan/components/Laporan';
 import useInitDataLaporan from '../components/pendampingan/hooks/useInitDataLaporan';
 import LoginForm from '../components/login';
+import withAuth from '../hoc/withAuth';
 
 const Pendampingan: React.FC = () => {
   const { isStatistikError, isStatistikLoading } = useInitDataStatistik();
@@ -51,4 +52,4 @@ const Pendampingan: React.FC = () => {
   )
 }
 
-export default Pendampingan;
+export default withAuth(Pendampingan);

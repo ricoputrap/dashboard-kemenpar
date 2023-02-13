@@ -10,6 +10,7 @@ import GrafikNilai from '../components/sosialisasi/components/GrafikNilai'
 import GrafikUsiaPendidikan from '../components/sosialisasi/components/GrafikUsiaPendidikan'
 import FilterTahun from '../components/sosialisasi/components/FilterTahun'
 import LoginForm from '../components/login'
+import withAuth from '../hoc/withAuth'
 
 
 const Sosialisasi: React.FC = () => {
@@ -64,4 +65,4 @@ const Sosialisasi: React.FC = () => {
   )
 }
 
-export default Sosialisasi
+export default withAuth(Sosialisasi);
