@@ -1,0 +1,23 @@
+{
+  "data": {
+    "tahun": 2022,
+    "materi": [
+      {
+        "label": "exploring",
+        "url": null
+      },
+      {
+        "label": "packaging",
+        "url": null
+      },
+      {
+        "label": "presentation",
+        "url": null
+      },
+      {
+        "label": "sustainable tourism",
+        "url": null
+      }
+    ]
+  }
+}

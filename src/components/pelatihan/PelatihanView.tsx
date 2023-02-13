@@ -5,6 +5,7 @@ import { Flex } from '@chakra-ui/react';
 import StatistikJumlahPeserta from './StatistikJumlahPeserta';
 import GrafikUsiaPendidikan from './GrafikUsiaPendidikan';
 import useWindowSize from '../../hooks/useWindowSize';
+import MateriPelatihan from './MateriPelatihan';
 
 const PelatihanView: React.FC = () => {
   useInitData();
@@ -37,6 +38,7 @@ const PelatihanView: React.FC = () => {
           marginTop="20px"
         >
           <GrafikUsiaPendidikan />
+          <MateriPelatihan />
         </Flex>
       </Flex>
     </BasePage>
