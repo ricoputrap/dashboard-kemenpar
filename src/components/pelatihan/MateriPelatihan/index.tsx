@@ -3,6 +3,7 @@ import { Container } from './index.styles'
 import DropdownMateri from './components/DropdownMateri'
 import ChartLine from "../../../assets/lines/chart-line.svg";
 import { Flex, Image, Text } from '@chakra-ui/react';
+import DaftarMateri from './components/DaftarMateri';
 
 const MateriPelatihan: React.FC = () => {
   return (
@@ -15,6 +16,8 @@ const MateriPelatihan: React.FC = () => {
           MATERI PELATIHAN
         </Text>
       </Flex>
+
+      <DaftarMateri />
     </Container>
   )
 }

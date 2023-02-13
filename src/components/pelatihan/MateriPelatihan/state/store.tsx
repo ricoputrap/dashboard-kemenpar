@@ -1,22 +1,28 @@
 import { create } from "zustand";
-import { TMateriState, TMateriActions, TMateriPertahun } from "./index.types";
+import { TMateriState, TMateriActions, TMateriPertahun, TMateriPerJenis } from "./index.types";
 
 const useMateriStore = create<TMateriState & TMateriActions>((set, get) => ({
+  jenisMateri: "pelatihan_a",
   materiPertahun: {},
-  activeMateri: "pelatihan a",
 
-  setMateriPertahun: (data, tahun) => {
+  setJenisMateri: (jenisMateri) => {set({ jenisMateri })},
+  setMateriPertahun: (data, tahun, jenisMateri) => {
     const materiPertahun: TMateriPertahun = get().materiPertahun;
+    const materiSetahunPerJenis: TMateriPerJenis = materiPertahun[tahun];
+    let updatedMateriPertahun: TMateriPertahun = { ...materiPertahun };
 
-    // compute value
-    const updatedValue: TMateriPertahun = {
-      ...materiPertahun,
-      [tahun]: data
+    if (materiSetahunPerJenis) {
+      updatedMateriPertahun[tahun][jenisMateri] = data;
+    }
+    else {
+      updatedMateriPertahun[tahun] = {
+        [jenisMateri]: data
+      }
     }
 
-    set({ materiPertahun: updatedValue })
+    set({ materiPertahun: updatedMateriPertahun })
   },
-  setActiveMateri: (activeMateri) => set({ activeMateri })
+  
 }));
 
 export default useMateriStore;

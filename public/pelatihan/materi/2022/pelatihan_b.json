@@ -1,0 +1,24 @@
+{
+  "data": {
+    "tahun": 2022,
+    "pelatihan": "pelatihan_b",
+    "materi": [
+      {
+        "label": "exploring B",
+        "url": null
+      },
+      {
+        "label": "packaging B",
+        "url": null
+      },
+      {
+        "label": "presentation B",
+        "url": null
+      },
+      {
+        "label": "sustainable tourism B",
+        "url": null
+      }
+    ]
+  }
+}

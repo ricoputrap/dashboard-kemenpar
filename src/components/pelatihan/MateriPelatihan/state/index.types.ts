@@ -3,16 +3,20 @@ export type TMateri = {
   url?: string;
 }
 
+export type TMateriPerJenis = {
+  [jenis: string]: TMateri[];
+}
+
 export type TMateriPertahun = {
-  [tahun: number]: TMateri[];
+  [tahun: number]: TMateriPerJenis;
 }
 
 export type TMateriState = {
+  jenisMateri: string;
   materiPertahun: TMateriPertahun;
-  activeMateri: string;
 }
 
 export type TMateriActions = {
-  setMateriPertahun: (data: TMateri[], tahun: number) => void;
-  setActiveMateri: (activeMateri: string) => void;
+  setJenisMateri: (jenisMateri: string) => void;
+  setMateriPertahun: (data: TMateri[], tahun: number, jenisMateri: string) => void;
 }

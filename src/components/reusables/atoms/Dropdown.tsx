@@ -40,6 +40,7 @@ const Dropdown: React.FC<Props> = ({ options, activeItem, onChange }) => {
         {/* OPTIONS */}
         {!showOptions ? <></> : (
           <Box 
+            zIndex={1000}
             borderRadius="5px"
             background="#EAC170"
             position="absolute"

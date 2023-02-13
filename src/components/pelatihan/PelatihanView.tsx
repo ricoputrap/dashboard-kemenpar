@@ -19,7 +19,7 @@ const PelatihanView: React.FC = () => {
 
     const DOUGHNUT_KPI_WIDTH = 390;
     const PAGE_PADDING_HORIZONTAL = 56 * 2;
-    const GAP = 90;
+    const GAP = 30;
     const deductedWidth = DOUGHNUT_KPI_WIDTH + PAGE_PADDING_HORIZONTAL + GAP;
     const remainingSpace = width - deductedWidth;
 
@@ -33,7 +33,7 @@ const PelatihanView: React.FC = () => {
 
         <Flex
           direction="column"
-          rowGap="12px"
+          rowGap="24px"
           width={`${barChartsWidth}px`}
           marginTop="20px"
         >
