@@ -8,12 +8,12 @@ export const getChartWidth = (width: number): number => {
   }
 
   const DOUGHNUT_KPI_WIDTH = 390;
-    const PAGE_PADDING_HORIZONTAL = 56 * 2;
-    const GAP = 90;
-    const deductedWidth = DOUGHNUT_KPI_WIDTH + PAGE_PADDING_HORIZONTAL + GAP;
-    const remainingSpace = width - deductedWidth;
+  const PAGE_PADDING_HORIZONTAL = 56 * 2;
+  const GAP = 90;
+  const deductedWidth = DOUGHNUT_KPI_WIDTH + PAGE_PADDING_HORIZONTAL + GAP;
+  const remainingSpace = width - deductedWidth;
 
-    return remainingSpace;
+  return remainingSpace;
 }
 
 export const getHalfChartWidth = (width: number): number => {
