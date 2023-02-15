@@ -2,6 +2,7 @@ import React, { useMemo } from 'react'
 import { Container } from './index.styles'
 import Grafik from './components/Grafik'
 import useWindowSize from '../../../hooks/useWindowSize';
+import DropdownPelatihan from './components/DropdownPelatihan';
 
 const GrafikNilai: React.FC = () => {
   const { width } = useWindowSize();
@@ -23,6 +24,7 @@ const GrafikNilai: React.FC = () => {
 
   return (
     <Container>
+      <DropdownPelatihan />
       <Grafik width={ barChartsWidth } />
     </Container>
   )
