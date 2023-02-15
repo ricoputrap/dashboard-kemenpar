@@ -1,0 +1,38 @@
+{
+  "data": {
+    "tahun": 2022,
+    "pelatihan": "pelatihan_a_b",
+    "data": [
+      {
+        "lokasi": "toba",
+        "pre-test": 60.13,
+        "post-test": 69.3
+      },
+      {
+        "lokasi": "byp",
+        "pre-test": 63.895,
+        "post-test": 75.865
+      },
+      {
+        "lokasi": "bts",
+        "pre-test": 64.93,
+        "post-test": 67.63
+      },
+      {
+        "lokasi": "lombok",
+        "pre-test": 0,
+        "post-test": 0
+      },
+      {
+        "lokasi": "l.bajo",
+        "pre-test": 52,
+        "post-test": 63.63
+      },
+      {
+        "lokasi": "wakatobi",
+        "pre-test": 57.15,
+        "post-test": 61.57
+      }
+    ]
+  }
+}

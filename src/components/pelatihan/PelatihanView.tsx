@@ -6,6 +6,7 @@ import StatistikJumlahPeserta from './StatistikJumlahPeserta';
 import GrafikUsiaPendidikan from './GrafikUsiaPendidikan';
 import useWindowSize from '../../hooks/useWindowSize';
 import MateriPelatihan from './MateriPelatihan';
+import GrafikNilai from './GrafikNilai';
 
 const PelatihanView: React.FC = () => {
   useInitData();
@@ -39,6 +40,7 @@ const PelatihanView: React.FC = () => {
         >
           <GrafikUsiaPendidikan />
           <MateriPelatihan />
+          <GrafikNilai />
         </Flex>
       </Flex>
     </BasePage>
