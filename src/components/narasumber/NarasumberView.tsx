@@ -2,6 +2,7 @@ import React from 'react'
 import BasePage from '../templates/BasePage'
 import { Flex, Stack } from '@chakra-ui/react'
 import JumlahNarasumber from './JumlahNarasumber'
+import TopListNarasumber from './TopListNarasumber'
 
 const NarasumberView: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const NarasumberView: React.FC = () => {
       <Flex direction="row" justifyContent="space-between">
         <Stack rowGap="44px" width="390px">
           <JumlahNarasumber />
-          <div>TOP LIST NARASUMBER</div>
+          <TopListNarasumber />
         </Stack>
 
         <Stack>
