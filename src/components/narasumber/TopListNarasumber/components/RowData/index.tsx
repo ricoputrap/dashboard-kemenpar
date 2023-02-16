@@ -20,7 +20,11 @@ const RowData: React.FC<Props> = ({ name, value }) => {
           <Circle
             key={ index }
             size="20px"
-            bg="#EAC170"
+            backgroundImage="linear-gradient(
+              to right,
+              #EAC170 50%,
+              #FFFFFF80 50%
+            )"
           />
         ))}
       </Flex>

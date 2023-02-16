@@ -20,7 +20,7 @@ const Komposisi: React.FC = () => {
         </Text>
       </Flex>
 
-      <Flex gap="12px">
+      <Flex justifyContent="space-between">
         {data.map(item => (
           <BoxKomposisi
             key={ item.name }

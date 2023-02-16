@@ -4,7 +4,7 @@ import { ColumnData, ColumnHeader } from './index.styles'
 
 const DataTable: React.FC = () => {
   return (
-    <TableContainer overflowY="scroll" height="307px">
+    <TableContainer overflowY="scroll" maxHeight="307px">
       <Table variant="simple">
         <Thead position="sticky" top={0}>
           <Tr>
@@ -47,6 +47,20 @@ const DataTable: React.FC = () => {
           </Tr>
           <Tr>
             <ColumnData>3.</ColumnData>
+            <ColumnData>Husein Hutagalung</ColumnData>
+            <ColumnData>Univ. Trisakti</ColumnData>
+            <ColumnData>Jakarta</ColumnData>
+            <ColumnData>
+              <Stack>
+                <Text>CHSE</Text>
+                <Text>Sapta Pesona</Text>
+                <Text>Pelayanan Prima</Text>
+                <Text>Manajemen Konflik</Text>
+              </Stack>
+            </ColumnData>
+          </Tr>
+          <Tr>
+            <ColumnData>4.</ColumnData>
             <ColumnData>Husein Hutagalung</ColumnData>
             <ColumnData>Univ. Trisakti</ColumnData>
             <ColumnData>Jakarta</ColumnData>
