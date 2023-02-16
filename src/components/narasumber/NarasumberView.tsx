@@ -4,6 +4,7 @@ import { Flex, Stack } from '@chakra-ui/react'
 import JumlahNarasumber from './JumlahNarasumber'
 import TopListNarasumber from './TopListNarasumber'
 import Komposisi from './Komposisi'
+import DataTable from './DataTable'
 
 const NarasumberView: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const NarasumberView: React.FC = () => {
 
         <Stack>
           <Komposisi />
-          <div>data narasumber</div>
+          <DataTable />
         </Stack>
       </Flex>
     </BasePage>
