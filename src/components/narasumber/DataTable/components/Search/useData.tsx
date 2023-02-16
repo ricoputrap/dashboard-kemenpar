@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import useDataTableStore from '../../state/store';
 
 interface ReturnValue {
   searchValue: string;
@@ -6,7 +6,8 @@ interface ReturnValue {
 }
 
 const useData = (): ReturnValue => {
-  const [searchValue, setSearchValue] = useState<string>("");
+  const searchValue = useDataTableStore(state => state.searchValue);
+  const setSearchValue = useDataTableStore(state => state.setSearchValue);
 
   const handleChange = (value: string) => {
     setSearchValue(value);
