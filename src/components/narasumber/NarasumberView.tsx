@@ -3,7 +3,7 @@ import BasePage from '../templates/BasePage'
 import { Flex, Stack } from '@chakra-ui/react'
 import StatistikTotal from './components/StatistikTotal'
 import TopListNarasumber from './TopListNarasumber'
-import Komposisi from './Komposisi'
+import Komposisi from './components/Komposisi'
 import Details from './Details'
 import useInitData from './hooks/useInitData'
 
@@ -28,7 +28,7 @@ const NarasumberView: React.FC = () => {
           <TopListNarasumber />
         </Stack>
 
-        <Stack>
+        <Stack rowGap="20px">
           <Komposisi />
           <Details />
         </Stack>

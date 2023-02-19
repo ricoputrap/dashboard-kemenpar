@@ -1,16 +1,14 @@
 import { Flex, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
-import BoxKomposisi from './components/BoxKomposisi'
-import ChartLine from "../../../assets/lines/chart-line.svg"
+import BoxKomposisi from './BoxKomposisi'
+import ChartLine from "../../../../assets/lines/chart-line.svg"
+import useData from './useData'
+import { TKomposisiItem } from '../../state/index.types'
 
-const data: any[] = [
-  { name: "AKADEMISI", value: 43 },
-  { name: "PRAKTISI", value: 23 },
-  { name: "KOMUNITAS", value: 2 },
-  { name: "ASOSIASI", value: 2 }
-]
 
 const Komposisi: React.FC = () => {
+  const data: TKomposisiItem[] = useData();
+  
   return (
     <Stack rowGap="20px">
       <Flex columnGap="16px">

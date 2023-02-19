@@ -3,6 +3,12 @@
     "total": {
       "totalLaki": 40,
       "totalPerempuan": 30
-    }
+    },
+    "komposisi": [
+      { "name": "akademisi", "value": 43 },
+      { "name": "praktisi", "value": 23 },
+      { "name": "komunitas", "value": 2 },
+      { "name": "asosiasi", "value": 2 }
+    ]
   }
 }

@@ -23,6 +23,7 @@ const BoxKomposisi: React.FC<Props> = ({ name, value }) => {
           lineHeight="15px"
           width="122px"
           textAlign="center"
+          textTransform="uppercase"
         >
           { name }
         </Text>
