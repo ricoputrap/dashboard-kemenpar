@@ -4,6 +4,7 @@ import { TKPIData } from '../types/home.type';
 import { pendampinganStatistik, pendampinganLaporan } from './pendampingan';
 import sosialisasi from './sosialisasi';
 import pelatihan from './pelatihan';
+import narasumber from './narasumber';
 
 export const fetcher = (url: string, token: string = "") => {
   const config: AxiosRequestConfig<any> = { responseType: "json" }
@@ -32,6 +33,7 @@ export default {
   home,
   sosialisasi,
   pelatihan,
+  narasumber,
   
   pendampinganStatistik,
   pendampinganLaporan

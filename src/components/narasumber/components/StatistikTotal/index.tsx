@@ -1,8 +1,8 @@
 import React from 'react'
 import useData from './useData'
-import DoughnutChartPeserta from '../../reusables/organisms/DoughnutChartPeserta';
+import DoughnutChartPeserta from '../../../reusables/organisms/DoughnutChartPeserta';
 
-const JumlahNarasumber: React.FC = () => {
+const StatistikTotal: React.FC = () => {
   const { menData, womenData } = useData();
 
   return (
@@ -14,4 +14,4 @@ const JumlahNarasumber: React.FC = () => {
   )
 }
 
-export default JumlahNarasumber
+export default StatistikTotal
