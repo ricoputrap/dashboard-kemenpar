@@ -17,10 +17,13 @@ export type TState = {
   jumlahTotal: TJumlahTotal;
   komposisi: TKomposisiItem[];
   topList: TTopNarasumber[];
+
+  searchValue: string;
 }
 
 export type TActions = {
   setJumlahTotal: (totalLaki: number, totalPerempuan: number) => void;
   setKomposisi: (komposisi: TKomposisiItem[]) => void;
   setTopList: (topList: TTopNarasumber[]) => void;
+  setSearchValue: (searchValue: string) => void;
 }

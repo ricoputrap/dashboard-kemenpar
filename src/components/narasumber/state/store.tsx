@@ -8,12 +8,16 @@ const useNarasumberStore = create<TState & TActions>(set => ({
   },
   komposisi: [],
   topList: [],
+  searchValue: "",
 
   setJumlahTotal: (totalLaki, totalPerempuan) => set({
     jumlahTotal: { totalLaki, totalPerempuan }
   }),
   setKomposisi: (komposisi) => set({ komposisi }),
-  setTopList: (topList) => set({ topList })
+  setTopList: (topList) => set({ topList }),
+  setSearchValue: (searchValue) => {
+    set({ searchValue })
+  }
 }));
 
 export default useNarasumberStore;
