@@ -1,10 +1,11 @@
 import useSWR from "swr";
 import { fetcher } from "..";
-import { TJumlahTotal, TKomposisiItem } from "../../components/narasumber/state/index.types";
+import { TJumlahTotal, TKomposisiItem, TTopNarasumber } from "../../components/narasumber/state/index.types";
 
 export type TJumlahData = {
   total: TJumlahTotal;
   komposisi: TKomposisiItem[];
+  topList: TTopNarasumber[];
 }
 
 export type TJumlahResponse = {

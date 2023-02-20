@@ -1,17 +1,13 @@
 import React from 'react'
-import ChartLine from "../../../assets/lines/chart-line.svg"
+import ChartLine from "../../../../assets/lines/chart-line.svg"
 import { Image, Stack, Text } from '@chakra-ui/react'
-import RowData from './components/RowData'
-
-const data: any[] = [
-  { name: "Nasrullah", value: 4.5 },
-  { name: "Rusmin", value: 3 },
-  { name: "Sri Susanti", value: 2.9 },
-  { name: "Budi Setiawan", value: 2.5 },
-  { name: "Udi Hartoko", value: 2 }
-]
+import RowData from './RowData'
+import useData from './useData'
+import { TTopNarasumber } from '../../state/index.types'
 
 const TopListNarasumber: React.FC = () => {
+  const data: TTopNarasumber[] = useData();
+
   return (
     <Stack rowGap="16px">
       <Image src={ ChartLine } />

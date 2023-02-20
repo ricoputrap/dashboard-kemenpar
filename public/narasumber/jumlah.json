@@ -9,6 +9,13 @@
       { "name": "praktisi", "value": 23 },
       { "name": "komunitas", "value": 2 },
       { "name": "asosiasi", "value": 2 }
+    ],
+    "topList": [
+      { "name": "Nasrullah", "value": 4.5 },
+      { "name": "Rusmin", "value": 3 },
+      { "name": "Sri Susanti", "value": 2.9 },
+      { "name": "Budi Setiawan", "value": 2.5 },
+      { "name": "Udi Hartoko", "value": 2 }
     ]
   }
 }
