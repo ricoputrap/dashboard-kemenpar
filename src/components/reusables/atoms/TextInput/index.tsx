@@ -7,15 +7,28 @@ interface Props {
   value: string | number;
   handleChange: (value: string) => void;
   isPassword?: boolean;
+  handleSubmit?: () => void;
 }
 
-const TextInput: React.FC<Props> = ({ label, value, handleChange, isPassword }) => {
+const TextInput: React.FC<Props> = ({
+  label,
+  value,
+  handleChange,
+  isPassword,
+  handleSubmit = () => {}
+}) => {
   const type: React.HTMLInputTypeAttribute = isPassword ? "password" : "text";
   
   const onChange = (e: React.FormEvent<HTMLInputElement>) => {
     const newValue: string = e.currentTarget.value;
     handleChange(newValue);
   }
+
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (event.key === "Enter") {
+      handleSubmit();
+    }
+  };
 
   return (
     <Container>
@@ -26,6 +39,7 @@ const TextInput: React.FC<Props> = ({ label, value, handleChange, isPassword }) 
           type={ type }
           value={ value }
           onChange={ onChange }
+          onKeyDown={ handleKeyDown }
         />
       </BoxInput>
     </Container>
