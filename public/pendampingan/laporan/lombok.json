@@ -3,9 +3,10 @@
     "dpp": "lombok",
     "data": [
       {
+        "area": "lombok",
+        "kec": "Batu Layar",
+        "kab": "Lombok Barat",
         "desa": "Pusuk Lestari",
-        "kec": "Batu Layar",
-        "kab": "Lombok Barat",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -14,9 +15,10 @@
         "laporan_5": null
       },
       {
+        "area": "lombok",
+        "kec": "Batu Layar",
+        "kab": "Lombok Barat",
         "desa": "Senteluk",
-        "kec": "Batu Layar",
-        "kab": "Lombok Barat",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -25,9 +27,10 @@
         "laporan_5": null
       },
       {
+        "area": "lombok",
+        "kec": "Sekotong",
+        "kab": "Lombok Barat",
         "desa": "Gili Gede Indah",
-        "kec": "Sekotong",
-        "kab": "Lombok Barat",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -36,9 +39,10 @@
         "laporan_5": null
       },
       {
+        "area": "lombok",
+        "kec": "Sekotong",
+        "kab": "Lombok Barat",
         "desa": "Sekotong Barat",
-        "kec": "Sekotong",
-        "kab": "Lombok Barat",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -47,9 +51,10 @@
         "laporan_5": null
       },
       {
+        "area": "lombok",
+        "kec": "Sekotong",
+        "kab": "Lombok Barat",
         "desa": "Buwun Mas",
-        "kec": "Sekotong",
-        "kab": "Lombok Barat",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -58,9 +63,10 @@
         "laporan_5": null
       },
       {
+        "area": "lombok",
+        "kec": "Pujut",
+        "kab": "Lombok Tengah",
         "desa": "Kuta",
-        "kec": "Pujut",
-        "kab": "Lombok Tengah",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -69,9 +75,10 @@
         "laporan_5": null
       },
       {
+        "area": "lombok",
+        "kec": "Pujut",
+        "kab": "Lombok Tengah",
         "desa": "Rembitan",
-        "kec": "Pujut",
-        "kab": "Lombok Tengah",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -80,9 +87,10 @@
         "laporan_5": null
       },
       {
-        "desa": "Selong Belanak",
+        "area": "lombok",
         "kec": "Praya Barat",
         "kab": "Lombok Tengah",
+        "desa": "Selong Belanak",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -91,9 +99,10 @@
         "laporan_5": null
       },
       {
-        "desa": "Gili Indah",
+        "area": "lombok",
         "kec": "Pemenang",
         "kab": "Lombok Utara",
+        "desa": "Gili Indah",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -102,9 +111,10 @@
         "laporan_5": null
       },
       {
-        "desa": "Medana",
+        "area": "lombok",
         "kec": "Tanjung",
         "kab": "Lombok Utara",
+        "desa": "Medana",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -113,9 +123,10 @@
         "laporan_5": null
       },
       {
-        "desa": "Jerowaru",
+        "area": "lombok",
         "kec": "Jerowaru",
-        "kab": "Lombok Timur",
+        "kab": "Lombok Utara",
+        "desa": "Jerowaru",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,

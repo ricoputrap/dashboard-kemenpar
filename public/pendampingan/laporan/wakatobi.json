@@ -3,9 +3,10 @@
     "dpp": "wakatobi",
     "data": [
       {
-        "desa": "Liya Togo",
+        "area": "wakatobi",
         "kec": "Wangi - Wangi",
         "kab": "Wakatobi",
+        "desa": "Liya Togo",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -14,9 +15,10 @@
         "laporan_5": null
       },
       {
+        "area": "wakatobi",
+        "kec": "Kaledupa",
+        "kab": "Wakatobi",
         "desa": "Pajam",
-        "kec": "Kaledupa",
-        "kab": "Wakatobi",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -25,9 +27,10 @@
         "laporan_5": null
       },
       {
+        "area": "wakatobi",
+        "kec": "Kaledupa",
+        "kab": "Wakatobi",
         "desa": "Tanomeha",
-        "kec": "Kaledupa",
-        "kab": "Wakatobi",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
@@ -36,9 +39,10 @@
         "laporan_5": null
       },
       {
-        "desa": "Kulati",
+        "area": "wakatobi",
         "kec": "Tomia Timur",
         "kab": "Wakatobi",
+        "desa": "Kulati",
         "urlProposal": null,
         "laporan_1": null,
         "laporan_2": null,
