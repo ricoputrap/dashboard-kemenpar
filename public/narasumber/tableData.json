@@ -1,0 +1,369 @@
+{
+  "data": [
+    {
+      "nama": "I Ketut Suabawa",
+      "institusi": "Asosiasi (DPP AHLI)",
+      "domisili": "Denpasar"
+    },
+    {
+      "nama": "Mohamad Husen Hutagalung",
+      "institusi": "STP Trisakti, Founder Indonesia Berkarakter Foundation dan Owner Studiwisata Educational Tour",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Udi Hartoko, S.M",
+      "institusi": "Pemerintah Desa Wisata Pujon Kidul ",
+      "domisili": "Malang"
+    },
+    {
+      "nama": "Dr. Ir. Eni Sumiarsih, MSc",
+      "institusi": "Sekolah Tinggi Pariwisata (STP) RIAU",
+      "domisili": "Riau"
+    },
+    {
+      "nama": "Nasrullah",
+      "institusi": "Universitas Fajar (Unifa)",
+      "domisili": "Makassar"
+    },
+    {
+      "nama": "Dr. Diana Simanjuntak, M.Si",
+      "institusi": "STIEPAR YAPARI, Bandung",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Dr. Sri Susanty, SST.Par, M.Par",
+      "institusi": "Sekolah Tinggi Pariwisata Mataram",
+      "domisili": "Lombok"
+    },
+    {
+      "nama": "Mira Maulani Utami,SE,MM",
+      "institusi": "Untirta",
+      "domisili": "Tangerang"
+    },
+    {
+      "nama": "Rusmin Nuryadin, A.Md.Par, SE, M.Si",
+      "institusi": "Sekolah Tinggi Pariwisata Tamalatea Makassar",
+      "domisili": "Makassar"
+    },
+    {
+      "nama": "Dinar Sukma Pramesti ST, MT",
+      "institusi": "Politeknik Internasional Bali (PIB)",
+      "domisili": "Denpasar"
+    },
+    {
+      "nama": "I Ketut Sutrawan Selamet, A.ma",
+      "institusi": "Ode Resto & Guest House ",
+      "domisili": "Bali"
+    },
+    {
+      "nama": "Budi Setiawan",
+      "institusi": "Pradita University",
+      "domisili": "Tangerang Selatan"
+    },
+    {
+      "nama": "Poernomo HM Anshori, SE. MM",
+      "institusi": "Lembaga Desa Wisata Gubugklakah",
+      "domisili": "Malang"
+    },
+    {
+      "nama": "Sugeng Handoko, S.T",
+      "institusi": "Griya Cokelat Nglanggeran",
+      "domisili": "Yogyakarta"
+    },
+    {
+      "nama": "Kusmayadi",
+      "institusi": "Politeknik Sahid",
+      "domisili": "Tangerang"
+    },
+    {
+      "nama": "Prof. Dr. Diena Mutiara Lemy, A.Par., M.M., CHE",
+      "institusi": "Universitas Pelita Harapan",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Dr. Rahmat Darmawan, SS., M.Hum",
+      "institusi": "Politeknik Pariwisata Medan",
+      "domisili": "Medan"
+    },
+    {
+      "nama": "Dra. Margaretha Wadid Rante, M.Si",
+      "institusi": "Poltekpar Makassar",
+      "domisili": "makasar"
+    },
+    {
+      "nama": "Tatak Sariawan",
+      "institusi": "Dinas Pertanian Provinsi Jawa Tengah",
+      "domisili": "Magelang"
+    },
+    {
+      "nama": "Rokhmadu Inuhayi, SE",
+      "institusi": "Desa Wisata Banjaroya",
+      "domisili": "Kulonprogo"
+    },
+    {
+      "nama": "Fitri Utami Ningrum",
+      "institusi": "Pesona Desa Nusantara",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Reza Permadi",
+      "institusi": "PT. Atourin Teknologi Nusantara",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Alma Tegar Rahman Nasution,ST.MP Par",
+      "institusi": "Forum Komunitas Kreatif",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Eska Nia Sarinastiti, S.I.Kom., M.A., CPR., CHE",
+      "institusi": "Bisnis Perjalanan Wisata, Sekolah Vokasi, UGM",
+      "domisili": "Yogyakarta"
+    },
+    {
+      "nama": "Vitha Octavanny, MM. Par",
+      "institusi": "LSPR institute of communication and business",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Febriana ST., MP.Par",
+      "institusi": "Universitas Persatuan Islam",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Muhamad Rury Dermawan",
+      "institusi": "Pesona Desa Nusantara",
+      "domisili": "Bekasi"
+    },
+    {
+      "nama": "Galuh Alif Fahmi Rizki",
+      "institusi": "Desa Wisata Tinalah",
+      "domisili": "Kulonprogo"
+    },
+    {
+      "nama": "Hanugerah Kristiono Liestiandre",
+      "institusi": "Poltekpar Bali",
+      "domisili": "BALI"
+    },
+    {
+      "nama": "Dr. Windra Aini, SE, MM, CHE",
+      "institusi": "Politeknik Pariwisata Makassar",
+      "domisili": "Makassar"
+    },
+    {
+      "nama": "Riza Firmansyah",
+      "institusi": "Universitas Pancasila",
+      "domisili": "Bogor"
+    },
+    {
+      "nama": "Dani Rahadian M",
+      "institusi": "Binus",
+      "domisili": "Samosir"
+    },
+    {
+      "nama": "Titing Kartika, S.Pd., MM., MBA.Tourism",
+      "institusi": "STIEPAR YAPARI BANDUNG ",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Djoni Sofyan Iskandar",
+      "institusi": "Sekolah Tinggi Pariwisata ( STP ) Bandung",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Amelda Pramezwary",
+      "institusi": "Universitas Pelita Harapan (UPH)",
+      "domisili": "Tangerang"
+    },
+    {
+      "nama": "Sugeng Untung",
+      "institusi": "TASHMIIM",
+      "domisili": "Bekasi"
+    },
+    {
+      "nama": "Robiatul Adawiyah, S.ST.Par., M.Par",
+      "institusi": "Sekolah Tinggi Pariwisata Trisakti",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Tri Wahyuningsih, SE., MM",
+      "institusi": "Akpar Mandala Bhakti Surakarta",
+      "domisili": "Surakarta "
+    },
+    {
+      "nama": "Anak Agung Ngurah Sedana Putra, M.Par",
+      "institusi": "Politeknik Pariwisata Lombok",
+      "domisili": "Denpasar"
+    },
+    {
+      "nama": "Esxi Martia Gusma, S.ST.Par., M.Si., CHE., CEP., CEM., CEE",
+      "institusi": "Politeknik Pariwisata Palembang",
+      "domisili": " Palembang "
+    },
+    {
+      "nama": "Nawawi Halik, S.Kom, CHA, CHIA",
+      "institusi": "Lor In Hotels",
+      "domisili": "Batam"
+    },
+    {
+      "nama": "Akhmad Roji, SE",
+      "institusi": "Lembaga Pemerhati Pariwisata Daerah",
+      "domisili": "Lombok Timur"
+    },
+    {
+      "nama": "Ayu Nurwitasari, S.AP., MM.Par",
+      "institusi": "STP NHI Bandung",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Firman Koma Febdilan, S.Pd., MM.Par",
+      "institusi": "Politeknik Pariwisata Lombok",
+      "domisili": "Lombok"
+    },
+    {
+      "nama": "Dr (C). Ahmad Faidlal Rahman, SE.Par., M.Sc.",
+      "institusi": "Fakultas Pendidikan Vokasi Universitas Brawijaya",
+      "domisili": "Malang"
+    },
+    {
+      "nama": "Raymond Manogar Simandjuntak",
+      "institusi": "Profesional Designer",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Ratih Mahardika, S.T, M.Ds",
+      "institusi": "Universitas Trilogi",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Lalitya Dwi Rachmani, S.Pd",
+      "institusi": "Kelayang",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Dr. Retno Dewanti, S.Si, MM, Ph.D",
+      "institusi": "Binus University",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Wawan Dhewanto",
+      "institusi": "Sekolah Bisnis dan Manajemen Institut Teknologi Bandung",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Idris Gautama",
+      "institusi": "",
+      "domisili": ""
+    },
+    {
+      "nama": "Benarivo Triadi Putra",
+      "institusi": "PT Atourin Teknologi Nusantara",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Setyowati Ayu Widuri, SE., M.Par",
+      "institusi": "Politeknik Pariwisata Bali",
+      "domisili": "Bali"
+    },
+    {
+      "nama": "Rosaline Tandiono",
+      "institusi": "Binus University",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Joko Winarno, S.Pt",
+      "institusi": "Sumber Umbul Ponggok",
+      "domisili": "Klaten"
+    },
+    {
+      "nama": "Hannif Andy Al Anshori",
+      "institusi": "Desa Wisata Institute",
+      "domisili": "Sleman, Yogyakarta"
+    },
+    {
+      "nama": "Chandra Kartika",
+      "institusi": "",
+      "domisili": ""
+    },
+    {
+      "nama": "Dr. Syarifinnur, SP., M.Si",
+      "institusi": "Yayasan Pemberdayaan Pemuda Pelajar Kota Mataram",
+      "domisili": "Lombok"
+    },
+    {
+      "nama": "Didi Leonardo Manaba",
+      "institusi": "Politeknik Pariwisata Negeri Makassar",
+      "domisili": "Makassar"
+    },
+    {
+      "nama": "Esti Dwi Gandini, S.PSi",
+      "institusi": "Ok Oce Indonesia ",
+      "domisili": "Jakarta"
+    },
+    {
+      "nama": "Muhammad Fikri Maulana, S.Ab, MBA",
+      "institusi": "Universitas Pasundan",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Quratul Ain",
+      "institusi": "Akselerasi Indonesia Digital",
+      "domisili": "Palangka Raya"
+    },
+    {
+      "nama": "I Wayan Adi Pratama, S.Tr.Par, M.Par",
+      "institusi": "Politeknik Internasional Bali",
+      "domisili": "Bali"
+    },
+    {
+      "nama": "Ilma Indriasri Pratiwi",
+      "institusi": "Universitas Pendidikan Indonesia",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Restio Rahadyan Megawiranto Putro",
+      "institusi": "PT Midsolin Sukses",
+      "domisili": "Tangerang Selatan"
+    },
+    {
+      "nama": "Nadia Rizky Vindiazhari",
+      "institusi": "Akademi Sekretari Manajemen Taruna Bakti, Bandung",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Dany Laksana",
+      "institusi": "Wiranesia",
+      "domisili": "Depok"
+    },
+    {
+      "nama": "Dr. Donni Juni Priansa, S.Pd. S.E. MM. MAP.",
+      "institusi": "Universitas Telkom",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Dr. Eko Sakapurnama, S.PSi., MBA., CHRM",
+      "institusi": "Universitas Indonesia",
+      "domisili": "Depok"
+    },
+    {
+      "nama": "Reni Fitriani, CBC, QWP, CPMM, CMFC",
+      "institusi": "SuperKey Consulting Group ",
+      "domisili": "Bekasi"
+    },
+    {
+      "nama": "Dr. Amirosa Riasatiadji SE, MM, CHE, CEE, CIQnR",
+      "institusi": "Politeknik Pariwisata Bali & Lombok",
+      "domisili": "Bali"
+    },
+    {
+      "nama": "Vyana Lohjiwa S.Par",
+      "institusi": "Politeknik Pariwisata NHI Bandung",
+      "domisili": "Bandung"
+    },
+    {
+      "nama": "Dr. Chandra Kartika, SE.,MM",
+      "institusi": "",
+      "domisili": "Surabaya"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import useNarasumberStore from '../../../state/store';
+import useNarasumberStore from '../../../../state/store';
 
 interface ReturnValue {
   searchValue: string;

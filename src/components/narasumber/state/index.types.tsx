@@ -13,12 +13,21 @@ export type TTopNarasumber = {
   value: number;
 }
 
+export type TRowData = {
+  no: number;
+  nama: string;
+  institusi: string;
+  domisili: string;
+  materi: string[];
+}
+
 export type TState = {
   jumlahTotal: TJumlahTotal;
   komposisi: TKomposisiItem[];
   topList: TTopNarasumber[];
 
   searchValue: string;
+  tableData: TRowData[];
 }
 
 export type TActions = {
@@ -26,4 +35,5 @@ export type TActions = {
   setKomposisi: (komposisi: TKomposisiItem[]) => void;
   setTopList: (topList: TTopNarasumber[]) => void;
   setSearchValue: (searchValue: string) => void;
-}
+  setTableData: (tableData: TRowData[]) => void;
+ }

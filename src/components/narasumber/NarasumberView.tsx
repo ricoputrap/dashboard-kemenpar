@@ -4,7 +4,7 @@ import { Flex, Stack } from '@chakra-ui/react'
 import StatistikTotal from './components/StatistikTotal'
 import TopListNarasumber from './components/TopListNarasumber'
 import Komposisi from './components/Komposisi'
-import Details from './Details'
+import Details from './components/Details'
 import useInitData from './hooks/useInitData'
 
 const NarasumberView: React.FC = () => {
