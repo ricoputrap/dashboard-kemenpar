@@ -14,7 +14,6 @@ export type TTopNarasumber = {
 }
 
 export type TRowData = {
-  no: number;
   nama: string;
   institusi: string;
   domisili: string;

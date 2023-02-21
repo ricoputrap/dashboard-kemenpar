@@ -7,39 +7,45 @@ const DataTable: React.FC = () => {
   const data = useData();
   
   return (
-    <TableContainer overflowY="scroll" maxHeight="307px" whiteSpace="break-spaces">
+    <TableContainer
+      overflowY="scroll"
+      maxHeight="307px"
+      whiteSpace="break-spaces"
+    >
       <Table variant="simple">
         <Thead position="sticky" top={0}>
           <Tr>
-            <ColumnHeader width="50px" paddingX="20px">
+            <ColumnHeader width="5%" paddingX="15px">
               No
             </ColumnHeader>
-            <ColumnHeader>Nama</ColumnHeader>
-            <ColumnHeader>Institusi</ColumnHeader>
-            <ColumnHeader width="100px" paddingX="20px">
+            <ColumnHeader width="25%">Nama</ColumnHeader>
+            <ColumnHeader width="25%">Institusi</ColumnHeader>
+            <ColumnHeader width="20%" paddingX="20px">
               Domisili
             </ColumnHeader>
-            <ColumnHeader width="250px">Materi Ajar</ColumnHeader>
+            <ColumnHeader width="25%">Materi Ajar</ColumnHeader>
           </Tr>
         </Thead>
 
         <Tbody>
-          {data.map(rowData => (
-            <Tr key={ rowData.no }>
-              <ColumnData width="50px" paddingX="20px">
-                { rowData.no }.
+          {data.map((rowData, index) => (
+            <Tr key={ index + 1 }>
+              <ColumnData width="5%" paddingX="15px">
+                { index + 1 }.
               </ColumnData>
-              <ColumnData>{ rowData.nama }</ColumnData>
-              <ColumnData>
+              <ColumnData width="25%">
+              { rowData.nama }
+              </ColumnData>
+              <ColumnData width="25%">
                 <Text>
                   { rowData.institusi }
                 </Text>
               </ColumnData>
-              <ColumnData width="100px" paddingX="20px">
+              <ColumnData>
                 { rowData.domisili }
               </ColumnData>
 
-              <ColumnData width="250px">
+              <ColumnData width="25%">
                 <Stack>
                   {rowData.materi.map((item, index) => (
                     <Text key={ index }>

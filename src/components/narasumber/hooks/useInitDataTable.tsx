@@ -19,7 +19,6 @@ const useInitDataTable = (): ReturnValue => {
 
     const rows: TResponseRow[] = data.data;
     const computedData: TRowData[] = rows.map((row, index) => ({
-      no: index + 1,
       nama: row.nama,
       institusi: row.institusi,
       domisili: row.domisili,
