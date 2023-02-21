@@ -51,7 +51,6 @@ const Sosialisasi: React.FC = () => {
           direction="column"
           rowGap="12px"
           width={`${barChartsWidth}px`}
-          marginTop="20px"
         >
           <FilterTahun />
           <Flex direction="column" rowGap="40px">

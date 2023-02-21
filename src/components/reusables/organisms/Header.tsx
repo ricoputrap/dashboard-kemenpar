@@ -1,23 +1,16 @@
 import { Box, Flex, Heading, Image } from '@chakra-ui/react'
-import React, { useMemo } from 'react'
+import React from 'react'
 import HeaderLogos from '../molecules/HeaderLogos'
 import Navbar from '../molecules/Navbar'
 import headerLine from "../../../assets/lines/header-line.svg";
-import useWindowSize from '../../../hooks/useWindowSize';
 
 const Header: React.FC = () => {
-  const { width } = useWindowSize();
-  const headerHeight = useMemo(() => {
-    if (width >= 1336) return "190px";
-    return 0;
-  }, [width]);
-
   return (
     <Box>
       <Box
         width="100vw"
         position="absolute"
-        height={ headerHeight }
+        top="72px"
       >
         <Image
           src={ headerLine }

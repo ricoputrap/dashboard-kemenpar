@@ -1,12 +1,5 @@
 import React from 'react'
-import BasePage from '../components/templates/BasePage';
+import withAuth from '../hoc/withAuth';
+import ProfileView from '../components/profile/ProfileView';
 
-const Profile: React.FC = () => {
-  return (
-    <BasePage id="page-profile">
-      <h1>PROFILE</h1>
-    </BasePage>
-  )
-}
-
-export default Profile;
+export default withAuth(ProfileView)
