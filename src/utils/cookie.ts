@@ -28,3 +28,7 @@ export const setCookie = (key: string, value: string, numberOfDays: number = 0) 
 
   document.cookie = newCookie;
 }
+
+export const deleteCookie = (key: string) => {
+  document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+}
