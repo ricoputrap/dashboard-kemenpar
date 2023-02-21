@@ -11,15 +11,15 @@ interface Props {
 const LaporanItem: React.FC<Props> = ({ nomor, url = "" }) => {
     const isDefined: boolean = useMemo(() => !!url, [url]);
     const title: string = useMemo(() => `LAPORAN ${nomor}`, [nomor]);
-    const target: React.HTMLAttributeAnchorTarget = useMemo(() => {
-      if (url !== "#")
-        return "_blank";
-      return "_self";
-    }, [url]);
+    // const target: React.HTMLAttributeAnchorTarget = useMemo(() => {
+    //   if (url !== "#")
+    //     return "_blank";
+    //   return "_self";
+    // }, [url]);
 
   return (
     <LinkBox>
-      <LinkOverlay href={ url } target={ target }>
+      <LinkOverlay href={ url } target="_self">
         <Card isDefined={ isDefined }>
           <Label>
             { title }
