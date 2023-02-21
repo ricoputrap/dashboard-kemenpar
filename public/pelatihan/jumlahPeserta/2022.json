@@ -6,43 +6,43 @@
         "lokasi": "toba",
         "target": 270,
         "realisasi": 270,
-        "laki": 968,
-        "perempuan": 792
+        "laki": 499,
+        "perempuan": 311
       },
       {
         "lokasi": "byp",
         "target": 300,
         "realisasi": 300,
-        "laki": 1226,
-        "perempuan": 745
+        "laki": 571,
+        "perempuan": 329
       },
       {
         "lokasi": "bts",
         "target": 135,
         "realisasi": 135,
-        "laki": 590,
-        "perempuan": 284
+        "laki": 236,
+        "perempuan": 98
       },
       {
         "lokasi": "lombok",
         "target": 165,
         "realisasi": 165,
-        "laki": 789,
-        "perempuan": 311
+        "laki": 391,
+        "perempuan": 104
       },
       {
         "lokasi": "l. bajo",
         "target": 45,
         "realisasi": 45,
-        "laki": 235,
-        "perempuan": 65
+        "laki": 95,
+        "perempuan": 39
       },
       {
         "lokasi": "wakatobi",
         "target": 60,
         "realisasi": 60,
-        "laki": 179,
-        "perempuan": 221
+        "laki": 78,
+        "perempuan": 102
       }
     ]
   }
