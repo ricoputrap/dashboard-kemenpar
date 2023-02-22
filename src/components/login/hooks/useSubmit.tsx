@@ -24,7 +24,7 @@ const useSubmit = () => {
         const token: string = res.data.token;
         setCookie("token", token);
         setIsLoading(false);
-        navigate("/");
+        location.replace("/")
       })
       .catch(err => {
         alert("LOGIN ERROR");
