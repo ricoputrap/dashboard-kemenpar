@@ -8,7 +8,7 @@ const Form: React.FC = () => {
   const password = useLoginStore(state => state.password);
   const setUsername = useLoginStore(state => state.setUsername);
   const setPassword = useLoginStore(state => state.setPassword);
-  const handleSubmit = useSubmit();
+  const { handleSubmit } = useSubmit();
 
   return (
     <>

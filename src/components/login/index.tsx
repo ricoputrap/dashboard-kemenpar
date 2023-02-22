@@ -4,9 +4,10 @@ import Form from './components/Form';
 import { Flex, Link } from '@chakra-ui/react';
 import RememberMe from './components/RememberMe';
 import useSubmit from './hooks/useSubmit';
+import LoadingOverlay from '../reusables/atoms/LoadingOverlay';
 
 const LoginForm = () => {
-  const handleSubmit = useSubmit();
+  const { handleSubmit, isLoading } = useSubmit();
 
   return (
     <BaseContainer>
@@ -27,9 +28,15 @@ const LoginForm = () => {
           </Link>
         </Flex>
         
-        <LoginButton onClick={ handleSubmit }>
+        <LoginButton
+          onClick={ handleSubmit }
+        >
           Login
         </LoginButton>
+
+        {!!isLoading && (
+          <LoadingOverlay isOpen={ isLoading } />
+        )}
       </MainContainer>
     </BaseContainer>
   )
