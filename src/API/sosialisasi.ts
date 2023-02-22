@@ -15,7 +15,7 @@ export type TStatistikResponse = {
 }
 
 const statistik = (tahun: number) => {
-  const source: string = `sosialisasi/jumlahPeserta/${tahun}.json`;
+  const source: string = `data/sosialisasi/jumlahPeserta/${tahun}.json`;
   const { data, error, isLoading } = useSWR<TStatistikResponse>(source, fetcher);
   return { data, error, isLoading }
 }

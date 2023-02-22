@@ -20,7 +20,7 @@ const usiaPendidikan = (tahun: number, lokasi: string) => {
   if (lokasi == "l.bajo")
     dpp = "labuan_bajo";
 
-  const source = `sosialisasi/usiaPendidikan/${tahun}/${dpp}.json`;
+  const source = `data/sosialisasi/usiaPendidikan/${tahun}/${dpp}.json`;
 
   const { data, error, isLoading } = useSWR<TUsiaPendidikanResponse>(source, fetcher);
   return { data, error, isLoading };

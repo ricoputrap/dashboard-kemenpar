@@ -19,7 +19,7 @@ export type TNilaiResponse = {
 }
 
 const nilai = (tahun: number, jenisPelatihan: TJenisPelatihan) => {
-  const source: string = `pelatihan/nilai/${tahun}/${jenisPelatihan}.json`;
+  const source: string = `data/pelatihan/nilai/${tahun}/${jenisPelatihan}.json`;
   const { data, error, isLoading } = useSWR<TNilaiResponse>(source, fetcher);
   return { data, error, isLoading };
 }

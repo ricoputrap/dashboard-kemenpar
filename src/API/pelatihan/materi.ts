@@ -13,7 +13,7 @@ export type TMateriResponse = {
 }
 
 const materi = (tahun: number, jenisMateri: string) => {
-  const source: string = `pelatihan/materi/${tahun}/${jenisMateri}.json`;
+  const source: string = `data/pelatihan/materi/${tahun}/${jenisMateri}.json`;
   const { data, error, isLoading } = useSWR<TMateriResponse>(source, fetcher);
   return { data, error, isLoading };
 }

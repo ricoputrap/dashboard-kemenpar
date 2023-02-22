@@ -25,7 +25,8 @@ type THomeData = {
 }
 
 const home = () => {
-  const { data, error, isLoading } = useSWR<THomeData>("home/home.json", fetcher);
+  const source: string = "data/home/home.json";
+  const { data, error, isLoading } = useSWR<THomeData>(source, fetcher);
   return { data, error, isLoading }
 }
 

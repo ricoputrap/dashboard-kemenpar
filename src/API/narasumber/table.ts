@@ -12,7 +12,7 @@ export type TDataTableResponse = {
 }
 
 const table = () => {
-  const source: string = "narasumber/tableData.json";
+  const source: string = "data/narasumber/tableData.json";
   const { data, error, isLoading } = useSWR<TDataTableResponse>(source, fetcher);
   return { data, error, isLoading }
 }

@@ -17,7 +17,7 @@ export type TNilaiResponse = {
 }
 
 const nilai = (tahun: number) => {
-  const source = `sosialisasi/nilai/${tahun}.json`;
+  const source = `data/sosialisasi/nilai/${tahun}.json`;
   const { data, error, isLoading } = useSWR<TNilaiResponse>(source, fetcher);
   return { data, error, isLoading }
 }

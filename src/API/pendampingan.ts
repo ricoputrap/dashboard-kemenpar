@@ -23,7 +23,8 @@ type TLaporanResponse = {
 }
 
 export const pendampinganStatistik = () => {
-  const { data, error, isLoading } = useSWR<TStatistikResponse>("pendampingan/statistik.json", fetcher);
+  const source: string = "data/pendampingan/statistik.json";
+  const { data, error, isLoading } = useSWR<TStatistikResponse>(source, fetcher);
   return { data, error, isLoading }
 }
 
@@ -39,7 +40,7 @@ export const pendampinganLaporan = (dpp: string) => {
   //   ([URL, token]) => fetcher(URL, token)
   // );
   
-  const source: string = `pendampingan/laporan/${dpp}.json`;
+  const source: string = `data/pendampingan/laporan/${dpp}.json`;
   const { data, error, isLoading } = useSWR<TLaporanResponse>(source, fetcher);
   return { data, error, isLoading }
 }

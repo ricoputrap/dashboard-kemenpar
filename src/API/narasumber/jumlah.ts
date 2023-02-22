@@ -13,7 +13,7 @@ export type TJumlahResponse = {
 }
 
 const jumlah = () => {
-  const source: string = "narasumber/jumlah.json";
+  const source: string = "data/narasumber/jumlah.json";
   const { data, error, isLoading } = useSWR<TJumlahResponse>(source, fetcher);
   return { data, error, isLoading }
 }
