@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom"
 import BasePage from '../templates/BasePage'
 import { Button, Flex, Image, Stack, Text } from '@chakra-ui/react';
@@ -10,14 +10,19 @@ import ProfileDetail from './ProfileDetail';
 
 const ProfileView: React.FC = () => {
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const backHome = () => {
     navigate("/");
   }
 
   const doLogout = () => {
-    deleteCookie("token");
-    navigate("/login");
+    setIsLoading(true);
+
+    setTimeout(() => {
+      deleteCookie("token");
+      navigate("/login");
+    }, 400);
   }
 
   return (
@@ -69,6 +74,7 @@ const ProfileView: React.FC = () => {
             background="#EAC170"
             color="#000000"
             onClick={ doLogout }
+            isLoading={ isLoading }
           >
             Logout
           </Button>
