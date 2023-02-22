@@ -33,7 +33,7 @@ const ProfileView: React.FC = () => {
         </Text>
       </Flex>
 
-      <Flex paddingY="20px" height="600px">
+      <Flex paddingY="20px" height="600px" justifyContent="center">
         <Stack
           paddingY="46px"
           width="320px"

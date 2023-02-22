@@ -6,15 +6,24 @@ interface Props {
   label: string;
   error?: string;
   touched?: boolean;
+  textArea?: boolean;
   fieldProps: FieldInputProps<string | number | readonly string[] | undefined>;
 }
 
-const FormField: React.FC<Props> = ({ label, error, touched, fieldProps }) => {
+const FormField: React.FC<Props> = ({ label, error, touched, fieldProps, textArea }) => {
   return (
     <FormControl isInvalid={ !!error && touched }>
       <FormLabel margin={0}>{ label }</FormLabel>
-      <Input {...fieldProps} />
-      <FormErrorMessage>
+      <Input
+        {...fieldProps}
+        as={textArea ? "textarea" : "input"}
+        height={textArea ? "160px" : "50px"}
+        width="365px"
+        background="white"
+        color="black"
+        paddingY={textArea ? "12px" : 0}
+      />
+      <FormErrorMessage fontWeight={500} fontSize="16px">
         { error }
       </FormErrorMessage>
     </FormControl>

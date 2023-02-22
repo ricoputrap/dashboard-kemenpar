@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, Formik } from 'formik';
-import { Box, Button, Stack } from '@chakra-ui/react';
+import { Box, Button, Flex, Stack } from '@chakra-ui/react';
 import * as Yup from 'yup';
 import FormField from './FormField';
 
@@ -43,50 +43,49 @@ const EditProfile: React.FC = () => {
       {formik => (
         <Box>
           <Form onSubmit={ formik.handleSubmit }>
-            <Stack>
-              <FormField
-                label="Name"
-                error={ formik.errors.name }
-                touched={ formik.touched.name }
-                fieldProps={ formik.getFieldProps("name") }
-              />
-            </Stack>
+            <Flex columnGap="32px">
+              <Stack rowGap="28px">
+                <FormField
+                  label="Name"
+                  error={ formik.errors.name }
+                  touched={ formik.touched.name }
+                  fieldProps={ formik.getFieldProps("name") }
+                />
 
-            <Stack rowGap={0}>
-              <FormField
-                label="Email"
-                error={ formik.errors.email }
-                touched={ formik.touched.email }
-                fieldProps={ formik.getFieldProps("email") }
-              />
-            </Stack>
+                <FormField
+                  label="Email"
+                  error={ formik.errors.email }
+                  touched={ formik.touched.email }
+                  fieldProps={ formik.getFieldProps("email") }
+                />
 
-            <Stack>
-              <FormField
-                label="No Telp"
-                error={ formik.errors.phoneNumber }
-                touched={ formik.touched.phoneNumber }
-                fieldProps={ formik.getFieldProps("phoneNumber") }
-              />
-            </Stack>
+                <FormField
+                  label="No Telp"
+                  error={ formik.errors.phoneNumber }
+                  touched={ formik.touched.phoneNumber }
+                  fieldProps={ formik.getFieldProps("phoneNumber") }
+                />
+              </Stack>
 
-            <Stack>
-              <FormField
-                label="Address"
-                error={ formik.errors.address }
-                touched={ formik.touched.address }
-                fieldProps={ formik.getFieldProps("address") }
-              />
-            </Stack>
+              <Stack rowGap="50px">
+                <FormField
+                  label="Address"
+                  error={ formik.errors.address }
+                  touched={ formik.touched.address }
+                  fieldProps={ formik.getFieldProps("address") }
+                  textArea
+                />
 
-            <Button
-              type="submit"
-              background="#EAC170"
-              color="#000000"
-              isLoading={ formik.isSubmitting }
-            >
-              Submit
-            </Button>
+                <Button
+                  type="submit"
+                  background="#EAC170"
+                  color="#000000"
+                  isLoading={ formik.isSubmitting }
+                >
+                  Submit
+                </Button>
+              </Stack>
+            </Flex>
           </Form>
         </Box>
       )}

@@ -4,7 +4,11 @@ import EditProfile from './EditProfile'
 
 const ProfileDetail: React.FC = () => {
   return (
-    <Stack paddingLeft="72px" paddingTop="56px">
+    <Stack
+      paddingLeft="72px"
+      paddingTop="56px"
+      rowGap="28px"
+    >
       <Heading
         fontFamily="Montserrat"
         fontSize="30px"
