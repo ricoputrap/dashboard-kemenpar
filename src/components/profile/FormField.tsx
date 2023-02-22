@@ -19,7 +19,9 @@ const FormField: React.FC<Props> = ({ label, error, touched, fieldProps, textAre
         as={textArea ? "textarea" : "input"}
         height={textArea ? "160px" : "50px"}
         width="365px"
-        background="white"
+        background="rgba(255, 255, 255, 0.5)"
+        borderRadius="5px"
+        borderColor="none"
         color="black"
         paddingY={textArea ? "12px" : 0}
       />
