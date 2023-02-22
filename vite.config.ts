@@ -17,6 +17,12 @@ export default defineConfig({
         main: resolve(root, "index.html"),
         home: resolve(root, "index.html"),
         login: resolve(root, "login", "index.html"),
+        sosialisasi: resolve(root, "sosialisasi", "index.html"),
+        pelatihan: resolve(root, "pelatihan", "index.html"),
+        pendampingan: resolve(root, "pendampingan", "index.html"),
+        narasumber: resolve(root, "narasumber", "index.html"),
+        publikasi: resolve(root, "publikasi", "index.html"),
+        profile: resolve(root, "profile", "index.html")
       }
     }
   }
