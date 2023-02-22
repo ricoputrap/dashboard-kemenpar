@@ -6,6 +6,7 @@ import { ArrowBackIcon, EditIcon } from "@chakra-ui/icons";
 import PersonImg from "../../assets/images/person.jpg"
 import LogoutIcon from "../../assets/icons/logout.svg"
 import { deleteCookie } from '../../utils/cookie';
+import ProfileDetail from './ProfileDetail';
 
 const ProfileView: React.FC = () => {
   const navigate = useNavigate();
@@ -72,6 +73,8 @@ const ProfileView: React.FC = () => {
             Logout
           </Button>
         </Stack>
+
+        <ProfileDetail />
       </Flex>
     </BasePage>
   )
