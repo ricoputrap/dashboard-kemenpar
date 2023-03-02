@@ -10,21 +10,18 @@ interface ReturnValue {
 }
 
 const useInitDataKategoriUsaha = (): ReturnValue => {
-  const tahun = useSosialisasiStore(state => state.tahun);
-  const { data, error, isLoading } = API.sosialisasi.kategoriUsaha(tahun);
-
   const {
-    setTahun,
-    setKategoriUsahaPertahun
+    dpp,
+    setKategoriUsahaPerlokasi
   } = useKategoriUsahaStore();
-  
+
+  const { data, error, isLoading } = API.sosialisasi.kategoriUsaha(dpp);
+
   useEffect(() => {
     if (!data) return;
 
-    const { tahun, data: dataKategoriUsaha }: TKategoriUsahaSetahun = data.data;
-
-    setTahun(tahun);
-    setKategoriUsahaPertahun(dataKategoriUsaha, tahun);
+    const { dpp, data: dataKategoriUsaha }: TKategoriUsahaSetahun = data.data;
+    setKategoriUsahaPerlokasi(dataKategoriUsaha, dpp);
   }, [data]);
 
   return {

@@ -3,7 +3,7 @@ import { fetcher } from "..";
 import { TKategoriUsaha } from "../../components/sosialisasi/types/kategoriUsaha.types";
 
 export type TKategoriUsahaSetahun = {
-  tahun: number;
+  dpp: string;
   data: TKategoriUsaha[];
 }
 
@@ -11,8 +11,8 @@ export type TKategoriUsahaResponse = {
   data: TKategoriUsahaSetahun;
 }
 
-const kategoriUsaha = (tahun: number) => {
-  const source: string = `data/sosialisasi/kategoriUsaha/${tahun}.json`;
+const kategoriUsaha = (dpp: string) => {
+  const source: string = `data/sosialisasi/kategoriUsaha/${dpp}.json`;
   const { data, error, isLoading } = useSWR<TKategoriUsahaResponse>(source, fetcher);
   return { data, error, isLoading }
 }

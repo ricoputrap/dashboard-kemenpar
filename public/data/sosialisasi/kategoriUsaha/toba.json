@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dpp": "toba",
+    "data": [
+      {
+        "nama": "pemandu wisata",
+        "jumlah": 1500
+      },
+      {
+        "nama": "home stay",
+        "jumlah": 1800
+      },
+      {
+        "nama": "cendra mata",
+        "jumlah": 2500
+      },
+      {
+        "nama": "kuliner",
+        "jumlah": 1000
+      },
+      {
+        "nama": "pengelola wisata",
+        "jumlah": 700
+      },
+      {
+        "nama": "jasa transportasi",
+        "jumlah": 1600
+      },
+      {
+        "nama": "pelaku budaya",
+        "jumlah": 1900
+      },
+      {
+        "nama": "pengelola wisata",
+        "jumlah": 700
+      },
+      {
+        "nama": "jasa transportasi",
+        "jumlah": 1600
+      },
+      {
+        "nama": "pelaku budaya",
+        "jumlah": 1900
+      }
+    ]
+  }
+}

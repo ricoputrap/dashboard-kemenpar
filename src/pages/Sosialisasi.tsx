@@ -54,9 +54,9 @@ const Sosialisasi: React.FC = () => {
         >
           <FilterTahun />
           <Flex direction="column" rowGap="40px">
-            <GrafikKategoriUsaha width={ barChartsWidth } />
             <GrafikNilai width={ barChartsWidth } />
             <GrafikUsiaPendidikan />
+            <GrafikKategoriUsaha width={ barChartsWidth } />
           </Flex>
         </Flex>
       </Flex>
