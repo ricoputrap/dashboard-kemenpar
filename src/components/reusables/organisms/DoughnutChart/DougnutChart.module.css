@@ -1,16 +1,6 @@
-.container {
-  width: 155px;
-  position: relative;
-}
-
 .subcontainer {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.number {
-  font-size: 40px;
-  font-weight: 400;
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, ChartData } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { Box, Text } from '@chakra-ui/react';
@@ -11,22 +11,35 @@ const options = {
     legend: {
       display: false
     }
-  },
-  cutout: 55
+  }
 }
 
 interface Props {
   data: ChartData<"doughnut", number[], string>,
-  value: number
+  value: number,
+  width?: number;
+  fontSize?: number;
+  thickness?: number;
 }
 
-const DougnutChart: React.FC<Props> = ({ data, value }) => {
+const DougnutChart: React.FC<Props> = ({
+  data,
+  value,
+  width = 155,
+  fontSize = 40,
+  thickness = 55
+}) => {
+  const doughnutOptions = useMemo(() => ({
+    ...options,
+    cutout: thickness
+  }), [thickness])
+
   return (
-    <Box className={ styles.container }>
-      <Doughnut data={ data } options={ options } />
+    <Box position="relative" width={`${width}px`}>
+      <Doughnut data={ data } options={ doughnutOptions } />
       
       <Box className={ styles.subcontainer }>
-        <Text className={ styles.number }>
+        <Text fontSize={`${fontSize}px`} fontWeight={400}>
           { value }
         </Text>
       </Box>
