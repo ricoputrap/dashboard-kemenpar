@@ -1,9 +1,8 @@
 import React from 'react'
 import useData from './useData'
 import ChartLine from "../../../../../assets/lines/chart-line.svg"
-import { Flex, Image, Stack, Text } from '@chakra-ui/react'
-import DoughnutChartContainer from '../../../../reusables/organisms/DoughnutChart/DoughnutChartContainer'
-import LegendItem from '../../../../reusables/organisms/DoughnutChartPeserta/LegendItem'
+import { Box, Flex, Image, Stack, Text } from '@chakra-ui/react'
+import DonutChart from '../../../../reusables/organisms/DonutChart'
 
 const StatistikChart: React.FC = () => {
   const { menData, womenData } = useData();
@@ -16,108 +15,29 @@ const StatistikChart: React.FC = () => {
       />
 
       <Flex>
-        <Stack
-          width="193px"
-          borderRight="1px solid #EAC170"
-        >
-          <Stack
-            rowGap="12px"
-            alignItems="center"
-            padding="8px"
-            borderBottom="1px solid #EAC170"
-          >
-            <DoughnutChartContainer
-              data={[menData, womenData]}
-              label="Jumlah Peserta"
-              width={108}
-              fontSize={20}
-              thickness={40}
-            />
-            <Text
-              fontSize="15px"
-              fontWeight={500}
-              textTransform="uppercase"
-              textAlign="center"
-            >
-              Peserta Pelatihan A&B
-            </Text>
-          </Stack>
+        <Box borderRight="1px solid #EAC170">
+          <DonutChart
+            chartData={[menData, womenData]}
+            title="Peserta Pelatihan A&B"
+            width={108}
+            fontSize={20}
+            thickness={40}
 
-          {/* Legends */}
-          <Stack rowGap="4px" padding="4px 16px">
-            <Text
-              fontSize="15px"
-              fontWeight={500}
-              textTransform="uppercase"
-            >
-              Jenis Kelamin
-            </Text>
+            showLegend
+            legendTitle="Jenis Kelamin"
+          />
+        </Box>
 
-            <LegendItem
-              value={ menData.value }
-              percent={ menData.percent }
-              label={ menData.label }
-              color={ menData.color }
-            />
+        <DonutChart
+          chartData={[menData, womenData]}
+          title="Peserta Pelatihan C"
+          width={108}
+          fontSize={20}
+          thickness={40}
 
-            <LegendItem
-              value={ womenData.value }
-              percent={ womenData.percent }
-              label={ womenData.label }
-              color={ womenData.color }
-            />
-          </Stack>
-        </Stack>
-
-        <Stack width="193px">
-          <Stack
-            rowGap="12px"
-            alignItems="center"
-            padding="8px"
-            borderBottom="1px solid #EAC170"
-          >
-            <DoughnutChartContainer
-              data={[menData, womenData]}
-              label="Jumlah Peserta"
-              width={108}
-              fontSize={20}
-              thickness={40}
-            />
-            <Text
-              fontSize="15px"
-              fontWeight={500}
-              textTransform="uppercase"
-              textAlign="center"
-            >
-              Peserta Pelatihan C
-            </Text>
-          </Stack>
-
-          {/* Legends */}
-          <Stack rowGap="4px" padding="4px 16px">
-            <Text
-              fontSize="15px"
-              fontWeight={500}
-              textTransform="uppercase"
-            >
-              Jenis Kelamin
-            </Text>
-
-            <LegendItem
-              value={ menData.value }
-              percent={ menData.percent }
-              label={ menData.label }
-              color={ menData.color }
-            />
-
-            <LegendItem
-              value={ womenData.value }
-              percent={ womenData.percent }
-              label={ womenData.label }
-              color={ womenData.color }
-            />
-          </Stack>
-        </Stack>
+          showLegend
+          legendTitle="Jenis Kelamin"
+        />
       </Flex>
     </Stack>
   )
