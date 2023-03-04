@@ -20,8 +20,8 @@
       },
       {
         "lokasi": "lombok",
-        "pre-test": 0,
-        "post-test": 0
+        "pre-test": 45,
+        "post-test": 65
       },
       {
         "lokasi": "l.bajo",

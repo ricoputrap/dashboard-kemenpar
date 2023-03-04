@@ -1,19 +1,19 @@
 import { TStatistikPeserta } from "../../../reusables/organisms/StatistikPeserta/index.types";
 
-export type TStatistikPesertaPertahun = {
-  [tahun: number]: TStatistikPeserta[];
-}
-
 export type TStatistikTotal = {
   totalPeserta: number;
   totalLaki: number;
   totalPerempuan: number;
 }
-
+ 
 export type TStatistikState = {
-  statistikPesertaPertahun: TStatistikPesertaPertahun;
+  statistikTotalAB: TStatistikTotal;
+  statistikTotalC: TStatistikTotal;
+  statistikPeserta: TStatistikPeserta[];
 }
 
 export type TStatistikActions = {
-  setStatistikPesertaPertahun: (data: TStatistikPeserta[], tahun: number) => void;
+  setStatistikTotalAB: (statistikTotalAB: TStatistikTotal) => void;
+  setStatistikTotalC: (statistikTotalC: TStatistikTotal) => void;
+  setStatistikPeserta: (statistikPeserta: TStatistikPeserta[]) => void;
 }

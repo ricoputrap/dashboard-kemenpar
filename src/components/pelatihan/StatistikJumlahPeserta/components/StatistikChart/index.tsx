@@ -5,7 +5,7 @@ import { Box, Flex, Image, Stack, Text } from '@chakra-ui/react'
 import DonutChart from '../../../../reusables/organisms/DonutChart'
 
 const StatistikChart: React.FC = () => {
-  const { menData, womenData } = useData();
+  const { chartPesertaAB, chartPesertaC } = useData();
 
   return (
     <Stack rowGap="14px">
@@ -17,7 +17,7 @@ const StatistikChart: React.FC = () => {
       <Flex>
         <Box borderRight="1px solid #EAC170">
           <DonutChart
-            chartData={[menData, womenData]}
+            chartData={[chartPesertaAB.menData, chartPesertaAB.womenData]}
             title="Peserta Pelatihan A&B"
             width={108}
             fontSize={20}
@@ -29,7 +29,7 @@ const StatistikChart: React.FC = () => {
         </Box>
 
         <DonutChart
-          chartData={[menData, womenData]}
+          chartData={[chartPesertaC.menData, chartPesertaC.womenData]}
           title="Peserta Pelatihan C"
           width={108}
           fontSize={20}

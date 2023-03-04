@@ -1,18 +1,24 @@
 import useSWR from "swr";
-import { TStatistikPeserta } from "../../components/reusables/organisms/StatistikPeserta/index.types";
 import { fetcher } from "..";
+import { TStatistikPeserta } from "../../components/reusables/organisms/StatistikPeserta/index.types";
 
-export type TStatistikPesertaSetahun = {
-  tahun: number;
+export type TPesertaTotal = {
+  laki: number;
+  perempuan: number;
+}
+
+export type TStatistikJumlahPeserta = {
+  totalAB: TPesertaTotal;
+  totalC: TPesertaTotal;
   statistik: TStatistikPeserta[];
 }
 
 export type TStatistikResponse = {
-  data: TStatistikPesertaSetahun;
+  data: TStatistikJumlahPeserta;
 }
 
-const statistik = (tahun: number) => {
-  const source: string = `data/pelatihan/jumlahPeserta/${tahun}.json`;
+const statistik = () => {
+  const source: string = `data/pelatihan/jumlahPeserta/index.json`;
   const { data, error, isLoading } = useSWR<TStatistikResponse>(source, fetcher);
   return { data, error, isLoading }
 }

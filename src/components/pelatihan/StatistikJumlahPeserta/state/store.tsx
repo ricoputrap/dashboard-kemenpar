@@ -1,21 +1,22 @@
 import { create } from "zustand";
-import { TStatistikActions, TStatistikPesertaPertahun, TStatistikState } from "./index.types";
+import { TStatistikActions, TStatistikState } from "./index.types";
 
 const useStatistikStore = create<TStatistikState & TStatistikActions>((set, get) => ({
-  statistikPesertaPertahun: {},
+  statistikTotalAB: {
+    totalLaki: 0,
+    totalPerempuan: 0,
+    totalPeserta: 0
+  },
+  statistikTotalC: {
+    totalLaki: 0,
+    totalPerempuan: 0,
+    totalPeserta: 0
+  },
+  statistikPeserta: [],
 
-  setStatistikPesertaPertahun: (data, tahun) => {
-    const statistikPesertaPertahun: TStatistikPesertaPertahun = get().statistikPesertaPertahun;
-
-    // compute value
-    const updatedValue: TStatistikPesertaPertahun = {
-      ...statistikPesertaPertahun,
-      [tahun]: data
-    }
-
-    // update value
-    set({ statistikPesertaPertahun: updatedValue })
-  }
+  setStatistikTotalAB: (statistikTotalAB) => set({ statistikTotalAB }),
+  setStatistikTotalC: (statistikTotalC) => set({ statistikTotalC }),
+  setStatistikPeserta: (statistikPeserta) => set({ statistikPeserta })
 }));
 
 export default useStatistikStore;

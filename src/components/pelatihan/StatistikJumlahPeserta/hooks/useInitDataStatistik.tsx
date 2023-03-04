@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import API from "../../../../API";
 import useStatistikStore from "../state/store";
-import { TStatistikPesertaSetahun } from "../../../../API/pelatihan/statistik";
+import { TStatistikTotal } from "../state/index.types";
+import { TStatistikJumlahPeserta } from "../../../../API/pelatihan/statistik";
 
 interface ReturnValue {
   statistikError: any;
@@ -9,20 +10,36 @@ interface ReturnValue {
 }
 
 const useInitDataStatistik = (): ReturnValue => {
-  const setStatistikPesertaPertahun = useStatistikStore(state => state.setStatistikPesertaPertahun);
-  const tahun = 2022;
+  const setStatistikTotalAB = useStatistikStore(state => state.setStatistikTotalAB);
+  const setStatistikTotalC = useStatistikStore(state => state.setStatistikTotalC);
+  const setStatistikPeserta = useStatistikStore(state => state.setStatistikPeserta);
 
-  const { data, error, isLoading } = API.pelatihan.statistik(tahun);
+  const { data, error, isLoading } = API.pelatihan.statistik();
 
   useEffect(() => {
     if (!data) return;
 
     const {
-      tahun,
+      totalAB,
+      totalC,
       statistik
-    }: TStatistikPesertaSetahun = data.data;
+    }: TStatistikJumlahPeserta = data.data;
 
-    setStatistikPesertaPertahun(statistik, tahun);
+    const statistikTotalAB: TStatistikTotal = {
+      totalLaki: totalAB.laki,
+      totalPerempuan: totalAB.perempuan,
+      totalPeserta: totalAB.laki + totalAB.perempuan
+    }
+
+    const statistikTotalC: TStatistikTotal = {
+      totalLaki: totalC.laki,
+      totalPerempuan: totalC.perempuan,
+      totalPeserta: totalC.laki + totalC.perempuan
+    }
+    
+    setStatistikTotalAB(statistikTotalAB);
+    setStatistikTotalC(statistikTotalC);
+    setStatistikPeserta(statistik);
   }, [data]);
 
   return {

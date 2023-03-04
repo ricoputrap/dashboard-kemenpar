@@ -1,22 +1,27 @@
 import React, { useMemo } from 'react'
 import useStatistikStore from '../../state/store';
-import getStatistikPesertaSetahun from '../../utils/getStatistikPesertaSetahun';
-import computeStatistikTotal from '../../utils/computeStatistikTotal';
 import { IStatistikChartData, computeData } from './utils';
 
-const useData = (): IStatistikChartData => {
-  const statistikPesertaPertahun = useStatistikStore(state => state.statistikPesertaPertahun);
-  const tahun = 2022;
+type ReturnValue = {
+  chartPesertaAB: IStatistikChartData;
+  chartPesertaC: IStatistikChartData;
+}
 
-  const { menData, womenData }: IStatistikChartData = useMemo(() => {
-    const statistikSetahun = getStatistikPesertaSetahun(statistikPesertaPertahun, tahun);
-    const statistikTotal = computeStatistikTotal(statistikSetahun);
-    const data: IStatistikChartData = computeData(statistikTotal);
-    
-    return data;
-  }, [statistikPesertaPertahun, tahun]);
+const useData = (): ReturnValue => {
+  const statistikTotalAB = useStatistikStore(state => state.statistikTotalAB);
+  const statistikTotalC = useStatistikStore(state => state.statistikTotalC);
 
-  return { menData, womenData }
+  const chartPesertaAB: IStatistikChartData = useMemo(() => {
+    const { menData, womenData } = computeData(statistikTotalAB);
+    return { menData, womenData };
+  }, [statistikTotalAB]);
+
+  const chartPesertaC: IStatistikChartData = useMemo(() => {
+    const { menData, womenData } = computeData(statistikTotalC);
+    return { menData, womenData };
+  }, [statistikTotalC]);
+
+  return { chartPesertaAB, chartPesertaC }
 }
 
 export default useData
