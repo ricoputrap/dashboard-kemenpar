@@ -5,7 +5,7 @@ import Filter from './components/Filter'
 import useInitData from './useInitData'
 import useChampionStore from './state/store'
 import { TLaporanPerDesa } from './state/index.types'
-import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons"
+import DaftarLaporan from './components/DaftarLaporan'
 
 const LocalChampionView: React.FC = () => {
   const { championError, isChampionLoading } = useInitData();
@@ -64,35 +64,7 @@ const LocalChampionView: React.FC = () => {
                 </Flex>
 
                 {/* Laporan per Bulan */}
-                <Flex alignItems="center">
-                  <ChevronLeftIcon width="32px" />
-                  <Flex
-                    columnGap="22px"
-                    width="896px" // todo compute
-                    alignItems="center"
-                    overflowX="scroll"
-                  >
-                    {data.laporanSetahun.map(laporan => (
-                      <Flex
-                        key={ laporan.bulan }
-                        minWidth="134px"
-                        height="34.44px"
-                        border="1.57px solid #FFFFFF"
-                        alignItems="center"
-                        justifyContent="center"
-                      >
-                        <Text
-                          fontSize="16px"
-                          fontWeight={600}
-                          textTransform="uppercase"
-                        >
-                          { laporan.bulan }
-                        </Text>
-                      </Flex>
-                    ))}
-                  </Flex>
-                  <ChevronRightIcon width="32px" />
-                </Flex>
+                <DaftarLaporan data={ data.laporanSetahun } />
               </Flex>
             ))}
           </Flex>
