@@ -1,15 +1,10 @@
 import useSWR from "swr";
 import { fetcher } from ".";
 import { getCookie } from "../utils/cookie";
-import { TLaporanBulanan, TLaporanPerDesa } from "../components/local-champion/state/index.types";
-
-export type TResponseChampionPerDPP = {
-  dpp: string;
-  data: TLaporanPerDesa[];
-}
+import { TLaporanPerDesa } from "../components/local-champion/state/index.types";
 
 export type TResponseChampion = {
-  data: TResponseChampionPerDPP;
+  data: TLaporanPerDesa[];
 }
 
 export const localChampion = (dpp: string) => {

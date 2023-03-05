@@ -17,7 +17,7 @@ const useInitData = (): ReturnValue => {
   useEffect(() => {
     if (!data) return;
     
-    const dataSetahun: TLaporanPerDesa[] = data.data.data;
+    const dataSetahun: TLaporanPerDesa[] = data.data;
     setLaporanPerDPP(activeDPP, dataSetahun);
   }, [data]);
 
