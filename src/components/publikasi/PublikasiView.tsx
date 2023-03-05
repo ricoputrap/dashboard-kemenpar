@@ -7,6 +7,7 @@ import MediaLuarRuang from './components/MediaLuarRuang'
 import Website from './components/Website'
 import MediaElektronik from './components/MediaElektronik'
 import MediaSosial from './components/MediaSosial'
+import MediaOnline from './components/MediaOnline'
 
 type TDoughnutChartItem = {
   value: number;
@@ -21,22 +22,20 @@ const PublikasiView: React.FC = () => {
       <Flex justifyContent="space-between">
 
         {/* Column I */}
-        <Stack rowGap="24px" width="392px">
+        <Stack rowGap="24px" width="366px">
           <MediaLuarRuang />
           <Website />
           <MediaElektronik />
         </Stack>
 
         {/* Column II */}
-        <Stack rowGap="24px" width="392px">
+        <Stack rowGap="24px" width="366px">
           <MediaSosial />
-          <Box width="100%">
-            <Image src={ ChartLine } width="100%" />
-          </Box>
+          <MediaOnline />
         </Stack>
 
         {/* Column III */}
-        <Stack rowGap="24px" width="392px">
+        <Stack rowGap="24px" width="366px">
           <Box width="100%">
             <Image src={ ChartLine } width="100%" />
           </Box>
