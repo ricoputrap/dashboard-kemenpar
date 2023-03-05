@@ -22,7 +22,8 @@ export default defineConfig({
         pendampingan: resolve(root, "pendampingan", "index.html"),
         narasumber: resolve(root, "narasumber", "index.html"),
         publikasi: resolve(root, "publikasi", "index.html"),
-        profile: resolve(root, "profile", "index.html")
+        profile: resolve(root, "profile", "index.html"),
+        "local-champion": resolve(root, "local-champion", "index.html")
       }
     }
   }
