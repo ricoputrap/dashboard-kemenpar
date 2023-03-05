@@ -3,7 +3,6 @@
     "dpp": "labuan_bajo",
     "data": [
       {
-        "area": "labuan_bajo",
         "kec": "Komodo",
         "kab": "Manggarai Barat",
         "desa": "Papagarang",
@@ -23,7 +22,6 @@
         ]
       },
       {
-        "area": "labuan_bajo",
         "kec": "Komodo",
         "kab": "Manggarai Barat",
         "desa": "Pasir Panjang",
@@ -43,7 +41,6 @@
         ]
       },
       {
-        "area": "labuan_bajo",
         "kec": "Komodo",
         "kab": "Manggarai Barat",
         "desa": "Golo Mori",

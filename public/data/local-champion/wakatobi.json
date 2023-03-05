@@ -3,7 +3,6 @@
     "dpp": "wakatobi",
     "data": [
       {
-        "area": "wakatobi",
         "kec": "Wangi - Wangi",
         "kab": "Wakatobi",
         "desa": "Liya Togo",
@@ -23,7 +22,6 @@
         ]
       },
       {
-        "area": "wakatobi",
         "kec": "Kaledupa",
         "kab": "Wakatobi",
         "desa": "Pajam",
@@ -43,7 +41,6 @@
         ]
       },
       {
-        "area": "wakatobi",
         "kec": "Kaledupa",
         "kab": "Wakatobi",
         "desa": "Tanomeha",
@@ -63,7 +60,6 @@
         ]
       },
       {
-        "area": "wakatobi",
         "kec": "Tomia Timur",
         "kab": "Wakatobi",
         "desa": "Kulati",

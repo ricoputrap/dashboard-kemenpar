@@ -3,7 +3,6 @@
     "dpp": "byp",
     "data": [
       {
-        "area": "byp",
         "kec": "Kraton",
         "kab": "Kota Yogyakarta",
         "desa": "Kadipaten",
@@ -23,7 +22,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Kraton",
         "kab": "Kota Yogyakarta",
         "desa": "Tamansari (patehan)",
@@ -43,7 +41,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Gondomanan",
         "kab": "Kota Yogyakarta",
         "desa": "Kauman (ngupasan)",
@@ -63,7 +60,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Gedongtengen",
         "kab": "Kota Yogyakarta",
         "desa": "Sosromenduran",
@@ -83,7 +79,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Kotagede",
         "kab": "Kota Yogyakarta",
         "desa": "Purbayan",
@@ -103,7 +98,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Kraton",
         "kab": "Kota Yogyakarta",
         "desa": "Warungboto",
@@ -123,7 +117,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Kotagede",
         "kab": "Kota Yogyakarta",
         "desa": "Rejowinangun",
@@ -143,7 +136,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Gondomanan",
         "kab": "Kota Yogyakarta",
         "desa": "Sayidan (prawirodirjan)",
@@ -163,7 +155,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Kraton",
         "kab": "Kota Yogyakarta",
         "desa": "Cokrodiningratan",
@@ -183,7 +174,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Kraton",
         "kab": "Kota Yogyakarta",
         "desa": "Pakualaman (gunungketur)",
@@ -203,7 +193,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Kotagede",
         "kab": "Kota Yogyakarta",
         "desa": "Prenggan",
@@ -223,7 +212,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Borobudur",
         "kab": "Magelang",
         "desa": "Candirejo",
@@ -243,7 +231,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Borobudur",
         "kab": "Magelang",
         "desa": "Tanjungsari",
@@ -263,7 +250,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Borobudur",
         "kab": "Magelang",
         "desa": "Ngargogondo",
@@ -283,7 +269,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Borobudur",
         "kab": "Magelang",
         "desa": "Wanurejo",
@@ -303,7 +288,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Mungkid",
         "kab": "Magelang",
         "desa": "Mendut",
@@ -323,7 +307,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Prambanan",
         "kab": "Klaten",
         "desa": "Bugisan",
@@ -343,7 +326,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Prambanan",
         "kab": "Klaten",
         "desa": "Kebondalem Kidul",
@@ -363,7 +345,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Prambanan",
         "kab": "Klaten",
         "desa": "Pereng",
@@ -383,7 +364,6 @@
         ]
       },
       {
-        "area": "byp",
         "kec": "Prambanan",
         "kab": "Sleman",
         "desa": "Bokoharjo",
