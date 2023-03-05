@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import React from 'react'
-import CircleItem from '../CircleItem';
+import CircleItem from '../../atoms/CircleItem';
 import { CircleContainer, Label, Value } from './index.styles';
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
   value: number;
 }
 
-const RowData: React.FC<Props> = ({ name, value }) => {
+const RowCircles: React.FC<Props> = ({ name, value }) => {
   const adjustedIndex: number = Number.isInteger(value)
     ? value - 1
     : Math.floor(value);
@@ -33,4 +33,4 @@ const RowData: React.FC<Props> = ({ name, value }) => {
   )
 }
 
-export default RowData
+export default RowCircles

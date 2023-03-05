@@ -1,9 +1,9 @@
 import React from 'react'
 import ChartLine from "../../../../assets/lines/chart-line.svg"
 import { Image, Stack, Text } from '@chakra-ui/react'
-import RowData from './RowData'
 import useData from './useData'
 import { TTopNarasumber } from '../../state/index.types'
+import CircularChart from '../../../reusables/organisms/CircularChart'
 
 const TopListNarasumber: React.FC = () => {
   const data: TTopNarasumber[] = useData();
@@ -15,15 +15,7 @@ const TopListNarasumber: React.FC = () => {
         TOP LIST NARASUMBER
       </Text>
 
-      <Stack rowGap="16px">
-        {data.map((item, index) => (
-          <RowData
-            key={ index }
-            name={ item.name }
-            value={ item.value }
-          />
-        ))}
-      </Stack>
+      <CircularChart data={ data } />
     </Stack>
   )
 }
