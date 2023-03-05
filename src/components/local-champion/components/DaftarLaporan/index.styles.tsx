@@ -17,3 +17,17 @@ export const Label = styled.p`
   font-weight: 600;
   text-transform: uppercase;
 `;
+
+export const IconBox = styled.div`
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: #2c4771;
+    cursor: pointer;
+  }
+`;

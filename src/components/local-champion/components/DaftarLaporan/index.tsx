@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import { TLaporanBulanan } from '../../state/index.types'
-import { Box, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
-import { BoxContainer, Label } from './index.styles';
+import { BoxContainer, IconBox, Label } from './index.styles';
 
 interface Props {
   data: TLaporanBulanan[];
@@ -30,10 +30,10 @@ const DaftarLaporan: React.FC<Props> = ({ data }) => {
   };
 
   return (
-    <Flex alignItems="center">
-      <Box onMouseDown={() => handleMouseDown(-100)}>
+    <Flex alignItems="center" columnGap="4px">
+      <IconBox onMouseDown={() => handleMouseDown(-100)}>
         <ChevronLeftIcon width="32px" />
-      </Box>
+      </IconBox>
 
       <BoxContainer width={896} ref={ boxListRef }>
         {data.map(laporan => (
@@ -52,9 +52,9 @@ const DaftarLaporan: React.FC<Props> = ({ data }) => {
         ))}
       </BoxContainer>
 
-      <Box onMouseDown={() => handleMouseDown(100)}>
+      <IconBox onMouseDown={() => handleMouseDown(100)}>
         <ChevronRightIcon width="32px" />
-      </Box>
+      </IconBox>
     </Flex>
   )
 }
