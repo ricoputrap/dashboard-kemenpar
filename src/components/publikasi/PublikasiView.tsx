@@ -2,6 +2,10 @@ import React from 'react'
 import BasePage from '../templates/BasePage'
 import { Box, Circle, Flex, Image, Stack, Text } from '@chakra-ui/react'
 import ChartLine from "../../assets/lines/chart-line.svg"
+import Ring from './components/Ring'
+import MediaLuarRuang from './components/MediaLuarRuang'
+import Website from './components/Website'
+import MediaElektronik from './components/MediaElektronik'
 
 type TDoughnutChartItem = {
   value: number;
@@ -10,11 +14,6 @@ type TDoughnutChartItem = {
   color: string;
 }
 
-const daftarBaliho: string[] = [
-  "Danau Toba", "BYP", "BTS",
-  "Lombok", "Labuan Bajo", "Wakatobi"
-]
-
 const PublikasiView: React.FC = () => {
   return (
     <BasePage id="page-sosialisasi">
@@ -22,112 +21,9 @@ const PublikasiView: React.FC = () => {
 
         {/* Column I */}
         <Stack rowGap="24px" width="392px">
-
-          {/* Row I: Media Luar Ruang */}
-          <Box>
-            <Image src={ ChartLine } />
-            <Text
-              fontSize="20px"
-              fontWeight={600}
-              lineHeight="20px"
-              textTransform="uppercase"
-              marginTop="12px"
-            >
-              Media
-            </Text>
-
-            <Flex columnGap="12px" marginTop="8px">
-              <Circle size="154px" bg='rgba(234, 193, 112, 0.5)'>
-                <Circle size="122px" bg="#112647">
-                  <Text fontSize="20px" fontWeight={600} color="#EAC170" textAlign="center">
-                    LUAR RUANG
-                  </Text>
-                </Circle>
-              </Circle>
-
-              <Box>
-                <Text fontSize="18px" fontWeight={600}>
-                  Baliho di 6 DPP:
-                </Text>
-                <Stack rowGap="4px" marginTop="8px">
-                  {daftarBaliho.map((item, index) => (
-                    <Text
-                      key={ index }
-                      fontSize="15px"
-                      fontWeight={400}
-                      lineHeight="16px"
-                      marginTop="0 !important"
-                    >
-                      { index }. { item }
-                    </Text>
-                  ))}
-                </Stack>
-              </Box>
-            </Flex>
-          </Box>
-
-          {/* Row II: Website */}
-          <Stack rowGap="8px">
-            <Image src={ ChartLine } />
-            <Text
-              fontSize="20px"
-              fontWeight={600}
-              color="#EAC170"
-              textTransform="uppercase"
-              marginTop="0 !important"
-            >
-              Website
-            </Text>
-            <Text
-              fontSize="15px"
-              fontWeight={400}
-              lineHeight="15px"
-              marginTop="0 !important"
-            >
-              16 ARTIKEL (FEATURES) DI
-              <br/>www.indonesia.travel
-            </Text>
-          </Stack>
-
-          {/* Row III: Media Elektronik */}
-          <Box>
-            <Image src={ ChartLine } />
-
-            <Flex columnGap="16px" marginTop="24px">
-              <Circle size="154px" bg='rgba(234, 193, 112, 0.5)'>
-                <Circle size="122px" bg="#112647">
-                  <Stack>
-                    <Text
-                      fontSize="20px"
-                      fontWeight={600}
-                      textAlign="center"
-                    >
-                      MEDIA
-                    </Text>
-                    <Text
-                      fontSize="15px"
-                      fontWeight={600}
-                      textAlign="center"
-                      color="#EAC170"
-                      marginTop="0 !important"
-                    >
-                      ELEKTRONIK
-                    </Text>
-                  </Stack>
-                </Circle>
-              </Circle>
-
-              <Stack rowGap="16px" justifyContent="center">
-                <Text fontSize="18px" fontWeight={500} lineHeight="16px">
-                  1 Talkshow
-                </Text>
-                <Text fontSize="18px" fontWeight={500} marginTop="0 !important">
-                  120 Radio Insertion
-                  <br/>di 6 DPP
-                </Text>
-              </Stack>
-            </Flex>
-          </Box>
+          <MediaLuarRuang />
+          <Website />
+          <MediaElektronik />
         </Stack>
 
         {/* Column II */}
