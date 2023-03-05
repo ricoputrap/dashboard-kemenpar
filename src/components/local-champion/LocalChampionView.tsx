@@ -39,10 +39,15 @@ const LocalChampionView: React.FC = () => {
             overflowY="scroll"
           >
             {daftarLaporan.map((data, index) => (
-              <Flex key={data.desa}>
-                <Flex columnGap="12px" alignItems="center" width="284px">
+              <Flex key={data.desa} columnGap="24px">
+                {/* Area */}
+                <Flex
+                  columnGap="12px"
+                  alignItems="center"
+                  width="284px"
+                >
                   {/* No */}
-                  <Text fontSize="20px" fontWeight={700} lineHeight="24px" width="27px">
+                  <Text fontSize="20px" fontWeight={700} lineHeight="24px" width="32px">
                     { index + 1 }.
                   </Text>
 
@@ -55,6 +60,33 @@ const LocalChampionView: React.FC = () => {
                       { data.kec.toUpperCase() }, { data.kab.toUpperCase() }
                     </Text>
                   </Box>
+                </Flex>
+
+                {/* Laporan per Bulan */}
+                <Flex
+                  columnGap="22px"
+                  width="1052px" // todo compute
+                  alignItems="center"
+                  overflowX="scroll"
+                >
+                  {data.laporanSetahun.map(laporan => (
+                    <Flex
+                      key={ laporan.bulan }
+                      minWidth="134px"
+                      height="34.44px"
+                      border="1.57px solid #FFFFFF"
+                      alignItems="center"
+                      justifyContent="center"
+                    >
+                      <Text
+                        fontSize="16px"
+                        fontWeight={600}
+                        textTransform="uppercase"
+                      >
+                        { laporan.bulan }
+                      </Text>
+                    </Flex>
+                  ))}
                 </Flex>
               </Flex>
             ))}
