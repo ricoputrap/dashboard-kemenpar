@@ -4,7 +4,7 @@ import ChartLine from "../../../../assets/lines/chart-line.svg"
 
 const Website: React.FC = () => {
   return (
-    <Stack rowGap="8px">
+    <Stack id="website" rowGap="8px">
       <Image src={ ChartLine } />
       <Text
         fontSize="20px"

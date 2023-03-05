@@ -10,7 +10,7 @@ const daftarBaliho: string[] = [
 
 const MediaLuarRuang: React.FC = () => {
   return (
-    <Box width="100%">
+    <Box id="media-luar-ruang" width="100%">
       <Image src={ ChartLine } width="100%" />
       <Text
         fontSize="20px"

@@ -6,6 +6,7 @@ import Ring from './components/Ring'
 import MediaLuarRuang from './components/MediaLuarRuang'
 import Website from './components/Website'
 import MediaElektronik from './components/MediaElektronik'
+import MediaSosial from './components/MediaSosial'
 
 type TDoughnutChartItem = {
   value: number;
@@ -28,21 +29,19 @@ const PublikasiView: React.FC = () => {
 
         {/* Column II */}
         <Stack rowGap="24px" width="392px">
-          <Box>
-            <Image src={ ChartLine } />
-          </Box>
-          <Box>
-            <Image src={ ChartLine } />
+          <MediaSosial />
+          <Box width="100%">
+            <Image src={ ChartLine } width="100%" />
           </Box>
         </Stack>
 
         {/* Column III */}
         <Stack rowGap="24px" width="392px">
-          <Box>
-            <Image src={ ChartLine } />
+          <Box width="100%">
+            <Image src={ ChartLine } width="100%" />
           </Box>
-          <Box>
-            <Image src={ ChartLine } />
+          <Box width="100%">
+            <Image src={ ChartLine } width="100%" />
           </Box>
         </Stack>
       </Flex>
