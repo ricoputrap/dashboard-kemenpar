@@ -1,64 +1,61 @@
 {
-  "data": {
-    "dpp": "labuan_bajo",
-    "data": [
-      {
-        "kec": "Komodo",
-        "kab": "Manggarai Barat",
-        "desa": "Papagarang",
-        "laporanSetahun": [
-          { "bulan": "januari", "url": "" },
-          { "bulan": "februari", "url": "" },
-          { "bulan": "maret", "url": "" },
-          { "bulan": "april", "url": "" },
-          { "bulan": "mei", "url": "" },
-          { "bulan": "juni", "url": "" },
-          { "bulan": "juli", "url": "" },
-          { "bulan": "agustus", "url": "" },
-          { "bulan": "september", "url": "" },
-          { "bulan": "oktober", "url": "" },
-          { "bulan": "november", "url": "" },
-          { "bulan": "desember", "url": "" }
-        ]
-      },
-      {
-        "kec": "Komodo",
-        "kab": "Manggarai Barat",
-        "desa": "Pasir Panjang",
-        "laporanSetahun": [
-          { "bulan": "januari", "url": "" },
-          { "bulan": "februari", "url": "" },
-          { "bulan": "maret", "url": "" },
-          { "bulan": "april", "url": "" },
-          { "bulan": "mei", "url": "" },
-          { "bulan": "juni", "url": "" },
-          { "bulan": "juli", "url": "" },
-          { "bulan": "agustus", "url": "" },
-          { "bulan": "september", "url": "" },
-          { "bulan": "oktober", "url": "" },
-          { "bulan": "november", "url": "" },
-          { "bulan": "desember", "url": "" }
-        ]
-      },
-      {
-        "kec": "Komodo",
-        "kab": "Manggarai Barat",
-        "desa": "Golo Mori",
-        "laporanSetahun": [
-          { "bulan": "januari", "url": "" },
-          { "bulan": "februari", "url": "" },
-          { "bulan": "maret", "url": "" },
-          { "bulan": "april", "url": "" },
-          { "bulan": "mei", "url": "" },
-          { "bulan": "juni", "url": "" },
-          { "bulan": "juli", "url": "" },
-          { "bulan": "agustus", "url": "" },
-          { "bulan": "september", "url": "" },
-          { "bulan": "oktober", "url": "" },
-          { "bulan": "november", "url": "" },
-          { "bulan": "desember", "url": "" }
-        ]
-      }
-    ]
-  }
+  "data": [
+    {
+      "kec": "Komodo",
+      "kab": "Manggarai Barat",
+      "desa": "Papagarang",
+      "laporanSetahun": [
+        { "bulan": "januari", "url": "" },
+        { "bulan": "februari", "url": "" },
+        { "bulan": "maret", "url": "" },
+        { "bulan": "april", "url": "" },
+        { "bulan": "mei", "url": "" },
+        { "bulan": "juni", "url": "" },
+        { "bulan": "juli", "url": "" },
+        { "bulan": "agustus", "url": "" },
+        { "bulan": "september", "url": "" },
+        { "bulan": "oktober", "url": "" },
+        { "bulan": "november", "url": "" },
+        { "bulan": "desember", "url": "" }
+      ]
+    },
+    {
+      "kec": "Komodo",
+      "kab": "Manggarai Barat",
+      "desa": "Pasir Panjang",
+      "laporanSetahun": [
+        { "bulan": "januari", "url": "" },
+        { "bulan": "februari", "url": "" },
+        { "bulan": "maret", "url": "" },
+        { "bulan": "april", "url": "" },
+        { "bulan": "mei", "url": "" },
+        { "bulan": "juni", "url": "" },
+        { "bulan": "juli", "url": "" },
+        { "bulan": "agustus", "url": "" },
+        { "bulan": "september", "url": "" },
+        { "bulan": "oktober", "url": "" },
+        { "bulan": "november", "url": "" },
+        { "bulan": "desember", "url": "" }
+      ]
+    },
+    {
+      "kec": "Komodo",
+      "kab": "Manggarai Barat",
+      "desa": "Golo Mori",
+      "laporanSetahun": [
+        { "bulan": "januari", "url": "" },
+        { "bulan": "februari", "url": "" },
+        { "bulan": "maret", "url": "" },
+        { "bulan": "april", "url": "" },
+        { "bulan": "mei", "url": "" },
+        { "bulan": "juni", "url": "" },
+        { "bulan": "juli", "url": "" },
+        { "bulan": "agustus", "url": "" },
+        { "bulan": "september", "url": "" },
+        { "bulan": "oktober", "url": "" },
+        { "bulan": "november", "url": "" },
+        { "bulan": "desember", "url": "" }
+      ]
+    }
+  ]
 }
