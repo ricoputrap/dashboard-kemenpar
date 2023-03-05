@@ -22,6 +22,8 @@ const PublikasiView: React.FC = () => {
 
         {/* Column I */}
         <Stack rowGap="24px" width="392px">
+
+          {/* Row I: Media Luar Ruang */}
           <Box>
             <Image src={ ChartLine } />
             <Text
@@ -63,9 +65,29 @@ const PublikasiView: React.FC = () => {
               </Box>
             </Flex>
           </Box>
-          <Box>
+
+          {/* Row II: Website */}
+          <Stack rowGap="8px">
             <Image src={ ChartLine } />
-          </Box>
+            <Text
+              fontSize="20px"
+              fontWeight={600}
+              color="#EAC170"
+              textTransform="uppercase"
+              marginTop="0 !important"
+            >
+              Website
+            </Text>
+            <Text
+              fontSize="15px"
+              fontWeight={400}
+              lineHeight="15px"
+              marginTop="0 !important"
+            >
+              16 ARTIKEL (FEATURES) DI
+              <br/>www.indonesia.travel
+            </Text>
+          </Stack>
           <Box>
             <Image src={ ChartLine } />
           </Box>
