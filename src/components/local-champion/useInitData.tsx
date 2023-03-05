@@ -1,17 +1,32 @@
 import React, { useEffect } from 'react'
 import useChampionStore from './state/store'
 import API from '../../API';
+import { TLaporanPerDesa } from './state/index.types';
 
-const useInitData = () => {
+interface ReturnValue {
+  championError: any;
+  isChampionLoading: boolean;
+}
+
+const useInitData = (): ReturnValue => {
   const activeDPP: string = useChampionStore(state => state.activeDPP);
+  const setLaporanPerDPP = useChampionStore(state => state.setLaporanPerDPP);
 
   const { data, error, isLoading } = API.localChampion(activeDPP);
 
   useEffect(() => {
     if (!data) return;
 
-    console.log("===== data:", data)
-  }, [data])
+    
+    const dpp: string = data.dpp;
+    const dataSetahun: TLaporanPerDesa[] = data.data;
+    setLaporanPerDPP(dpp, dataSetahun);
+  }, [data]);
+
+  return {
+    championError: error,
+    isChampionLoading: isLoading
+  }
 }
 
 export default useInitData

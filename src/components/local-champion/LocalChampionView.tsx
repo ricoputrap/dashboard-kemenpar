@@ -5,7 +5,8 @@ import Filter from './components/Filter'
 import useInitData from './useInitData'
 
 const LocalChampionView: React.FC = () => {
-  useInitData();
+  const { championError, isChampionLoading } = useInitData();
+  
   return (
     <BasePage id="local-champion">
       <Box
