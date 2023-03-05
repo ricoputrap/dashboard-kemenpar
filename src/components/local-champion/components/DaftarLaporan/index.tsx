@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { TLaporanBulanan } from '../../state/index.types'
-import { Flex } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { BoxContainer, Label } from './index.styles';
 
@@ -9,11 +9,33 @@ interface Props {
 }
 
 const DaftarLaporan: React.FC<Props> = ({ data }) => {
+  const boxListRef = useRef<HTMLDivElement>(null);
+
+  const scrollBoxes = (distance: number) => {
+    if (!boxListRef.current) return;
+    boxListRef.current.scrollBy({
+      left: distance,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleMouseDown = (distance: number) => {
+    let intervalId = setInterval(() => {
+      scrollBoxes(distance);
+    }, 20);
+
+    document.addEventListener('mouseup', () => {
+      clearInterval(intervalId);
+    });
+  };
+
   return (
     <Flex alignItems="center">
-      <ChevronLeftIcon width="32px" />
+      <Box onMouseDown={() => handleMouseDown(-100)}>
+        <ChevronLeftIcon width="32px" />
+      </Box>
 
-      <BoxContainer width={896}>
+      <BoxContainer width={896} ref={ boxListRef }>
         {data.map(laporan => (
           <Flex
             key={ laporan.bulan }
@@ -30,7 +52,9 @@ const DaftarLaporan: React.FC<Props> = ({ data }) => {
         ))}
       </BoxContainer>
 
-      <ChevronRightIcon width="32px" />
+      <Box onMouseDown={() => handleMouseDown(100)}>
+        <ChevronRightIcon width="32px" />
+      </Box>
     </Flex>
   )
 }
