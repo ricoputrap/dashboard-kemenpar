@@ -1,5 +1,6 @@
-import React, { useMemo, useState } from 'react'
+import React, { useMemo } from 'react'
 import { TDropdownItem } from '../../../../types/utils.type';
+import useChampionStore from '../../state/store';
 
 interface ReturnValue {
   activeDPP: string;
@@ -8,7 +9,8 @@ interface ReturnValue {
 }
 
 const useFilter = (): ReturnValue => {
-  const [activeDPP, setActiveDPP] = useState<string>("toba");
+  const activeDPP = useChampionStore(state => state.activeDPP);
+  const setActiveDPP = useChampionStore(state => state.setActiveDPP);
 
   const options: TDropdownItem[] = useMemo(() => {
     const keys: string[] = ["toba", "byp", "bts", "lombok", "l. bajo", "wakatobi"];
