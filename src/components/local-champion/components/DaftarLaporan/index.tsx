@@ -33,7 +33,6 @@ const DaftarLaporan: React.FC<Props> = ({ data }) => {
       + 4; // extra
 
     const containerWidth = width - totalWidth;
-    console.log("===== containerWidth:", containerWidth)
     return containerWidth
   }, [width])
 
