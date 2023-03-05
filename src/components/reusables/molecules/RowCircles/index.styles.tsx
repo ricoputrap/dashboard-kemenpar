@@ -1,9 +1,13 @@
 import styled from "@emotion/styled";
 
-export const Label = styled.div`
-  width: 66px;
+interface Props {
+  size: string;
+  width: string;
+}
+export const Label = styled.div<Props>`
+  width: ${props => props.width};
   margin-right: 12px;
-  font-size: 12px;
+  font-size: ${props => props.size};
   font-weight: 600;
   line-height: 12px;
 `;

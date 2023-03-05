@@ -6,16 +6,18 @@ import { CircleContainer, Label, Value } from './index.styles';
 interface Props {
   name: string;
   value: number;
+  labelSize: string;
+  labelWidth: string;
 }
 
-const RowCircles: React.FC<Props> = ({ name, value }) => {
+const RowCircles: React.FC<Props> = ({ name, value, labelSize, labelWidth }) => {
   const adjustedIndex: number = Number.isInteger(value)
     ? value - 1
     : Math.floor(value);
 
   return (
     <Flex alignItems="center">
-      <Label>{ name }</Label>
+      <Label size={ labelSize } width={ labelWidth }>{ name }</Label>
 
       <CircleContainer>
         {[0, 1, 2, 3, 4].map(index => (

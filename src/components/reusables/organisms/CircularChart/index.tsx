@@ -2,16 +2,22 @@ import { Stack } from '@chakra-ui/react'
 import React from 'react'
 import RowCircles from '../../molecules/RowCircles'
 
-type TCircularRowData = {
+export type TCircularRowData = {
   name: string;
   value: number;
 }
 
 interface Props {
   data: TCircularRowData[];
+  labelSize?: string;
+  labelWidth?: string;
 }
 
-const CircularChart: React.FC<Props> = ({ data }) => {
+const CircularChart: React.FC<Props> = ({
+  data,
+  labelSize = "12px",
+  labelWidth = "66px"
+}) => {
   return (
     <Stack rowGap="16px">
       {data.map((item, index) => (
@@ -19,6 +25,8 @@ const CircularChart: React.FC<Props> = ({ data }) => {
           key={ index }
           name={ item.name }
           value={ item.value }
+          labelSize={ labelSize }
+          labelWidth={ labelWidth }
         />
       ))}
     </Stack>
