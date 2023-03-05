@@ -1,0 +1,227 @@
+{
+  "data": {
+    "dpp": "lombok",
+    "data": [
+      {
+        "area": "lombok",
+        "kec": "Batu Layar",
+        "kab": "Lombok Barat",
+        "desa": "Pusuk Lestari",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Batu Layar",
+        "kab": "Lombok Barat",
+        "desa": "Senteluk",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Sekotong",
+        "kab": "Lombok Barat",
+        "desa": "Gili Gede Indah",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Sekotong",
+        "kab": "Lombok Barat",
+        "desa": "Sekotong Barat",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Sekotong",
+        "kab": "Lombok Barat",
+        "desa": "Buwun Mas",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Pujut",
+        "kab": "Lombok Tengah",
+        "desa": "Kuta",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Pujut",
+        "kab": "Lombok Tengah",
+        "desa": "Rembitan",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Praya Barat",
+        "kab": "Lombok Tengah",
+        "desa": "Selong Belanak",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Pemenang",
+        "kab": "Lombok Utara",
+        "desa": "Gili Indah",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Tanjung",
+        "kab": "Lombok Utara",
+        "desa": "Medana",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      },
+      {
+        "area": "lombok",
+        "kec": "Jerowaru",
+        "kab": "Lombok Utara",
+        "desa": "Jerowaru",
+        "laporanSetahun": [
+          { "bulan": "januari", "url": "" },
+          { "bulan": "februari", "url": "" },
+          { "bulan": "maret", "url": "" },
+          { "bulan": "april", "url": "" },
+          { "bulan": "mei", "url": "" },
+          { "bulan": "juni", "url": "" },
+          { "bulan": "juli", "url": "" },
+          { "bulan": "agustus", "url": "" },
+          { "bulan": "september", "url": "" },
+          { "bulan": "oktober", "url": "" },
+          { "bulan": "november", "url": "" },
+          { "bulan": "desember", "url": "" }
+        ]
+      }
+    ]
+  }
+}

@@ -2,8 +2,10 @@ import React from 'react'
 import BasePage from '../templates/BasePage'
 import { Box, Flex } from '@chakra-ui/react'
 import Filter from './components/Filter'
+import useInitData from './useInitData'
 
 const LocalChampionView: React.FC = () => {
+  useInitData();
   return (
     <BasePage id="local-champion">
       <Box
@@ -14,6 +16,17 @@ const LocalChampionView: React.FC = () => {
       >
         <Flex direction="column" rowGap="16px">
           <Filter />
+
+          {/* Data Bulanan per Desa */}
+          <Flex
+            direction="column"
+            rowGap="16px"
+            paddingX="16px"
+            paddingY="32px"
+            borderTop="1px solid #EAC170"
+          >
+            
+          </Flex>
         </Flex>
       </Box>
     </BasePage>

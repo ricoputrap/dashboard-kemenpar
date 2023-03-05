@@ -5,6 +5,7 @@ import { pendampinganStatistik, pendampinganLaporan } from './pendampingan';
 import sosialisasi from './sosialisasi';
 import pelatihan from './pelatihan';
 import narasumber from './narasumber';
+import { localChampion } from './local-champion';
 
 export const fetcher = (url: string, token: string = "") => {
   const config: AxiosRequestConfig<any> = { responseType: "json" }
@@ -35,7 +36,8 @@ export default {
   sosialisasi,
   pelatihan,
   narasumber,
+  localChampion,
   
   pendampinganStatistik,
-  pendampinganLaporan
+  pendampinganLaporan,
 }
