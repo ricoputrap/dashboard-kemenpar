@@ -88,8 +88,45 @@ const PublikasiView: React.FC = () => {
               <br/>www.indonesia.travel
             </Text>
           </Stack>
+
+          {/* Row III: Media Elektronik */}
           <Box>
             <Image src={ ChartLine } />
+
+            <Flex columnGap="16px" marginTop="24px">
+              <Circle size="154px" bg='rgba(234, 193, 112, 0.5)'>
+                <Circle size="122px" bg="#112647">
+                  <Stack>
+                    <Text
+                      fontSize="20px"
+                      fontWeight={600}
+                      textAlign="center"
+                    >
+                      MEDIA
+                    </Text>
+                    <Text
+                      fontSize="15px"
+                      fontWeight={600}
+                      textAlign="center"
+                      color="#EAC170"
+                      marginTop="0 !important"
+                    >
+                      ELEKTRONIK
+                    </Text>
+                  </Stack>
+                </Circle>
+              </Circle>
+
+              <Stack rowGap="16px" justifyContent="center">
+                <Text fontSize="18px" fontWeight={500} lineHeight="16px">
+                  1 Talkshow
+                </Text>
+                <Text fontSize="18px" fontWeight={500} marginTop="0 !important">
+                  120 Radio Insertion
+                  <br/>di 6 DPP
+                </Text>
+              </Stack>
+            </Flex>
           </Box>
         </Stack>
 
