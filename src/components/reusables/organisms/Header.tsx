@@ -36,9 +36,9 @@ const Header: React.FC = () => {
         top={94}
         width="100vw"
       >
-        KAMPANYE SADAR
+        KAMPANYE
         <br/>
-        WISATA 5.0
+        SADAR WISATA 5.0
       </Heading>
     </Box>
   )

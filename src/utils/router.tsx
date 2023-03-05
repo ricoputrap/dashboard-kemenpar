@@ -8,6 +8,7 @@ import Pendampingan from "../pages/Pendampingan";
 import Apresiasi from "../pages/Apresiasi";
 import Profile from "../pages/Profile";
 import Publikasi from "../pages/Publikasi";
+import LocalChampion from "../pages/LocalChampion";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <Profile />
+  },
+  {
+    path: "/local-champion",
+    element: <LocalChampion />
   },
   {
     path: "/publikasi",

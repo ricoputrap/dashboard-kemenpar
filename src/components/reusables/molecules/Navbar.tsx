@@ -14,6 +14,7 @@ const menus: IMenu[] = [
   { label: "PELATIHAN", path: "/pelatihan" },
   { label: "PENDAMPINGAN", path: "/pendampingan" },
   { label: "NARASUMBER", path: "/narasumber" },
+  { label: "L. Champion", path: "/local-champion" },
   { label: "PUBLIKASI", path: "/publikasi" },
 ]
 
