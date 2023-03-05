@@ -3,9 +3,13 @@ import { fetcher } from ".";
 import { getCookie } from "../utils/cookie";
 import { TLaporanBulanan, TLaporanPerDesa } from "../components/local-champion/state/index.types";
 
-export type TResponseChampion = {
+export type TResponseChampionPerDPP = {
   dpp: string;
   data: TLaporanPerDesa[];
+}
+
+export type TResponseChampion = {
+  data: TResponseChampionPerDPP;
 }
 
 export const localChampion = (dpp: string) => {

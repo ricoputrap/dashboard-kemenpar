@@ -8,10 +8,12 @@ const useChampionStore = create<TChampionState & TChampionActions>((set, get) =>
   setActiveDPP: (activeDPP) => set({ activeDPP }),
   setLaporanPerDPP: (dpp, daftarLaporan) => {
     const laporanPerDPP: TLaporanPerDPP = get().laporanPerDPP;
-
+        
     set({
-      ...laporanPerDPP,
-      [dpp]: daftarLaporan
+      laporanPerDPP: {
+        ...laporanPerDPP,
+        [dpp]: daftarLaporan
+      }
     })
   },
 
