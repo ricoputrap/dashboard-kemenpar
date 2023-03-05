@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Stack, Text } from '@chakra-ui/react';
+import { Box, Image, Stack } from '@chakra-ui/react';
 import React from 'react'
 import ChartLine from "../../../../assets/lines/chart-line.svg"
 import { MediaItem, Title } from './index.styles';
