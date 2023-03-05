@@ -9,6 +9,10 @@ export const BoxContainer = styled.div<Props>`
   column-gap: 22px;
   width: ${props => props.width}px;
   overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const Label = styled.p`
