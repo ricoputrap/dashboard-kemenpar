@@ -35,19 +35,15 @@
       },
       {
         "pendidikan": "SMA/ SMK",
-        "jumlah": 177
+        "jumlah": 176
       },
       {
         "pendidikan": "D1/ D2/ D3",
         "jumlah": 17
       },
       {
-        "pendidikan": "S1",
+        "pendidikan": "S1/ S2",
         "jumlah": 87
-      },
-      {
-        "pendidikan": "S2",
-        "jumlah": 0
       }
     ]
   }

@@ -31,7 +31,7 @@
       },
       {
         "pendidikan": "SMP",
-        "jumlah": 54
+        "jumlah": 55
       },
       {
         "pendidikan": "SMA/ SMK",
@@ -42,12 +42,8 @@
         "jumlah": 8
       },
       {
-        "pendidikan": "S1",
-        "jumlah": 47
-      },
-      {
-        "pendidikan": "S2",
-        "jumlah": 0
+        "pendidikan": "S1/ S2",
+        "jumlah": 48
       }
     ]
   }

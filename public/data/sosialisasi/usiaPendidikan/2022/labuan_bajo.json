@@ -13,7 +13,7 @@
       },
       {
         "usia": "45-65",
-        "jumlah": 16
+        "jumlah": 13
       },
       {
         "usia": ">65",
@@ -42,12 +42,8 @@
         "jumlah": 13
       },
       {
-        "pendidikan": "S1",
+        "pendidikan": "S1/ S2",
         "jumlah": 40
-      },
-      {
-        "pendidikan": "S2",
-        "jumlah": 0
       }
     ]
   }

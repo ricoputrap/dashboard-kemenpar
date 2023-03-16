@@ -13,11 +13,11 @@
       },
       {
         "usia": "45-65",
-        "jumlah": 187
+        "jumlah": 104
       },
       {
         "usia": ">65",
-        "jumlah": 0
+        "jumlah": 48
       }
     ],
     "pendidikan": [
@@ -35,19 +35,15 @@
       },
       {
         "pendidikan": "SMA/ SMK",
-        "jumlah": 567
+        "jumlah": 568
       },
       {
         "pendidikan": "D1/ D2/ D3",
-        "jumlah": 70
+        "jumlah": 75
       },
       {
-        "pendidikan": "S1",
-        "jumlah": 235
-      },
-      {
-        "pendidikan": "S2",
-        "jumlah": 12
+        "pendidikan": "S1/ S2",
+        "jumlah": 247
       }
     ]
   }
