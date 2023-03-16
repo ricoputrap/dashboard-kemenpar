@@ -10,8 +10,8 @@
       },
       {
         "lokasi": "byp",
-        "pre-test": 0,
-        "post-test": 0
+        "pre-test": 7.28,
+        "post-test": 8.42
       },
       {
         "lokasi": "bts",
@@ -20,18 +20,18 @@
       },
       {
         "lokasi": "lombok",
-        "pre-test": 0,
-        "post-test": 0
+        "pre-test": 6.27,
+        "post-test": 6.91
       },
       {
         "lokasi": "l.bajo",
-        "pre-test": 0,
-        "post-test": 0
+        "pre-test": 5.22,
+        "post-test": 6
       },
       {
         "lokasi": "wakatobi",
-        "pre-test": 0,
-        "post-test": 0
+        "pre-test": 5.95,
+        "post-test": 6.57
       }
     ]
   }
