@@ -4,33 +4,33 @@
     "data": [
       {
         "lokasi": "toba",
-        "pre-test": 45,
-        "post-test": 65
+        "pre-test": 65.33,
+        "post-test": 68.42
       },
       {
         "lokasi": "byp",
-        "pre-test": 25,
-        "post-test": 80
+        "pre-test": 68.58,
+        "post-test": 73.85
       },
       {
         "lokasi": "bts",
-        "pre-test": 25,
-        "post-test": 50
+        "pre-test": 64.93,
+        "post-test": 67.63
       },
       {
         "lokasi": "lombok",
-        "pre-test": 48,
-        "post-test": 65
+        "pre-test": 63.08,
+        "post-test": 66.81
       },
       {
         "lokasi": "l.bajo",
-        "pre-test": 25,
-        "post-test": 80
+        "pre-test": 58.37,
+        "post-test": 59.59
       },
       {
         "lokasi": "wakatobi",
-        "pre-test": 25,
-        "post-test": 49
+        "pre-test": 57.15,
+        "post-test": 61.57
       }
     ]
   }
