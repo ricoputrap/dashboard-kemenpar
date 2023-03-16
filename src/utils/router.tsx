@@ -43,14 +43,14 @@ const router = createBrowserRouter([
     path: "/profile",
     element: <Profile />
   },
-  {
-    path: "/local-champion",
-    element: <LocalChampion />
-  },
-  {
-    path: "/publikasi",
-    element: <Publikasi />
-  },
+  // {
+  //   path: "/local-champion",
+  //   element: <LocalChampion />
+  // },
+  // {
+  //   path: "/publikasi",
+  //   element: <Publikasi />
+  // },
 ]);
 
 export default router;
