@@ -11,8 +11,8 @@
         "rows": [
           {
             "full": { "value": 65, "label": "Desa" },
-            "done": { "value": 0, "label": "Terealisasi" },
-            "percent": { "value": "0%" }
+            "done": { "value": 44, "label": "Terealisasi" },
+            "percent": { "value": "67%" }
           },
           {
             "full": { "value": 325, "label": "Kunjungan" },
