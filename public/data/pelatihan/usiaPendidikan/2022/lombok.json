@@ -23,31 +23,27 @@
     "pendidikan": [
       {
         "pendidikan": "Tidak Tamat SD",
-        "jumlah": 23
+        "jumlah": 2
       },
       {
         "pendidikan": "SD",
-        "jumlah": 56
+        "jumlah": 3
       },
       {
         "pendidikan": "SMP",
-        "jumlah": 131
+        "jumlah": 2
       },
       {
         "pendidikan": "SMA/ SMK",
-        "jumlah": 567
+        "jumlah": 2
       },
       {
         "pendidikan": "D1/ D2/ D3",
-        "jumlah": 70
+        "jumlah": 13
       },
       {
-        "pendidikan": "S1",
-        "jumlah": 235
-      },
-      {
-        "pendidikan": "S2",
-        "jumlah": 12
+        "pendidikan": "S1/ S2",
+        "jumlah": 34
       }
     ]
   }
