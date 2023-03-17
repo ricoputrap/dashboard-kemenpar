@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { TDropdownItem } from "../../../../../types/utils.type";
 import useMateriStore from "../../state/store";
 
-const DAFTAR_MATERI = ["pelatihan_a", "pelatihan_b", "pelatihan_c"];
+const DAFTAR_MATERI = ["pelatihan_a_&_b", "pelatihan_c"];
 
 interface ReturnValue {
   options: TDropdownItem[];

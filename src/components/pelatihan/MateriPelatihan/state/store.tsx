@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { TMateriState, TMateriActions, TMateriPertahun, TMateriPerJenis } from "./index.types";
 
 const useMateriStore = create<TMateriState & TMateriActions>((set, get) => ({
-  jenisMateri: "pelatihan_a",
+  jenisMateri: "pelatihan_a_&_b",
   materiPertahun: {},
 
   setJenisMateri: (jenisMateri) => {set({ jenisMateri })},

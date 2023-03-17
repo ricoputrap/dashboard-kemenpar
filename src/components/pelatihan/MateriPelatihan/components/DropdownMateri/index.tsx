@@ -7,7 +7,7 @@ const DropdownMateri: React.FC = () => {
   const { activeMateri, options, handleChange } = useData();
 
   return (
-    <Box width="180px">
+    <Box width="200px">
       <Dropdown
         activeItem={ activeMateri }
         options={ options }
