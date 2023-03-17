@@ -16,8 +16,8 @@
           },
           {
             "full": { "value": 325, "label": "Kunjungan" },
-            "done": { "value": 0, "label": "Terealisasi" },
-            "percent": { "value": "0%" }
+            "done": { "value": 87, "label": "Terealisasi" },
+            "percent": { "value": "27%" }
           }
         ]
       }
@@ -76,13 +76,13 @@
         "rows": [
           {
             "full": { "value": 90, "label": "Desa" },
-            "done": { "value": 0, "label": "Terealisasi" },
-            "percent": { "value": "0%" }
+            "done": { "value": 30, "label": "Terealisasi" },
+            "percent": { "value": "33%" }
           },
           {
-            "full": { "value": 0, "label": "Peserta" },
-            "done": { "value": 0, "label": "Terealisasi" },
-            "percent": { "value": "0%" }
+            "full": { "value": 9000, "label": "Peserta" },
+            "done": { "value": 2992, "label": "Terealisasi" },
+            "percent": { "value": "33%" }
           }
         ]
       }
