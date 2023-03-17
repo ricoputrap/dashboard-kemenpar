@@ -5,19 +5,19 @@
     "usia": [
       {
         "usia": "17-25",
-        "jumlah": 294
+        "jumlah": 0
       },
       {
         "usia": "26-45",
-        "jumlah": 716
+        "jumlah": 0
       },
       {
         "usia": "45-65",
-        "jumlah": 870
+        "jumlah": 0
       },
       {
         "usia": ">65",
-        "jumlah": 100
+        "jumlah": 0
       }
     ],
     "pendidikan": [
