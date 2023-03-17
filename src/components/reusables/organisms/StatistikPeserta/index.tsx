@@ -10,6 +10,7 @@ const StatistikPeserta: React.FC<TStatistikPeserta> = ({
   perempuan
 }) => {
   const percent: number = useMemo(() => {
+    if (target == 0) return 0;
     return Math.ceil(realisasi * 100 / target);
   }, [target, realisasi]);
 
