@@ -35,11 +35,11 @@
         "rows": [
           {
             "full": { "value": 65, "label": "Desa" },
-            "done": { "value": 0, "label": "Terealisasi" }
+            "done": { "value": 65, "label": "Terealisasi" }
           },
           {
             "full": { "value": 975, "label": "Peserta" },
-            "done": { "value": 0, "label": "Terealisasi" }
+            "done": { "value": 974, "label": "Terealisasi" }
           }
         ]
       }
@@ -62,7 +62,7 @@
           },
           {
             "full": { "value": 6500, "label": "Peserta" },
-            "done": { "value": 6391, "label": "Terealisasi" },
+            "done": { "value": 6413, "label": "Terealisasi" },
             "percent": { "value": "98%" }
           }
         ]
@@ -76,13 +76,13 @@
         "rows": [
           {
             "full": { "value": 90, "label": "Desa" },
-            "done": { "value": 18, "label": "Terealisasi" },
-            "percent": { "value": "20%" }
+            "done": { "value": 0, "label": "Terealisasi" },
+            "percent": { "value": "0%" }
           },
           {
-            "full": { "value": 9000, "label": "Peserta" },
-            "done": { "value": 1799, "label": "Terealisasi" },
-            "percent": { "value": "19,9%" }
+            "full": { "value": 0, "label": "Peserta" },
+            "done": { "value": 0, "label": "Terealisasi" },
+            "percent": { "value": "0%" }
           }
         ]
       }
