@@ -32,7 +32,8 @@ const ItemArea: React.FC<Props> = ({ label }) => {
           background="#E9C270"
 
           display="flex"
-
+          flexDirection="column"
+          rowGap="10px"
         >
           <Text
             fontSize="17px"
