@@ -9,6 +9,7 @@ import withAuth from '../hoc/withAuth'
 import ImageContainer from '../components/home/MapIndo/ImageContainer'
 import ImageContent from '../components/home/MapIndo/ImageContent'
 import StatisticContainer from '../components/home/organisms/StatisticContainer'
+import ItemArea from '../components/home/MapIndo/ItemArea'
 
 const Home: React.FC = () => {
   const {
@@ -43,25 +44,9 @@ const Home: React.FC = () => {
             }}
             position="relative"
           >
-            <Flex
-              justifyContent="center"
-              alignItems="center"
-              position="absolute"
-              left="68px"
-              top="28px"
-              width="52px"
-              height="14px"
-              background="#e9c270"
-              borderRadius="5px"
-            >
-              <Text
-                fontSize="12px"
-                fontWeight={400}
-                color="black"
-              >
-                TOBA
-              </Text>
-            </Flex>
+            <Box position="absolute" left="68px" top="28px">
+              <ItemArea label="TOBA" width="52px" />
+            </Box>
             <ImageContent src={ MapIndo } />
           </ImageContainer>
         </Flex>
