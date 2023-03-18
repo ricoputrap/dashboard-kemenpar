@@ -3,21 +3,18 @@ import React from 'react'
 
 interface Props {
   label: string;
-  width: string;
 }
 
-const ItemArea: React.FC<Props> = ({ label, width }) => {
+const ItemArea: React.FC<Props> = ({ label }) => {
   return (
     <Flex
       justifyContent="center"
       alignItems="center"
-      height="14px"
-      width={ width }
-      background="#e9c270"
-      borderRadius="5px"
+      height="100%"
+      width="100%"
     >
       <Text
-        fontSize="12px"
+        // fontSize="12px"
         fontWeight={500}
         color="black"
       >

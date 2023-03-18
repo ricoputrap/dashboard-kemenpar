@@ -10,6 +10,7 @@ import ImageContainer from '../components/home/MapIndo/ImageContainer'
 import ImageContent from '../components/home/MapIndo/ImageContent'
 import StatisticContainer from '../components/home/organisms/StatisticContainer'
 import ItemArea from '../components/home/MapIndo/ItemArea'
+import ItemAreaToba from '../components/home/MapIndo/ItemAreaToba'
 
 const Home: React.FC = () => {
   const {
@@ -44,9 +45,9 @@ const Home: React.FC = () => {
             }}
             position="relative"
           >
-            <Box position="absolute" left="68px" top="28px">
-              <ItemArea label="TOBA" width="52px" />
-            </Box>
+            <ItemAreaToba>
+              <ItemArea label="TOBA" />
+            </ItemAreaToba>
             <ImageContent src={ MapIndo } />
           </ImageContainer>
         </Flex>
