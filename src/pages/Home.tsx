@@ -6,6 +6,43 @@ import KPI from '../components/home/organisms/KPI'
 import useDataHome from '../hooks/useDataHome'
 import MapIndo from "../assets/images/Peta.svg";
 import withAuth from '../hoc/withAuth'
+import styled from '@emotion/styled'
+
+const ImageContainer = styled(Flex)`
+  width: 100%;
+
+  @media (min-width: 1280px) {
+    width: 700px;
+  }
+
+  @media (min-width: 1310px) {
+    width: 750px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 800px;
+  }
+`;
+
+const ImageContent = styled(Image)`
+  width: 800px;
+
+  @media (min-width: 1110px) {
+    width: 900px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 700px;
+  }
+
+  @media (min-width: 1310px) {
+    width: 750px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 800px;
+  }
+`;
 
 const Home: React.FC = () => {
   const {
@@ -22,23 +59,27 @@ const Home: React.FC = () => {
           gap="20px"
         >
           <Box
-            width={{ base: "100%", xl: "35%" }}
             height="300px"
+            width={{
+              base: "100%",
+              xl: "425px"
+            }}
           >
             <DescriptionBox
               height='300px'
             />
           </Box>
 
-          <Flex
-            justifyContent={{ base: "center", xl: "end" }}
-            width={{ base: "100%", xl: "55vw" }}
+          <ImageContainer
+            justifyContent={{
+              base: "center",
+              xl: "end"
+            }}
           >
-            <Image
+            <ImageContent
               src={ MapIndo }
-              width={{ base: "794px", xl: "55vw" }}
             />
-          </Flex>
+          </ImageContainer>
         </Flex>
 
         <Flex
