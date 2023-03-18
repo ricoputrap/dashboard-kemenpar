@@ -1,7 +1,7 @@
 import React from 'react'
 import BasePage from '../components/templates/BasePage'
 import DescriptionBox from '../components/home/DescriptionBox'
-import { Box, Flex, Image } from '@chakra-ui/react'
+import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import KPI from '../components/home/organisms/KPI'
 import useDataHome from '../hooks/useDataHome'
 import MapIndo from "../assets/images/Peta.svg";
@@ -87,7 +87,27 @@ const Home: React.FC = () => {
               base: "center",
               xl: "end"
             }}
+            position="relative"
           >
+            <Flex
+              justifyContent="center"
+              alignItems="center"
+              position="absolute"
+              left="68px"
+              top="28px"
+              width="52px"
+              height="14px"
+              background="#e9c270"
+              borderRadius="5px"
+            >
+              <Text
+                fontSize="12px"
+                fontWeight={400}
+                color="black"
+              >
+                TOBA
+              </Text>
+            </Flex>
             <ImageContent
               src={ MapIndo }
             />
