@@ -1,60 +1,14 @@
 import React from 'react'
 import BasePage from '../components/templates/BasePage'
 import DescriptionBox from '../components/home/DescriptionBox'
-import { Box, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Flex, Text } from '@chakra-ui/react'
 import KPI from '../components/home/organisms/KPI'
 import useDataHome from '../hooks/useDataHome'
 import MapIndo from "../assets/images/Peta.svg";
 import withAuth from '../hoc/withAuth'
-import styled from '@emotion/styled'
-
-const ImageContainer = styled(Flex)`
-  width: 100%;
-
-  @media (min-width: 1280px) {
-    width: 700px;
-  }
-
-  @media (min-width: 1310px) {
-    width: 750px;
-  }
-
-  @media (min-width: 1440px) {
-    width: 800px;
-  }
-`;
-
-const ImageContent = styled(Image)`
-  width: 800px;
-
-  @media (min-width: 1110px) {
-    width: 900px;
-  }
-
-  @media (min-width: 1280px) {
-    width: 700px;
-  }
-
-  @media (min-width: 1310px) {
-    width: 750px;
-  }
-
-  @media (min-width: 1440px) {
-    width: 800px;
-  }
-`;
-
-const StatisticContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  @media (min-width: 1365px) {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-`;
+import ImageContainer from '../components/home/MapIndo/ImageContainer'
+import ImageContent from '../components/home/MapIndo/ImageContent'
+import StatisticContainer from '../components/home/organisms/StatisticContainer'
 
 const Home: React.FC = () => {
   const {
@@ -108,9 +62,7 @@ const Home: React.FC = () => {
                 TOBA
               </Text>
             </Flex>
-            <ImageContent
-              src={ MapIndo }
-            />
+            <ImageContent src={ MapIndo } />
           </ImageContainer>
         </Flex>
 
