@@ -44,6 +44,18 @@ const ImageContent = styled(Image)`
   }
 `;
 
+const StatisticContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (min-width: 1365px) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+`;
+
 const Home: React.FC = () => {
   const {
     pendampingan, pelatihan, sosialisasi,
@@ -82,15 +94,11 @@ const Home: React.FC = () => {
           </ImageContainer>
         </Flex>
 
-        <Flex
-          justifyContent={{ base: "center", xl: "space-between" }}
-          flexWrap={{ base: "wrap", xl: "nowrap" }}
-          gap="20px"
-        >
+        <StatisticContainer>
           <KPI data={ sosialisasi } />
           <KPI data={ pelatihan } />
           <KPI data={ pendampingan } />
-        </Flex>
+        </StatisticContainer>
       </Flex>
     </BasePage>
   )
