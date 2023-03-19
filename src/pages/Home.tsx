@@ -1,7 +1,7 @@
 import React from 'react'
 import BasePage from '../components/templates/BasePage'
 import DescriptionBox from '../components/home/DescriptionBox'
-import { Box, Flex, Text } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import KPI from '../components/home/organisms/KPI'
 import useDataHome from '../hooks/useDataHome'
 import MapIndo from "../assets/images/Peta.svg";
@@ -46,7 +46,10 @@ const Home: React.FC = () => {
             position="relative"
           >
             <ItemAreaToba>
-              <ItemArea label="TOBA" />
+              <ItemArea label="TOBA" data={[
+              { tahun: 2022, jumlah: 18 },
+              { tahun: 2023, jumlah: 10 }
+            ]} />
             </ItemAreaToba>
             <ImageContent src={ MapIndo } />
           </ImageContainer>
