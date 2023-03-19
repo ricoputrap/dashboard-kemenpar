@@ -1,4 +1,4 @@
-import { Popover, PopoverContent, PopoverTrigger, Portal } from '@chakra-ui/react'
+import { Popover, PopoverCloseButton, PopoverContent, PopoverTrigger, Portal, useDisclosure } from '@chakra-ui/react'
 import React from 'react'
 import { AreaBadge } from './index.styles';
 import PopoverArea from '../PopoverArea';
@@ -11,7 +11,10 @@ interface Props {
 
 const ItemArea: React.FC<Props> = ({ label, data }) => {
   return (
-    <Popover placement="right-start">
+    <Popover
+      placement="right-start"
+      closeOnEsc={true}
+    >
       <PopoverTrigger>
         <AreaBadge>{ label }</AreaBadge>
       </PopoverTrigger>
@@ -24,6 +27,12 @@ const ItemArea: React.FC<Props> = ({ label, data }) => {
           color="#112647"
           background="#E9C270"
         >
+          <PopoverCloseButton
+            fontSize="8px"
+            border="none"
+            right="2px"
+            top="2px"
+          />
           <PopoverArea
             title={ label }
             data={ data }
