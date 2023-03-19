@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dpp": "wakatobi",
+    "data": [
+      {
+        "nama": "IRT",
+        "jumlah": 112
+      },
+      {
+        "nama": "Wiraswasta",
+        "jumlah": 61
+      },
+      {
+        "nama": "Petani",
+        "jumlah": 45
+      },
+      {
+        "nama": "Nelayan",
+        "jumlah": 35
+      },
+      {
+        "nama": "Honorer",
+        "jumlah": 18
+      },
+      {
+        "nama": "Pelajar",
+        "jumlah": 17
+      },
+      {
+        "nama": "Perangkat Desa",
+        "jumlah": 13
+      },
+      {
+        "nama": "Tukang",
+        "jumlah": 8
+      },
+      {
+        "nama": "Guru",
+        "jumlah": 6
+      },
+      {
+        "nama": "Pengrajin",
+        "jumlah": 6
+      }
+    ]
+  }
+}

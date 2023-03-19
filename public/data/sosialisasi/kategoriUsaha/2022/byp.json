@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dpp": "byp",
+    "data": [
+      {
+        "nama": "Swasta",
+        "jumlah": 624
+      },
+      {
+        "nama": "IRT",
+        "jumlah": 221
+      },
+      {
+        "nama": "Buruh",
+        "jumlah": 122
+      },
+      {
+        "nama": "Mahasiswa",
+        "jumlah": 100
+      },
+      {
+        "nama": "PNS",
+        "jumlah": 98
+      },
+      {
+        "nama": "Pensiunan",
+        "jumlah": 63
+      },
+      {
+        "nama": "Petani",
+        "jumlah": 55
+      },
+      {
+        "nama": "Perangkat Desa",
+        "jumlah": 55
+      },
+      {
+        "nama": "Petani",
+        "jumlah": 44
+      },
+      {
+        "nama": "Pariwisata",
+        "jumlah": 41
+      }
+    ]
+  }
+}

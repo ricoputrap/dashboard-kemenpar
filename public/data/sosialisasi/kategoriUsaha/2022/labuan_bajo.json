@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dpp": "labuan_bajo",
+    "data": [
+      {
+        "nama": "Nelayan",
+        "jumlah": 109
+      },
+      {
+        "nama": "Petani",
+        "jumlah": 33
+      },
+      {
+        "nama": "Guru",
+        "jumlah": 18
+      },
+      {
+        "nama": "Swasta",
+        "jumlah": 15
+      },
+      {
+        "nama": "Perangkat Desa",
+        "jumlah": 18
+      },
+      {
+        "nama": "BPD",
+        "jumlah": 9
+      },
+      {
+        "nama": "PNS",
+        "jumlah": 7
+      },
+      {
+        "nama": "IRT",
+        "jumlah": 4
+      },
+      {
+        "nama": "Pokdarwis",
+        "jumlah": 3
+      },
+      {
+        "nama": "Bidan",
+        "jumlah": 3
+      }
+    ]
+  }
+}

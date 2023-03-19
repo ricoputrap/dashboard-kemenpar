@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dpp": "labuan_bajo",
+    "data": [
+      {
+        "nama": "IRT",
+        "jumlah": 94
+      },
+      {
+        "nama": "Swasta",
+        "jumlah": 62
+      },
+      {
+        "nama": "Nelayan",
+        "jumlah": 39
+      },
+      {
+        "nama": "Petani",
+        "jumlah": 37
+      },
+      {
+        "nama": "Guru",
+        "jumlah": 30
+      },
+      {
+        "nama": "Pelajar",
+        "jumlah": 24
+      },
+      {
+        "nama": "Staff Desa",
+        "jumlah": 17
+      },
+      {
+        "nama": "Tokoh Perempuan",
+        "jumlah": 12
+      },
+      {
+        "nama": "Pokdarwis",
+        "jumlah": 9
+      },
+      {
+        "nama": "Bidan",
+        "jumlah": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dpp": "lombok",
+    "data": [
+      {
+        "nama": "Wiraswasta",
+        "jumlah": 270
+      },
+      {
+        "nama": "Mahasiswa",
+        "jumlah": 82
+      },
+      {
+        "nama": "Perangkat Desa",
+        "jumlah": 52
+      },
+      {
+        "nama": "Petani",
+        "jumlah": 41
+      },
+      {
+        "nama": "IRT",
+        "jumlah": 39
+      },
+      {
+        "nama": "Nelayan",
+        "jumlah": 37
+      },
+      {
+        "nama": "Pokdarwis",
+        "jumlah": 36
+      },
+      {
+        "nama": "Dispar",
+        "jumlah": 32
+      },
+      {
+        "nama": "Tour Guide",
+        "jumlah": 29
+      },
+      {
+        "nama": "Guru",
+        "jumlah": 25
+      }
+    ]
+  }
+}

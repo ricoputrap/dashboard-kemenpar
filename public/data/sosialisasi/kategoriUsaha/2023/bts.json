@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dpp": "bts",
+    "data": [
+      {
+        "nama": "Petani",
+        "jumlah": 171
+      },
+      {
+        "nama": "Perangkat Desa",
+        "jumlah": 19
+      },
+      {
+        "nama": "Kader",
+        "jumlah": 13
+      },
+      {
+        "nama": "IRT",
+        "jumlah": 10
+      },
+      {
+        "nama": "Pedagang",
+        "jumlah": 7
+      },
+      {
+        "nama": "Babinsa",
+        "jumlah": 5
+      },
+      {
+        "nama": "Karyawan Swasta",
+        "jumlah": 4
+      },
+      {
+        "nama": "Pekebun",
+        "jumlah": 2
+      },
+      {
+        "nama": "Kepala Desa",
+        "jumlah": 2
+      },
+      {
+        "nama": "Buruh",
+        "jumlah": 2
+      }
+    ]
+  }
+}

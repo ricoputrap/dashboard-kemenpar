@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dpp": "toba",
+    "data": [
+      {
+        "nama": "Petani",
+        "jumlah": 194
+      },
+      {
+        "nama": "Swasta",
+        "jumlah": 100
+      },
+      {
+        "nama": "IRT",
+        "jumlah": 16
+      },
+      {
+        "nama": "Pelajar",
+        "jumlah": 9
+      },
+      {
+        "nama": "Kades",
+        "jumlah": 9
+      },
+      {
+        "nama": "Perangkat Desa",
+        "jumlah": 9
+      },
+      {
+        "nama": "Pengrajin",
+        "jumlah": 8
+      },
+      {
+        "nama": "PNS",
+        "jumlah": 7
+      },
+      {
+        "nama": "UMKM",
+        "jumlah": 4
+      },
+      {
+        "nama": "Pedagang",
+        "jumlah": 3
+      }
+    ]
+  }
+}

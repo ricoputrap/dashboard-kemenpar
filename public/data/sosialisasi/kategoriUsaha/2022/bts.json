@@ -1,0 +1,47 @@
+{
+  "data": {
+    "dpp": "bts",
+    "data": [
+      {
+        "nama": "Petani",
+        "jumlah": 226
+      },
+      {
+        "nama": "Wiraswasta",
+        "jumlah": 134
+      },
+      {
+        "nama": "PKL",
+        "jumlah": 77
+      },
+      {
+        "nama": "IRT",
+        "jumlah": 44
+      },
+      {
+        "nama": "Pelajar",
+        "jumlah": 62
+      },
+      {
+        "nama": "Perangkat Desa",
+        "jumlah": 37
+      },
+      {
+        "nama": "Guru",
+        "jumlah": 31
+      },
+      {
+        "nama": "Wisata",
+        "jumlah": 34
+      },
+      {
+        "nama": "Pengelola Homestay",
+        "jumlah": 19
+      },
+      {
+        "nama": "PNS",
+        "jumlah": 19
+      }
+    ]
+  }
+}
