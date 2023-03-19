@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { TBarData } from '../../../reusables/organisms/BarChart/index.types';
 import useKategoriUsahaStore from '../../state/kategoriUsaha/store';
 import { TKategoriUsaha } from '../../types/kategoriUsaha.types';
+import useSosialisasiStore from '../../state/store';
 
 interface ReturnValue {
   labels: string[];
@@ -9,19 +10,16 @@ interface ReturnValue {
 }
 
 const useData = (): ReturnValue => {
+  const tahun = useSosialisasiStore(state => state.tahun);
   const dpp = useKategoriUsahaStore(state => state.dpp);
-  const kategoriUsahaPerlokasi = useKategoriUsahaStore(state => state.kategoriUsahaPerlokasi);
+  const kategoriUsahaPertahun = useKategoriUsahaStore(state => state.kategoriUsahaPertahun);
+  const getKategoriUsahaSetahun = useKategoriUsahaStore(state => state.getKategoriUsahaSetahun);
   
   const [labels, setLabels] = useState<string[]>([]);
   const [dataset, setDataset] = useState<TBarData[]>([]);
 
   useEffect(() => {
-    if (!kategoriUsahaPerlokasi.hasOwnProperty(dpp)) {
-      setDataset([]);
-      return;
-    }
-
-    const daftarKategoriUsaha: TKategoriUsaha[] = kategoriUsahaPerlokasi[dpp];
+    const daftarKategoriUsaha: TKategoriUsaha[] = getKategoriUsahaSetahun(tahun, dpp);
     const labels: string[] = daftarKategoriUsaha.map(
       kategori => kategori.nama.toUpperCase()
     );
@@ -40,7 +38,7 @@ const useData = (): ReturnValue => {
 
     setLabels(labels);
     setDataset(dataset);
-  }, [kategoriUsahaPerlokasi, dpp]);
+  }, [tahun, dpp, kategoriUsahaPertahun]);
 
   return { labels, dataset }
 }

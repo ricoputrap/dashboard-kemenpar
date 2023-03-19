@@ -4,12 +4,17 @@ export type TKategoriUsahaPerlokasi = {
   [dpp: string]: TKategoriUsaha[];
 }
 
+export type TKategoriUsahaPertahun = {
+  [tahun: number]: TKategoriUsahaPerlokasi;
+}
+
 export type TKategoriUsahaState = {
   dpp: string;
-  kategoriUsahaPerlokasi: TKategoriUsahaPerlokasi;
+  kategoriUsahaPertahun: TKategoriUsahaPertahun;
 }
 
 export type TKategoriUsahaActions = {
   setDPP: (dpp: string) => void;
-  setKategoriUsahaPerlokasi: (data: TKategoriUsaha[], dpp: string) => void;
+  getKategoriUsahaSetahun: (tahun: number, dpp: string) => TKategoriUsaha[];
+  setKategoriUsahaPertahun: (data: TKategoriUsaha[], tahun: number, dpp: string) => void;
 }

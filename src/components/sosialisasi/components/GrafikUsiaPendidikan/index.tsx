@@ -1,16 +1,9 @@
 import React, { useMemo } from 'react'
 import { ChartContainer, Container } from './index.styles'
-import { TDropdownItem } from '../../../../types/utils.type'
 import GrafikUsia from './GrafikUsia'
 import useWindowSize from '../../../../hooks/useWindowSize'
 import DropdownLokasi from './DropdownLokasi'
 import GrafikPendidikan from './GrafikPendidikan'
-
-const options: TDropdownItem[] = [
-  { label: "TOBA", value: "TOBA" },
-  { label: "BYP", value: "BYP" },
-  { label: "BTDS", value: "BTDS" },
-]
 
 const getChartWidth = (width: number): number => {
   if (width == 0) {

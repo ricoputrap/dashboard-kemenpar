@@ -11,10 +11,10 @@ export type TKategoriUsahaResponse = {
   data: TKategoriUsahaSetahun;
 }
 
-const kategoriUsaha = (dpp: string) => {
+const kategoriUsaha = (dpp: string, tahun: number) => {
   const lokasi: string = dpp == "labuan bajo" ? "labuan_bajo" : dpp;
 
-  const source: string = `data/sosialisasi/kategoriUsaha/${lokasi}.json`;
+  const source: string = `data/sosialisasi/kategoriUsaha/${tahun}/${lokasi}.json`;
   const { data, error, isLoading } = useSWR<TKategoriUsahaResponse>(source, fetcher);
   return { data, error, isLoading }
 }

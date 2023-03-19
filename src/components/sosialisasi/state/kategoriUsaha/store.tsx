@@ -1,24 +1,42 @@
 import { create } from "zustand";
-import { TKategoriUsahaState, TKategoriUsahaActions, TKategoriUsahaPerlokasi } from "./index.types";
+import { TKategoriUsahaState, TKategoriUsahaActions, TKategoriUsahaPerlokasi, TKategoriUsahaPertahun } from "./index.types";
 import { TKategoriUsaha } from "../../types/kategoriUsaha.types";
 
 const useKategoriUsahaStore = create<TKategoriUsahaState & TKategoriUsahaActions>((set, get) => ({
   dpp: "toba",
-  kategoriUsahaPerlokasi: {},
+  kategoriUsahaPertahun: {},
 
   setDPP: (dpp: string) => set({ dpp }),
 
-  setKategoriUsahaPerlokasi: (data: TKategoriUsaha[], dpp: string) => {
-    const kategoriUsahaPerlokasi: TKategoriUsahaPerlokasi = get().kategoriUsahaPerlokasi;
+  getKategoriUsahaSetahun: (tahun: number, dpp: string) => {
+    const kategoriUsahaPertahun: TKategoriUsahaPertahun = get().kategoriUsahaPertahun;
 
-    // compute value
-    const updatedValue: TKategoriUsahaPerlokasi = {
-      ...kategoriUsahaPerlokasi,
-      [dpp]: data
+    if (!kategoriUsahaPertahun.hasOwnProperty(tahun))
+      return [];
+
+    const kategoriUsahaSetahun: TKategoriUsahaPerlokasi = kategoriUsahaPertahun[tahun];
+    if (!kategoriUsahaSetahun.hasOwnProperty(dpp))
+      return [];
+
+    return kategoriUsahaSetahun[dpp];
+  },
+  
+  setKategoriUsahaPertahun: (data: TKategoriUsaha[], tahun: number, dpp: string) => {
+    const kategoriUsahaPertahun: TKategoriUsahaPertahun = get().kategoriUsahaPertahun;;
+    const kategoriUsahaSetahunPerlokasi: TKategoriUsahaPerlokasi = kategoriUsahaPertahun[tahun];
+    let updatedKategoriUsahaPertahun: TKategoriUsahaPertahun = { ...kategoriUsahaPertahun };
+
+    if (kategoriUsahaSetahunPerlokasi) {
+      updatedKategoriUsahaPertahun[tahun][dpp] = data;
+    }
+    else {
+      updatedKategoriUsahaPertahun[tahun] = {
+        [dpp]: data
+      }
     }
 
     // update value
-    set({ kategoriUsahaPerlokasi: updatedValue })
+    set({ kategoriUsahaPertahun: updatedKategoriUsahaPertahun })
   }
 }));
 
