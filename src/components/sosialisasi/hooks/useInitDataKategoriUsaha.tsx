@@ -21,7 +21,7 @@ const useInitDataKategoriUsaha = (): ReturnValue => {
   useEffect(() => {
     if (!data) return;
 
-    const { dpp, data: dataKategoriUsaha }: TKategoriUsahaSetahun = data.data;
+    const { data: dataKategoriUsaha }: TKategoriUsahaSetahun = data.data;
     setKategoriUsahaPertahun(dataKategoriUsaha, tahun, dpp);
   }, [data]);
 
