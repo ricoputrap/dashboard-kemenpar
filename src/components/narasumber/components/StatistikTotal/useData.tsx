@@ -24,7 +24,7 @@ const useData = (): ReturnValue => {
     const women: TGenderData = {
       value: jumlahTotal.totalPerempuan,
       percent: Math.ceil((totalPerempuan * 100) / total),
-      label: "laki-laki",
+      label: "perempuan",
       color: "#FF1F00"
     }
 
