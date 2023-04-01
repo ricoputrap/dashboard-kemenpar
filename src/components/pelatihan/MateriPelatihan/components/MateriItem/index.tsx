@@ -6,19 +6,23 @@ import PdfIcon from "../../../../../assets/icons/pdf-icon.svg"
 
 const MateriItem: React.FC<TMateri> = ({ label, url }) => {
   return (
-    <Container>
-      <BoxLabel>
-        <Label>{ label }</Label>
-      </BoxLabel>
+    <LinkBox>
+      <LinkOverlay href={ url } target="_blank">
+        <Container>
+          <BoxLabel>
+            <Label>{ label }</Label>
+          </BoxLabel>
 
-      <BoxIcon>
-        <Image
-          src={ PdfIcon }
-          width="25.5px"
-          height="30px"
-        />
-      </BoxIcon>
-    </Container>
+          <BoxIcon>
+            <Image
+              src={ PdfIcon }
+              width="25.5px"
+              height="30px"
+            />
+          </BoxIcon>
+        </Container>
+      </LinkOverlay>
+    </LinkBox>
   )
 }
 
