@@ -76,8 +76,8 @@
         "rows": [
           {
             "full": { "value": 90, "label": "Desa" },
-            "done": { "value": 30, "label": "Terealisasi" },
-            "percent": { "value": "33%" }
+            "done": { "value": 46, "label": "Terealisasi" },
+            "percent": { "value": "51%" }
           },
           {
             "full": { "value": 9000, "label": "Peserta" },

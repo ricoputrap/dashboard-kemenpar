@@ -26,9 +26,6 @@ const Content: React.FC = () => {
       <Paragraph>
         Pelatihan ditujukan untuk meningkatkan kapasitas pelaku pariwisata meliputi Program Pengembangan Potensi Produk Pariwisata, Homestay, Kuliner dan Cinderamata serta Kewirausahaan dan Manajamen Bisnis
       </Paragraph>
-      <Paragraph>
-        Target Program ini adalah: Pokdarwis (Kelompok Sadar Wisata), BUMDES, UMKM, Koperasi, Pemandu Wisata dan pelaku usaha pariwisata lainnya.
-      </Paragraph>
     </Flex>
   )
 }
