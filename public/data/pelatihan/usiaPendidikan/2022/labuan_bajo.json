@@ -5,15 +5,15 @@
     "usia": [
       {
         "usia": "17-25",
-        "jumlah": 21
+        "jumlah": 42
       },
       {
         "usia": "26-45",
-        "jumlah": 23
+        "jumlah": 46
       },
       {
         "usia": "45-65",
-        "jumlah": 1
+        "jumlah": 2
       },
       {
         "usia": ">65",
