@@ -4,16 +4,15 @@ import useDataHome from './state/useDataHome'
 import BasePage from '../templates/BasePage';
 import DescriptionBox from './DescriptionBox';
 import ImageContainer from './MapIndo/ImageContainer';
-import ItemAreaToba from './MapIndo/ItemAreaToba';
-import ItemArea from './MapIndo/ItemArea';
 import ImageContent from './MapIndo/ImageContent';
 import StatisticContainer from './organisms/StatisticContainer';
 import KPI from './organisms/KPI';
 import MapIndo from "../../assets/images/Peta.svg";
+import ItemAreas from './components/ItemAreas';
 
 const HomeView: React.FC = () => {
   const {
-    pendampingan, pelatihan, sosialisasi,
+    pendampingan, pelatihan, sosialisasi, map,
     error, isLoading
   } = useDataHome();
 
@@ -44,12 +43,7 @@ const HomeView: React.FC = () => {
             }}
             position="relative"
           >
-            <ItemAreaToba>
-              <ItemArea label="TOBA" data={[
-              { tahun: 2022, jumlah: 18 },
-              { tahun: 2023, jumlah: 10 }
-            ]} />
-            </ItemAreaToba>
+            <ItemAreas />
             <ImageContent src={ MapIndo } />
           </ImageContainer>
         </Flex>

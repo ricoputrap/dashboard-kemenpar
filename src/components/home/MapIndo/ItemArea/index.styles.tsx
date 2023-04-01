@@ -8,4 +8,5 @@ export const AreaBadge = styled.div`
   width: 100%;
   font-weight: 500;
   color: #112647;
+  text-transform: uppercase;
 `;

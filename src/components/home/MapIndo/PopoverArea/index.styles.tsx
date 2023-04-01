@@ -11,5 +11,6 @@ export const Title = styled.p`
   font-size: 17px;
   font-weight: 700;
   font-family: Montserrat;
+  text-transform: uppercase;
   margin: 0;
 `;
