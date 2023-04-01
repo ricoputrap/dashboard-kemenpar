@@ -1,0 +1,49 @@
+{
+  "data": {
+    "pelatihan": "pelatihan_c",
+    "statistik": [
+      {
+        "lokasi": "toba",
+        "target": 270,
+        "realisasi": 270,
+        "laki": 159,
+        "perempuan": 111
+      },
+      {
+        "lokasi": "byp",
+        "target": 300,
+        "realisasi": 300,
+        "laki": 187,
+        "perempuan": 113
+      },
+      {
+        "lokasi": "bts",
+        "target": 135,
+        "realisasi": 135,
+        "laki": 100,
+        "perempuan": 35
+      },
+      {
+        "lokasi": "lombok",
+        "target": 165,
+        "realisasi": 165,
+        "laki": 131,
+        "perempuan": 34
+      },
+      {
+        "lokasi": "l. bajo",
+        "target": 45,
+        "realisasi": 45,
+        "laki": 31,
+        "perempuan": 14
+      },
+      {
+        "lokasi": "wakatobi",
+        "target": 60,
+        "realisasi": 60,
+        "laki": 26,
+        "perempuan": 34
+      }
+    ]
+  }
+}
