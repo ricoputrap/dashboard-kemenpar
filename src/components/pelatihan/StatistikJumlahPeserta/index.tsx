@@ -1,4 +1,5 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Stack } from "@chakra-ui/react";
+import DropdownJenisPelatihan from "./components/DropdownJenisPelatihan";
 import StatistikBoxes from "./components/StatistikBoxes";
 import StatistikChart from "./components/StatistikChart";
 
@@ -11,7 +12,11 @@ const StatistikJumlahPeserta: React.FC = () => {
       marginTop="20px"
     >
       <StatistikChart />
-      <StatistikBoxes />
+      
+      <Stack>
+        <DropdownJenisPelatihan />
+        <StatistikBoxes />
+      </Stack>
     </Flex>
   )
 }

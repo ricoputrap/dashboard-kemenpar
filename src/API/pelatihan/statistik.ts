@@ -7,20 +7,31 @@ export type TPesertaTotal = {
   perempuan: number;
 }
 
-export type TStatistikJumlahPeserta = {
+export type TStatistikJenisKelamin = {
   totalAB: TPesertaTotal;
   totalC: TPesertaTotal;
+}
+
+export type TStatistikJumlahPeserta = {
   statistik: TStatistikPeserta[];
 }
 
-export type TStatistikResponse = {
+export type TStatistikJenisKelaminResponse = {
+  data: TStatistikJenisKelamin;
+}
+
+export type TStatistikJumlahPesertaResponse = {
   data: TStatistikJumlahPeserta;
 }
 
-const statistik = () => {
-  const source: string = `data/pelatihan/jumlahPeserta/index.json`;
-  const { data, error, isLoading } = useSWR<TStatistikResponse>(source, fetcher);
+export const statistik = (jenisPelatihan: string) => {
+  const source: string = `data/pelatihan/jumlahPeserta/${jenisPelatihan}.json`;
+  const { data, error, isLoading } = useSWR<TStatistikJumlahPesertaResponse>(source, fetcher);
   return { data, error, isLoading }
 }
 
-export default statistik;
+export const statistikJenisKelamin = () => {
+  const source: string = `data/pelatihan/jumlahPeserta/jenisKelamin.json`;
+  const { data, error, isLoading } = useSWR<TStatistikJenisKelaminResponse>(source, fetcher);
+  return { data, error, isLoading }
+}

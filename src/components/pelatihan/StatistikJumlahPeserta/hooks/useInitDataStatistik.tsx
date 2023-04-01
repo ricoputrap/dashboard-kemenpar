@@ -12,18 +12,18 @@ interface ReturnValue {
 const useInitDataStatistik = (): ReturnValue => {
   const setStatistikTotalAB = useStatistikStore(state => state.setStatistikTotalAB);
   const setStatistikTotalC = useStatistikStore(state => state.setStatistikTotalC);
-  const setStatistikPeserta = useStatistikStore(state => state.setStatistikPeserta);
+  const setStatistikPesertaAB = useStatistikStore(state => state.setStatistikPesertaAB);
+  const setStatistikPesertaC = useStatistikStore(state => state.setStatistikPesertaC);
+  const jenisPelatihan = useStatistikStore(state => state.jenisPelatihan);
 
-  const { data, error, isLoading } = API.pelatihan.statistik();
+  const { data: dataJenisKelamin } = API.pelatihan.statistikJenisKelamin();
+  const { data, error, isLoading } = API.pelatihan.statistik(jenisPelatihan);
 
   useEffect(() => {
-    if (!data) return;
+    if (!data || !dataJenisKelamin) return;
 
-    const {
-      totalAB,
-      totalC,
-      statistik
-    }: TStatistikJumlahPeserta = data.data;
+    const { statistik }: TStatistikJumlahPeserta = data.data;
+    const { totalAB, totalC } = dataJenisKelamin.data;
 
     const statistikTotalAB: TStatistikTotal = {
       totalLaki: totalAB.laki,
@@ -39,7 +39,11 @@ const useInitDataStatistik = (): ReturnValue => {
     
     setStatistikTotalAB(statistikTotalAB);
     setStatistikTotalC(statistikTotalC);
-    setStatistikPeserta(statistik);
+
+    if (jenisPelatihan === "pelatihan_a_&_b")
+      setStatistikPesertaAB(statistik);
+    else
+      setStatistikPesertaC(statistik);
   }, [data]);
 
   return {
