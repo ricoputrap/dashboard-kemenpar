@@ -24,3 +24,9 @@ export type TKPIData = {
   title: string;
   stats: TStatData[];
 }
+
+export type TMapData = {
+  dpp: string,
+  2022: number,
+  2023: number
+}

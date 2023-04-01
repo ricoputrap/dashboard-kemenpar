@@ -1,6 +1,6 @@
 import useSWR from 'swr';
 import axios, { AxiosRequestConfig } from 'axios';
-import { TKPIData } from '../types/home.type';
+import { TKPIData, TMapData } from '../types/home.type';
 import { pendampinganStatistik, pendampinganLaporan } from './pendampingan';
 import sosialisasi from './sosialisasi';
 import pelatihan from './pelatihan';
@@ -23,6 +23,7 @@ type THomeData = {
   pendampingan: TKPIData;
   pelatihan: TKPIData;
   sosialisasi: TKPIData;
+  map: TMapData[];
 }
 
 const home = () => {

@@ -3,7 +3,6 @@ import BasePage from '../components/templates/BasePage'
 import DescriptionBox from '../components/home/DescriptionBox'
 import { Box, Flex } from '@chakra-ui/react'
 import KPI from '../components/home/organisms/KPI'
-import useDataHome from '../hooks/useDataHome'
 import MapIndo from "../assets/images/Peta.svg";
 import withAuth from '../hoc/withAuth'
 import ImageContainer from '../components/home/MapIndo/ImageContainer'
@@ -11,6 +10,7 @@ import ImageContent from '../components/home/MapIndo/ImageContent'
 import StatisticContainer from '../components/home/organisms/StatisticContainer'
 import ItemArea from '../components/home/MapIndo/ItemArea'
 import ItemAreaToba from '../components/home/MapIndo/ItemAreaToba'
+import useDataHome from '../components/home/state/useDataHome'
 
 const Home: React.FC = () => {
   const {
