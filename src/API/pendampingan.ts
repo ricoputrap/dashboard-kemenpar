@@ -23,8 +23,14 @@ type TLaporanResponse = {
 }
 
 export const pendampinganStatistik = () => {
-  const source: string = "data/pendampingan/statistik.json";
-  const { data, error, isLoading } = useSWR<TStatistikResponse>(source, fetcher);
+  const URL = "https://kemenpar.spero-lab.id/admin/api/pendampingan/dashboard/summary";
+  const token = getCookie("token");
+
+  const { data, error, isLoading } = useSWR<TStatistikResponse>(
+    [URL, token],
+    ([URL, token]) => fetcher(URL, token)
+  );
+
   return { data, error, isLoading }
 }
 
