@@ -8,7 +8,7 @@ const StatistikJumlahPeserta: React.FC = () => {
     <Flex
       direction="column"
       width="390px"
-      rowGap="24px"
+      rowGap="40px"
       marginTop="20px"
     >
       <StatistikChart />
