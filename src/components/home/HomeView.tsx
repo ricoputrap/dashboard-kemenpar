@@ -12,7 +12,7 @@ import ItemAreas from './components/ItemAreas';
 
 const HomeView: React.FC = () => {
   const {
-    pendampingan, pelatihan, sosialisasi, map,
+    pendampingan, pelatihan, sosialisasi,
     error, isLoading
   } = useDataHome();
 
