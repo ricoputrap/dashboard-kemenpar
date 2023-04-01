@@ -1,0 +1,50 @@
+{
+  "data": {
+    "tahun": 2023,
+    "dpp": "bts",
+    "usia": [
+      {
+        "usia": "17-25",
+        "jumlah": 0
+      },
+      {
+        "usia": "26-45",
+        "jumlah": 0
+      },
+      {
+        "usia": "45-65",
+        "jumlah": 0
+      },
+      {
+        "usia": ">65",
+        "jumlah": 0
+      }
+    ],
+    "pendidikan": [
+      {
+        "pendidikan": "Tidak Tamat SD",
+        "jumlah": 0
+      },
+      {
+        "pendidikan": "SD",
+        "jumlah": 0
+      },
+      {
+        "pendidikan": "SMP",
+        "jumlah": 0
+      },
+      {
+        "pendidikan": "SMA/ SMK",
+        "jumlah": 0
+      },
+      {
+        "pendidikan": "D1/ D2/ D3",
+        "jumlah": 0
+      },
+      {
+        "pendidikan": "S1/ S2",
+        "jumlah": 0
+      }
+    ]
+  }
+} 

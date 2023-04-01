@@ -1,0 +1,49 @@
+{
+  "data": {
+    "tahun": 2023,
+    "statistik": [
+      {
+        "lokasi": "toba",
+        "target": 0,
+        "realisasi": 0,
+        "laki": 0,
+        "perempuan": 0
+      },
+      {
+        "lokasi": "byp",
+        "target": 0,
+        "realisasi": 0,
+        "laki": 0,
+        "perempuan": 0
+      },
+      {
+        "lokasi": "bts",
+        "target": 0,
+        "realisasi": 0,
+        "laki": 0,
+        "perempuan": 0
+      },
+      {
+        "lokasi": "lombok",
+        "target": 0,
+        "realisasi": 0,
+        "laki": 0,
+        "perempuan": 0
+      },
+      {
+        "lokasi": "l. bajo",
+        "target": 0,
+        "realisasi": 0,
+        "laki": 0,
+        "perempuan": 0
+      },
+      {
+        "lokasi": "wakatobi",
+        "target": 0,
+        "realisasi": 0,
+        "laki": 0,
+        "perempuan": 0
+      }
+    ]
+  }
+}

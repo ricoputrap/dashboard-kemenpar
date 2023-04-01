@@ -1,0 +1,37 @@
+{
+  "data": {
+    "tahun": 2023,
+    "data": [
+      {
+        "lokasi": "toba",
+        "pre-test": 0,
+        "post-test": 0
+      },
+      {
+        "lokasi": "byp",
+        "pre-test": 0,
+        "post-test": 0
+      },
+      {
+        "lokasi": "bts",
+        "pre-test": 0,
+        "post-test": 0
+      },
+      {
+        "lokasi": "lombok",
+        "pre-test": 0,
+        "post-test": 0
+      },
+      {
+        "lokasi": "l.bajo",
+        "pre-test": 0,
+        "post-test": 0
+      },
+      {
+        "lokasi": "wakatobi",
+        "pre-test": 0,
+        "post-test": 0
+      }
+    ]
+  }
+}
