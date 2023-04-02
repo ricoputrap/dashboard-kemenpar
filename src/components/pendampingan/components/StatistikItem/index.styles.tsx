@@ -66,7 +66,7 @@ export const JumlahBox = styled(Box)`
   }
 
   & .jumlah__label {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 18px;
     color: #FFFFFF;

@@ -14,6 +14,8 @@ const StatistikItem: React.FC<TStatistikPendampingan> = ({
     const percent: number = Math.ceil(sudah * 100 / total);
     return percent;
   }, [belum, sudah]);
+
+  const total: number = useMemo(() => belum + sudah, [belum, sudah]);
   
   return (
     <Container>
@@ -45,6 +47,12 @@ const StatistikItem: React.FC<TStatistikPendampingan> = ({
         <JumlahBox borderLeft="1px solid #EAC170">
           <Text className="jumlah__value">{ belum }</Text>
           <Text className="jumlah__label">Belum</Text>
+        </JumlahBox>
+
+        {/* Jumlah Total */}
+        <JumlahBox borderLeft="1px solid #EAC170">
+          <Text className="jumlah__value">{ total }</Text>
+          <Text className="jumlah__label">Total</Text>
         </JumlahBox>
       </Flex>
     </Container>
