@@ -12,7 +12,7 @@ interface Props {
 
 const PopoverArea: React.FC<Props> = ({ title, data }) => {
   const jumlahTotalDesa = useMemo(() => {
-    const jumlah: number = data.reduce((total, item) => total + item.jumlah, 0);
+    const jumlah: number = data.reduce((total, item) => total + parseInt(item.jumlah + ""), 0);
     return jumlah;
   }, [data]);
 
