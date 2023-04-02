@@ -1,4 +1,5 @@
 import React from 'react'
+import ItemAreaBajo from './ItemAreaBajo';
 import ItemAreaBTS from './ItemAreaBTS';
 import ItemAreaBYP from './ItemAreaBYP';
 import ItemAreaLombok from './ItemAreaLombok';
@@ -14,6 +15,7 @@ const ItemAreas: React.FC = () => {
       <ItemAreaBTS />
       <ItemAreaLombok />
       <ItemAreaWakatobi />
+      <ItemAreaBajo />
     </>
   )
 }
