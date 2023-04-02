@@ -4,34 +4,34 @@
     "pelatihan": "pelatihan_c",
     "data": [
       {
-        "lokasi": "toba",
-        "pre-test": 0,
-        "post-test": 0
-      },
-      {
-        "lokasi": "byp",
-        "pre-test": 7.28,
-        "post-test": 8.42
-      },
-      {
-        "lokasi": "bts",
-        "pre-test": 0,
-        "post-test": 0
-      },
-      {
         "lokasi": "lombok",
-        "pre-test": 6.27,
-        "post-test": 6.91
+        "pre-test": 52.26,
+        "post-test": 57.59
       },
       {
         "lokasi": "l.bajo",
-        "pre-test": 5.22,
-        "post-test": 6
+        "pre-test": 43.52,
+        "post-test": 50.00
+      },
+      {
+        "lokasi": "byp",
+        "pre-test": 59.78,
+        "post-test": 71.07
+      },
+      {
+        "lokasi": "toba",
+        "pre-test": 58.12,
+        "post-test": 64.68
       },
       {
         "lokasi": "wakatobi",
-        "pre-test": 5.95,
-        "post-test": 6.57
+        "pre-test": 49.58,
+        "post-test": 54.72
+      },
+      {
+        "lokasi": "bts",
+        "pre-test": 61.87,
+        "post-test": 68.54
       }
     ]
   }
