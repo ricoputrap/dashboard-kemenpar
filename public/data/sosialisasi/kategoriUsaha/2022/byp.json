@@ -3,44 +3,44 @@
     "dpp": "byp",
     "data": [
       {
-        "nama": "Swasta",
-        "jumlah": 624
+        "nama": "Pelaku Usaha",
+        "jumlah": 765
       },
       {
         "nama": "IRT",
-        "jumlah": 221
+        "jumlah": 222
       },
       {
-        "nama": "Buruh",
-        "jumlah": 122
-      },
-      {
-        "nama": "Mahasiswa",
-        "jumlah": 100
+        "nama": "Pelajar",
+        "jumlah": 145
       },
       {
         "nama": "PNS",
-        "jumlah": 98
+        "jumlah": 136
       },
       {
-        "nama": "Pensiunan",
-        "jumlah": 63
-      },
-      {
-        "nama": "Petani",
-        "jumlah": 55
+        "nama": "Buruh",
+        "jumlah": 125
       },
       {
         "nama": "Perangkat Desa",
-        "jumlah": 55
+        "jumlah": 85
+      },
+      {
+        "nama": "Pensiunan",
+        "jumlah": 74
+      },
+      {
+        "nama": "Pelaku Wisata",
+        "jumlah": 72
       },
       {
         "nama": "Petani",
         "jumlah": 44
       },
       {
-        "nama": "Pariwisata",
-        "jumlah": 41
+        "nama": "Lainnya",
+        "jumlah": 303
       }
     ]
   }

@@ -3,44 +3,44 @@
     "dpp": "bts",
     "data": [
       {
+        "nama": "Pelaku Usaha",
+        "jumlah": 227
+      },
+      {
         "nama": "Petani",
         "jumlah": 226
       },
       {
-        "nama": "Wiraswasta",
-        "jumlah": 134
-      },
-      {
-        "nama": "PKL",
-        "jumlah": 77
-      },
-      {
-        "nama": "IRT",
-        "jumlah": 44
+        "nama": "Pelaku Wisata",
+        "jumlah": 79
       },
       {
         "nama": "Pelajar",
         "jumlah": 62
       },
       {
-        "nama": "Perangkat Desa",
-        "jumlah": 37
+        "nama": "IRT",
+        "jumlah": 44
       },
       {
-        "nama": "Guru",
-        "jumlah": 31
-      },
-      {
-        "nama": "Wisata",
-        "jumlah": 34
-      },
-      {
-        "nama": "Pengelola Homestay",
-        "jumlah": 19
+        "nama": "Tenaga Pendidik",
+        "jumlah": 32
       },
       {
         "nama": "PNS",
-        "jumlah": 19
+        "jumlah": 30
+      },
+      {
+        "nama": "Perangkat Desa",
+        "jumlah": 30
+      },
+      {
+        "nama": "Tokoh Masyarakat",
+        "jumlah": 13
+      },
+      {
+        "nama": "Lainnya",
+        "jumlah": 139
       }
     ]
   }

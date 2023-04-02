@@ -3,16 +3,24 @@
     "dpp": "lombok",
     "data": [
       {
-        "nama": "Wiraswasta",
-        "jumlah": 270
-      },
-      {
-        "nama": "Mahasiswa",
-        "jumlah": 82
+        "nama": "Pelaku Usaha",
+        "jumlah": 310
       },
       {
         "nama": "Perangkat Desa",
-        "jumlah": 52
+        "jumlah": 115
+      },
+      {
+        "nama": "Mahasiswa",
+        "jumlah": 98
+      },
+      {
+        "nama": "Pelaku Wisata",
+        "jumlah": 58
+      },
+      {
+        "nama": "PNS",
+        "jumlah": 54
       },
       {
         "nama": "Petani",
@@ -31,16 +39,8 @@
         "jumlah": 36
       },
       {
-        "nama": "Dispar",
-        "jumlah": 32
-      },
-      {
-        "nama": "Tour Guide",
-        "jumlah": 29
-      },
-      {
-        "nama": "Guru",
-        "jumlah": 25
+        "nama": "Lainnya",
+        "jumlah": 312
       }
     ]
   }

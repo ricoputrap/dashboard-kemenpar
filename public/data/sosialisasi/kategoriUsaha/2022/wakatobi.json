@@ -11,36 +11,32 @@
         "jumlah": 50
       },
       {
-        "nama": "Wiraswasta",
-        "jumlah": 24
+        "nama": "Pelaku Usaha",
+        "jumlah": 28
       },
       {
         "nama": "Nelayan",
         "jumlah": 24
       },
       {
-        "nama": "Perangkat Desa",
-        "jumlah": 30
-      },
-      {
         "nama": "Mahasiswa",
-        "jumlah": 23
-      },
-      {
-        "nama": "Kader",
-        "jumlah": 13
+        "jumlah": 19
       },
       {
         "nama": "PNS",
-        "jumlah": 17
+        "jumlah": 18
       },
       {
-        "nama": "Guru",
-        "jumlah": 8
+        "nama": "Kader Organisasi",
+        "jumlah": 13
       },
       {
-        "nama": "BPD",
-        "jumlah": 8
+        "nama": "Tokoh Masyarakat",
+        "jumlah": 12
+      },
+      {
+        "nama": "Lainnya",
+        "jumlah": 115
       }
     ]
   }

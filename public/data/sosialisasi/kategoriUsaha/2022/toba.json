@@ -3,8 +3,8 @@
     "dpp": "toba",
     "data": [
       {
-        "nama": "Wiraswasta",
-        "jumlah": 393
+        "nama": "Pelaku Usaha",
+        "jumlah": 454
       },
       {
         "nama": "Mahasiswa",
@@ -12,35 +12,35 @@
       },
       {
         "nama": "Perangkat Desa",
-        "jumlah": 42
+        "jumlah": 78
       },
       {
         "nama": "PNS",
-        "jumlah": 40
+        "jumlah": 79
       },
       {
-        "nama": "Penenun",
-        "jumlah": 36
+        "nama": "Pengrajin",
+        "jumlah": 37
       },
       {
         "nama": "IRT",
         "jumlah": 35
       },
       {
-        "nama": "Pedagang",
-        "jumlah": 32
-      },
-      {
-        "nama": "Pelaku Usaha",
-        "jumlah": 23
-      },
-      {
         "nama": "Petani",
-        "jumlah": 23
+        "jumlah": 24
       },
       {
-        "nama": "Guru",
+        "nama": "Tenaga Pendidik",
         "jumlah": 19
+      },
+      {
+        "nama": "Kesehatan",
+        "jumlah": 16
+      },
+      {
+        "nama": "Lainnya",
+        "jumlah": 942
       }
     ]
   }
