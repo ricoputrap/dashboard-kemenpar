@@ -7,7 +7,7 @@ export const Container = styled.div`
   cursor: pointer;
 
   @media (min-width: 1110px) {
-    left: 385px;
+    left: 380px;
     top: 241px;
     width: 59px;
     height: 17px;
@@ -19,26 +19,26 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1280px) {
-    left: 204px;
-    top: 198px;
-    width: 46px;
+    left: 338px;
+    top: 226px;
+    width: 65px;
     height: 14px;
     font-size: 10px;
   }
 
   @media (min-width: 1310px) {
-    left: 218px;
-    top: 202px;
-    width: 50px;
+    left: 362px;
+    top: 232px;
+    width: 70px;
     height: 14px;
     font-size: 12px;
   }
 
   @media (min-width: 1440px) {
-    left: 234px;
-    top: 214px;
-    width: 52px;
-    height: 15px;
+    left: 386px;
+    top: 245px;
+    width: 74px;
+    height: 16px;
     font-size: 12px;
   }
 `;

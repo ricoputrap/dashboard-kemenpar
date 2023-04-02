@@ -14,6 +14,10 @@ export const Container = styled.div`
     font-size: 12px;
   }
 
+  @media (max-width: 1279px) {
+    display: none;
+  }
+
   @media (min-width: 1280px) {
     left: 59px;
     top: 35px;
