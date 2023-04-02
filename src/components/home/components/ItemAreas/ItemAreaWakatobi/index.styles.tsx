@@ -2,8 +2,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   position: absolute;
-  // background: #E9C270;
-  background: red;
+  background: #E9C270;
   border-radius: 10px;
   cursor: pointer;
 
