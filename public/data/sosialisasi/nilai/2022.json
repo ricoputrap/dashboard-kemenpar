@@ -23,14 +23,14 @@
         "post-test": 66.81
       },
       {
-        "lokasi": "l.bajo",
-        "pre-test": 58.37,
-        "post-test": 59.49
-      },
-      {
         "lokasi": "wakatobi",
         "pre-test": 57.15,
         "post-test": 61.57
+      },
+      {
+        "lokasi": "l.bajo",
+        "pre-test": 58.37,
+        "post-test": 59.49
       }
     ]
   }

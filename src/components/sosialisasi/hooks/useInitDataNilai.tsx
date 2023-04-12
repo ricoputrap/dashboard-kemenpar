@@ -28,13 +28,15 @@ const useInitDataNilai = (): ReturnValue => {
     const daftarNilaiPostTest: TNilai[] = [];
 
     nilaiPerLokasi.forEach(nilai => {
+      const lokasi = nilai.lokasi === 'labuan_bajo' ? 'l.bajo' : nilai.lokasi;
+      
       daftarNilaiPreTest.push({
-        lokasi: nilai.lokasi,
+        lokasi,
         nilai: nilai["pre-test"]
       });
 
       daftarNilaiPostTest.push({
-        lokasi: nilai.lokasi,
+        lokasi,
         nilai: nilai["post-test"]
       });
     });
