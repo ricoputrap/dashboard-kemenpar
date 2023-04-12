@@ -31,18 +31,18 @@
         "perempuan": 311
       },
       {
-        "lokasi": "l. bajo",
-        "target": 300,
-        "realisasi": 300,
-        "laki": 235,
-        "perempuan": 65
-      },
-      {
         "lokasi": "wakatobi",
         "target": 400,
         "realisasi": 400,
         "laki": 179,
         "perempuan": 221
+      },
+      {
+        "lokasi": "l. bajo",
+        "target": 300,
+        "realisasi": 300,
+        "laki": 235,
+        "perempuan": 65
       }
     ]
   }
