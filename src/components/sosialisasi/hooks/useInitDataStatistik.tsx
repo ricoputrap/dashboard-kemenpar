@@ -28,8 +28,15 @@ const useInitDataStatistik = (): TReturnValue => {
 
     const { tahun, statistik }: TStatistikPesertaPertahun = data.data;
 
+    // preprocess: rename "labuan_bajo" to "l. bajo"
+    const statistikPreprocessed: TStatistikPeserta[] = statistik.map(stat => {
+      const { lokasi } = stat;
+      const dppPreprocessed = lokasi === 'labuan_bajo' ? 'l. bajo' : lokasi;
+      return { ...stat, lokasi: dppPreprocessed };
+    });
+
     // compute data statistik total
-    const statistikTotal: TStatistikTotal = statistik.reduce(
+    const statistikTotal: TStatistikTotal = statistikPreprocessed.reduce(
       (total: TStatistikTotal, stat: TStatistikPeserta) => {
         const jumlahLaki: number = stat.laki;
         const jumlahPerempuan: number = stat.perempuan;
@@ -45,7 +52,7 @@ const useInitDataStatistik = (): TReturnValue => {
     );
 
     // update states
-    setStatistikPesertaPertahun(statistik, tahun);
+    setStatistikPesertaPertahun(statistikPreprocessed, tahun);
     setStatistikTotal(statistikTotal);
   }, [data]);
 
