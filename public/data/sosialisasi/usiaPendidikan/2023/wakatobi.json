@@ -5,19 +5,19 @@
     "usia": [
       {
         "usia": "17-25",
-        "jumlah": 96
+        "jumlah": 78
       },
       {
         "usia": "26-45",
-        "jumlah": 263
+        "jumlah": 209
       },
       {
         "usia": "45-65",
-        "jumlah": 38
+        "jumlah": 105
       },
       {
         "usia": ">65",
-        "jumlah": 3
+        "jumlah": 8
       }
     ],
     "pendidikan": [
@@ -27,7 +27,7 @@
       },
       {
         "pendidikan": "SD",
-        "jumlah": 88
+        "jumlah": 85
       },
       {
         "pendidikan": "SMP",
@@ -35,7 +35,7 @@
       },
       {
         "pendidikan": "SMA/ SMK",
-        "jumlah": 162
+        "jumlah": 148
       },
       {
         "pendidikan": "D1/ D2/ D3",
@@ -43,7 +43,7 @@
       },
       {
         "pendidikan": "S1/ S2",
-        "jumlah": 90
+        "jumlah": 92
       }
     ]
   }
