@@ -4,43 +4,43 @@
     "data": [
       {
         "nama": "Petani",
-        "jumlah": 194
+        "jumlah": 434
       },
       {
-        "nama": "Swasta",
-        "jumlah": 100
-      },
-      {
-        "nama": "IRT",
-        "jumlah": 16
-      },
-      {
-        "nama": "Pelajar",
-        "jumlah": 9
-      },
-      {
-        "nama": "Kades",
-        "jumlah": 9
+        "nama": "Pelaku Usaha",
+        "jumlah": 168
       },
       {
         "nama": "Perangkat Desa",
-        "jumlah": 9
+        "jumlah": 42
+      },
+      {
+        "nama": "Pelajar",
+        "jumlah": 31
+      },
+      {
+        "nama": "IRT",
+        "jumlah": 24
       },
       {
         "nama": "Pengrajin",
-        "jumlah": 8
+        "jumlah": 13
+      },
+      {
+        "nama": "Mahasiswa",
+        "jumlah": 11
+      },
+      {
+        "nama": "Karyawan",
+        "jumlah": 9
       },
       {
         "nama": "PNS",
-        "jumlah": 7
+        "jumlah": 8
       },
       {
-        "nama": "UMKM",
-        "jumlah": 4
-      },
-      {
-        "nama": "Pedagang",
-        "jumlah": 3
+        "nama": "Lainnya",
+        "jumlah": 42
       }
     ]
   }

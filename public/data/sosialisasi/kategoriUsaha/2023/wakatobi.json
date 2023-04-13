@@ -7,8 +7,8 @@
         "jumlah": 112
       },
       {
-        "nama": "Wiraswasta",
-        "jumlah": 61
+        "nama": "Pelaku Usaha",
+        "jumlah": 62
       },
       {
         "nama": "Petani",
@@ -23,24 +23,24 @@
         "jumlah": 18
       },
       {
-        "nama": "Pelajar",
-        "jumlah": 17
+        "nama": "Perangkat Desa",
+        "jumlah": 15
       },
       {
-        "nama": "Perangkat Desa",
+        "nama": "Pelajar",
+        "jumlah": 14
+      },
+      {
+        "nama": "Mahasiswa",
         "jumlah": 13
       },
       {
-        "nama": "Tukang",
-        "jumlah": 8
+        "nama": "PNS",
+        "jumlah": 9
       },
       {
-        "nama": "Guru",
-        "jumlah": 6
-      },
-      {
-        "nama": "Pengrajin",
-        "jumlah": 6
+        "nama": "Lainnya",
+        "jumlah": 75
       }
     ]
   }

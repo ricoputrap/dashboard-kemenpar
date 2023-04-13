@@ -3,44 +3,44 @@
     "dpp": "byp",
     "data": [
       {
-        "nama": "Swasta",
-        "jumlah": 349
-      },
-      {
-        "nama": "Ibu Rumah Tangga",
-        "jumlah": 268
+        "nama": "IRT",
+        "jumlah": 356
       },
       {
         "nama": "Buruh",
-        "jumlah": 259
+        "jumlah": 264
       },
       {
-        "nama": "IRT",
-        "jumlah": 202
-      },
-      {
-        "nama": "Mahasiswa",
-        "jumlah": 139
+        "nama": "Pelaku Usaha",
+        "jumlah": 254
       },
       {
         "nama": "Karyawan",
-        "jumlah": 127
+        "jumlah": 231
       },
       {
         "nama": "Perangkat Desa",
-        "jumlah": 116
+        "jumlah": 197
       },
       {
-        "nama": "Guru",
-        "jumlah": 60
+        "nama": "Mahasiswa",
+        "jumlah": 104
       },
       {
-        "nama": "Pedagang",
-        "jumlah": 33
+        "nama": "Pelajar",
+        "jumlah": 73
       },
       {
-        "nama": "Petani",
-        "jumlah": 32
+        "nama": "PNS",
+        "jumlah": 50
+      },
+      {
+        "nama": "Tenaga Pendidikan",
+        "jumlah": 50
+      },
+      {
+        "nama": "Lainnya",
+        "jumlah": 319
       }
     ]
   }

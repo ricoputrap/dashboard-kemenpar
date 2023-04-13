@@ -7,11 +7,15 @@
         "jumlah": 171
       },
       {
-        "nama": "Perangkat Desa",
-        "jumlah": 19
+        "nama": "Pelaku Usaha",
+        "jumlah": 107
       },
       {
-        "nama": "Kader",
+        "nama": "Perangkat Desa",
+        "jumlah": 27
+      },
+      {
+        "nama": "Kader Organisasi",
         "jumlah": 13
       },
       {
@@ -19,28 +23,24 @@
         "jumlah": 10
       },
       {
-        "nama": "Pedagang",
+        "nama": "Kesehatan",
         "jumlah": 7
       },
       {
-        "nama": "Babinsa",
-        "jumlah": 5
+        "nama": "Guru",
+        "jumlah": 7
       },
       {
         "nama": "Karyawan Swasta",
-        "jumlah": 4
+        "jumlah": 6
       },
       {
-        "nama": "Pekebun",
-        "jumlah": 2
+        "nama": "Tokoh Masyarakat",
+        "jumlah": 6
       },
       {
-        "nama": "Kepala Desa",
-        "jumlah": 2
-      },
-      {
-        "nama": "Buruh",
-        "jumlah": 2
+        "nama": "Lainnya",
+        "jumlah": 44
       }
     ]
   }
