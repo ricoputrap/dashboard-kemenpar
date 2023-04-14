@@ -15,9 +15,9 @@
             "percent": { "value": "67%" }
           },
           {
-            "full": { "value": 325, "label": "Kunjungan" },
-            "done": { "value": 87, "label": "Terealisasi" },
-            "percent": { "value": "27%" }
+            "full": { "value": 259, "label": "Kunjungan" },
+            "done": { "value": 66, "label": "Terealisasi" },
+            "percent": { "value": "25%" }
           }
         ]
       }
