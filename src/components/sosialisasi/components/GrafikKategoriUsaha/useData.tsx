@@ -21,7 +21,7 @@ const useData = (): ReturnValue => {
   useEffect(() => {
     const daftarKategoriUsaha: TKategoriUsaha[] = getKategoriUsahaSetahun(tahun, dpp);
     const labels: string[] = daftarKategoriUsaha.map(
-      kategori => kategori.nama.toUpperCase()
+      kategori => kategori.nama?.toUpperCase() || "no name"
     );
 
     const daftarJumlahTiapUsaha: number[] = daftarKategoriUsaha.map(

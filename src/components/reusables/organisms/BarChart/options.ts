@@ -22,7 +22,7 @@ const computeOptions = (labels: string[], showGrid: boolean = false) => {
           display: true,
           color: "white",
           font: {
-            size: 11,
+            size: 9,
             weight: 700,
             family: "Montserrat"
           },
