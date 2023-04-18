@@ -47,10 +47,10 @@ const router = createBrowserRouter([
   //   path: "/local-champion",
   //   element: <LocalChampion />
   // },
-  // {
-  //   path: "/publikasi",
-  //   element: <Publikasi />
-  // },
+  {
+    path: "/publikasi",
+    element: <Publikasi />
+  },
 ]);
 
 export default router;

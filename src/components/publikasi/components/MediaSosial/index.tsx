@@ -1,43 +1,65 @@
-import { Box, Flex, Image, ListItem, OrderedList, Stack, Text } from '@chakra-ui/react'
+import { Box, Flex, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
+import LogoKemenpar from "../../../../assets/logo/7-publikasi-kemenpar.svg"
+import LogoWonderful from "../../../../assets/logo/8-publikasi-wonderful.svg"
 import ChartLine from "../../../../assets/lines/chart-line.svg"
-import RingMedia from '../RingMedia'
+import StatisticBox from '../StatisticBox'
 
 const MediaSosial: React.FC = () => {
   return (
-    <Box id="media-sosial" width="100%">
-      <Image src={ ChartLine } width="100%" />
-      
-      <Flex columnGap="16px" marginTop="24px">
-        <RingMedia media="Sosial" />
+    <Box>
+      <Box marginBottom="40px">
+        <Text
+          color="#EAC170"
+          fontSize="25px"
+          fontWeight={600}
+          marginBottom="12px"
+        >
+          MEDIA SOSIAL
+        </Text>
+        <Image src={ ChartLine } width="312px" />
+      </Box>
+      <Flex columnGap="80px">
+        <Stack width="100%" rowGap="110px" alignItems="center">
+          <StatisticBox
+            logo={LogoKemenpar}
+            title="@kemenparekraf.ri"
+            titleSize="25px"
+            url="https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
+            statistics={[
+              { label: "follower", value: "968K" },
+              { label: "jumlah konten", value: "31" },
+              { label: "reach", value: "0" },
+              { label: "engagement", value: "0.23%" },
+            ]}
+          />
+          <StatisticBox
+            logo={LogoWonderful}
+            title="@pesona.indonesia"
+            titleSize="25px"
+            url="https://www.instagram.com/wonderfulindonesia/"
+            statistics={[
+              { label: "follower", value: "18.7k" },
+              { label: "jumlah konten", value: "1.9k" },
+              { label: "reach", value: "1.5k" },
+              { label: "engagement", value: "1.6k" },
+            ]}
+          />
+        </Stack>
 
-        <Stack rowGap="16px" justifyContent="center">
-          <OrderedList>
-            <ListItem fontSize="15px" fontWeight={500} lineHeight="16px">
-              <Text fontWeight={700}>KONTEN</Text>
-              <Text fontWeight={500}>44 Konten Infografis, Video, Video Animasi</Text>
-            </ListItem>
-
-            <ListItem fontSize="15px" fontWeight={500} lineHeight="16px" marginTop="14px">
-              <Text fontWeight={700}>7 Influencer Visit</Text>
-            </ListItem>
-
-            <ListItem fontSize="15px" fontWeight={500} lineHeight="16px" marginTop="14px">
-              <Text fontWeight={700}>2 IG Live Ngantri</Text>
-            </ListItem>
-
-            <ListItem fontSize="15px" fontWeight={500} lineHeight="16px" marginTop="14px">
-              <Text fontWeight={700}>2 Podcast</Text>
-              <Text fontWeight={500}>Wonderful Indonesia</Text>
-            </ListItem>
-
-            <ListItem fontSize="15px" fontWeight={500} lineHeight="16px" marginTop="14px">
-              <Flex columnGap="4px">
-                <Text fontWeight={700}>2 UGC</Text>
-                <Text fontWeight={500}>(Giveaway)</Text>
-              </Flex>
-            </ListItem>
-          </OrderedList>
+        <Stack width="100%" rowGap="52px" alignItems="center">
+          <StatisticBox
+            logo={LogoWonderful}
+            title="@KampanyeSadarWisata"
+            titleSize="20px"
+            url="https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
+            statistics={[
+              { label: "follower", value: "14.2k" },
+              { label: "jumlah konten", value: "40" },
+              { label: "reach", value: "0" },
+              { label: "engagement", value: "4.50%" },
+            ]}
+          />
         </Stack>
       </Flex>
     </Box>

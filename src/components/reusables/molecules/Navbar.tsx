@@ -15,7 +15,7 @@ const menus: IMenu[] = [
   { label: "PENDAMPINGAN", path: "/pendampingan" },
   { label: "NARASUMBER", path: "/narasumber" },
   // { label: "L. CHAMPION", path: "/local-champion" },
-  // { label: "PUBLIKASI", path: "/publikasi" },
+  { label: "PUBLIKASI", path: "/publikasi" },
 ]
 
 const Navbar: React.FC = () => {
