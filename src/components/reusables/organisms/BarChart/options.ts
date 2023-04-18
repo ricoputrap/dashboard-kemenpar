@@ -27,7 +27,7 @@ const computeOptions = (labels: string[], showGrid: boolean = false) => {
             family: "Montserrat"
           },
           callback: (value: any, index: number) => {
-            return labels[index].split(" ")
+            return labels[index]?.split(" ")
           },
         },
         offset: true
