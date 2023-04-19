@@ -4,6 +4,7 @@ import LogoKemenpar from "../../../../assets/logo/7-publikasi-kemenpar.svg"
 import LogoWonderful from "../../../../assets/logo/8-publikasi-wonderful.svg"
 import ChartLine from "../../../../assets/lines/chart-line.svg"
 import StatisticBox from '../StatisticBox'
+import ProfilMikroInfluencer from '../ProfilMikroInfluencer'
 
 const MediaSosial: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const MediaSosial: React.FC = () => {
         </Text>
         <Image src={ ChartLine } width="312px" />
       </Box>
+
       <Flex columnGap="80px">
         <Stack width="100%" rowGap="110px" alignItems="center">
           <StatisticBox
@@ -61,6 +63,13 @@ const MediaSosial: React.FC = () => {
             ]}
           />
         </Stack>
+      </Flex>
+
+      <Flex columnGap="40px" marginTop="80px">
+        {/* PROFIL MIKRO INFLUENCER */}
+        <ProfilMikroInfluencer />
+
+        {/* IG LIVE NGANTRI */}
       </Flex>
     </Box>
   )
