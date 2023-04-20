@@ -14,12 +14,12 @@ interface Props {
 const StatisticBox: React.FC<Props> = ({ logo, title, titleSize, url, statistics }) => {
   return (
     <Flex columnGap="25px" height="267px">
-      <Stack rowGap="18px" alignItems="center">
+      <Stack rowGap="18px" alignItems="center" width="283px">
         <Circle size="215px" bg="white">
           <Image src={ logo } width="215px" height="215px" />
         </Circle>
 
-        <Text fontSize={ titleSize } fontWeight={600}>
+        <Text fontSize={ titleSize } fontWeight={600} textAlign="center">
           { title }
         </Text>
       </Stack>

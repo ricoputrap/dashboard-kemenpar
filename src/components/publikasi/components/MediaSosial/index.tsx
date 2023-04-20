@@ -70,6 +70,120 @@ const MediaSosial: React.FC = () => {
         <ProfilMikroInfluencer />
 
         {/* IG LIVE NGANTRI */}
+        <Stack rowGap="27px">
+          <Text
+            color="#EAC170"
+            fontSize="25px"
+            fontWeight={600}
+            marginBottom="12px"
+          >
+            IG LIVE NGANTRI
+          </Text>
+
+          <StatisticBox
+            logo={ LogoKemenpar }
+            title="IG LIVE PANJI PETUALANG"
+            titleSize="20px"
+            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
+            statistics={[
+              { label: "follower", value: "968K" },
+              { label: "jumlah konten", value: "31" },
+              { label: "reach", value: "0" },
+              { label: "engagement", value: "0.23%" },
+            ]}
+          />
+
+          <StatisticBox
+            logo={ LogoKemenpar }
+            title="IG LIVE GRITHE AGATHA"
+            titleSize="20px"
+            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
+            statistics={[
+              { label: "follower", value: "968K" },
+              { label: "jumlah konten", value: "31" },
+              { label: "reach", value: "0" },
+              { label: "engagement", value: "0.23%" },
+            ]}
+          />
+        </Stack>
+      </Flex>
+
+      <Flex columnGap="80px" marginTop="80px">
+        {/* PODCAST WONDERFUL INDONESIA */}
+        <Stack rowGap="27px">
+          <Text
+            color="#EAC170"
+            fontSize="25px"
+            fontWeight={600}
+            marginBottom="12px"
+          >
+            PODCAST WONDERFUL INDONESIA
+          </Text>
+
+          <StatisticBox
+            logo={ LogoKemenpar }
+            title="PENJAGA PESONA WAKATOBI"
+            titleSize="20px"
+            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
+            statistics={[
+              { label: "follower", value: "968K" },
+              { label: "jumlah konten", value: "31" },
+              { label: "reach", value: "0" },
+              { label: "engagement", value: "0.23%" },
+            ]}
+          />
+
+          <StatisticBox
+            logo={ LogoKemenpar }
+            title="MAKIN SERU WISATA DI LABUAN BAJO"
+            titleSize="20px"
+            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
+            statistics={[
+              { label: "follower", value: "968K" },
+              { label: "jumlah konten", value: "31" },
+              { label: "reach", value: "0" },
+              { label: "engagement", value: "0.23%" },
+            ]}
+          />
+        </Stack>
+
+        {/* USER GENERATED CONTENT */}
+        <Stack rowGap="27px">
+          <Text
+            color="#EAC170"
+            fontSize="25px"
+            fontWeight={600}
+            marginBottom="12px"
+          >
+            USER GENERATED CONTENT
+          </Text>
+
+          <StatisticBox
+            logo={ LogoKemenpar }
+            title="KSW GIVEAWAY"
+            titleSize="20px"
+            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
+            statistics={[
+              { label: "follower", value: "968K" },
+              { label: "jumlah konten", value: "31" },
+              { label: "reach", value: "0" },
+              { label: "engagement", value: "0.23%" },
+            ]}
+          />
+
+          <StatisticBox
+            logo={ LogoKemenpar }
+            title="KSW GIVEAWAY"
+            titleSize="20px"
+            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
+            statistics={[
+              { label: "follower", value: "968K" },
+              { label: "jumlah konten", value: "31" },
+              { label: "reach", value: "0" },
+              { label: "engagement", value: "0.23%" },
+            ]}
+          />
+        </Stack>
       </Flex>
     </Box>
   )
