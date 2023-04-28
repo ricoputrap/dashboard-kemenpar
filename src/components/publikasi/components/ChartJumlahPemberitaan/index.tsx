@@ -44,7 +44,7 @@ const ChartJumlahPemberitaan: React.FC = () => {
         background="#EAC170"
         color="#112647"
         as="a"
-        href={ "url" }
+        href="https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link"
         target="_blank"
       >
         SELENGKAPNYA
