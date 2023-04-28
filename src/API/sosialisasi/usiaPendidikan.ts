@@ -17,8 +17,9 @@ export type TUsiaPendidikanResponse = {
 
 const usiaPendidikan = (tahun: number, lokasi: string) => {
   let dpp = lokasi;
-  if (lokasi == "l.bajo")
-    dpp = tahun == 2022 ? "labuan_bajo" : "labuan bajo";
+
+  if (lokasi == "l.bajo" || lokasi == "l. bajo")
+    dpp = "labuan_bajo"
 
   if (tahun === 2022) {
     const source = `data/sosialisasi/usiaPendidikan/${tahun}/${dpp}.json`;
