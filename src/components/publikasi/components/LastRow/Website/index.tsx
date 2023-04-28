@@ -2,6 +2,7 @@ import { Box, Heading, Stack } from '@chakra-ui/react'
 import React from 'react'
 import SectionHeader from '../../../../reusables/atoms/SectionHeader'
 import ButtonSelengkapnya from '../../ButtonSelengkapnya'
+import ListArticle from './ListArticle';
 
 const URL = "https://drive.google.com/file/d/13p3RlpgaeYv_7IJjHfdGXBktAKaJqWmv/view?usp=share_link";
 
@@ -14,17 +15,21 @@ const Website: React.FC = () => {
         <Box
           border="1px solid #EAC170"
           borderRadius="5px"
-          padding="32px 18px"
+          padding="32px 10px 32px 18px"
           flex={1}
         >
-          <Heading
-            fontFamily="Montserrat"
-            fontSize="20px"
-            lineHeight="24px"
-            fontWeight={600}
-          >
-            16 ARTIKEL WWW.INDONESIA.TRAVEL
-          </Heading>
+          <Stack rowGap="20px">
+            <Heading
+              fontFamily="Montserrat"
+              fontSize="20px"
+              lineHeight="24px"
+              fontWeight={600}
+            >
+              16 ARTIKEL WWW.INDONESIA.TRAVEL
+            </Heading>
+
+            <ListArticle />
+          </Stack>
         </Box>
       </Stack>
 

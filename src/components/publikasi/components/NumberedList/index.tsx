@@ -33,7 +33,7 @@ const NumberedList: React.FC<Props> = ({ data }) => {
             fontSize="30px"
             fontWeight={600}
             textTransform="uppercase"
-            width="100%"
+            flex={1}
             paddingY="10px"
             paddingX="48px"
             border="2px solid #EAC170"

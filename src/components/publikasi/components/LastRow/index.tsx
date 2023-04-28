@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Stack } from '@chakra-ui/react'
+import { Box, Flex, Grid, GridItem, Stack } from '@chakra-ui/react'
 import React from 'react'
 import MediaElektronik from './MediaElektronik'
 import MediaLuarRuang from './MediaLuarRuang'
@@ -7,19 +7,21 @@ import Website from './Website'
 
 const LastRow: React.FC = () => {
   return (
-    <Box>
-      <Grid templateColumns="repeat(2, 1fr)" gap="44px">
-        <GridItem height="1300px">
-          <Stack justifyContent="space-between" height="100%">
-            <MediaElektronik />
-            <MediaLuarRuang />
-            <TopListMedia />
-          </Stack>
-        </GridItem>
+    <Box id="last-row">
+      <Grid
+        templateColumns="repeat(2, 1fr)"
+        templateRows="repeat(1, 1fr)"
+        gap="44px"
+      >
+        <Stack rowGap="40px" justifyContent="space-between" maxH="1300px">
+          <MediaElektronik />
+          <MediaLuarRuang />
+          <TopListMedia />
+        </Stack>
 
-        <GridItem height="1300px">
+        <Box maxH="1300px">
           <Website />
-        </GridItem>
+        </Box>
       </Grid>
     </Box>
   )
