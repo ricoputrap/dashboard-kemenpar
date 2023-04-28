@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -28,7 +28,7 @@ ChartJS.register(
 );
 
 interface Props {
-  title: string;
+  title?: string;
   width: string;
   height: string;
   labels: string[];
@@ -45,18 +45,23 @@ const BarChart: React.FC<Props> = ({
   const options = useOptions(labels, showGrid);
   const { data } = useData(labels, dataset);
   const legends: TLegendItem[] = useLegends(dataset, showLegends);
+  const showTitle: boolean = useMemo(() => !!title, [title]);
 
   return (
     <Flex direction="column" rowGap="12px">
-      <Image src={ ChartLine } width="390px" />
-      
-      <Flex justifyContent="space-between">
-        <Text className={ styles.title }>
-          { title }
-        </Text>
+      {showTitle && (
+        <>
+          <Image src={ ChartLine } width="390px" />
+        
+          <Flex justifyContent="space-between">
+            <Text className={ styles.title }>
+              { title }
+            </Text>
 
-        {!!showLegends && <Legends data={ legends } />}
-      </Flex>
+            {!!showLegends && <Legends data={ legends } />}
+          </Flex>
+        </>
+      )}
 
       <Bar
         options={ options }
