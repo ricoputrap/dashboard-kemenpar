@@ -5,6 +5,7 @@ import LogoWonderful from "../../../../assets/logo/8-publikasi-wonderful.svg"
 import ChartLine from "../../../../assets/lines/chart-line.svg"
 import StatisticBox from '../StatisticBox'
 import ProfilMikroInfluencer from '../ProfilMikroInfluencer'
+import StackedBarChart from '../../../reusables/organisms/StackedBarChart'
 
 const MediaSosial: React.FC = () => {
   return (
@@ -21,47 +22,105 @@ const MediaSosial: React.FC = () => {
         <Image src={ ChartLine } width="312px" />
       </Box>
 
+      {/* TODO: Refactor using Grid */}
       <Flex columnGap="80px">
         <Stack width="100%" rowGap="110px" alignItems="center">
-          <StatisticBox
-            logo={LogoKemenpar}
-            title="@kemenparekraf.ri"
-            titleSize="25px"
-            url="https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
-            statistics={[
-              { label: "follower", value: "968K" },
-              { label: "jumlah konten", value: "31" },
-              { label: "reach", value: "0" },
-              { label: "engagement", value: "0.23%" },
-            ]}
-          />
-          <StatisticBox
-            logo={LogoWonderful}
-            title="@pesona.indonesia"
-            titleSize="25px"
-            url="https://www.instagram.com/wonderfulindonesia/"
-            statistics={[
-              { label: "follower", value: "18.7k" },
-              { label: "jumlah konten", value: "1.9k" },
-              { label: "reach", value: "1.5k" },
-              { label: "engagement", value: "1.6k" },
-            ]}
-          />
+          <Flex
+            width="100%"
+            height="100%"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <StatisticBox
+              logo={LogoKemenpar}
+              title="@kemenparekraf.ri"
+              titleSize="25px"
+              url="https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
+              statistics={[
+                { label: "follower", value: "968K" },
+                { label: "jumlah konten", value: "31" },
+                { label: "reach", value: "0" },
+                { label: "engagement", value: "0.23%" },
+              ]}
+            />
+          </Flex>
+          <Flex
+            width="100%"
+            height="100%"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <StatisticBox
+              logo={LogoWonderful}
+              title="@pesona.indonesia"
+              titleSize="25px"
+              url="https://www.instagram.com/wonderfulindonesia/"
+              statistics={[
+                { label: "follower", value: "18.7k" },
+                { label: "jumlah konten", value: "1.9k" },
+                { label: "reach", value: "1.5k" },
+                { label: "engagement", value: "1.6k" },
+              ]}
+            />
+          </Flex>
         </Stack>
 
         <Stack width="100%" rowGap="52px" alignItems="center">
-          <StatisticBox
-            logo={LogoWonderful}
-            title="@KampanyeSadarWisata"
-            titleSize="20px"
-            url="https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
-            statistics={[
-              { label: "follower", value: "14.2k" },
-              { label: "jumlah konten", value: "40" },
-              { label: "reach", value: "0" },
-              { label: "engagement", value: "4.50%" },
-            ]}
-          />
+          <Flex
+            width="100%"
+            height="100%"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <StatisticBox
+              logo={LogoWonderful}
+              title="@KampanyeSadarWisata"
+              titleSize="20px"
+              url="https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
+              statistics={[
+                { label: "follower", value: "14.2k" },
+                { label: "jumlah konten", value: "40" },
+                { label: "reach", value: "0" },
+                { label: "engagement", value: "4.50%" },
+              ]}
+            />
+          </Flex>
+
+          <Flex
+            width="100%"
+            height="100%"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <StackedBarChart
+              title={(
+                <>
+                  JUMLAH PEMBERITAAN<br/>
+                  6 DESTINASI PARIWISATA PRIORITAS
+                </>
+              )}
+              labels={["TOBA", "BYP", "BTS", "BAJO", "LOMBOK", "WAKATOBI"]}
+              datasets={[
+                {
+                  label: "Follower",
+                  data: [383400, 305100, 313700, 701700, 316300, 226400],
+                  backgroundColor: "#00FFFF"
+                },
+                {
+                  label: "Reach",
+                  data: [64089, 29659, 22550, 29886, 177972, 38521],
+                  backgroundColor: "#0085FF"
+                },
+                {
+                  label: "Engagement",
+                  data: [6929, 7658, 7087, 4032, 10974, 3446],
+                  backgroundColor: "#7A4DFC"
+                }
+              ]}
+              width="630px"
+              height="250px"
+            />
+          </Flex>
         </Stack>
       </Flex>
 
