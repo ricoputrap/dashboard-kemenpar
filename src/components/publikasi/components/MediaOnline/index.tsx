@@ -19,20 +19,6 @@ const MediaOnline: React.FC = () => {
         <Image src={ ChartLine } width="312px" />
       </Box>
 
-      {/* <Flex columnGap="80px">
-        <Box width="100%">
-          <NumberedList data={[
-            { label: "siaran pers", value: 30 },
-            { label: "weekly press briefing", value: 1 },
-            { label: "media center", value: 2 },
-            { label: "pemberitaan media online", value: 442 }
-          ]} />
-        </Box>
-
-        <Box width="100%">
-          <ChartJumlahPemberitaan />
-        </Box>
-      </Flex> */}
       <Grid templateColumns="repeat(2, 1fr)" gap="68px">
         <GridItem w="100%" h="360px">
           <NumberedList data={[
