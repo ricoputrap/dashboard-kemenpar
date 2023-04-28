@@ -21,7 +21,7 @@ const kategoriUsaha = (dpp: string, tahun: number) => {
     return { data, error, isLoading }
   }
   else if (tahun == 2023) {
-    const URL = `https://kampanye-sadarwisata.com/api/sosialisasi/kategori-usaha?dpp=${dpp}&tahun=${tahun}`;
+    const URL = `https://kampanye-sadarwisata.com/api/sosialisasi/kategori-usaha?dpp=${lokasi}&tahun=${tahun}`;
     const token = getCookie("token");
     
     const { data, error, isLoading } = useSWR<TKategoriUsahaResponse>(
