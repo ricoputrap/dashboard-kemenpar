@@ -8,7 +8,7 @@ import useWidth from './useWidth';
 
 interface Props {
   header?: string;
-  title: string;
+  title: string | React.ReactNode;
   dataset: TBarData[];
   labels: string[];
   url: string;
