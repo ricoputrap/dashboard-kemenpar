@@ -20,7 +20,7 @@ const MediaOnline: React.FC = () => {
       </Box>
 
       <Grid templateColumns="repeat(2, 1fr)" gap="68px">
-        <GridItem w="100%" h="360px">
+        <GridItem w="100%">
           <NumberedList data={[
             { label: "siaran pers", value: 30 },
             { label: "weekly press briefing", value: 1 },
@@ -28,7 +28,7 @@ const MediaOnline: React.FC = () => {
             { label: "pemberitaan media online", value: 442 }
           ]} />
         </GridItem>
-        <GridItem w="100%" h="360px">
+        <GridItem w="100%">
           <ChartJumlahPemberitaan />
         </GridItem>
       </Grid>
