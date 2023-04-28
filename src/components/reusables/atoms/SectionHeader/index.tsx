@@ -8,7 +8,7 @@ interface Props {
 
 const SectionHeader: React.FC<Props> = ({ title }) => {
   return (
-    <Box marginBottom="32px">
+    <Box>
       <Text
         color="#EAC170"
         fontSize="25px"

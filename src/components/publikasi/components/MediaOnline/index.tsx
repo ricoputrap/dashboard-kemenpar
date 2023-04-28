@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem, Image, Text } from '@chakra-ui/react'
+import { Box, Grid, GridItem, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import ChartLine from "../../../../assets/lines/chart-line.svg"
 import ChartJumlahPemberitaan from '../ChartJumlahPemberitaan'

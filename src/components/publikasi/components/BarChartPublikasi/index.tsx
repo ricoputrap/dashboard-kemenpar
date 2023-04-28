@@ -20,7 +20,9 @@ const BarChartPublikasi: React.FC<Props> = ({ header, title, dataset, labels, ur
   return (
     <Box>
       {!!header && (
-        <SectionHeader title={ header } />
+        <Box marginBottom="32px">
+          <SectionHeader title={ header } />
+        </Box>
       )}
       
       <Box>
