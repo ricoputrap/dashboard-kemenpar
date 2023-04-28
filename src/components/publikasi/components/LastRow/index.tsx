@@ -2,6 +2,7 @@ import { Box, Flex, Stack } from '@chakra-ui/react'
 import React from 'react'
 import NumberedList from '../NumberedList'
 import MediaElektronik from './MediaElektronik'
+import MediaLuarRuang from './MediaLuarRuang'
 
 const LastRow: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const LastRow: React.FC = () => {
         <Stack rowGap="60px">
 
           <MediaElektronik />
-        <div>HAHA</div>
+          <MediaLuarRuang />
         <div>HAHA</div>
         </Stack>
       </Box>
