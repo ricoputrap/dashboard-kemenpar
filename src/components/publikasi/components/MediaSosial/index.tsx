@@ -6,6 +6,7 @@ import ChartLine from "../../../../assets/lines/chart-line.svg"
 import StatisticBox from '../StatisticBox'
 import ProfilMikroInfluencer from '../ProfilMikroInfluencer'
 import StackedBarChart from '../../../reusables/organisms/StackedBarChart'
+import ChartInfluencerVisit from './ChartInfluencerVisit'
 
 const MediaSosial: React.FC = () => {
   return (
@@ -92,34 +93,7 @@ const MediaSosial: React.FC = () => {
             alignItems="center"
             justifyContent="center"
           >
-            <StackedBarChart
-              title={(
-                <>
-                  JUMLAH PEMBERITAAN<br/>
-                  6 DESTINASI PARIWISATA PRIORITAS
-                </>
-              )}
-              labels={["TOBA", "BYP", "BTS", "BAJO", "LOMBOK", "WAKATOBI"]}
-              datasets={[
-                {
-                  label: "Follower",
-                  data: [383400, 305100, 313700, 701700, 316300, 226400],
-                  backgroundColor: "#00FFFF"
-                },
-                {
-                  label: "Reach",
-                  data: [64089, 29659, 22550, 29886, 177972, 38521],
-                  backgroundColor: "#0085FF"
-                },
-                {
-                  label: "Engagement",
-                  data: [6929, 7658, 7087, 4032, 10974, 3446],
-                  backgroundColor: "#7A4DFC"
-                }
-              ]}
-              width="630px"
-              height="250px"
-            />
+            <ChartInfluencerVisit />
           </Flex>
         </Stack>
       </Flex>
