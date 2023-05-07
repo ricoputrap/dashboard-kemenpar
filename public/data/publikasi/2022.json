@@ -1,0 +1,77 @@
+{
+  "data": {
+    "tahun": 2022,
+    "data": {
+      "media_sosial": {
+        "statistik": [
+          {
+            "id": "@kemenparekraf.ri",
+            "follower": "968k",
+            "jumlah_konten": "31",
+            "reach": "0",
+            "engagement": "0.23%",
+            "url": "https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
+          },
+          {
+            "id": "@kampanyesadarwisata",
+            "follower": "14.2k",
+            "jumlah_konten": "40",
+            "reach": "0",
+            "engagement": "4.50%",
+            "url": "https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
+          },
+          {
+            "id": "@pesona.indonesia",
+            "follower": "18.7k",
+            "jumlah_konten": "25",
+            "reach": "0",
+            "engagement": "1.50%",
+            "url": "https://instagram.com/pesona.indonesia?igshid=YmMyMTA2M2Y="
+          }
+        ],
+        "chart": {
+          "title": "Influencer Visit",
+          "url": "https://drive.google.com/file/d/1CrwkQsmgWaxr1_oOaF81Ru8OjwzSqM2h/view?usp=sharing",
+          "data": [
+            {
+              "dpp": "toba",
+              "follower": 383400,
+              "reach": 64089,
+              "engagement": 6929
+            },
+            {
+              "dpp": "byp",
+              "follower": 305100,
+              "reach": 29659,
+              "engagement": 7658
+            },
+            {
+              "dpp": "bts",
+              "follower": 313700,
+              "reach": 22550,
+              "engagement": 7087
+            },
+            {
+              "dpp": "bajo",
+              "follower": 701700,
+              "reach": 29886,
+              "engagement": 4032
+            },
+            {
+              "dpp": "lombok",
+              "follower": 316300,
+              "reach": 177972,
+              "engagement": 10974
+            },
+            {
+              "dpp": "wakatobi",
+              "follower": 226400,
+              "reach": 38521,
+              "engagement": 3446
+            }
+          ]
+        }
+      }
+    }
+  }
+}

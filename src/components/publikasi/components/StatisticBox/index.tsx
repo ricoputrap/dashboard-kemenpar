@@ -1,6 +1,5 @@
 import { Button, Circle, Flex, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
-import { TStatisticItem } from './index.types';
 import Item from './Item';
 
 interface Props {
@@ -8,10 +7,19 @@ interface Props {
   title: string;
   titleSize: string;
   url: string;
-  statistics: TStatisticItem[];
+  follower: string;
+  jumlahKonten: string;
+  reach: string;
+  engagement: string;
 }
 
-const StatisticBox: React.FC<Props> = ({ logo, title, titleSize, url, statistics }) => {
+const StatisticBox: React.FC<Props> = ({
+  logo, title, titleSize, url, 
+  follower = "0",
+  jumlahKonten = "0",
+  reach = "0",
+  engagement = "0"
+}) => {
   return (
     <Flex columnGap="25px" height="267px">
       <Stack rowGap="18px" alignItems="center" width="283px">
@@ -27,13 +35,22 @@ const StatisticBox: React.FC<Props> = ({ logo, title, titleSize, url, statistics
       {/* Statistics */}
       <Stack width="292px" justifyContent="space-between" paddingTop="12px">
         <Stack rowGap="18px">
-          {statistics.map(item => (
-            <Item
-              key={ item.label }
-              label={ item.label }
-              value={ item.value }
-            />
-          ))}
+          <Item
+            label="follower"
+            value={ follower }
+          />
+          <Item
+            label="jumlah konten"
+            value={ jumlahKonten }
+          />
+          <Item
+            label="reach"
+            value={ reach }
+          />
+          <Item
+            label="engagement"
+            value={ engagement }
+          />
         </Stack>
         <Button
           width="100%"

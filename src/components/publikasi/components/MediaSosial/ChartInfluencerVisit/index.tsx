@@ -1,36 +1,42 @@
 import { Box, Flex } from '@chakra-ui/react'
-import React from 'react'
+import React, { useMemo } from 'react'
 import StackedBarChart from '../../../../reusables/organisms/StackedBarChart';
+import { TChartInfluencerVisit } from '../../../state/index.types';
 import ButtonSelengkapnya from '../../ButtonSelengkapnya';
 import ColorLegend from './ColorLegend';
-import { COLORS } from './constants';
-import useData from './useData'
 
-const URL = "https://drive.google.com/file/d/1CrwkQsmgWaxr1_oOaF81Ru8OjwzSqM2h/view?usp=sharing";
+interface Props {
+  data: TChartInfluencerVisit;
+}
 
-const ChartInfluencerVisit: React.FC = () => {
-  const { labels, datasets } = useData();
+const ChartInfluencerVisit: React.FC<Props> = ({ data }) => {
+  const { categories, colors } = useMemo(() => {
+    const categories: string[] = data.datasets.map(item => item.label.toUpperCase());
+    const colors: string[] = data.datasets.map(item => item.backgroundColor);
+    return { categories, colors }
+  }, [data]);
+
   return (
     <Box id="chart-influencer-visit">
       <StackedBarChart
         title={(
           <>
-            JUMLAH PEMBERITAAN<br/>
+            INFLUENCER VIST<br/>
             6 DESTINASI PARIWISATA PRIORITAS
           </>
         )}
-        labels={ labels }
-        datasets={ datasets }
+        labels={ data.labels }
+        datasets={ data.datasets }
         width="630px"
         height="250px"
       />
 
       <Flex justifyContent="space-between" alignItems="center">
-        <ButtonSelengkapnya url={ URL } />
+        <ButtonSelengkapnya url={ data.url } />
 
         <ColorLegend
-          categories={["FOLLOWER", "REACH", "ENGAGEMENT"]}
-          colors={ COLORS }
+          categories={ categories }
+          colors={ colors }
         />
       </Flex>
     </Box>

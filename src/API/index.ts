@@ -5,6 +5,7 @@ import { pendampinganStatistik, pendampinganLaporan } from './pendampingan';
 import sosialisasi from './sosialisasi';
 import pelatihan from './pelatihan';
 import narasumber from './narasumber';
+import publikasi from './publikasi';
 import { localChampion } from './local-champion';
 import { getCookie } from '../utils/cookie';
 
@@ -31,7 +32,6 @@ const home = () => {
   const URL: string = "https://kampanye-sadarwisata.com/api/main";
   const token = getCookie("token");
 
-  const source: string = "data/home/home.json";
   const { data, error, isLoading } = useSWR<THomeData>(
     [URL, token],
     ([URL, token]) => fetcher(URL, token)
@@ -44,6 +44,7 @@ export default {
   sosialisasi,
   pelatihan,
   narasumber,
+  publikasi,
   localChampion,
   
   pendampinganStatistik,

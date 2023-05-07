@@ -1,0 +1,1 @@
+export const COLORS_INFLUENCER: string[] = ["#00FFFF", "#0085FF", "#7A4DFC"];

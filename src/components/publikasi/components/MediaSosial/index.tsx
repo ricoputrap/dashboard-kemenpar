@@ -5,10 +5,12 @@ import LogoWonderful from "../../../../assets/logo/8-publikasi-wonderful.svg"
 import ChartLine from "../../../../assets/lines/chart-line.svg"
 import StatisticBox from '../StatisticBox'
 import ProfilMikroInfluencer from '../ProfilMikroInfluencer'
-import StackedBarChart from '../../../reusables/organisms/StackedBarChart'
 import ChartInfluencerVisit from './ChartInfluencerVisit'
+import useData from './useData'
 
 const MediaSosial: React.FC = () => {
+  const { kemenpar, kampanye, pesona, influencer } = useData();
+
   return (
     <Box>
       <Box marginBottom="40px">
@@ -34,15 +36,13 @@ const MediaSosial: React.FC = () => {
           >
             <StatisticBox
               logo={LogoKemenpar}
-              title="@kemenparekraf.ri"
+              title={ kemenpar.id }
               titleSize="25px"
-              url="https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
-              statistics={[
-                { label: "follower", value: "968K" },
-                { label: "jumlah konten", value: "31" },
-                { label: "reach", value: "0" },
-                { label: "engagement", value: "0.23%" },
-              ]}
+              url={ kemenpar.url }
+              follower={ kemenpar.follower }
+              jumlahKonten={ kemenpar.jumlah_konten }
+              reach={ kemenpar.reach }
+              engagement={ kemenpar.engagement }
             />
           </Flex>
           <Flex
@@ -53,15 +53,13 @@ const MediaSosial: React.FC = () => {
           >
             <StatisticBox
               logo={LogoWonderful}
-              title="@pesona.indonesia"
+              title={ pesona.id }
               titleSize="25px"
-              url="https://www.instagram.com/wonderfulindonesia/"
-              statistics={[
-                { label: "follower", value: "18.7k" },
-                { label: "jumlah konten", value: "1.9k" },
-                { label: "reach", value: "1.5k" },
-                { label: "engagement", value: "1.6k" },
-              ]}
+              url={ pesona.url }
+              follower={ pesona.follower }
+              jumlahKonten={ pesona.jumlah_konten }
+              reach={ pesona.reach }
+              engagement={ pesona.engagement }
             />
           </Flex>
         </Stack>
@@ -75,15 +73,13 @@ const MediaSosial: React.FC = () => {
           >
             <StatisticBox
               logo={LogoWonderful}
-              title="@KampanyeSadarWisata"
-              titleSize="20px"
-              url="https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
-              statistics={[
-                { label: "follower", value: "14.2k" },
-                { label: "jumlah konten", value: "40" },
-                { label: "reach", value: "0" },
-                { label: "engagement", value: "4.50%" },
-              ]}
+              title={ kampanye.id }
+              titleSize="22px"
+              url={ kampanye.url }
+              follower={ kampanye.follower }
+              jumlahKonten={ kampanye.jumlah_konten }
+              reach={ kampanye.reach }
+              engagement={ kampanye.engagement }
             />
           </Flex>
 
@@ -93,7 +89,7 @@ const MediaSosial: React.FC = () => {
             alignItems="center"
             justifyContent="center"
           >
-            <ChartInfluencerVisit />
+            <ChartInfluencerVisit data={ influencer } />
           </Flex>
         </Stack>
       </Flex>
