@@ -4,6 +4,8 @@ import BasePage from '../templates/BasePage'
 import LastRow from './components/LastRow'
 import MediaOnline from './components/MediaOnline'
 import MediaSosial from './components/MediaSosial'
+import SectionThree from './components/SectionThree'
+import SectionTwo from './components/SectionTwo'
 import useInitData from './hooks/useInitData'
 
 const PublikasiView: React.FC = () => {
@@ -13,6 +15,8 @@ const PublikasiView: React.FC = () => {
     <BasePage id="page-sosialisasi">
       <Stack rowGap="80px">
         <MediaSosial />
+        <SectionTwo />
+        <SectionThree />
         <MediaOnline />
         <LastRow />
       </Stack>

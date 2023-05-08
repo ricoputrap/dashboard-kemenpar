@@ -1,6 +1,7 @@
 import useSWR from "swr";
 import { fetcher } from "..";
 import { TResponseMediaSosial } from "./types/media-social.types";
+import { TResponseSectionThree } from "./types/section-three.types";
 import { TResponseSectionTwo } from "./types/section-two.types";
 
 export type TResponse = {
@@ -9,6 +10,7 @@ export type TResponse = {
     data: {
       media_sosial: TResponseMediaSosial;
       section_two: TResponseSectionTwo;
+      section_three: TResponseSectionThree;
     }
   }
 }

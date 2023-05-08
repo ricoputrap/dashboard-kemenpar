@@ -40,6 +40,11 @@ export type TSectionTwo = {
   }
 }
 
+export type TSectionThree = {
+  podcastWonderfulIndonesia: TStatisticData[];
+  userGeneratedContent: TStatisticData[];
+}
+
 export type TState = {
   tahun: number;
   mediaSosial: {
@@ -47,6 +52,9 @@ export type TState = {
   }
   sectionTwo: {
     [tahun: number]: TSectionTwo;
+  },
+  sectionThree: {
+    [tahun: number]: TSectionThree;
   }
 }
 
@@ -54,4 +62,5 @@ export type TActions = {
   setTahun: (tahun: number) => void;
   setDataMediaSosial: (data: TMediaSosial, tahun: number) => void;
   setDataSectionTwo: (data: TSectionTwo, tahun: number) => void;
+  setDataSectionThree: (data: TSectionThree, tahun: number) => void;
 }

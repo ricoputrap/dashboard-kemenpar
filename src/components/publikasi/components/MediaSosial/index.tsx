@@ -6,13 +6,12 @@ import ChartLine from "../../../../assets/lines/chart-line.svg"
 import StatisticBox from '../StatisticBox'
 import ChartInfluencerVisit from './ChartInfluencerVisit'
 import useData from './useData'
-import SectionTwo from '../SectionTwo'
 
 const MediaSosial: React.FC = () => {
   const { kemenpar, kampanye, pesona, influencer } = useData();
 
   return (
-    <Box>
+    <Box id="section-one" width="100%">
       <Box marginBottom="40px">
         <Text
           color="#EAC170"
@@ -25,7 +24,6 @@ const MediaSosial: React.FC = () => {
         <Image src={ ChartLine } width="312px" />
       </Box>
 
-      {/* TODO: Refactor using Grid */}
       <Flex columnGap="80px">
         <Stack width="100%" rowGap="110px" alignItems="center">
           <Flex
@@ -91,88 +89,6 @@ const MediaSosial: React.FC = () => {
           >
             <ChartInfluencerVisit data={ influencer } />
           </Flex>
-        </Stack>
-      </Flex>
-
-      <Flex columnGap="40px" marginTop="80px">
-        <SectionTwo />
-      </Flex>
-
-      <Flex columnGap="80px" marginTop="80px">
-        {/* PODCAST WONDERFUL INDONESIA */}
-        <Stack rowGap="27px">
-          <Text
-            color="#EAC170"
-            fontSize="25px"
-            fontWeight={600}
-            marginBottom="12px"
-          >
-            PODCAST WONDERFUL INDONESIA
-          </Text>
-
-          <StatisticBox
-            logo={ LogoKemenpar }
-            title="PENJAGA PESONA WAKATOBI"
-            titleSize="20px"
-            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
-            statistics={[
-              { label: "follower", value: "968K" },
-              { label: "jumlah konten", value: "31" },
-              { label: "reach", value: "0" },
-              { label: "engagement", value: "0.23%" },
-            ]}
-          />
-
-          <StatisticBox
-            logo={ LogoKemenpar }
-            title="MAKIN SERU WISATA DI LABUAN BAJO"
-            titleSize="20px"
-            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
-            statistics={[
-              { label: "follower", value: "968K" },
-              { label: "jumlah konten", value: "31" },
-              { label: "reach", value: "0" },
-              { label: "engagement", value: "0.23%" },
-            ]}
-          />
-        </Stack>
-
-        {/* USER GENERATED CONTENT */}
-        <Stack rowGap="27px">
-          <Text
-            color="#EAC170"
-            fontSize="25px"
-            fontWeight={600}
-            marginBottom="12px"
-          >
-            USER GENERATED CONTENT
-          </Text>
-
-          <StatisticBox
-            logo={ LogoKemenpar }
-            title="KSW GIVEAWAY"
-            titleSize="20px"
-            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
-            statistics={[
-              { label: "follower", value: "968K" },
-              { label: "jumlah konten", value: "31" },
-              { label: "reach", value: "0" },
-              { label: "engagement", value: "0.23%" },
-            ]}
-          />
-
-          <StatisticBox
-            logo={ LogoKemenpar }
-            title="KSW GIVEAWAY"
-            titleSize="20px"
-            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
-            statistics={[
-              { label: "follower", value: "968K" },
-              { label: "jumlah konten", value: "31" },
-              { label: "reach", value: "0" },
-              { label: "engagement", value: "0.23%" },
-            ]}
-          />
         </Stack>
       </Flex>
     </Box>
