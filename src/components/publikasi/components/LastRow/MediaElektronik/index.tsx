@@ -3,14 +3,11 @@ import React from 'react'
 import NumberedList from '../../NumberedList'
 import ChartLine from "../../../../../assets/lines/chart-line.svg"
 import ButtonSelengkapnya from '../../ButtonSelengkapnya'
-
-const URL = "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link";
-const DATA = [
-  { label: "radio talkshow", value: 1 },
-  { label: "radio insertion", value: 120 },
-];
+import useData from '../useData'
 
 const MediaElektronik: React.FC = () => {
+  const { mediaElektronik } = useData();
+
   return (
     <Box id="media-elektronik">
       <Box marginBottom="32px">
@@ -25,11 +22,11 @@ const MediaElektronik: React.FC = () => {
         <Image src={ ChartLine } width="312px" />
       </Box>
       <NumberedList
-        data={ DATA }
+        data={ mediaElektronik.data }
       />
       <Box marginTop="20px">
         <ButtonSelengkapnya
-          url={ URL }
+          url={ mediaElektronik.url }
           fullWidth
         />
       </Box>

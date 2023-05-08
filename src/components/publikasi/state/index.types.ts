@@ -12,6 +12,18 @@ export type TStatisticData = {
 export type TListData = {
   label: string;
   value: number;
+  url?: string;
+}
+
+export type TArticle = {
+  no: number;
+  title: string;
+  link: string;
+}
+
+export type TBarDataPublikasi = {
+  labels: string[];
+  dataset: TBarData;
   url: string;
 }
 
@@ -53,10 +65,19 @@ export type TSectionThree = {
 
 export type TMediaOnline = {
   list: TListData[];
-  jangkauanMedia: {
-    labels: string[];
-    dataset: TBarData;
+  jangkauanMedia: TBarDataPublikasi;
+}
+
+export type TSectionFive = {
+  mediaElektronik: {
     url: string;
+    data: TListData[];
+  },
+  mediaLuarRuang: TBarDataPublikasi,
+  topListMedia: TBarDataPublikasi,
+  website: {
+    url: string;
+    data: TArticle[];
   }
 }
 
@@ -73,6 +94,9 @@ export type TState = {
   },
   mediaOnline: {
     [tahun: number]: TMediaOnline;
+  },
+  sectionFive: {
+    [tahun: number]: TSectionFive;
   }
 }
 
@@ -82,4 +106,5 @@ export type TActions = {
   setDataSectionTwo: (data: TSectionTwo, tahun: number) => void;
   setDataSectionThree: (data: TSectionThree, tahun: number) => void;
   setDataMediaOnline: (data: TMediaOnline) => void;
+  setDataSectionFive: (data: TSectionFive) => void;
 }

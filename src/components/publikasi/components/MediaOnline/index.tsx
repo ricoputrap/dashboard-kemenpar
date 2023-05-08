@@ -17,7 +17,7 @@ const MediaOnline: React.FC = () => {
           fontWeight={600}
           marginBottom="12px"
         >
-          MEDIA SOSIAL
+          MEDIA ONLINE
         </Text>
         <Image src={ ChartLine } width="312px" />
       </Box>

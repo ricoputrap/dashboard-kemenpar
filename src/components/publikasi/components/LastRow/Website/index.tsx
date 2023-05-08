@@ -2,11 +2,12 @@ import { Box, Heading, Stack } from '@chakra-ui/react'
 import React from 'react'
 import SectionHeader from '../../../../reusables/atoms/SectionHeader'
 import ButtonSelengkapnya from '../../ButtonSelengkapnya'
+import useData from '../useData';
 import ListArticle from './ListArticle';
 
-const URL = "https://drive.google.com/file/d/13p3RlpgaeYv_7IJjHfdGXBktAKaJqWmv/view?usp=share_link";
-
 const Website: React.FC = () => {
+  const { website } = useData();
+
   return (
     <Stack justifyContent="space-between" rowGap="20px" height="100%">
       <Stack rowGap="20px" height="100%">
@@ -28,12 +29,12 @@ const Website: React.FC = () => {
               16 ARTIKEL WWW.INDONESIA.TRAVEL
             </Heading>
 
-            <ListArticle />
+            <ListArticle data={ website.data } />
           </Stack>
         </Box>
       </Stack>
 
-      <ButtonSelengkapnya url={ URL } fullWidth />
+      <ButtonSelengkapnya url={ website.url } fullWidth />
     </Stack>
   )
 }

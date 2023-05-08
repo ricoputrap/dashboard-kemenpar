@@ -2,6 +2,7 @@ import useSWR from "swr";
 import { fetcher } from "..";
 import { TResponseMediaOnline } from "./types/media-online.types";
 import { TResponseMediaSosial } from "./types/media-social.types";
+import { TResponseSectionFive } from "./types/section-five.types";
 import { TResponseSectionThree } from "./types/section-three.types";
 import { TResponseSectionTwo } from "./types/section-two.types";
 
@@ -13,6 +14,7 @@ export type TResponse = {
       section_two: TResponseSectionTwo;
       section_three: TResponseSectionThree;
       media_online: TResponseMediaOnline;
+      section_five: TResponseSectionFive;
     }
   }
 }

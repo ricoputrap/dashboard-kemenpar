@@ -1,9 +1,13 @@
 import { Box, Stack } from '@chakra-ui/react'
 import React from 'react'
-import { data } from './data'
+import { TArticle } from '../../../state/index.types'
 import RowData from './RowData'
 
-const ListArticle: React.FC = () => {
+interface Props {
+  data: TArticle[];
+}
+
+const ListArticle: React.FC<Props> = ({ data }) => {
   return (
     <Box id="list-article">
       <Box paddingRight="20px">

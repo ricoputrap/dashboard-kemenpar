@@ -3,6 +3,7 @@ import { create } from "zustand";
 import { TState, TActions, TMediaSosial, TSectionTwo } from "./index.types";
 import { initialDataMediaSosial, initialDataSectionTwo } from "./initialData";
 import initialDataMediaOnline from "./initialData/initialDataMediaOnline";
+import initialDataSectionFive from "./initialData/initialDataSectionFive";
 import initialDataSectionThree from "./initialData/initialDataSectionThree";
 
 const usePublikasiStore = create<TState & TActions>(set => ({
@@ -22,6 +23,10 @@ const usePublikasiStore = create<TState & TActions>(set => ({
   mediaOnline: {
     2022: initialDataMediaOnline,
     2023: initialDataMediaOnline
+  },
+  sectionFive: {
+    2022: initialDataSectionFive,
+    2023: initialDataSectionFive
   },
 
   setTahun: (tahun: number) => set({ tahun }),
@@ -53,6 +58,14 @@ const usePublikasiStore = create<TState & TActions>(set => ({
     set(state => ({
       mediaOnline: {
         ...state.mediaOnline,
+        [state.tahun]: data
+      }
+    }));
+  },
+  setDataSectionFive: (data) => {
+    set(state => ({
+      sectionFive: {
+        ...state.sectionFive,
         [state.tahun]: data
       }
     }));

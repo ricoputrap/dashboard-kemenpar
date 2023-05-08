@@ -5,6 +5,7 @@ import { initialDataMediaSosial } from '../state/initialData';
 import usePublikasiStore from '../state/store'
 import computeMediaSosial from '../utils/computeData/media-sosial';
 import useInitDataMediaOnline from './useInitDataMediaOnline';
+import useInitDataSectionFive from './useInitDataSectionFive';
 import useInitDataSectionThree from './useInitDataSectionThree';
 import useInitDataSectionTwo from './useInitDataSectionTwo';
 
@@ -16,6 +17,7 @@ const useInitData = () => {
   useInitDataSectionTwo(data);
   useInitDataSectionThree(data);
   useInitDataMediaOnline(data);
+  useInitDataSectionFive(data);
 
   const dataMediaSosial: TMediaSosial = useMemo(() => {
     if (!data) {

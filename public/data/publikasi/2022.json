@@ -271,6 +271,105 @@
             }
           ]
         }
+      },
+      "section_five": {
+        "media_elektronik": {
+          "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link",
+          "data": [
+            { "id": "Radio Talkshow", "jumlah": 1 },
+            { "id": "Radio Insertion", "jumlah": 120 }
+          ]
+        },
+        "media_luar_ruang": {
+          "url": "https://drive.google.com/file/d/11o9qZFxBurBgjZ6-0i1hDWWAIYusyzSh/view?usp=sharing",
+          "data": [
+            { "dpp": "toba", "jumlah": 42 },
+            { "dpp": "byp", "jumlah": 100 },
+            { "dpp": "bts", "jumlah": 28 },
+            { "dpp": "lombok", "jumlah": 34 },
+            { "dpp": "wakatobi", "jumlah": 20 },
+            { "dpp": "labuan bajo", "jumlah": 13 }
+          ]
+        },
+        "top_list_media": {
+          "url": "https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link",
+          "data": [
+            { "id": "Tribunnews.com", "jumlah": 27 },
+            { "id": "Mediaindonesia.com", "jumlah": 27 },
+            { "id": "Indopos.co.id", "jumlah": 28 },
+            { "id": "Liputan6.com", "jumlah": 26 },
+            { "id": "Antaranews.com", "jumlah": 25 }
+          ]
+        },
+        "website": {
+          "url": "https://drive.google.com/file/d/13p3RlpgaeYv_7IJjHfdGXBktAKaJqWmv/view?usp=share_link",
+          "data": [
+            {
+              "title": "Kehangatan Rasa Keluarga Khas Jogja di Kampung Wisata Sosromedurun",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/kehangatan-rasa-keluarga-khas-yogya-di-kampung-wisata-sosromenduran"
+            },
+            {
+              "title": "Pengalaman Desa Wisata KIan Berkesan Berkat Kwsiapan Warga Desa Wisata Sekitar Borubudur dan Prambanan",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/pengalaman-wisata-desa-kian-berkesan-berkat-kesiapan-warga-desa-wisata-sekitar-borobudur-dan-prambanan"
+            },
+            {
+              "title": "Sisi Lain Labuan Bajo, Adaptasi Warga Desa Untuk Melestarikan Sang Satwa Langka",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/sisi-lain-labuan-bajo-adaptasi-warga-desa-untuk-melestarikan-sang-satwa-langka"
+            },
+            {
+              "title": "Pariwisata Bahari Berkembang, Lapangan Pekerjaan Baru Bagi Warga Sekitar",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/pariwisata-bahari-berkembang-lapangan-pekerjaan-baru-bagi-warga-sekitar"
+            },
+            {
+              "title": "Gugusan Gili Cantik Desa Sekotong Barat Surga Keindahan Bahari di Lombok Barat",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/gugusan-gili-cantik-desa-sekotong-barat-surga-keindahan-bahari-di-lombok-barat"
+            },
+            {
+              "title": "Manusia-manusia kuat dari Selong Balanak",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/manusia-manusia-kuat-dari-selong-belanak"
+            },
+            {
+              "title": "Mereka Yang Berada di Garda Depan Pulau Samosir",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/mereka-yang-berada-di-garda-depan-pariwisata-pulau-samosir"
+            },
+            {
+              "title": "Menelusuri Rindu di Kampung Wisata Jogja",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/menelusuri-rindu-di-kampung-wisata-yogya "
+            },
+            {
+              "title": "Cerita Sade",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/cerita-sade"
+            },
+            {
+              "title": "Kampung Homestay Desa Wisata Kuta",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/kampoeng-homestay-desa-wisata-kuta-memoles-layanan-prima"
+            },
+            {
+              "title": "Terpikat Kearifan Lokal Pelaku Pariwisata di Desa-desa Wisata Mandalika",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/terpikat-kearifan-lokal-pelaku-pariwisata-di-desa-desa-wisata-mandalika"
+            },
+            {
+              "title": "Geliat Desa Wisata di Tanah Karo",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/geliat-desa-desa-wisata-di-tanah-karo"
+            },
+            {
+              "title": "Mencicipi Serunya Desa Wisata Penyangga Bromo Tengger Semeru Ala Pelaku Wisata Lokal",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/mencicipi-serunya-desa-wisata-penyangga-bromo-tengger-semeru-ala-pelaku-wisata-lokal"
+            },
+            {
+              "title": "Pesona Yang Berbeda dari Alam Desa Wisata di Danau Toba",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/pesona-yang-berbeda-dari-alam-desa-desa-di-danau-toba"
+            },
+            {
+              "title": "Menjelajahi Desa Wisata di Tapanuli Utara, Sisi Lain dari Danau Toba",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/menjelajahi-desa-desa-wisata-di-tapanuli-utara-sisi-lain-dari-danau-toba"
+            },
+            {
+              "title": "Harmoni Persahabatan Manusia dengan Laut di Desa Wisata Wakatobi",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/harmoni-persahabatan-manusia-dengan-laut-di-desa-desa-wisata-wakatobi"
+            }
+          ]
+        }
       }
     }
   }
