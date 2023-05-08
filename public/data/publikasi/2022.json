@@ -71,6 +71,115 @@
             }
           ]
         }
+      },
+      "section_two": {
+        "profile_mikro_influencer": {
+          "url": "#",
+          "data": [
+            {
+              "nama": "@puanindya",
+              "asal": "DKI Jakarta",
+              "follower": "479K",
+              "engagement_rate": "0.01%"
+            },
+            {
+              "nama": "@harivalzayuka",
+              "asal": "Bali",
+              "follower": "115K",
+              "engagement_rate": "11.29%"
+            },
+            {
+              "nama": "@aqilaavviv",
+              "asal": "DKI Jakarta",
+              "follower": "114K",
+              "engagement_rate": "1.95%"
+            },
+            {
+              "nama": "@patrishiela",
+              "asal": "Bali",
+              "follower": "107K",
+              "engagement_rate": "2.41%"
+            },
+            {
+              "nama": "@anisadheaa",
+              "asal": "DI Yogyakarta",
+              "follower": "101K",
+              "engagement_rate": "0.49%"
+            },
+            {
+              "nama": "@onihoironi",
+              "asal": "Bali",
+              "follower": "100K",
+              "engagement_rate": "5.88%"
+            },
+            {
+              "nama": "@yukianggia",
+              "asal": "DKI Jakarta",
+              "follower": "88.8K",
+              "engagement_rate": "8.98%"
+            },
+            {
+              "nama": "@hendraar",
+              "asal": "Jawa Barat",
+              "follower": "71.8K",
+              "engagement_rate": "0.37%"
+            },
+            {
+              "nama": "@bibobns",
+              "asal": "Bali",
+              "follower": "67.1K",
+              "engagement_rate": "2.52%"
+            },
+            {
+              "nama": "@caswanassegaf",
+              "asal": "Jawa Barat",
+              "follower": "61.9K",
+              "engagement_rate": "2.49%"
+            },
+            {
+              "nama": "@satyawinnie",
+              "asal": "Bali",
+              "follower": "47.1K",
+              "engagement_rate": "2.21%"
+            },
+            {
+              "nama": "@cece_chaann",
+              "asal": "Bali",
+              "follower": "36.3K",
+              "engagement_rate": "1.47%"
+            },
+            {
+              "nama": "@leonard_c4me",
+              "asal": "DKI Jakarta",
+              "follower": "21.8K",
+              "engagement_rate": "3.78%"
+            },
+            {
+              "nama": "@Alibufteim",
+              "asal": "NTT",
+              "follower": "51.1K",
+              "engagement_rate": "2.66%"
+            }
+          ]
+        },
+        "ig_live_ngantri": {
+          "panji": {
+            "id": "PANJI PETUALANG",
+            "follower": "1M",
+            "jumlah_konten": "1",
+            "reach": "12K",
+            "engagement": "426",
+            "url": "https://drive.google.com/file/d/1xeCjeL2z6YUz9BYRFGi4BBw0Giep4NDT/view?usp=share_link"
+          },
+          "grithe": {
+            "id": "GRITHE AGATHA",
+            "follower": "3.7M",
+            "jumlah_konten": "1",
+            "reach": "396K",
+            "engagement": "675",
+            "url": "https://drive.google.com/file/d/1xeCjeL2z6YUz9BYRFGi4BBw0Giep4NDT/view?usp=share_link"
+          }
+        }
       }
     }
   }

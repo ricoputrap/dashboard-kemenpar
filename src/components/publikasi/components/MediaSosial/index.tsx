@@ -4,9 +4,9 @@ import LogoKemenpar from "../../../../assets/logo/7-publikasi-kemenpar.svg"
 import LogoWonderful from "../../../../assets/logo/8-publikasi-wonderful.svg"
 import ChartLine from "../../../../assets/lines/chart-line.svg"
 import StatisticBox from '../StatisticBox'
-import ProfilMikroInfluencer from '../ProfilMikroInfluencer'
 import ChartInfluencerVisit from './ChartInfluencerVisit'
 import useData from './useData'
+import SectionTwo from '../SectionTwo'
 
 const MediaSosial: React.FC = () => {
   const { kemenpar, kampanye, pesona, influencer } = useData();
@@ -95,46 +95,7 @@ const MediaSosial: React.FC = () => {
       </Flex>
 
       <Flex columnGap="40px" marginTop="80px">
-        {/* PROFIL MIKRO INFLUENCER */}
-        <ProfilMikroInfluencer />
-
-        {/* IG LIVE NGANTRI */}
-        <Stack rowGap="27px">
-          <Text
-            color="#EAC170"
-            fontSize="25px"
-            fontWeight={600}
-            marginBottom="12px"
-          >
-            IG LIVE NGANTRI
-          </Text>
-
-          <StatisticBox
-            logo={ LogoKemenpar }
-            title="IG LIVE PANJI PETUALANG"
-            titleSize="20px"
-            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
-            statistics={[
-              { label: "follower", value: "968K" },
-              { label: "jumlah konten", value: "31" },
-              { label: "reach", value: "0" },
-              { label: "engagement", value: "0.23%" },
-            ]}
-          />
-
-          <StatisticBox
-            logo={ LogoKemenpar }
-            title="IG LIVE GRITHE AGATHA"
-            titleSize="20px"
-            url="https://www.instagram.com/p/CLL0Z8YJ8Z-/"
-            statistics={[
-              { label: "follower", value: "968K" },
-              { label: "jumlah konten", value: "31" },
-              { label: "reach", value: "0" },
-              { label: "engagement", value: "0.23%" },
-            ]}
-          />
-        </Stack>
+        <SectionTwo />
       </Flex>
 
       <Flex columnGap="80px" marginTop="80px">

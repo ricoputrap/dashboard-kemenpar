@@ -1,28 +1,14 @@
 import useSWR from "swr";
 import { fetcher } from "..";
-import { TStatisticData } from "../../components/publikasi/state/index.types";
-
-type TInfluencerRawData = {
-  dpp: string;
-  follower: number;
-  reach: number;
-  engagement: number;
-}
-
-export type TResponseMediaSosial = {
-  statistik: TStatisticData[];
-  chart: {
-    title: string;
-    url: string;
-    data: TInfluencerRawData[];
-  }
-}
+import { TResponseMediaSosial } from "./types/media-social.types";
+import { TResponseSectionTwo } from "./types/section-two.types";
 
 export type TResponse = {
   data: {
     tahun: number;
     data: {
       media_sosial: TResponseMediaSosial;
+      section_two: TResponseSectionTwo;
     }
   }
 }

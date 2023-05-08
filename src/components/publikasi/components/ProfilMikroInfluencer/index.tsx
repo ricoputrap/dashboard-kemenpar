@@ -1,10 +1,16 @@
 import { Box, Button, Table, TableContainer, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react'
 import React from 'react'
+import { TProfilMikroInfluencer } from '../../state/index.types'
 import { ColumnData, ColumnHeader, Container, RowData } from './index.styles'
 
-const ProfilMikroInfluencer: React.FC = () => {
+interface Props {
+  data: TProfilMikroInfluencer[];
+  url: string;
+}
+
+const ProfilMikroInfluencer: React.FC<Props> = ({ data, url }) => {
   return (
-    <Box>
+    <Box maxW="620px">
       <Container>
         <Text
           color="#EAC170"
@@ -18,9 +24,8 @@ const ProfilMikroInfluencer: React.FC = () => {
 
         <TableContainer
           overflowY="scroll"
-          maxHeight="620px"
+          maxHeight="500px"
           whiteSpace="break-spaces"
-          maxW="575px"
         >
           <Table variant="unstyled">
             <Thead position="sticky" top={0}>
@@ -55,42 +60,14 @@ const ProfilMikroInfluencer: React.FC = () => {
             </Thead>
 
             <Tbody>
-              <RowData>
-                <ColumnData>Nama Orang 1 Manusia</ColumnData>
-                <ColumnData>Jakarta</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-              </RowData>
-              <RowData>
-                <ColumnData>Nama Orang 1 Manusia</ColumnData>
-                <ColumnData>Jakarta</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-              </RowData>
-              <RowData>
-                <ColumnData>Nama Orang 1 Manusia</ColumnData>
-                <ColumnData>Jakarta</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-              </RowData>
-              <RowData>
-                <ColumnData>Nama Orang 1 Manusia</ColumnData>
-                <ColumnData>Jakarta</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-              </RowData>
-              <RowData>
-                <ColumnData>Nama Orang 1 Manusia</ColumnData>
-                <ColumnData>Jakarta</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-              </RowData>
-              <RowData>
-                <ColumnData>Nama Orang 1 Manusia</ColumnData>
-                <ColumnData>Jakarta</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-                <ColumnData>48.6K</ColumnData>
-              </RowData>
+              {data.map((item, index) => (
+                <RowData key={ index }>
+                  <ColumnData>{ item.nama }</ColumnData>
+                  <ColumnData>{ item.asal }</ColumnData>
+                  <ColumnData>{ item.follower }</ColumnData>
+                  <ColumnData>{ item.engagement_rate }</ColumnData>
+                </RowData>
+              ))}
             </Tbody>
           </Table>
         </TableContainer>
@@ -102,7 +79,7 @@ const ProfilMikroInfluencer: React.FC = () => {
         background="#EAC170"
         color="#112647"
         as="a"
-        href="#"
+        href={ url }
         target="_blank"
       >
         SELENGKAPNYA

@@ -22,14 +22,36 @@ export type TMediaSosial = {
   influencer: TChartInfluencerVisit;
 }
 
+export type TProfilMikroInfluencer = {
+  nama: string;
+  asal: string;
+  follower: string;
+  engagement_rate: string;
+}
+
+export type TSectionTwo = {
+  profilMikroInfluencer: {
+    data: TProfilMikroInfluencer[];
+    url: string;
+  },
+  igLiveNgantri: {
+    panji: TStatisticData;
+    grithe: TStatisticData;
+  }
+}
+
 export type TState = {
   tahun: number;
   mediaSosial: {
     [tahun: number]: TMediaSosial;
+  }
+  sectionTwo: {
+    [tahun: number]: TSectionTwo;
   }
 }
 
 export type TActions = {
   setTahun: (tahun: number) => void;
   setDataMediaSosial: (data: TMediaSosial, tahun: number) => void;
+  setDataSectionTwo: (data: TSectionTwo, tahun: number) => void;
 }

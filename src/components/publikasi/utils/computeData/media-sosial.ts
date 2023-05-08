@@ -1,9 +1,9 @@
-import { TResponseMediaSosial } from "../../../API/publikasi";
-import { TBarData } from "../../reusables/organisms/BarChart/index.types";
-import { TChartInfluencerVisit, TMediaSosial } from "../state/index.types";
-import { COLORS_INFLUENCER } from "./constants";
+import { TResponseMediaSosial } from "../../../../API/publikasi/types/media-social.types";
+import { TBarData } from "../../../reusables/organisms/BarChart/index.types";
+import { TChartInfluencerVisit, TMediaSosial } from "../../state/index.types";
+import { COLORS_INFLUENCER } from "../constants";
 
-export const computeMediaSosial = (data: TResponseMediaSosial): TMediaSosial => {
+const computeMediaSosial = (data: TResponseMediaSosial): TMediaSosial => {
   const [kemenpar, kampanye, pesona] = data.statistik;
 
   const influencer: TChartInfluencerVisit = {
@@ -53,3 +53,5 @@ export const computeMediaSosial = (data: TResponseMediaSosial): TMediaSosial => 
 
   return { kemenpar, kampanye, pesona, influencer };
 }
+
+export default computeMediaSosial;
