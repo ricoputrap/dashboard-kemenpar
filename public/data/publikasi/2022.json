@@ -218,6 +218,59 @@
             "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link"
           }
         ]
+      },
+      "media_online": {
+        "list": [
+          {
+            "id": "Siaran Pers",
+            "jumlah": 30,
+            "url": "https://drive.google.com/file/d/1gnO2hg6zDOK4-lQSatQ11wBXCthNM_qM/view?usp=share_link"
+          },
+          {
+            "id": "Weekly Press Briefing",
+            "jumlah": 1,
+            "url": "https://drive.google.com/file/d/1gnO2hg6zDOK4-lQSatQ11wBXCthNM_qM/view?usp=share_link"
+          },
+          {
+            "id": "Media Center",
+            "jumlah": 2,
+            "url": "https://drive.google.com/file/d/1gnO2hg6zDOK4-lQSatQ11wBXCthNM_qM/view?usp=share_link"
+          },
+          {
+            "id": "Pemberitaan Media Online",
+            "jumlah": 442,
+            "url": "https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link"
+          }
+        ],
+        "jangkauan_media": {
+          "url": "https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link",
+          "data": [
+            {
+              "dpp": "toba",
+              "jumlah": 17
+            },
+            {
+              "dpp": "byp",
+              "jumlah": 9
+            },
+            {
+              "dpp": "bts",
+              "jumlah": 4
+            },
+            {
+              "dpp": "lombok",
+              "jumlah": 14
+            },
+            {
+              "dpp": "wakatobi",
+              "jumlah": 6
+            },
+            {
+              "dpp": "labuan bajo",
+              "jumlah": 5
+            }
+          ]
+        }
       }
     }
   }

@@ -3,8 +3,11 @@ import React from 'react'
 import ChartLine from "../../../../assets/lines/chart-line.svg"
 import ChartJumlahPemberitaan from '../ChartJumlahPemberitaan'
 import NumberedList from '../NumberedList'
+import useData from './useData'
 
 const MediaOnline: React.FC = () => {
+  const { list, jangkauanMedia } = useData();
+
   return (
     <Box>
       <Box marginBottom="40px">
@@ -21,15 +24,14 @@ const MediaOnline: React.FC = () => {
 
       <Grid templateColumns="repeat(2, 1fr)" gap="68px">
         <GridItem w="100%">
-          <NumberedList data={[
-            { label: "siaran pers", value: 30 },
-            { label: "weekly press briefing", value: 1 },
-            { label: "media center", value: 2 },
-            { label: "pemberitaan media online", value: 442 }
-          ]} />
+          <NumberedList data={ list } />
         </GridItem>
         <GridItem w="100%">
-          <ChartJumlahPemberitaan />
+          <ChartJumlahPemberitaan
+            dataset={ jangkauanMedia.dataset }
+            labels={ jangkauanMedia.labels }
+            url={ jangkauanMedia.url }
+          />
         </GridItem>
       </Grid>
     </Box>

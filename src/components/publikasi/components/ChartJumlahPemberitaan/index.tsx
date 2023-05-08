@@ -1,13 +1,14 @@
 import React, { useMemo } from 'react'
+import { TBarData } from '../../../reusables/organisms/BarChart/index.types';
 import BarChartPublikasi from '../BarChartPublikasi'
 
-const URL = "https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link";
-const dataset = [
-  { label: "Media", data: [17, 9, 4, 14, 6, 5], backgroundColor: "#EAC170" },
-]
-const LABELS: string[] = ["toba", "byp", "bts", "lombok", "labuan bajo", "wakatobi"];
+interface Props {
+  dataset: TBarData;
+  labels: string[];
+  url: string;
+}
 
-const ChartJumlahPemberitaan: React.FC = () => {
+const ChartJumlahPemberitaan: React.FC<Props> = ({ dataset, labels, url }) => {
   const title = useMemo<React.ReactNode>(() => (
     <>
       JUMLAH PEMBERITAAN<br/>
@@ -18,9 +19,9 @@ const ChartJumlahPemberitaan: React.FC = () => {
   return (
     <BarChartPublikasi
       title={ title }
-      dataset={ dataset }
-      labels={ LABELS }
-      url={ URL }
+      dataset={[dataset]}
+      labels={ labels }
+      url={ url }
     />
   )
 }
