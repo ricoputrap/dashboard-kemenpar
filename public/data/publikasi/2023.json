@@ -1,0 +1,228 @@
+{
+  "data": {
+    "tahun": 2023,
+    "data": {
+      "media_sosial": {
+        "statistik": [
+          {
+            "id": "@kemenparekraf.ri",
+            "follower": "0",
+            "jumlah_konten": "0",
+            "reach": "0",
+            "engagement": "0%",
+            "url": "https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
+          },
+          {
+            "id": "@kampanyesadarwisata",
+            "follower": "0",
+            "jumlah_konten": "0",
+            "reach": "0",
+            "engagement": "0%",
+            "url": "https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
+          },
+          {
+            "id": "@pesona.indonesia",
+            "follower": "0",
+            "jumlah_konten": "0",
+            "reach": "0",
+            "engagement": "0%",
+            "url": "https://instagram.com/pesona.indonesia?igshid=YmMyMTA2M2Y="
+          }
+        ],
+        "chart": {
+          "title": "Influencer Visit",
+          "url": "https://drive.google.com/file/d/1CrwkQsmgWaxr1_oOaF81Ru8OjwzSqM2h/view?usp=sharing",
+          "data": [
+            {
+              "dpp": "toba",
+              "follower": 0,
+              "reach": 0,
+              "engagement": 0
+            },
+            {
+              "dpp": "byp",
+              "follower": 0,
+              "reach": 0,
+              "engagement": 0
+            },
+            {
+              "dpp": "bts",
+              "follower": 0,
+              "reach": 0,
+              "engagement": 0
+            },
+            {
+              "dpp": "bajo",
+              "follower": 0,
+              "reach": 0,
+              "engagement": 0
+            },
+            {
+              "dpp": "lombok",
+              "follower": 0,
+              "reach": 0,
+              "engagement": 0
+            },
+            {
+              "dpp": "wakatobi",
+              "follower": 0,
+              "reach": 0,
+              "engagement": 0
+            }
+          ]
+        }
+      },
+      "section_two": {
+        "profile_mikro_influencer": {
+          "url": "#",
+          "data": []
+        },
+        "ig_live_ngantri": {
+          "panji": {
+            "id": "PANJI PETUALANG",
+            "follower": "0",
+            "jumlah_konten": "0",
+            "reach": "0",
+            "engagement": "0",
+            "url": "https://drive.google.com/file/d/1xeCjeL2z6YUz9BYRFGi4BBw0Giep4NDT/view?usp=share_link"
+          },
+          "grithe": {
+            "id": "GRITHE AGATHA",
+            "follower": "0",
+            "jumlah_konten": "0",
+            "reach": "0",
+            "engagement": "0",
+            "url": "https://drive.google.com/file/d/1xeCjeL2z6YUz9BYRFGi4BBw0Giep4NDT/view?usp=share_link"
+          }
+        }
+      },
+      "section_three": {
+        "podcast_wonderful_indonesia": [
+          {
+            "id": "Wakatobi",
+            "follower": "0",
+            "jumlah_konten": "0",
+            "reach": "0",
+            "engagement": "0",
+            "url": "https://drive.google.com/file/d/1EdAspsQUZd3JF4bgvy6EkMceDwBh2JYn/view?usp=share_link"
+          },
+          {
+            "id": "Labuan Bajo",
+            "follower": "0",
+            "jumlah_konten": "0",
+            "reach": "0",
+            "engagement": "0",
+            "url": "https://drive.google.com/file/d/1EdAspsQUZd3JF4bgvy6EkMceDwBh2JYn/view?usp=share_link"
+          }
+        ],
+        "user_generated_content": [
+          {
+            "id": "Giveaway 1",
+            "follower": "0",
+            "jumlah_konten": "0",
+            "reach": "0",
+            "engagement": "0",
+            "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link"
+          },
+          {
+            "id": "Giveaway 2",
+            "follower": "0",
+            "jumlah_konten": "0",
+            "reach": "0",
+            "engagement": "0",
+            "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link"
+          }
+        ]
+      },
+      "media_online": {
+        "list": [
+          {
+            "id": "Siaran Pers",
+            "jumlah": 0,
+            "url": "https://drive.google.com/file/d/1gnO2hg6zDOK4-lQSatQ11wBXCthNM_qM/view?usp=share_link"
+          },
+          {
+            "id": "Weekly Press Briefing",
+            "jumlah": 0,
+            "url": "https://drive.google.com/file/d/1gnO2hg6zDOK4-lQSatQ11wBXCthNM_qM/view?usp=share_link"
+          },
+          {
+            "id": "Media Center",
+            "jumlah": 0,
+            "url": "https://drive.google.com/file/d/1gnO2hg6zDOK4-lQSatQ11wBXCthNM_qM/view?usp=share_link"
+          },
+          {
+            "id": "Pemberitaan Media Online",
+            "jumlah": 0,
+            "url": "https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link"
+          }
+        ],
+        "jangkauan_media": {
+          "url": "https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link",
+          "data": [
+            {
+              "dpp": "toba",
+              "jumlah": 0
+            },
+            {
+              "dpp": "byp",
+              "jumlah": 0
+            },
+            {
+              "dpp": "bts",
+              "jumlah": 0
+            },
+            {
+              "dpp": "lombok",
+              "jumlah": 0
+            },
+            {
+              "dpp": "wakatobi",
+              "jumlah": 0
+            },
+            {
+              "dpp": "labuan bajo",
+              "jumlah": 0
+            }
+          ]
+        }
+      },
+      "section_five": {
+        "media_elektronik": {
+          "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link",
+          "data": [
+            { "id": "Radio Talkshow", "jumlah": 0 },
+            { "id": "Radio Insertion", "jumlah": 0 }
+          ]
+        },
+        "media_luar_ruang": {
+          "url": "https://drive.google.com/file/d/11o9qZFxBurBgjZ6-0i1hDWWAIYusyzSh/view?usp=sharing",
+          "data": [
+            { "dpp": "toba", "jumlah": 0 },
+            { "dpp": "byp", "jumlah": 0 },
+            { "dpp": "bts", "jumlah": 0 },
+            { "dpp": "lombok", "jumlah": 0 },
+            { "dpp": "wakatobi", "jumlah": 0 },
+            { "dpp": "labuan bajo", "jumlah": 0 }
+          ]
+        },
+        "top_list_media": {
+          "url": "https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link",
+          "data": [
+            { "id": "Tribunnews.com", "jumlah": 0 },
+            { "id": "Mediaindonesia.com", "jumlah": 0 },
+            { "id": "Indopos.co.id", "jumlah": 0 },
+            { "id": "Liputan6.com", "jumlah": 0 },
+            { "id": "Antaranews.com", "jumlah": 0 }
+          ]
+        },
+        "website": {
+          "url": "https://drive.google.com/file/d/13p3RlpgaeYv_7IJjHfdGXBktAKaJqWmv/view?usp=share_link",
+          "data": [
+            
+          ]
+        }
+      }
+    }
+  }
+}

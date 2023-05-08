@@ -20,7 +20,7 @@ const computeMediaSosial = (data: TResponseMediaSosial): TMediaSosial => {
   const engagement: number[] = [];
 
   data.chart.data.forEach(item => {
-    labels.push(item.dpp);
+    labels.push(item.dpp.toUpperCase());
     follower.push(item.follower);
     reach.push(item.reach);
     engagement.push(item.engagement);

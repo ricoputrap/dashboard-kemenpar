@@ -1,6 +1,5 @@
 import { TResponseSectionFive } from "../../../../API/publikasi/types/section-five.types";
 import { TBarDataPublikasi, TSectionFive } from "../../state/index.types";
-import initialDataSectionFive from "../../state/initialData/initialDataSectionFive";
 
 const computeDataSectionFive = (data: TResponseSectionFive): TSectionFive => {
   const { media_elektronik, media_luar_ruang, top_list_media, website } = data;
@@ -14,15 +13,25 @@ const computeDataSectionFive = (data: TResponseSectionFive): TSectionFive => {
   }
 
   const mediaLuarRuang: TBarDataPublikasi = {
-    ...initialDataSectionFive.mediaLuarRuang,
+    labels: [],
+    dataset: {
+      label: "Jumlah Media",
+      data: [],
+      backgroundColor: "#EAC170"
+    },
     url: media_luar_ruang.url
   }
   const topListMedia: TBarDataPublikasi = {
-    ...initialDataSectionFive.topListMedia,
+    labels: [],
+    dataset: {
+      label: "Jumlah Berita",
+      data: [],
+      backgroundColor: "#EAC170"
+    },
     url: top_list_media.url
   }
   const websiteArticles: TSectionFive["website"] = {
-    ...initialDataSectionFive.website,
+    data: [],
     url: website.url
   }
 

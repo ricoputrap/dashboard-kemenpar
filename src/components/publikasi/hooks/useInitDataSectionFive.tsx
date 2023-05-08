@@ -12,7 +12,7 @@ const useInitDataSectionFive = (data?: TResponse) => {
 
     const { section_five } = data.data.data;
     const dataSectionFive = computeDataSectionFive(section_five);
-    setDataSectionFive(dataSectionFive);
+    setDataSectionFive(dataSectionFive, tahun);
   }, [data, tahun]);
 }
 

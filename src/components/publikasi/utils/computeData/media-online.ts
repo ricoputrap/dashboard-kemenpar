@@ -1,6 +1,5 @@
 import { TResponseMediaOnline } from "../../../../API/publikasi/types/media-online.types";
 import { TListData, TMediaOnline } from "../../state/index.types";
-import initialDataMediaOnline from "../../state/initialData/initialDataMediaOnline";
 
 const computeDataMediaOnline = (data: TResponseMediaOnline): TMediaOnline => {
   const { list, jangkauan_media } = data;
@@ -12,7 +11,11 @@ const computeDataMediaOnline = (data: TResponseMediaOnline): TMediaOnline => {
   }));
 
   const jangkauanMedia: TMediaOnline["jangkauanMedia"] = {
-    ...initialDataMediaOnline.jangkauanMedia,
+    labels: [],
+    dataset: {
+      label: "Media",
+      data: [],
+      backgroundColor: "#EAC170",    },
     url: jangkauan_media.url
   }
 

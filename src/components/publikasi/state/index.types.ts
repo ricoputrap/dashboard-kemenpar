@@ -105,6 +105,6 @@ export type TActions = {
   setDataMediaSosial: (data: TMediaSosial, tahun: number) => void;
   setDataSectionTwo: (data: TSectionTwo, tahun: number) => void;
   setDataSectionThree: (data: TSectionThree, tahun: number) => void;
-  setDataMediaOnline: (data: TMediaOnline) => void;
-  setDataSectionFive: (data: TSectionFive) => void;
+  setDataMediaOnline: (data: TMediaOnline, tahun: number) => void;
+  setDataSectionFive: (data: TSectionFive, tahun: number) => void;
 }

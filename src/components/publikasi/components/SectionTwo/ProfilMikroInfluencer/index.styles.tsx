@@ -5,6 +5,7 @@ export const Container = styled.div`
   padding: 26px 20px 10px 20px;
   border: 1px solid #EAC170;
   border-radius: 5px;
+  min-height: 620px;
 
   & table {
     border-spacing: 0 10px;

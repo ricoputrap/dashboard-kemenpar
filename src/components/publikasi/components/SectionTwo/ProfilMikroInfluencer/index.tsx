@@ -25,6 +25,7 @@ const ProfilMikroInfluencer: React.FC<Props> = ({ data, url }) => {
         <TableContainer
           overflowY="scroll"
           maxHeight="500px"
+          minW="578px"
           whiteSpace="break-spaces"
         >
           <Table variant="unstyled">

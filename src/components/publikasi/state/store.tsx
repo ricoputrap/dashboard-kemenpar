@@ -54,19 +54,19 @@ const usePublikasiStore = create<TState & TActions>(set => ({
       }
     }));
   },
-  setDataMediaOnline: (data) => {
+  setDataMediaOnline: (data, tahun) => {
     set(state => ({
       mediaOnline: {
         ...state.mediaOnline,
-        [state.tahun]: data
+        [tahun]: data
       }
     }));
   },
-  setDataSectionFive: (data) => {
+  setDataSectionFive: (data, tahun) => {
     set(state => ({
       sectionFive: {
         ...state.sectionFive,
-        [state.tahun]: data
+        [tahun]: data
       }
     }));
   }

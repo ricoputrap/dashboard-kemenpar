@@ -12,7 +12,7 @@ const useInitDataMediaOnline = (data?: TResponse) => {
 
     const { media_online } = data.data.data;
     const dataMediaOnline = computeDataMediaOnline(media_online);
-    setDataMediaOnline(dataMediaOnline);
+    setDataMediaOnline(dataMediaOnline, tahun);
   }, [data, tahun]);
 }
 
