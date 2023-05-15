@@ -18,14 +18,6 @@ const LocalChampionView: React.FC = () => {
     return laporanPerDesa;
   }, [activeDPP, laporanPerDPP]);
 
-  if (isChampionLoading) {
-    return (
-      <BasePage id="local-champion">
-        <Text textAlign="center">LOADING...</Text>
-      </BasePage>
-    )
-  }
-
   return (
     <BasePage id="local-champion">
       <Box
@@ -37,48 +29,51 @@ const LocalChampionView: React.FC = () => {
         <Flex direction="column" rowGap="16px">
           <Filter />
 
-          {/* Data Bulanan per Desa */}
-          <Flex
-            direction="column"
-            rowGap="16px"
-            paddingLeft="16px"
-            paddingY="32px"
-            borderTop="1px solid #EAC170"
-            maxHeight="500px"
-            overflowY="scroll"
-          >
-            {daftarLaporan.map((data, index) => (
-              <Flex key={data.desa} columnGap={0} justifyContent="space-between">
-                {/* Area */}
-                <Flex
-                  columnGap="12px"
-                  alignItems="center"
-                  width="288px"
-                >
-                  {/* No */}
-                  <Text fontSize="20px" fontWeight={700} lineHeight="24px" width="32px">
-                    { index + 1 }.
-                  </Text>
+          {!!isChampionLoading ? (
+            <Text textAlign="center">LOADING...</Text>
+          ) : (
+            <Flex
+              direction="column"
+              rowGap="16px"
+              paddingLeft="16px"
+              paddingY="32px"
+              borderTop="1px solid #EAC170"
+              maxHeight="500px"
+              overflowY="scroll"
+              >
+              {daftarLaporan.map((data, index) => (
+                <Flex key={data.desa} columnGap={0} justifyContent="space-between">
+                  {/* Area */}
+                  <Flex
+                    columnGap="12px"
+                    alignItems="center"
+                    width="288px"
+                  >
+                    {/* No */}
+                    <Text fontSize="20px" fontWeight={700} lineHeight="24px" width="32px">
+                      { index + 1 }.
+                    </Text>
 
-                  {/* Detail Desa */}
-                  <Box>
-                    <Text fontSize="16px" fontWeight={700} lineHeight="20px">
-                      { data.desa.toUpperCase() }
-                    </Text>
-                    <Text fontSize="16px" fontWeight={400} lineHeight="20px">
-                      { data.kec.toUpperCase() }, { data.kab.toUpperCase() }
-                    </Text>
-                  </Box>
+                    {/* Detail Desa */}
+                    <Box>
+                      <Text fontSize="16px" fontWeight={700} lineHeight="20px">
+                        { data.desa.toUpperCase() }
+                      </Text>
+                      <Text fontSize="16px" fontWeight={400} lineHeight="20px">
+                        { data.kec.toUpperCase() }, { data.kab.toUpperCase() }
+                      </Text>
+                    </Box>
+                  </Flex>
+
+                  {/* Laporan per Bulan */}
+                  <DaftarLaporan
+                    profile={ data.profile }
+                    data={ data.laporan }
+                  />
                 </Flex>
-
-                {/* Laporan per Bulan */}
-                <DaftarLaporan
-                  profile={ data.profile }
-                  data={ data.laporan }
-                />
-              </Flex>
-            ))}
-          </Flex>
+              ))}
+            </Flex>
+          )}
         </Flex>
       </Box>
     </BasePage>
