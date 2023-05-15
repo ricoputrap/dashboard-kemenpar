@@ -7,17 +7,17 @@
       "profile": "https://www.google.com/",
       "laporan": [
         { "bulan": "oktober 2022", "url": "https://www.google.com/" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -26,18 +26,18 @@
       "desa": "Senteluk",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -46,18 +46,18 @@
       "desa": "Gili Gede Indah",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -66,18 +66,18 @@
       "desa": "Sekotong Barat",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -86,18 +86,18 @@
       "desa": "Buwun Mas",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -106,18 +106,18 @@
       "desa": "Kuta",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -126,18 +126,18 @@
       "desa": "Rembitan",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -146,18 +146,18 @@
       "desa": "Selong Belanak",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -166,18 +166,18 @@
       "desa": "Gili Indah",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -186,18 +186,18 @@
       "desa": "Medana",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
@@ -206,18 +206,18 @@
       "desa": "Jerowaru",
       "profile": "https://www.google.com/",
       "laporan": [
-        { "bulan": "oktober 2022", "url": "#" },
-        { "bulan": "november 2022", "url": "#" },
-        { "bulan": "desember 2022", "url": "#" },
-        { "bulan": "januari 2023", "url": "#" },
-        { "bulan": "februari 2023", "url": "#" },
-        { "bulan": "maret 2023", "url": "#" },
-        { "bulan": "april 2023", "url": "#" },
-        { "bulan": "mei 2023", "url": "#" },
-        { "bulan": "juni 2023", "url": "#" },
-        { "bulan": "juli 2023", "url": "#" },
-        { "bulan": "agustus 2023", "url": "#" },
-        { "bulan": "september 2023", "url": "#" }
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     }
   ]

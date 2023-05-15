@@ -83,7 +83,7 @@ const DaftarLaporan: React.FC<Props> = ({ profile, data }) => {
         </LinkBox>
 
         {data.map(laporan => {
-          const hasData: boolean = laporan.url !== "#"
+          const hasData: boolean = laporan.url !== ""
           return !hasData ? (
             <LaporanItem hasData={ hasData } bulan={ laporan.bulan } />
           ) : (
