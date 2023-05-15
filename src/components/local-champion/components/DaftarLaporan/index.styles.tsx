@@ -17,9 +17,18 @@ export const BoxContainer = styled.div<Props>`
 
 export const Label = styled.p`
   margin: 0;
-  font-size: 16px;
+  font-size: 14.65px;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: -0.05em;
+`;
+export const LabelSmall = styled.p`
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0D1D37;
+  line-height: 12px;
 `;
 
 export const IconBox = styled.div`

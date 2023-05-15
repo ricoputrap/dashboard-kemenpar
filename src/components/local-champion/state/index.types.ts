@@ -7,7 +7,8 @@ export type TLaporanPerDesa = {
   desa: string;
   kec: string;
   kab: string;
-  laporanSetahun: TLaporanBulanan[];
+  profile: string;
+  laporan: TLaporanBulanan[];
 }
 
 export type TLaporanPerDPP = {

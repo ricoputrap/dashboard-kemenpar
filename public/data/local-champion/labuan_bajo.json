@@ -4,57 +4,60 @@
       "kec": "Komodo",
       "kab": "Manggarai Barat",
       "desa": "Papagarang",
-      "laporanSetahun": [
-        { "bulan": "januari", "url": "" },
-        { "bulan": "februari", "url": "" },
-        { "bulan": "maret", "url": "" },
-        { "bulan": "april", "url": "" },
-        { "bulan": "mei", "url": "" },
-        { "bulan": "juni", "url": "" },
-        { "bulan": "juli", "url": "" },
-        { "bulan": "agustus", "url": "" },
-        { "bulan": "september", "url": "" },
-        { "bulan": "oktober", "url": "" },
-        { "bulan": "november", "url": "" },
-        { "bulan": "desember", "url": "" }
+      "profile": "",
+      "laporan": [
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
       "kec": "Komodo",
       "kab": "Manggarai Barat",
       "desa": "Pasir Panjang",
-      "laporanSetahun": [
-        { "bulan": "januari", "url": "" },
-        { "bulan": "februari", "url": "" },
-        { "bulan": "maret", "url": "" },
-        { "bulan": "april", "url": "" },
-        { "bulan": "mei", "url": "" },
-        { "bulan": "juni", "url": "" },
-        { "bulan": "juli", "url": "" },
-        { "bulan": "agustus", "url": "" },
-        { "bulan": "september", "url": "" },
-        { "bulan": "oktober", "url": "" },
-        { "bulan": "november", "url": "" },
-        { "bulan": "desember", "url": "" }
+      "profile": "",
+      "laporan": [
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     },
     {
       "kec": "Komodo",
       "kab": "Manggarai Barat",
       "desa": "Golo Mori",
-      "laporanSetahun": [
-        { "bulan": "januari", "url": "" },
-        { "bulan": "februari", "url": "" },
-        { "bulan": "maret", "url": "" },
-        { "bulan": "april", "url": "" },
-        { "bulan": "mei", "url": "" },
-        { "bulan": "juni", "url": "" },
-        { "bulan": "juli", "url": "" },
-        { "bulan": "agustus", "url": "" },
-        { "bulan": "september", "url": "" },
-        { "bulan": "oktober", "url": "" },
-        { "bulan": "november", "url": "" },
-        { "bulan": "desember", "url": "" }
+      "profile": "",
+      "laporan": [
+        { "bulan": "oktober 2022", "url": "" },
+        { "bulan": "november 2022", "url": "" },
+        { "bulan": "desember 2022", "url": "" },
+        { "bulan": "januari 2023", "url": "" },
+        { "bulan": "februari 2023", "url": "" },
+        { "bulan": "maret 2023", "url": "" },
+        { "bulan": "april 2023", "url": "" },
+        { "bulan": "mei 2023", "url": "" },
+        { "bulan": "juni 2023", "url": "" },
+        { "bulan": "juli 2023", "url": "" },
+        { "bulan": "agustus 2023", "url": "" },
+        { "bulan": "september 2023", "url": "" }
       ]
     }
   ]

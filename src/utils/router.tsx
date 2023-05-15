@@ -43,10 +43,10 @@ const router = createBrowserRouter([
     path: "/profile",
     element: <Profile />
   },
-  // {
-  //   path: "/local-champion",
-  //   element: <LocalChampion />
-  // },
+  {
+    path: "/local-champion",
+    element: <LocalChampion />
+  },
   {
     path: "/publikasi",
     element: <Publikasi />

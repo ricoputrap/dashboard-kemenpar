@@ -1,9 +1,10 @@
 import React, { useMemo, useRef } from 'react'
 import { TLaporanBulanan } from '../../state/index.types'
-import { Flex } from '@chakra-ui/react';
+import { Flex, Image } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
-import { BoxContainer, IconBox, Label } from './index.styles';
+import { BoxContainer, IconBox, Label, LabelSmall } from './index.styles';
 import useWindowSize from '../../../../hooks/useWindowSize';
+import UserIcon from "../../../../assets/icons/user-fill.svg"
 
 interface Props {
   data: TLaporanBulanan[];
@@ -61,6 +62,20 @@ const DaftarLaporan: React.FC<Props> = ({ data }) => {
       </IconBox>
 
       <BoxContainer width={boxContainerWidth} ref={ boxListRef }>
+        <Flex
+          minWidth="134px"
+          height="34.44px"
+          alignItems="center"
+          justifyContent="start"
+          background="#00F6E8"
+          paddingLeft="10px"
+          columnGap="12px"
+          cursor="pointer"
+        >
+          <Image src={ UserIcon } width="20px" height="20px" />
+          <LabelSmall>Profile L. Champion</LabelSmall>
+        </Flex>
+
         {data.map(laporan => (
           <Flex
             key={ laporan.bulan }
