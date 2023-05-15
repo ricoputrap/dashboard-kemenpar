@@ -30,7 +30,7 @@ const LocalChampionView: React.FC = () => {
           <Filter />
 
           {!!isChampionLoading ? (
-            <Text textAlign="center">LOADING...</Text>
+            <Text textAlign="center" marginBottom="40px">LOADING...</Text>
           ) : (
             <Flex
               direction="column"
