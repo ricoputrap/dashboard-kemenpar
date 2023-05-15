@@ -64,7 +64,10 @@ const LocalChampionView: React.FC = () => {
                 </Flex>
 
                 {/* Laporan per Bulan */}
-                <DaftarLaporan data={ data.laporan } />
+                <DaftarLaporan
+                  profile={ data.profile }
+                  data={ data.laporan }
+                />
               </Flex>
             ))}
           </Flex>

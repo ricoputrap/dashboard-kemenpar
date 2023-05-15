@@ -1,16 +1,18 @@
 import React, { useMemo, useRef } from 'react'
 import { TLaporanBulanan } from '../../state/index.types'
-import { Flex, Image } from '@chakra-ui/react';
+import { Flex, Image, LinkBox, LinkOverlay } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { BoxContainer, IconBox, Label, LabelSmall } from './index.styles';
 import useWindowSize from '../../../../hooks/useWindowSize';
 import UserIcon from "../../../../assets/icons/user-fill.svg"
+import LaporanItem from './LaporanItem';
 
 interface Props {
+  profile: string;
   data: TLaporanBulanan[];
 }
 
-const DaftarLaporan: React.FC<Props> = ({ data }) => {
+const DaftarLaporan: React.FC<Props> = ({ profile, data }) => {
   const boxListRef = useRef<HTMLDivElement>(null);
   const { width } = useWindowSize();
 
@@ -62,34 +64,36 @@ const DaftarLaporan: React.FC<Props> = ({ data }) => {
       </IconBox>
 
       <BoxContainer width={boxContainerWidth} ref={ boxListRef }>
-        <Flex
-          minWidth="134px"
-          height="34.44px"
-          alignItems="center"
-          justifyContent="start"
-          background="#00F6E8"
-          paddingLeft="10px"
-          columnGap="12px"
-          cursor="pointer"
-        >
-          <Image src={ UserIcon } width="20px" height="20px" />
-          <LabelSmall>Profile L. Champion</LabelSmall>
-        </Flex>
+        <LinkBox>
+          <LinkOverlay href={ profile } target="_blank">
+            <Flex
+              minWidth="134px"
+              height="34.44px"
+              alignItems="center"
+              justifyContent="start"
+              background="#00F6E8"
+              paddingLeft="10px"
+              columnGap="12px"
+              cursor="pointer"
+            >
+              <Image src={ UserIcon } width="20px" height="20px" />
+              <LabelSmall>Profile L. Champion</LabelSmall>
+            </Flex>
+          </LinkOverlay>
+        </LinkBox>
 
-        {data.map(laporan => (
-          <Flex
-            key={ laporan.bulan }
-            minWidth="134px"
-            height="34.44px"
-            border="1.57px solid #FFFFFF"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Label>
-              { laporan.bulan }
-            </Label>
-          </Flex>
-        ))}
+        {data.map(laporan => {
+          const hasData: boolean = laporan.url !== "#"
+          return !hasData ? (
+            <LaporanItem hasData={ hasData } bulan={ laporan.bulan } />
+          ) : (
+            <LinkBox>
+              <LinkOverlay href={ laporan.url } target="_blank">
+                <LaporanItem hasData={ hasData } bulan={ laporan.bulan } />
+              </LinkOverlay>
+            </LinkBox>
+          )
+        })}
       </BoxContainer>
 
       <IconBox onMouseDown={() => handleMouseDown(100)}>

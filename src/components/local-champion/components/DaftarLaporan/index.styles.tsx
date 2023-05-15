@@ -13,6 +13,11 @@ export const BoxContainer = styled.div<Props>`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  & a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export const Label = styled.p`
