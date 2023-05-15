@@ -18,6 +18,14 @@ const LocalChampionView: React.FC = () => {
     return laporanPerDesa;
   }, [activeDPP, laporanPerDPP]);
 
+  if (isChampionLoading) {
+    return (
+      <BasePage id="local-champion">
+        <Text textAlign="center">LOADING...</Text>
+      </BasePage>
+    )
+  }
+
   return (
     <BasePage id="local-champion">
       <Box
