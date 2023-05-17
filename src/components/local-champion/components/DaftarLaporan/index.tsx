@@ -85,9 +85,9 @@ const DaftarLaporan: React.FC<Props> = ({ profile, data }) => {
         {data.map(laporan => {
           const hasData: boolean = laporan.url !== ""
           return !hasData ? (
-            <LaporanItem hasData={ hasData } bulan={ laporan.bulan } />
+            <LaporanItem key={ laporan.bulan } hasData={ hasData } bulan={ laporan.bulan } />
           ) : (
-            <LinkBox>
+            <LinkBox key={ laporan.bulan }>
               <LinkOverlay href={ laporan.url } target="_blank">
                 <LaporanItem hasData={ hasData } bulan={ laporan.bulan } />
               </LinkOverlay>
