@@ -10,11 +10,11 @@ interface Props {
 
 const ProfilMikroInfluencer: React.FC<Props> = ({ data, url }) => {
   return (
-    <Box maxW="620px">
+    <Box maxW="554px">
       <Container>
         <Text
           color="#EAC170"
-          fontSize="25px"
+          fontSize="22px"
           fontWeight={700}
           textAlign="center"
           marginBottom="20px"
@@ -24,8 +24,8 @@ const ProfilMikroInfluencer: React.FC<Props> = ({ data, url }) => {
 
         <TableContainer
           overflowY="scroll"
-          maxHeight="500px"
-          minW="578px"
+          maxHeight="400px"
+          minW="515px"
           whiteSpace="break-spaces"
         >
           <Table variant="unstyled">

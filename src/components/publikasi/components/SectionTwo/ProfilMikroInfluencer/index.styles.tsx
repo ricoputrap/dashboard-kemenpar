@@ -5,7 +5,7 @@ export const Container = styled.div`
   padding: 26px 20px 10px 20px;
   border: 1px solid #EAC170;
   border-radius: 5px;
-  min-height: 620px;
+  min-height: 492px;
 
   & table {
     border-spacing: 0 10px;
@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const ColumnHeader = styled(Th)`
   background: #FFFFFF;
   color: #112647;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   text-align: center;
   padding: 10px;
@@ -32,14 +32,14 @@ export const ColumnHeader = styled(Th)`
 `;
 
 export const ColumnData = styled(Td)`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: #FFFFFF;
   text-align: center;
   margin-top: 10px;
   border-top: 1px solid #EAC170;
   border-bottom: 1px solid #EAC170;
-  padding: 10px;
+  padding: 4px;
 
   &:first-of-type {
     border-radius: 5px 0 0 5px;

@@ -15,7 +15,7 @@ const MediaSosial: React.FC = () => {
       <Box marginBottom="40px">
         <Text
           color="#EAC170"
-          fontSize="25px"
+          fontSize="22px"
           fontWeight={600}
           marginBottom="12px"
         >

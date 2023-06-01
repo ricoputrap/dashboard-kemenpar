@@ -11,37 +11,39 @@ interface Props {
 
 const IGLiveNgantri: React.FC<Props> = ({ panji, grithe }) => {
   return (
-    <Stack rowGap="27px">
+    <Stack rowGap="22px">
       <Text
         color="#EAC170"
-        fontSize="25px"
+        fontSize="22px"
         fontWeight={600}
         marginBottom="12px"
       >
         IG LIVE NGANTRI
       </Text>
 
-      <StatisticBox
-        logo={ LogoKemenpar }
-        title={ panji.id }
-        titleSize="20px"
-        url={ panji.url }
-        follower={ panji.follower }
-        jumlahKonten={ panji.jumlah_konten }
-        reach={ panji.reach }
-        engagement={ panji.engagement }
-      />
+      <Stack rowGap="18px">
+        <StatisticBox
+          logo={ LogoKemenpar }
+          title={ panji.id }
+          titleSize="17px"
+          url={ panji.url }
+          follower={ panji.follower }
+          jumlahKonten={ panji.jumlah_konten }
+          reach={ panji.reach }
+          engagement={ panji.engagement }
+        />
 
-      <StatisticBox
-        logo={ LogoKemenpar }
-        title={ grithe.id }
-        titleSize="20px"
-        url={ grithe.url }
-        follower={ grithe.follower }
-        jumlahKonten={ grithe.jumlah_konten }
-        reach={ grithe.reach }
-        engagement={ grithe.engagement }
-      />
+        <StatisticBox
+          logo={ LogoKemenpar }
+          title={ grithe.id }
+          titleSize="17px"
+          url={ grithe.url }
+          follower={ grithe.follower }
+          jumlahKonten={ grithe.jumlah_konten }
+          reach={ grithe.reach }
+          engagement={ grithe.engagement }
+        />
+      </Stack>
     </Stack>
   )
 }
