@@ -16,10 +16,10 @@ const NumberedList: React.FC<Props> = ({ data }) => {
           <Flex
             justifyContent="center"
             alignItems="center"
-            fontSize="30px"
+            fontSize="27px"
             fontWeight={600}
             textAlign="center"
-            width="85px"
+            width="80px"
             paddingY="10px"
             border="2px solid #EAC170"
             borderRadius="5px"
@@ -30,12 +30,12 @@ const NumberedList: React.FC<Props> = ({ data }) => {
 
           <Flex
             alignItems="center"
-            fontSize="30px"
+            fontSize="27px"
             fontWeight={600}
             textTransform="uppercase"
             flex={1}
             paddingY="10px"
-            paddingX="48px"
+            paddingX="20px"
             border="2px solid #EAC170"
             borderRadius="5px"
             lineHeight="37px"

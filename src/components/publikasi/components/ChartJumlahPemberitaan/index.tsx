@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import React, { useMemo } from 'react'
 import { TBarData } from '../../../reusables/organisms/BarChart/index.types';
 import BarChartPublikasi from '../BarChartPublikasi'
@@ -17,12 +18,14 @@ const ChartJumlahPemberitaan: React.FC<Props> = ({ dataset, labels, url }) => {
   ), []);
 
   return (
-    <BarChartPublikasi
-      title={ title }
-      dataset={[dataset]}
-      labels={ labels }
-      url={ url }
-    />
+    <Box width="548px">
+      <BarChartPublikasi
+        title={ title }
+        dataset={[dataset]}
+        labels={ labels }
+        url={ url }
+      />
+    </Box>
   )
 }
 
