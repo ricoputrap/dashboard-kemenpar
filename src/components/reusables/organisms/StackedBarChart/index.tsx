@@ -50,7 +50,7 @@ const StackedBarChart: React.FC<Props> = ({
       <Heading
         textAlign="center"
         fontFamily="Montserrat"
-        fontSize="15px"
+        fontSize="13px"
         fontWeight={600}
         lineHeight="20px"
         textTransform="uppercase"

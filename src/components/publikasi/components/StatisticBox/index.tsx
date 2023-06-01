@@ -21,7 +21,7 @@ const StatisticBox: React.FC<Props> = ({
   engagement = "0"
 }) => {
   return (
-    <Flex columnGap="20px" height="267px">
+    <Flex columnGap="20px" height="240px">
       <Stack rowGap="18px" alignItems="center" width="210px">
         <Circle size="184px" bg="white">
           <Image src={ logo } width="184px" height="215px" />
@@ -34,7 +34,7 @@ const StatisticBox: React.FC<Props> = ({
 
       {/* Statistics */}
       <Stack width="244px" justifyContent="space-between" paddingTop="12px">
-        <Stack rowGap="18px">
+        <Stack rowGap="20px">
           <Item
             label="follower"
             value={ follower }

@@ -12,7 +12,7 @@ const ColorLegendItem: React.FC<Props> = ({ label, color }) => {
       <Flex columnGap="7px" alignItems="center">
         <Box width="18px" height="18px" background={ color }></Box>
 
-        <Text color="#FFFFFF" fontSize="13px" fontWeight={500}>
+        <Text color="#FFFFFF" fontSize="11px" fontWeight={500}>
           { label }
         </Text>
       </Flex>

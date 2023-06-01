@@ -24,7 +24,7 @@ const MediaSosial: React.FC = () => {
         <Image src={ ChartLine } width="312px" />
       </Box>
 
-      <Flex columnGap="80px">
+      <Flex columnGap="132px">
         <Stack width="100%" rowGap="110px" alignItems="center">
           <Flex
             width="100%"
@@ -86,6 +86,7 @@ const MediaSosial: React.FC = () => {
 
           <Flex
             width="100%"
+            maxWidth="507px"
             height="100%"
             alignItems="center"
             justifyContent="center"

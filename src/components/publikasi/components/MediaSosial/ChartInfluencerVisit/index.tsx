@@ -27,11 +27,15 @@ const ChartInfluencerVisit: React.FC<Props> = ({ data }) => {
         )}
         labels={ data.labels }
         datasets={ data.datasets }
-        width="630px"
+        width="507px"
         height="250px"
       />
 
-      <Flex justifyContent="space-between" alignItems="center">
+      <Flex
+        justifyContent="space-between"
+        alignItems="center"
+        marginTop="4px"
+      >
         <ButtonSelengkapnya url={ data.url } />
 
         <ColorLegend

@@ -8,7 +8,7 @@ interface Props {
 
 const Item: React.FC<Props> = ({ label, value }) => {
   return (
-    <Flex justifyContent="space-between" alignItems="center">
+    <Flex justifyContent="space-between" alignItems="center" marginTop="0 !important">
       <Text fontSize="16px" fontWeight={400} textTransform="uppercase">
         { label }
       </Text>

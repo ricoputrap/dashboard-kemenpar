@@ -15,6 +15,7 @@ const ButtonSelengkapnya: React.FC<Props> = ({ url, fullWidth = false }) => {
       as="a"
       href={ url }
       target="_blank"
+      fontSize="16px"
       width={ width }
     >
       SELENGKAPNYA
