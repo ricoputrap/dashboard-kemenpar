@@ -9,12 +9,12 @@ interface Props {
 const Item: React.FC<Props> = ({ label, value }) => {
   return (
     <Flex justifyContent="space-between" alignItems="center">
-      <Text fontSize="20px" fontWeight={400} textTransform="uppercase">
+      <Text fontSize="16px" fontWeight={400} textTransform="uppercase">
         { label }
       </Text>
       <Flex>
-        <Text fontSize="20px" fontWeight={400}>:&nbsp;</Text>
-        <Text fontSize="25px" fontWeight={600} width="80px">{ value }</Text>
+        <Text fontSize="16px" fontWeight={400}>:&nbsp;</Text>
+        <Text fontSize="21px" fontWeight={600} width="80px">{ value }</Text>
       </Flex>
     </Flex>
   )

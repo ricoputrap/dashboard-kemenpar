@@ -21,10 +21,10 @@ const StatisticBox: React.FC<Props> = ({
   engagement = "0"
 }) => {
   return (
-    <Flex columnGap="25px" height="267px">
-      <Stack rowGap="18px" alignItems="center" width="283px">
-        <Circle size="215px" bg="white">
-          <Image src={ logo } width="215px" height="215px" />
+    <Flex columnGap="20px" height="267px">
+      <Stack rowGap="18px" alignItems="center" width="210px">
+        <Circle size="184px" bg="white">
+          <Image src={ logo } width="184px" height="215px" />
         </Circle>
 
         <Text fontSize={ titleSize } fontWeight={600} textAlign="center">
@@ -33,7 +33,7 @@ const StatisticBox: React.FC<Props> = ({
       </Stack>
 
       {/* Statistics */}
-      <Stack width="292px" justifyContent="space-between" paddingTop="12px">
+      <Stack width="244px" justifyContent="space-between" paddingTop="12px">
         <Stack rowGap="18px">
           <Item
             label="follower"
@@ -59,6 +59,7 @@ const StatisticBox: React.FC<Props> = ({
           as="a"
           href={ url }
           target="_blank"
+          fontSize="16px"
         >
           SELENGKAPNYA
         </Button>

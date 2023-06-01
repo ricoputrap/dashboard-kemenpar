@@ -28,6 +28,7 @@ const MediaSosial: React.FC = () => {
         <Stack width="100%" rowGap="110px" alignItems="center">
           <Flex
             width="100%"
+            maxWidth="507px"
             height="100%"
             alignItems="center"
             justifyContent="center"
@@ -35,7 +36,7 @@ const MediaSosial: React.FC = () => {
             <StatisticBox
               logo={LogoKemenpar}
               title={ kemenpar.id }
-              titleSize="25px"
+              titleSize="21px"
               url={ kemenpar.url }
               follower={ kemenpar.follower }
               jumlahKonten={ kemenpar.jumlah_konten }
@@ -45,6 +46,7 @@ const MediaSosial: React.FC = () => {
           </Flex>
           <Flex
             width="100%"
+            maxWidth="507px"
             height="100%"
             alignItems="center"
             justifyContent="center"
@@ -52,7 +54,7 @@ const MediaSosial: React.FC = () => {
             <StatisticBox
               logo={LogoWonderful}
               title={ pesona.id }
-              titleSize="25px"
+              titleSize="21px"
               url={ pesona.url }
               follower={ pesona.follower }
               jumlahKonten={ pesona.jumlah_konten }
@@ -65,6 +67,7 @@ const MediaSosial: React.FC = () => {
         <Stack width="100%" rowGap="52px" alignItems="center">
           <Flex
             width="100%"
+            maxWidth="507px"
             height="100%"
             alignItems="center"
             justifyContent="center"
@@ -72,7 +75,7 @@ const MediaSosial: React.FC = () => {
             <StatisticBox
               logo={LogoWonderful}
               title={ kampanye.id }
-              titleSize="22px"
+              titleSize="16px"
               url={ kampanye.url }
               follower={ kampanye.follower }
               jumlahKonten={ kampanye.jumlah_konten }

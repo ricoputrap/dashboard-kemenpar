@@ -15,7 +15,7 @@ const PublikasiView: React.FC = () => {
   return (
     <BasePage id="page-sosialisasi">
       <YearlyFilter />
-      <Stack rowGap="80px">
+      <Stack rowGap="80px" paddingX="56px">
         <MediaSosial />
         <SectionTwo />
         <SectionThree />
