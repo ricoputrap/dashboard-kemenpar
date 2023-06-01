@@ -14,7 +14,7 @@ const SectionThree: React.FC = () => {
           <Stack rowGap="27px">
             <Text
               color="#EAC170"
-              fontSize="25px"
+              fontSize="22px"
               fontWeight={600}
               marginBottom="12px"
             >
@@ -26,7 +26,7 @@ const SectionThree: React.FC = () => {
                 key={ podcast.id }
                 logo={ LogoKemenpar }
                 title={ podcast.id }
-                titleSize="20px"
+                titleSize="17px"
                 url={ podcast.url }
                 follower={ podcast.follower }
                 jumlahKonten={ podcast.jumlah_konten }
@@ -41,7 +41,7 @@ const SectionThree: React.FC = () => {
           <Stack rowGap="27px">
             <Text
               color="#EAC170"
-              fontSize="25px"
+              fontSize="22px"
               fontWeight={600}
               marginBottom="12px"
             >
@@ -53,7 +53,7 @@ const SectionThree: React.FC = () => {
                 key={ content.id }
                 logo={ LogoKemenpar }
                 title={ content.id }
-                titleSize="20px"
+                titleSize="17px"
                 url={ content.url }
                 follower={ content.follower }
                 jumlahKonten={ content.jumlah_konten }
