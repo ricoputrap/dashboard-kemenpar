@@ -13,7 +13,12 @@ const LastRow: React.FC = () => {
         templateRows="repeat(1, 1fr)"
         gap="44px"
       >
-        <Stack rowGap="40px" justifyContent="space-between" maxH="1300px">
+        <Stack
+          rowGap="40px"
+          justifyContent="space-between"
+          maxH="1300px"
+          maxW="574px"
+        >
           <MediaElektronik />
           <MediaLuarRuang />
           <TopListMedia />
