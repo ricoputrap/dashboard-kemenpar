@@ -1,5 +1,5 @@
 import { TResponseSectionTwo } from "../../../../API/publikasi/types/section-two.types";
-import { TProfilMikroInfluencer, TSectionTwo } from "../../state/index.types";
+import { TProfilMikroInfluencer, TSectionTwo, TStatisticData } from "../../state/index.types";
 
 const computeDataSectionTwo = (data: TResponseSectionTwo): TSectionTwo => {
   const { profile_mikro_influencer, ig_live_ngantri } = data;
@@ -17,14 +17,14 @@ const computeDataSectionTwo = (data: TResponseSectionTwo): TSectionTwo => {
   });
 
   // populate data ig live ngantri
-  const { panji, grithe } = ig_live_ngantri;
+  const igLiveNgantri: TStatisticData[] = Object.values(ig_live_ngantri);
 
   return {
     profilMikroInfluencer: {
       data: dataProfilMikroInfluencer,
       url: profile_mikro_influencer.url
     },
-    igLiveNgantri: { panji, grithe }
+    igLiveNgantri
   }
 }
 

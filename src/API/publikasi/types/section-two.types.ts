@@ -19,7 +19,6 @@ export type TResponseSectionTwo = {
     data: TMikroInfluencerRawData[];
   },
   ig_live_ngantri: {
-    panji: TMikroInfluencerFullData;
-    grithe: TMikroInfluencerFullData;
+    [key: string]: TMikroInfluencerFullData
   }
 }

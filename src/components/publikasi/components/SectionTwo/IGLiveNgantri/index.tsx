@@ -5,13 +5,12 @@ import LogoKemenpar from "../../../../../assets/logo/7-publikasi-kemenpar.svg"
 import { TStatisticData } from '../../../state/index.types'
 
 interface Props {
-  panji: TStatisticData;
-  grithe: TStatisticData;
+  data: TStatisticData[];
 }
 
-const IGLiveNgantri: React.FC<Props> = ({ panji, grithe }) => {
+const IGLiveNgantri: React.FC<Props> = ({ data }) => {
   return (
-    <Stack rowGap="22px">
+    <Stack rowGap="22px" minWidth="474px">
       <Text
         color="#EAC170"
         fontSize="22px"
@@ -22,27 +21,18 @@ const IGLiveNgantri: React.FC<Props> = ({ panji, grithe }) => {
       </Text>
 
       <Stack rowGap="18px">
-        <StatisticBox
-          logo={ LogoKemenpar }
-          title={ panji.id }
-          titleSize="17px"
-          url={ panji.url }
-          follower={ panji.follower }
-          jumlahKonten={ panji.jumlah_konten }
-          reach={ panji.reach }
-          engagement={ panji.engagement }
-        />
-
-        <StatisticBox
-          logo={ LogoKemenpar }
-          title={ grithe.id }
-          titleSize="17px"
-          url={ grithe.url }
-          follower={ grithe.follower }
-          jumlahKonten={ grithe.jumlah_konten }
-          reach={ grithe.reach }
-          engagement={ grithe.engagement }
-        />
+        {data.map(item => (
+          <StatisticBox
+            logo={ LogoKemenpar }
+            title={ item.id }
+            titleSize="17px"
+            url={ item.url }
+            follower={ item.follower }
+            jumlahKonten={ item.jumlah_konten }
+            reach={ item.reach }
+            engagement={ item.engagement }
+          />
+        ))}
       </Stack>
     </Stack>
   )

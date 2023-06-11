@@ -7,11 +7,11 @@ import IGLiveNgantri from './IGLiveNgantri'
 const SectionTwo: React.FC = () => {
   const {
     profilMikroInfluencer,
-    igLiveNgantri: { panji, grithe }
+    igLiveNgantri
   } = useData();
 
   return (
-    <Box id="section-two" width="100%">
+    <Box id="section-two" width="100%" minHeight="576px">
       <Flex width="100%" columnGap="80px">
         <Flex width="100%" justifyContent="center">
           <ProfilMikroInfluencer
@@ -22,8 +22,7 @@ const SectionTwo: React.FC = () => {
 
         <Flex width="100%" justifyContent="center">
           <IGLiveNgantri
-            panji={ panji }
-            grithe={ grithe }
+            data={ igLiveNgantri }
           />
         </Flex>
       </Flex>

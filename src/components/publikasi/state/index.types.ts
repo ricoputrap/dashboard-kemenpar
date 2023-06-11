@@ -52,10 +52,7 @@ export type TSectionTwo = {
     data: TProfilMikroInfluencer[];
     url: string;
   },
-  igLiveNgantri: {
-    panji: TStatisticData;
-    grithe: TStatisticData;
-  }
+  igLiveNgantri: TStatisticData[]
 }
 
 export type TSectionThree = {

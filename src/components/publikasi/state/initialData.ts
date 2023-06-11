@@ -54,5 +54,5 @@ export const initialDataSectionTwo: TSectionTwo = {
     data: dataProfilMikroInfluencer,
     url: "#"
   },
-  igLiveNgantri: { panji, grithe }
+  igLiveNgantri: [panji, grithe]
 }
