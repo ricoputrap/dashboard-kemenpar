@@ -1,4 +1,4 @@
-import { TChartInfluencerVisit, TProfilMikroInfluencer, TSectionTwo, TStatisticData } from "./index.types";
+import { TChartInfluencerVisit, TMediaSosial, TProfilMikroInfluencer, TSectionTwo, TStatisticData } from "./index.types";
 
 export const kemenpar: TStatisticData = {
   id: "@kemenparekraf.ri",
@@ -30,7 +30,10 @@ export const influencer: TChartInfluencerVisit = {
   url: "#"
 }
 
-export const initialDataMediaSosial = { kemenpar, kampanye, pesona, influencer };
+export const initialDataMediaSosial: TMediaSosial = { 
+  data: [kemenpar, kampanye, pesona],
+  influencer
+};
 
 export const dataProfilMikroInfluencer: TProfilMikroInfluencer[] = [];
 export const panji: TStatisticData = {

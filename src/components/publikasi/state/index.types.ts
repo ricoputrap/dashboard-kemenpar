@@ -34,9 +34,7 @@ export type TChartInfluencerVisit = {
 }
 
 export type TMediaSosial = {
-  kemenpar: TStatisticData;
-  kampanye: TStatisticData;
-  pesona: TStatisticData;
+  data: TStatisticData[];
   influencer: TChartInfluencerVisit;
 }
 

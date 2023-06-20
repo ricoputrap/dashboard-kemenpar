@@ -3,6 +3,8 @@ import { TBarData } from "../../../reusables/organisms/BarChart/index.types";
 import { TChartInfluencerVisit, TMediaSosial } from "../../state/index.types";
 import { COLORS_INFLUENCER } from "../constants";
 
+
+
 const computeMediaSosial = (data: TResponseMediaSosial): TMediaSosial => {
   const [kemenpar, kampanye, pesona] = data.statistik;
 
@@ -16,14 +18,23 @@ const computeMediaSosial = (data: TResponseMediaSosial): TMediaSosial => {
   const labels: string[] = [];
   const datasets: TBarData[] = [];
   const follower: number[] = [];
-  const reach: number[] = [];
-  const engagement: number[] = [];
 
   data.chart.data.forEach(item => {
     labels.push(item.dpp.toUpperCase());
-    follower.push(item.follower);
-    reach.push(item.reach);
-    engagement.push(item.engagement);
+
+    let totalFollower: number = 0;
+    if (item.follower.includes("K")) {
+      const strTotal = item.follower.slice(0, item.follower.length - 1);
+      const KILO = 1_000;
+      totalFollower = parseFloat(strTotal) * KILO;
+    }
+    else if (item.follower.includes("M")) {
+      const strTotal = item.follower.slice(0, item.follower.length - 1);
+      const MEGA = 1_000_000;
+      totalFollower = parseFloat(strTotal) * MEGA;
+    }
+
+    follower.push(totalFollower);
   });
 
   // follower
@@ -33,25 +44,14 @@ const computeMediaSosial = (data: TResponseMediaSosial): TMediaSosial => {
     backgroundColor: COLORS_INFLUENCER[0]
   });
 
-  // reach
-  datasets.push({
-    label: "Reach",
-    data: reach,
-    backgroundColor: COLORS_INFLUENCER[1]
-  });
-  
-  // engagement
-  datasets.push({
-    label: "Engagement",
-    data: engagement,
-    backgroundColor: COLORS_INFLUENCER[2]
-  });
-
   // update data influencer
   influencer.labels = labels;
   influencer.datasets = datasets;
 
-  return { kemenpar, kampanye, pesona, influencer };
+  return {
+    data: [kemenpar, kampanye, pesona],
+    influencer
+  };
 }
 
 export default computeMediaSosial;

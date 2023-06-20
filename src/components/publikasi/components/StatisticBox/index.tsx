@@ -1,5 +1,5 @@
 import { Button, Circle, Flex, Image, Stack, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { useMemo } from 'react'
 import Item from './Item';
 
 interface Props {
@@ -9,8 +9,24 @@ interface Props {
   url: string;
   follower: string;
   jumlahKonten: string;
-  reach: string;
+  reach?: string;
   engagement: string;
+}
+
+const getShowReach = (reach: string) => {
+  let value: number = 0;
+  if (reach.includes("K")) {
+    const strTotal = reach.slice(0, reach.length - 1);
+    const KILO = 1_000;
+    value = parseFloat(strTotal) * KILO;
+  }
+  else if (reach.includes("M")) {
+    const strTotal = reach.slice(0, reach.length - 1);
+    const MEGA = 1_000_000;
+    value = parseFloat(strTotal) * MEGA;
+  }
+
+  return value;
 }
 
 const StatisticBox: React.FC<Props> = ({
@@ -20,6 +36,8 @@ const StatisticBox: React.FC<Props> = ({
   reach = "0",
   engagement = "0"
 }) => {
+  const showReach = getShowReach(reach);
+
   return (
     <Flex columnGap="20px" height="240px">
       <Stack rowGap="18px" alignItems="center" width="210px">
@@ -43,10 +61,12 @@ const StatisticBox: React.FC<Props> = ({
             label="jumlah konten"
             value={ jumlahKonten }
           />
-          <Item
-            label="reach"
-            value={ reach }
-          />
+          {showReach && (
+            <Item
+              label="reach"
+              value={ reach }
+            />
+          )}
           <Item
             label="engagement"
             value={ engagement }

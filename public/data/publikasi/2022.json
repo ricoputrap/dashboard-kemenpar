@@ -7,7 +7,7 @@
           {
             "id": "@kemenparekraf.ri",
             "follower": "968k",
-            "jumlah_konten": "31",
+            "jumlah_konten": 31,
             "reach": "0",
             "engagement": "0.23%",
             "url": "https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
@@ -15,7 +15,7 @@
           {
             "id": "@kampanyesadarwisata",
             "follower": "14.2k",
-            "jumlah_konten": "40",
+            "jumlah_konten": 40,
             "reach": "0",
             "engagement": "4.50%",
             "url": "https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
@@ -23,7 +23,7 @@
           {
             "id": "@pesona.indonesia",
             "follower": "18.7k",
-            "jumlah_konten": "25",
+            "jumlah_konten": 25,
             "reach": "0",
             "engagement": "1.50%",
             "url": "https://instagram.com/pesona.indonesia?igshid=YmMyMTA2M2Y="
@@ -35,39 +35,27 @@
           "data": [
             {
               "dpp": "toba",
-              "follower": 383400,
-              "reach": 64089,
-              "engagement": 6929
+              "follower": "383.4K"
             },
             {
               "dpp": "byp",
-              "follower": 305100,
-              "reach": 29659,
-              "engagement": 7658
+              "follower": "305.1K"
             },
             {
               "dpp": "bts",
-              "follower": 313700,
-              "reach": 22550,
-              "engagement": 7087
+              "follower": "313.7K"
             },
             {
               "dpp": "bajo",
-              "follower": 701700,
-              "reach": 29886,
-              "engagement": 4032
+              "follower": "701.7K"
             },
             {
               "dpp": "lombok",
-              "follower": 316300,
-              "reach": 177972,
-              "engagement": 10974
+              "follower": "316.3K"
             },
             {
               "dpp": "wakatobi",
-              "follower": 226400,
-              "reach": 38521,
-              "engagement": 3446
+              "follower": "226.4K"
             }
           ]
         }
@@ -162,8 +150,8 @@
             }
           ]
         },
-        "ig_live_ngantri": {
-          "panji": {
+        "ig_live_ngantri": [
+          {
             "id": "PANJI PETUALANG",
             "follower": "1M",
             "jumlah_konten": "1",
@@ -171,7 +159,7 @@
             "engagement": "426",
             "url": "https://drive.google.com/file/d/1xeCjeL2z6YUz9BYRFGi4BBw0Giep4NDT/view?usp=share_link"
           },
-          "grithe": {
+          {
             "id": "GRITHE AGATHA",
             "follower": "3.7M",
             "jumlah_konten": "1",
@@ -179,41 +167,41 @@
             "engagement": "675",
             "url": "https://drive.google.com/file/d/1xeCjeL2z6YUz9BYRFGi4BBw0Giep4NDT/view?usp=share_link"
           }
-        }
+        ]
       },
       "section_three": {
         "podcast_wonderful_indonesia": [
           {
-            "id": "Wakatobi",
+            "id": "PODCAST WAKATOBI",
             "follower": "968K",
             "jumlah_konten": "1",
             "reach": "968K",
-            "engagement": "1.891",
+            "engagement": "1.8K",
             "url": "https://drive.google.com/file/d/1EdAspsQUZd3JF4bgvy6EkMceDwBh2JYn/view?usp=share_link"
           },
           {
-            "id": "Labuan Bajo",
+            "id": "PODCAST LABUAN BAJO",
             "follower": "968K",
             "jumlah_konten": "1",
             "reach": "83.6K",
-            "engagement": "1.338",
+            "engagement": "1.3K",
             "url": "https://drive.google.com/file/d/1EdAspsQUZd3JF4bgvy6EkMceDwBh2JYn/view?usp=share_link"
           }
         ],
         "user_generated_content": [
           {
-            "id": "Giveaway 1",
+            "id": "IGC-GIVEAWAY 1",
             "follower": "14.2K",
             "jumlah_konten": "1",
-            "reach": "5.283",
+            "reach": "5.2K",
             "engagement": "405",
             "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link"
           },
           {
-            "id": "Giveaway 2",
+            "id": "IGC-GIVEAWAY 2",
             "follower": "14.2K",
             "jumlah_konten": "1",
-            "reach": "1.373",
+            "reach": "1.3K",
             "engagement": "203",
             "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link"
           }
@@ -266,7 +254,7 @@
               "jumlah": 6
             },
             {
-              "dpp": "labuan bajo",
+              "dpp": "labuan_bajo",
               "jumlah": 5
             }
           ]
@@ -276,8 +264,8 @@
         "media_elektronik": {
           "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link",
           "data": [
-            { "id": "Radio Talkshow", "jumlah": 1 },
-            { "id": "Radio Insertion", "jumlah": 120 }
+            { "id": "Radio Talkshow", "jumlah": "1" },
+            { "id": "Radio Insertion", "jumlah": "120" }
           ]
         },
         "media_luar_ruang": {
@@ -288,7 +276,7 @@
             { "dpp": "bts", "jumlah": 28 },
             { "dpp": "lombok", "jumlah": 34 },
             { "dpp": "wakatobi", "jumlah": 20 },
-            { "dpp": "labuan bajo", "jumlah": 13 }
+            { "dpp": "labuan_bajo", "jumlah": 13 }
           ]
         },
         "top_list_media": {

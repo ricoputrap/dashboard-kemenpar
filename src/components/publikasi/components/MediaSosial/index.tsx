@@ -8,7 +8,7 @@ import ChartInfluencerVisit from './ChartInfluencerVisit'
 import useData from './useData'
 
 const MediaSosial: React.FC = () => {
-  const { kemenpar, kampanye, pesona, influencer } = useData();
+  const { data: [kemenpar, kampanye, pesona], influencer } = useData();
 
   return (
     <Box id="section-one" width="100%">
@@ -40,7 +40,6 @@ const MediaSosial: React.FC = () => {
               url={ kemenpar.url }
               follower={ kemenpar.follower }
               jumlahKonten={ kemenpar.jumlah_konten }
-              reach={ kemenpar.reach }
               engagement={ kemenpar.engagement }
             />
           </Flex>
@@ -58,7 +57,6 @@ const MediaSosial: React.FC = () => {
               url={ pesona.url }
               follower={ pesona.follower }
               jumlahKonten={ pesona.jumlah_konten }
-              reach={ pesona.reach }
               engagement={ pesona.engagement }
             />
           </Flex>
@@ -79,7 +77,6 @@ const MediaSosial: React.FC = () => {
               url={ kampanye.url }
               follower={ kampanye.follower }
               jumlahKonten={ kampanye.jumlah_konten }
-              reach={ kampanye.reach }
               engagement={ kampanye.engagement }
             />
           </Flex>

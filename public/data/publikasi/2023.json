@@ -1,31 +1,31 @@
 {
   "data": {
-    "tahun": 2023,
+    "tahun": 2022,
     "data": {
       "media_sosial": {
         "statistik": [
           {
             "id": "@kemenparekraf.ri",
-            "follower": "0",
-            "jumlah_konten": "0",
+            "follower": "968k",
+            "jumlah_konten": 31,
             "reach": "0",
-            "engagement": "0%",
+            "engagement": "0.23%",
             "url": "https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
           },
           {
             "id": "@kampanyesadarwisata",
-            "follower": "0",
-            "jumlah_konten": "0",
+            "follower": "14.2k",
+            "jumlah_konten": 40,
             "reach": "0",
-            "engagement": "0%",
+            "engagement": "4.50%",
             "url": "https://drive.google.com/file/d/1duVVOLufFmWHVd2BSUBdM5_wbDa2Goyp/view?usp=share_link"
           },
           {
             "id": "@pesona.indonesia",
-            "follower": "0",
-            "jumlah_konten": "0",
+            "follower": "18.7k",
+            "jumlah_konten": 25,
             "reach": "0",
-            "engagement": "0%",
+            "engagement": "1.50%",
             "url": "https://instagram.com/pesona.indonesia?igshid=YmMyMTA2M2Y="
           }
         ],
@@ -35,39 +35,27 @@
           "data": [
             {
               "dpp": "toba",
-              "follower": 0,
-              "reach": 0,
-              "engagement": 0
+              "follower": "383.4K"
             },
             {
               "dpp": "byp",
-              "follower": 0,
-              "reach": 0,
-              "engagement": 0
+              "follower": "305.1K"
             },
             {
               "dpp": "bts",
-              "follower": 0,
-              "reach": 0,
-              "engagement": 0
+              "follower": "313.7K"
             },
             {
               "dpp": "bajo",
-              "follower": 0,
-              "reach": 0,
-              "engagement": 0
+              "follower": "701.7K"
             },
             {
               "dpp": "lombok",
-              "follower": 0,
-              "reach": 0,
-              "engagement": 0
+              "follower": "316.3K"
             },
             {
               "dpp": "wakatobi",
-              "follower": 0,
-              "reach": 0,
-              "engagement": 0
+              "follower": "226.4K"
             }
           ]
         }
@@ -75,61 +63,146 @@
       "section_two": {
         "profile_mikro_influencer": {
           "url": "#",
-          "data": []
+          "data": [
+            {
+              "nama": "@puanindya",
+              "asal": "DKI Jakarta",
+              "follower": "479K",
+              "engagement_rate": "0.01%"
+            },
+            {
+              "nama": "@harivalzayuka",
+              "asal": "Bali",
+              "follower": "115K",
+              "engagement_rate": "11.29%"
+            },
+            {
+              "nama": "@aqilaavviv",
+              "asal": "DKI Jakarta",
+              "follower": "114K",
+              "engagement_rate": "1.95%"
+            },
+            {
+              "nama": "@patrishiela",
+              "asal": "Bali",
+              "follower": "107K",
+              "engagement_rate": "2.41%"
+            },
+            {
+              "nama": "@anisadheaa",
+              "asal": "DI Yogyakarta",
+              "follower": "101K",
+              "engagement_rate": "0.49%"
+            },
+            {
+              "nama": "@onihoironi",
+              "asal": "Bali",
+              "follower": "100K",
+              "engagement_rate": "5.88%"
+            },
+            {
+              "nama": "@yukianggia",
+              "asal": "DKI Jakarta",
+              "follower": "88.8K",
+              "engagement_rate": "8.98%"
+            },
+            {
+              "nama": "@hendraar",
+              "asal": "Jawa Barat",
+              "follower": "71.8K",
+              "engagement_rate": "0.37%"
+            },
+            {
+              "nama": "@bibobns",
+              "asal": "Bali",
+              "follower": "67.1K",
+              "engagement_rate": "2.52%"
+            },
+            {
+              "nama": "@caswanassegaf",
+              "asal": "Jawa Barat",
+              "follower": "61.9K",
+              "engagement_rate": "2.49%"
+            },
+            {
+              "nama": "@satyawinnie",
+              "asal": "Bali",
+              "follower": "47.1K",
+              "engagement_rate": "2.21%"
+            },
+            {
+              "nama": "@cece_chaann",
+              "asal": "Bali",
+              "follower": "36.3K",
+              "engagement_rate": "1.47%"
+            },
+            {
+              "nama": "@leonard_c4me",
+              "asal": "DKI Jakarta",
+              "follower": "21.8K",
+              "engagement_rate": "3.78%"
+            },
+            {
+              "nama": "@Alibufteim",
+              "asal": "NTT",
+              "follower": "51.1K",
+              "engagement_rate": "2.66%"
+            }
+          ]
         },
-        "ig_live_ngantri": {
-          "panji": {
+        "ig_live_ngantri": [
+          {
             "id": "PANJI PETUALANG",
-            "follower": "0",
-            "jumlah_konten": "0",
-            "reach": "0",
-            "engagement": "0",
+            "follower": "1M",
+            "jumlah_konten": "1",
+            "reach": "12K",
+            "engagement": "426",
             "url": "https://drive.google.com/file/d/1xeCjeL2z6YUz9BYRFGi4BBw0Giep4NDT/view?usp=share_link"
           },
-          "grithe": {
+          {
             "id": "GRITHE AGATHA",
-            "follower": "0",
-            "jumlah_konten": "0",
-            "reach": "0",
-            "engagement": "0",
+            "follower": "3.7M",
+            "jumlah_konten": "1",
+            "reach": "396K",
+            "engagement": "675",
             "url": "https://drive.google.com/file/d/1xeCjeL2z6YUz9BYRFGi4BBw0Giep4NDT/view?usp=share_link"
           }
-        }
+        ]
       },
       "section_three": {
         "podcast_wonderful_indonesia": [
           {
-            "id": "Wakatobi",
-            "follower": "0",
-            "jumlah_konten": "0",
-            "reach": "0",
-            "engagement": "0",
+            "id": "PODCAST WAKATOBI",
+            "follower": "968K",
+            "jumlah_konten": "1",
+            "reach": "968K",
+            "engagement": "1.8K",
             "url": "https://drive.google.com/file/d/1EdAspsQUZd3JF4bgvy6EkMceDwBh2JYn/view?usp=share_link"
           },
           {
-            "id": "Labuan Bajo",
-            "follower": "0",
-            "jumlah_konten": "0",
-            "reach": "0",
-            "engagement": "0",
+            "id": "PODCAST LABUAN BAJO",
+            "follower": "968K",
+            "jumlah_konten": "1",
+            "reach": "83.6K",
+            "engagement": "1.3K",
             "url": "https://drive.google.com/file/d/1EdAspsQUZd3JF4bgvy6EkMceDwBh2JYn/view?usp=share_link"
           }
         ],
         "user_generated_content": [
           {
-            "id": "Giveaway 1",
-            "follower": "0",
-            "jumlah_konten": "0",
-            "reach": "0",
-            "engagement": "0",
+            "id": "IGC-GIVEAWAY 1",
+            "follower": "14.2K",
+            "jumlah_konten": "1",
+            "reach": "5.2K",
+            "engagement": "405",
             "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link"
           },
           {
-            "id": "Giveaway 2",
-            "follower": "0",
-            "jumlah_konten": "0",
-            "reach": "0",
-            "engagement": "0",
+            "id": "IGC-GIVEAWAY 2",
+            "follower": "14.2K",
+            "jumlah_konten": "1",
+            "reach": "1.3K",
+            "engagement": "203",
             "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link"
           }
         ]
@@ -138,22 +211,22 @@
         "list": [
           {
             "id": "Siaran Pers",
-            "jumlah": 0,
+            "jumlah": 30,
             "url": "https://drive.google.com/file/d/1gnO2hg6zDOK4-lQSatQ11wBXCthNM_qM/view?usp=share_link"
           },
           {
             "id": "Weekly Press Briefing",
-            "jumlah": 0,
+            "jumlah": 1,
             "url": "https://drive.google.com/file/d/1gnO2hg6zDOK4-lQSatQ11wBXCthNM_qM/view?usp=share_link"
           },
           {
             "id": "Media Center",
-            "jumlah": 0,
+            "jumlah": 2,
             "url": "https://drive.google.com/file/d/1gnO2hg6zDOK4-lQSatQ11wBXCthNM_qM/view?usp=share_link"
           },
           {
             "id": "Pemberitaan Media Online",
-            "jumlah": 0,
+            "jumlah": 442,
             "url": "https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link"
           }
         ],
@@ -162,27 +235,27 @@
           "data": [
             {
               "dpp": "toba",
-              "jumlah": 0
+              "jumlah": 17
             },
             {
               "dpp": "byp",
-              "jumlah": 0
+              "jumlah": 9
             },
             {
               "dpp": "bts",
-              "jumlah": 0
+              "jumlah": 4
             },
             {
               "dpp": "lombok",
-              "jumlah": 0
+              "jumlah": 14
             },
             {
               "dpp": "wakatobi",
-              "jumlah": 0
+              "jumlah": 6
             },
             {
-              "dpp": "labuan bajo",
-              "jumlah": 0
+              "dpp": "labuan_bajo",
+              "jumlah": 5
             }
           ]
         }
@@ -191,35 +264,98 @@
         "media_elektronik": {
           "url": "https://drive.google.com/file/d/1qIS5lcCEV6LuR7sCAgIXAoSnxlLYVj3G/view?usp=share_link",
           "data": [
-            { "id": "Radio Talkshow", "jumlah": 0 },
-            { "id": "Radio Insertion", "jumlah": 0 }
+            { "id": "Radio Talkshow", "jumlah": "1" },
+            { "id": "Radio Insertion", "jumlah": "120" }
           ]
         },
         "media_luar_ruang": {
           "url": "https://drive.google.com/file/d/11o9qZFxBurBgjZ6-0i1hDWWAIYusyzSh/view?usp=sharing",
           "data": [
-            { "dpp": "toba", "jumlah": 0 },
-            { "dpp": "byp", "jumlah": 0 },
-            { "dpp": "bts", "jumlah": 0 },
-            { "dpp": "lombok", "jumlah": 0 },
-            { "dpp": "wakatobi", "jumlah": 0 },
-            { "dpp": "labuan bajo", "jumlah": 0 }
+            { "dpp": "toba", "jumlah": 42 },
+            { "dpp": "byp", "jumlah": 100 },
+            { "dpp": "bts", "jumlah": 28 },
+            { "dpp": "lombok", "jumlah": 34 },
+            { "dpp": "wakatobi", "jumlah": 20 },
+            { "dpp": "labuan_bajo", "jumlah": 13 }
           ]
         },
         "top_list_media": {
           "url": "https://drive.google.com/file/d/1G1vcywG8kHbyOLKCYbYnLNTAJ3kY0Xic/view?usp=share_link",
           "data": [
-            { "id": "Tribunnews.com", "jumlah": 0 },
-            { "id": "Mediaindonesia.com", "jumlah": 0 },
-            { "id": "Indopos.co.id", "jumlah": 0 },
-            { "id": "Liputan6.com", "jumlah": 0 },
-            { "id": "Antaranews.com", "jumlah": 0 }
+            { "id": "Tribunnews.com", "jumlah": 27 },
+            { "id": "Mediaindonesia.com", "jumlah": 27 },
+            { "id": "Indopos.co.id", "jumlah": 28 },
+            { "id": "Liputan6.com", "jumlah": 26 },
+            { "id": "Antaranews.com", "jumlah": 25 }
           ]
         },
         "website": {
           "url": "https://drive.google.com/file/d/13p3RlpgaeYv_7IJjHfdGXBktAKaJqWmv/view?usp=share_link",
           "data": [
-            
+            {
+              "title": "Kehangatan Rasa Keluarga Khas Jogja di Kampung Wisata Sosromedurun",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/kehangatan-rasa-keluarga-khas-yogya-di-kampung-wisata-sosromenduran"
+            },
+            {
+              "title": "Pengalaman Desa Wisata KIan Berkesan Berkat Kwsiapan Warga Desa Wisata Sekitar Borubudur dan Prambanan",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/pengalaman-wisata-desa-kian-berkesan-berkat-kesiapan-warga-desa-wisata-sekitar-borobudur-dan-prambanan"
+            },
+            {
+              "title": "Sisi Lain Labuan Bajo, Adaptasi Warga Desa Untuk Melestarikan Sang Satwa Langka",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/sisi-lain-labuan-bajo-adaptasi-warga-desa-untuk-melestarikan-sang-satwa-langka"
+            },
+            {
+              "title": "Pariwisata Bahari Berkembang, Lapangan Pekerjaan Baru Bagi Warga Sekitar",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/pariwisata-bahari-berkembang-lapangan-pekerjaan-baru-bagi-warga-sekitar"
+            },
+            {
+              "title": "Gugusan Gili Cantik Desa Sekotong Barat Surga Keindahan Bahari di Lombok Barat",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/gugusan-gili-cantik-desa-sekotong-barat-surga-keindahan-bahari-di-lombok-barat"
+            },
+            {
+              "title": "Manusia-manusia kuat dari Selong Balanak",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/manusia-manusia-kuat-dari-selong-belanak"
+            },
+            {
+              "title": "Mereka Yang Berada di Garda Depan Pulau Samosir",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/mereka-yang-berada-di-garda-depan-pariwisata-pulau-samosir"
+            },
+            {
+              "title": "Menelusuri Rindu di Kampung Wisata Jogja",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/menelusuri-rindu-di-kampung-wisata-yogya "
+            },
+            {
+              "title": "Cerita Sade",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/cerita-sade"
+            },
+            {
+              "title": "Kampung Homestay Desa Wisata Kuta",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/kampoeng-homestay-desa-wisata-kuta-memoles-layanan-prima"
+            },
+            {
+              "title": "Terpikat Kearifan Lokal Pelaku Pariwisata di Desa-desa Wisata Mandalika",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/terpikat-kearifan-lokal-pelaku-pariwisata-di-desa-desa-wisata-mandalika"
+            },
+            {
+              "title": "Geliat Desa Wisata di Tanah Karo",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/geliat-desa-desa-wisata-di-tanah-karo"
+            },
+            {
+              "title": "Mencicipi Serunya Desa Wisata Penyangga Bromo Tengger Semeru Ala Pelaku Wisata Lokal",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/mencicipi-serunya-desa-wisata-penyangga-bromo-tengger-semeru-ala-pelaku-wisata-lokal"
+            },
+            {
+              "title": "Pesona Yang Berbeda dari Alam Desa Wisata di Danau Toba",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/pesona-yang-berbeda-dari-alam-desa-desa-di-danau-toba"
+            },
+            {
+              "title": "Menjelajahi Desa Wisata di Tapanuli Utara, Sisi Lain dari Danau Toba",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/menjelajahi-desa-desa-wisata-di-tapanuli-utara-sisi-lain-dari-danau-toba"
+            },
+            {
+              "title": "Harmoni Persahabatan Manusia dengan Laut di Desa Wisata Wakatobi",
+              "url": "https://www.indonesia.travel/id/id/ide-liburan/harmoni-persahabatan-manusia-dengan-laut-di-desa-desa-wisata-wakatobi"
+            }
           ]
         }
       }

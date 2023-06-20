@@ -2,9 +2,7 @@ import { TStatisticData } from "../../../components/publikasi/state/index.types"
 
 type TInfluencerRawData = {
   dpp: string;
-  follower: number;
-  reach: number;
-  engagement: number;
+  follower: string;
 }
 
 export type TResponseMediaSosial = {
