@@ -38,7 +38,7 @@ const publikasi = (tahun: number) => {
     return { data, error, isLoading }
   }
 
-  return { data: null, error: null, isLoading: true }
+  return { data: undefined, error: undefined, isLoading: true }
 };
 
 export default publikasi;

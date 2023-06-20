@@ -1,6 +1,6 @@
 type TMediaSosialItem = {
   id: string;
-  jumlah: number;
+  jumlah: string;
   url: string;
 }
 
