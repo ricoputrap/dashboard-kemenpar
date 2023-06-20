@@ -17,7 +17,7 @@ const computeDataSectionTwo = (data: TResponseSectionTwo): TSectionTwo => {
   });
 
   // populate data ig live ngantri
-  const igLiveNgantri: TStatisticData[] = Object.values(ig_live_ngantri);
+  const igLiveNgantri: TStatisticData[] = [...ig_live_ngantri];
 
   return {
     profilMikroInfluencer: {

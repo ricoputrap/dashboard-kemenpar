@@ -18,7 +18,5 @@ export type TResponseSectionTwo = {
     url: string;
     data: TMikroInfluencerRawData[];
   },
-  ig_live_ngantri: {
-    [key: string]: TMikroInfluencerFullData
-  }
+  ig_live_ngantri: TMikroInfluencerFullData[];
 }
