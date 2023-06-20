@@ -23,6 +23,7 @@ const IGLiveNgantri: React.FC<Props> = ({ data }) => {
       <Stack rowGap="18px">
         {data.map(item => (
           <StatisticBox
+            key={ item.id }
             logo={ LogoKemenpar }
             title={ item.id }
             titleSize="17px"

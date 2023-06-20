@@ -8,7 +8,7 @@ import ChartInfluencerVisit from './ChartInfluencerVisit'
 import useData from './useData'
 
 const MediaSosial: React.FC = () => {
-  const { data: [kemenpar, kampanye, pesona], influencer } = useData();
+  const { data, influencer } = useData();
 
   return (
     <Box id="section-one" width="100%">
@@ -35,12 +35,12 @@ const MediaSosial: React.FC = () => {
           >
             <StatisticBox
               logo={LogoKemenpar}
-              title={ kemenpar.id }
+              title={ data[0]?.id || "" }
               titleSize="21px"
-              url={ kemenpar.url }
-              follower={ kemenpar.follower }
-              jumlahKonten={ kemenpar.jumlah_konten }
-              engagement={ kemenpar.engagement }
+              url={ data[0]?.url || "" }
+              follower={ data[0]?.follower || "0" }
+              jumlahKonten={ data[0]?.jumlah_konten || "0" }
+              engagement={ data[0]?.engagement || "0" }
             />
           </Flex>
           <Flex
@@ -52,12 +52,12 @@ const MediaSosial: React.FC = () => {
           >
             <StatisticBox
               logo={LogoWonderful}
-              title={ pesona.id }
+              title={ data[1]?.id || "" }
               titleSize="21px"
-              url={ pesona.url }
-              follower={ pesona.follower }
-              jumlahKonten={ pesona.jumlah_konten }
-              engagement={ pesona.engagement }
+              url={ data[1]?.url || "" }
+              follower={ data[1]?.follower || "0" }
+              jumlahKonten={ data[1]?.jumlah_konten || "0" }
+              engagement={ data[1]?.engagement || "0" }
             />
           </Flex>
         </Stack>
@@ -72,12 +72,12 @@ const MediaSosial: React.FC = () => {
           >
             <StatisticBox
               logo={LogoWonderful}
-              title={ kampanye.id }
-              titleSize="16px"
-              url={ kampanye.url }
-              follower={ kampanye.follower }
-              jumlahKonten={ kampanye.jumlah_konten }
-              engagement={ kampanye.engagement }
+              title={ data[2]?.id || "" }
+              titleSize="21px"
+              url={ data[2]?.url || "" }
+              follower={ data[2]?.follower || "0" }
+              jumlahKonten={ data[2]?.jumlah_konten || "0" }
+              engagement={ data[2]?.engagement || "0" }
             />
           </Flex>
 

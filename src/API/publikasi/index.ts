@@ -1,5 +1,6 @@
 import useSWR from "swr";
 import { fetcher } from "..";
+import { getCookie } from "../../utils/cookie";
 import { TResponseMediaOnline } from "./types/media-online.types";
 import { TResponseMediaSosial } from "./types/media-social.types";
 import { TResponseSectionFive } from "./types/section-five.types";
@@ -20,9 +21,24 @@ export type TResponse = {
 }
 
 const publikasi = (tahun: number) => {
-  const source: string = `data/publikasi/${tahun}.json`;
-  const { data, error, isLoading } = useSWR<TResponse>(source, fetcher);
-  return { data, error, isLoading }
+  if (tahun == 2022) {
+    const source: string = `data/publikasi/${tahun}.json`;
+    const { data, error, isLoading } = useSWR<TResponse>(source, fetcher);
+    return { data, error, isLoading }
+  }
+  else if (tahun == 2023) {
+    const URL = "https://kampanye-sadarwisata.com/api/publikasi/main?tahun=2023";
+    const token = getCookie("token");
+
+    const { data, error, isLoading } = useSWR<TResponse>(
+      [URL, token],
+      ([URL, token]) => fetcher(URL, token)
+    );
+
+    return { data, error, isLoading }
+  }
+
+  return { data: null, error: null, isLoading: true }
 };
 
 export default publikasi;
