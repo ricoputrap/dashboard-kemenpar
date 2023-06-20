@@ -1,6 +1,6 @@
 type TMediaElektronikItem = {
   id: string;
-  jumlah: number;
+  jumlah: string;
 }
 type TMediaLuarRuangItem = {
   dpp: string;
