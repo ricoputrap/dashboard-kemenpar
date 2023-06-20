@@ -11,7 +11,7 @@ export type TStatisticData = {
 
 export type TListData = {
   label: string;
-  value: number;
+  value: string;
   url?: string;
 }
 

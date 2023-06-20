@@ -1,4 +1,4 @@
-import { TResponseSectionFive } from "../../../../API/publikasi/types/section-five.types";
+import { TResponseSectionFive, TTopListMediaItem } from "../../../../API/publikasi/types/section-five.types";
 import { TBarDataPublikasi, TSectionFive } from "../../state/index.types";
 
 const computeDataSectionFive = (data: TResponseSectionFive): TSectionFive => {
@@ -39,7 +39,13 @@ const computeDataSectionFive = (data: TResponseSectionFive): TSectionFive => {
     mediaLuarRuang.labels.push(item.dpp.toUpperCase());
     mediaLuarRuang.dataset.data.push(item.jumlah);
   });
-  top_list_media.data.forEach(item => {
+
+  const sortedList: TTopListMediaItem[] = [...top_list_media.data];
+  sortedList.sort((a, b) => b.jumlah - a.jumlah);
+
+  const topFiveMedia: TTopListMediaItem[] = sortedList.slice(0, 5);
+
+  topFiveMedia.forEach(item => {
     topListMedia.labels.push(item.id);
     topListMedia.dataset.data.push(item.jumlah);
   });

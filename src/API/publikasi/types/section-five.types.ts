@@ -6,7 +6,7 @@ type TMediaLuarRuangItem = {
   dpp: string;
   jumlah: number;
 }
-type TTopListMediaItem = {
+export type TTopListMediaItem = {
   id: string;
   jumlah: number;
 }
