@@ -4,7 +4,7 @@ import React from 'react'
 interface Props {
   data: {
     label: string;
-    value: number;
+    value: string;
   }[];
 }
 
