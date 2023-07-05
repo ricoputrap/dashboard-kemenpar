@@ -13,7 +13,7 @@ const menus: IMenu[] = [
   { label: "SOSIALISASI", path: "/sosialisasi" },
   { label: "PELATIHAN", path: "/pelatihan" },
   { label: "PENDAMPINGAN", path: "/pendampingan" },
-  { label: "NARASUMBER", path: "/narasumber" },
+  // { label: "NARASUMBER", path: "/narasumber" },
   { label: "L. CHAMPION", path: "/local-champion" },
   { label: "PUBLIKASI", path: "/publikasi" },
 ]
