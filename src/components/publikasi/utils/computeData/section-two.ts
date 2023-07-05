@@ -16,6 +16,16 @@ const computeDataSectionTwo = (data: TResponseSectionTwo): TSectionTwo => {
     });
   });
 
+  // sort by engagement rate in increasing order
+  dataProfilMikroInfluencer.sort((rowA, rowB) => {
+    const engagementRateA = parseFloat(rowA.engagement_rate.split("%")[0]);
+    const engagementRateB = parseFloat(rowB.engagement_rate.split("%")[0]);
+
+    if (engagementRateA > engagementRateB)
+      return -1;
+    return 1
+  })
+
   // populate data ig live ngantri
   const igLiveNgantri: TStatisticData[] = [...ig_live_ngantri];
 
