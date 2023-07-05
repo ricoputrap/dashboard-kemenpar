@@ -26,12 +26,12 @@ const RowData: React.FC<Props> = ({ title, link, isHeader }) => {
       boxSizing='border-box'
     >
       <Flex columnGap="20px">
-        <Text width="30%" wordBreak="break-word">{ title }</Text>
+        <Text width="50%" wordBreak="break-word">{ title }</Text>
         
         {!!isHeader
-          ? <Text flex={1}>Link</Text>
+          ? <Text width="50%">Link</Text>
           : (
-            <Link flex={1} href={ link } target="_blank">
+            <Link width="50%" href={ link } target="_blank">
               { link }
             </Link>
           )
