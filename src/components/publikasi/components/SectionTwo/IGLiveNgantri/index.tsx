@@ -1,7 +1,7 @@
 import { Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import StatisticBox from '../../StatisticBox'
-import LogoKemenpar from "../../../../../assets/logo/7-publikasi-kemenpar.svg"
+import LogoKemenpar from "../../../../../assets/logo/7-publikasi-kemenpar-new.svg"
 import { TStatisticData } from '../../../state/index.types'
 
 interface Props {

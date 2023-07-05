@@ -1,7 +1,7 @@
 import { Box, Flex, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import StatisticBox from '../StatisticBox'
-import LogoKemenpar from "../../../../assets/logo/7-publikasi-kemenpar.svg"
+import LogoKemenpar from "../../../../assets/logo/7-publikasi-kemenpar-new.svg"
 import useData from './useData'
 
 const SectionThree: React.FC = () => {

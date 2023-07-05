@@ -1,7 +1,7 @@
 import { Box, Flex, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
-import LogoKemenpar from "../../../../assets/logo/7-publikasi-kemenpar.svg"
-import LogoWonderful from "../../../../assets/logo/8-publikasi-wonderful.svg"
+import LogoKemenpar from "../../../../assets/logo/7-publikasi-kemenpar-new.svg"
+import LogoWonderful from "../../../../assets/logo/8-publikasi-wonderful-new.svg"
 import ChartLine from "../../../../assets/lines/chart-line.svg"
 import StatisticBox from '../StatisticBox'
 import ChartInfluencerVisit from './ChartInfluencerVisit'
